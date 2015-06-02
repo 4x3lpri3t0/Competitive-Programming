@@ -6,18 +6,6 @@
 #include <sstream>
 using namespace std;
 
-vector<int> parseInts(string str) {
-    stringstream ss(str);
-    vector<int> result(0);
-    string token;
-
-    while(std::getline(ss, token, ',')) {
-        result.push_back(stoi(token));
-    }
-
-    return result;
-}
-
 int main() {
     string cancelled;
     int totalStudents;
