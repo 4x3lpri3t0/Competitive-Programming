@@ -14,6 +14,7 @@ int height(int n) {
     
     return height;
 }
+
 int main() {
     int T;
     cin >> T;
