@@ -1,2 +1,3 @@
-# hacker-rank
-Solutions for Hacker Rank problems.
+# Competitive Programming Solutions
+
+My solutions for competitive programming problems.
