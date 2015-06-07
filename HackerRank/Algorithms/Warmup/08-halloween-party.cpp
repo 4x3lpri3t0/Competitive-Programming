@@ -7,18 +7,17 @@ using namespace std;
 
 
 int main() {
-    long T, cuts, pieces;
+    long T, pieces;
+    double cuts; // IMPORTANT! cuts has to be double, so we get decimals when we divide / 2
     cin >> T;
     
     while(T--) {
         cin >> cuts;
-        pieces = 0;
         
-        if(cuts % 2 == 0) {
-            pieces = (cuts / 2) * (cuts / 2);
-        } else {
-            pieces = ((cuts-1) / 2) * ((cuts-1) / 2 + 1);
-        }
+        long firstHalf = floor(cuts / 2); // round down
+        long secondHalf = ceil(cuts / 2); // round up
+
+        pieces = firstHalf * secondHalf;
         
         cout << pieces << endl;
     }
