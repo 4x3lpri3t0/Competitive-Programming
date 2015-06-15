@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
@@ -13,7 +14,8 @@ int main() {
         cin >> strLine;
         
         for(char& c : strLine) {
-            map[i][j++] = c - '0'; // Convert char to int
+            // Convert char to int
+            map[i][j++] = c - '0';
         }
     }
     
@@ -21,6 +23,7 @@ int main() {
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < n; j++) {
             int current = map[i][j];
+            
             if(j > 0 && i > 0 && j < n-1 && i < n-1 && // Don't calculate the border values, but print them
             current > map[i-1][j] &&
             current > map[i+1][j] &&

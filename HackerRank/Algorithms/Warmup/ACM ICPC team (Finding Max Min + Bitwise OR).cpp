@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
@@ -20,11 +21,13 @@ int main() {
                 int currentTopicA = peopleArray[i][k] - '0';
                 int currentTopicB = peopleArray[j][k] - '0';
 
+                // Bitwise OR
                 if(currentTopicA | currentTopicB) {
                     numOfTopicsInCommon++;
                 }
             }
             
+            // Finding Max Min
             if(numOfTopicsInCommon > maxNumOfTopics) {
                 maxNumOfTopics = numOfTopicsInCommon;
                 teamsWithMax = 1;

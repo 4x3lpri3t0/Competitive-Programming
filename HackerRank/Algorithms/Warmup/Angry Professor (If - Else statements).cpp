@@ -1,18 +1,12 @@
-#include <cmath>
-#include <cstdio>
-#include <vector>
 #include <iostream>
-#include <algorithm>
-#include <sstream>
+
 using namespace std;
 
 int main() {
-    string cancelled;
     int totalStudents;
     int minStudents;
     int currentStudent;
     int assisting = 0;
-    vector<int> students;
     int numLines;
     
     cin >> numLines;

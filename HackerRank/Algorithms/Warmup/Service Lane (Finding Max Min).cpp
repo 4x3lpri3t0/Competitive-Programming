@@ -1,17 +1,14 @@
-#include <cmath>
-#include <cstdio>
 #include <vector>
 #include <iostream>
-#include <algorithm>
-using namespace std;
 
+using namespace std;
 
 int main() {
     int freewayLength, numberOfTestCases, tempInput, start, end;
     int largestVehicle = 0;
     int minSegLength = 9;
     vector<int> segments(0);
-        
+
     cin >> freewayLength >> numberOfTestCases;
     
     for(int i = 0; i < freewayLength; i++) {

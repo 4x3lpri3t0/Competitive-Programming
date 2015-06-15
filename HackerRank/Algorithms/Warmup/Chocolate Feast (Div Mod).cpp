@@ -1,16 +1,14 @@
-#include <cmath>
-#include <cstdio>
-#include <vector>
 #include <iostream>
-#include <algorithm>
+#include <cmath>
+
 using namespace std;
 
-
 int main() {
-    int t,n,c,m;
-    cin>>t;
-    while(t--){
-        cin>>n>>c>>m;
+    int t, n, c, m;
+    cin >> t;
+
+    while(t--) {
+        cin >> n >> c >> m;
         int answer = 0;
         int wrappers = floor(n / c);
         answer = wrappers;
@@ -23,7 +21,7 @@ int main() {
             answer += newChocolates;
         }
         
-        cout<<answer<<endl;
+        cout << answer << endl;
     }
     return 0;
 }

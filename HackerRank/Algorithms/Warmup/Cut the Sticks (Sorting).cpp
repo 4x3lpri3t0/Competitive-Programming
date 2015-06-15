@@ -1,8 +1,6 @@
-#include <cmath>
-#include <cstdio>
-#include <vector>
 #include <iostream>
-#include <algorithm>
+#include <vector>
+
 using namespace std;
 
 int main() {
@@ -32,7 +30,8 @@ int main() {
             *i -= min;
             
             if(*i <= 0) {
-                i = sticks.erase(i); // You assign the current iterator first and then remove the element.
+                // You assign the current iterator first and then remove the element.
+                i = sticks.erase(i);
             } else {
                 ++i;
             }
