@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _HackerRankSln
+﻿namespace _HackerRankSln
 {
     class Program
     {
         static void Main(string[] args)
         {
-
+            // Console.WriteLine(Simple_Array_Sum.ArraySum());
         }
     }
 }
