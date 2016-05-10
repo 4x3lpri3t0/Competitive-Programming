@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace _HackerRankSln
+namespace _HackerRankSln.Problems
 {
     public static class Simple_Array_Sum
     {
