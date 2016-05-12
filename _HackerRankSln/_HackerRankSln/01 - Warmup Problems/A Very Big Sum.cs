@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _HackerRankSln.Problems
+namespace _HackerRankSln._01___Warmup_Problems
 {
     public static class A_Very_Big_Sum
     {
-        public static Int64 VeryBigSum()
+        public static long VeryBigSum()
         {
             int n = Convert.ToInt32(Console.ReadLine());
             string[] arr_temp = Console.ReadLine().Split(' ');
-            Int64[] arr = Array.ConvertAll(arr_temp, Int64.Parse);
+            long[] arr = Array.ConvertAll(arr_temp, long.Parse);
 
             return arr.Sum();
         }

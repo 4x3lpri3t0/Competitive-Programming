@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _HackerRankSln.Problems
+namespace _HackerRankSln._01___Warmup_Problems
 {
     public static class Diagonal_Difference
     {
