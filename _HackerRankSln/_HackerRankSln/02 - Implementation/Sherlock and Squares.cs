@@ -16,17 +16,10 @@ namespace _HackerRankSln._02___Implementation
                 string[] a_temp = Console.ReadLine().Split(' ');
                 int[] a = Array.ConvertAll(a_temp, int.Parse);
 
-                int squaresCount = 0;
-                for (int i = a[0]; i <= a[1]; i++)
-                {
-                    double sqrRootResult = Math.Sqrt(i);
+                int max = a[1];
+                int min = a[0];
 
-                    // Check if it's integer after sqrt operation
-                    if ((sqrRootResult % 1) == 0)
-                    {
-                        squaresCount++;
-                    }
-                }
+                int squaresCount = (int)Math.Floor(Math.Sqrt(max)) - (int)Math.Ceiling(Math.Sqrt(min)) + 1;
 
                 Console.WriteLine(squaresCount);
             }
