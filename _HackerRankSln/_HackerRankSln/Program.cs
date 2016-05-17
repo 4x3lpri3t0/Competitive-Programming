@@ -20,7 +20,8 @@ namespace _HackerRankSln
             //Angry_Professor.PrintCancelledClasses();
             //Sherlock_and_The_Beast.CalculateLinearDiophantineEquation();
             //Sherlock_and_Squares.Sherlock();
-            Lisa_s_Workbook.PrintSpecialChapters();
+            //Lisa_s_Workbook.PrintSpecialChapters();
+            //The_Grid_Search.HasPattern();
 
             // 04 - Sorting
             //Insertion_Sort___Part_1.insertionSort();

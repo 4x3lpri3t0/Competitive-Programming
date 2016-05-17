@@ -51,6 +51,7 @@
     <Compile Include="02 - Implementation\Lisa%27s Workbook.cs" />
     <Compile Include="02 - Implementation\Sherlock and Squares.cs" />
     <Compile Include="02 - Implementation\Sherlock and The Beast.cs" />
+    <Compile Include="02 - Implementation\The Grid Search.cs" />
     <Compile Include="04 - Sorting\Insertion Sort - Part 1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
