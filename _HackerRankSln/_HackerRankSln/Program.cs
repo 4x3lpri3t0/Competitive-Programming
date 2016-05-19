@@ -22,6 +22,7 @@ namespace _HackerRankSln
             //Sherlock_and_Squares.Sherlock();
             //Lisa_s_Workbook.PrintSpecialChapters();
             //The_Grid_Search.HasPattern();
+            //Caesar_Cipher.Encrypt();
 
             // 04 - Sorting
             //Insertion_Sort___Part_1.insertionSort();

@@ -48,6 +48,7 @@
     <Compile Include="01 - Warmup Problems\Plus Minus.cs" />
     <Compile Include="01 - Warmup Problems\Time Conversion.cs" />
     <Compile Include="02 - Implementation\Angry Professor.cs" />
+    <Compile Include="02 - Implementation\Caesar Cipher.cs" />
     <Compile Include="02 - Implementation\Lisa%27s Workbook.cs" />
     <Compile Include="02 - Implementation\Sherlock and Squares.cs" />
     <Compile Include="02 - Implementation\Sherlock and The Beast.cs" />
