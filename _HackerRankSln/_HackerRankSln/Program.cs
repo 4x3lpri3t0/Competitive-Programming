@@ -23,6 +23,9 @@ namespace _HackerRankSln
             //Lisa_s_Workbook.PrintSpecialChapters();
             //The_Grid_Search.HasPattern();
             //Caesar_Cipher.Encrypt();
+            //Library_Fine.CalculateFine();
+            //Extra_Long_Factorials.CalculateFactorial();
+            Taum_and_B_day.GiftCalculator();
 
             // 04 - Sorting
             //Insertion_Sort___Part_1.insertionSort();
