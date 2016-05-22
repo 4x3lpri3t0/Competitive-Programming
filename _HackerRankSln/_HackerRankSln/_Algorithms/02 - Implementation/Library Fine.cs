@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _HackerRankSln._02___Implementation
+namespace _HackerRankSln._Algorithms._02___Implementation
 {
     public static class Library_Fine
     {

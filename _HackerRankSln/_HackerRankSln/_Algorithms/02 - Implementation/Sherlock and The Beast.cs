@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 // Find the largest Decent Number having NN digits.
 
@@ -24,7 +20,7 @@ using System.Threading.Tasks;
 
 ////Print the largest Decent Number having NN digits; if no such number exists, tell Sherlock by printing -1.
 
-namespace _HackerRankSln._02___Implementation
+namespace _HackerRankSln._Algorithms._02___Implementation
 {
     public static class Sherlock_and_The_Beast
     {

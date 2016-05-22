@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _HackerRankSln._01___Warmup_Problems
+namespace _HackerRankSln._Algorithms._01___Warmup_Problems
 {
     public static class Time_Conversion
     {

@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace _HackerRankSln._01___Warmup_Problems
+namespace _HackerRankSln._Algorithms._01___Warmup_Problems
 {
     public static class Diagonal_Difference
     {

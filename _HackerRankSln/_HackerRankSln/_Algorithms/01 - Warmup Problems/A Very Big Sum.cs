@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Linq;
 
-namespace _HackerRankSln._01___Warmup_Problems
+namespace _HackerRankSln._Algorithms._01___Warmup_Problems
 {
-    public static class Simple_Array_Sum
+    public static class A_Very_Big_Sum
     {
-        public static int ArraySum()
+        public static long VeryBigSum()
         {
             int n = Convert.ToInt32(Console.ReadLine());
             string[] arr_temp = Console.ReadLine().Split(' ');
-            int[] arr = Array.ConvertAll(arr_temp, int.Parse);
+            long[] arr = Array.ConvertAll(arr_temp, long.Parse);
 
             return arr.Sum();
         }

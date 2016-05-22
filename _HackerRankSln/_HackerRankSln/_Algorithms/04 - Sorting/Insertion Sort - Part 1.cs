@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace _HackerRankSln._04___Sorting
+namespace _HackerRankSln._Algorithms._04___Sorting
 {
     public static class Insertion_Sort___Part_1
     {
@@ -20,7 +16,6 @@ namespace _HackerRankSln._04___Sorting
                 ar[_ar_i] = Convert.ToInt32(split_elements[_ar_i]);
             }
 
-            // -- My code
             int rightmost = ar[ar.Length - 1];
             for (int i = ar.Length - 2; i >= 0; i--)
             {
