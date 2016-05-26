@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Week of Code - 20\Non-Divisible Subset.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\A Very Big Sum.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Diagonal Difference.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Plus Minus.cs" />
@@ -63,6 +64,10 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Simple Array Sum.cs" />
+    <Compile Include="_Data Structures\01 - Arrays\2D Array - DS.cs" />
+    <Compile Include="_Data Structures\01 - Arrays\Arrays - DS.cs" />
+    <Compile Include="_Data Structures\01 - Arrays\Dynamic Array.cs" />
+    <Compile Include="_Data Structures\01 - Arrays\Sparse Arrays.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="_Algorithms\03 - Strings\" />
@@ -73,6 +78,21 @@
     <Folder Include="_Algorithms\09 - Bit Manipulation\" />
     <Folder Include="_Algorithms\10 - Game Theory\" />
     <Folder Include="_Algorithms\11 - NP Complete\" />
+    <Folder Include="_Data Structures\03 - Trees\" />
+    <Folder Include="_Data Structures\04 - Balanced Trees\" />
+    <Folder Include="_Data Structures\05 - Stacks\" />
+    <Folder Include="_Data Structures\06- Queues\" />
+    <Folder Include="_Data Structures\07 - Heap\" />
+    <Folder Include="_Data Structures\08 - Disjoint Set\" />
+    <Folder Include="_Data Structures\09 - Multiple Choice\" />
+    <Folder Include="_Data Structures\10 - Trie\" />
+    <Folder Include="_Data Structures\11 - Advanced\" />
+    <Folder Include="_Mathematics\01 - Fundamentals\" />
+    <Folder Include="_Mathematics\02 - Number Theory\" />
+    <Folder Include="_Mathematics\03 - Combinatorics\" />
+    <Folder Include="_Mathematics\04 - Algebra\" />
+    <Folder Include="_Mathematics\05 - Geometry\" />
+    <Folder Include="_Mathematics\06 - Probability\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

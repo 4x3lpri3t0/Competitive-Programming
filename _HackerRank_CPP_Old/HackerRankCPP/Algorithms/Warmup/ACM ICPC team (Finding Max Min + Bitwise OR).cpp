@@ -1,12 +1,17 @@
 #include <iostream>
-
+#include <string>
+#include <algorithm>
+#include <vector>
+#include <ctime>
+#include <cstdlib>
+#include <cctype>
 using namespace std;
 
 int main() {
     int N, M, maxNumOfTopics = 0, teamsWithMax = 0;
     
     cin >> N >> M;
-    string peopleArray[N];
+    string** peopleArray = new string*[N];
     
     for(int i = 0; i < N; i++) {
         cin >> peopleArray[i];
