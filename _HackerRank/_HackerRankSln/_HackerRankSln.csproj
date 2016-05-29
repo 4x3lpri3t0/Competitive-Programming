@@ -68,6 +68,15 @@
     <Compile Include="_Data Structures\01 - Arrays\Arrays - DS.cs" />
     <Compile Include="_Data Structures\01 - Arrays\Dynamic Array.cs" />
     <Compile Include="_Data Structures\01 - Arrays\Sparse Arrays.cs" />
+    <Compile Include="_Data Structures\02 - Linked Lists\Insert a node at a specific position in a linked list.cs" />
+    <Compile Include="_Data Structures\02 - Linked Lists\Insert a node at the head of a linked list.cs" />
+    <Compile Include="_Data Structures\02 - Linked Lists\Insert a Node at the Tail of a Linked List.cs" />
+    <Compile Include="_Data Structures\02 - Linked Lists\_Node2.cs" />
+    <Compile Include="_Data Structures\02 - Linked Lists\Print the Elements of a Linked List.cs" />
+    <Compile Include="_Data Structures\02 - Linked Lists\_Node1.cs" />
+    <Compile Include="_Mathematics\01 - Fundamentals\Find Point.cs" />
+    <Compile Include="_Mathematics\01 - Fundamentals\Maximum Draws.cs" />
+    <Compile Include="_Mathematics\01 - Fundamentals\Restaurant.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="_Algorithms\03 - Strings\" />
@@ -87,7 +96,6 @@
     <Folder Include="_Data Structures\09 - Multiple Choice\" />
     <Folder Include="_Data Structures\10 - Trie\" />
     <Folder Include="_Data Structures\11 - Advanced\" />
-    <Folder Include="_Mathematics\01 - Fundamentals\" />
     <Folder Include="_Mathematics\02 - Number Theory\" />
     <Folder Include="_Mathematics\03 - Combinatorics\" />
     <Folder Include="_Mathematics\04 - Algebra\" />

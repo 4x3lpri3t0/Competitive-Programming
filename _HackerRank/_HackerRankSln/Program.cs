@@ -2,9 +2,10 @@
 using _HackerRankSln._Algorithms._02___Implementation;
 using _HackerRankSln._Algorithms._04___Sorting;
 using _HackerRankSln._Data_Structures._01___Arrays;
+using _HackerRankSln._Data_Structures._02___Linked_Lists;
+using _HackerRankSln._Mathematics._01___Fundamentals;
 using _HackerRankSln.May_World_CodeSprint_2016;
 using _HackerRankSln.Week_of_Code___20;
-
 namespace _HackerRankSln
 {
     class Program
@@ -49,9 +50,17 @@ namespace _HackerRankSln
             //Dynamic_Array.PrintUpdatedLastAnswer();
             //Sparse_Arrays.PrintTimes();
             #endregion
+            #region Linked Lists
+            var node1 = new Node1();
+            //Print_the_Elements_of_a_Linked_List.Print(node1);
+            //Insert_a_Node_at_the_Tail_of_a_Linked_List.InsertTail(node1, 0);
+            //Insert_a_node_at_the_head_of_a_linked_list.InsertHead(node1, 0);
+            //Insert_a_node_at_a_specific_position_in_a_linked_list.InsertNth(node1, 0, 1);
 
+            #endregion
             #region 03 - Trees
             // Swap Nodes [Algo] -> Only one in the whole section with C# available
+            // Do the rest of the 'Trees' exercises using java, then migrate to C#
             #endregion
 
             #region 04 - Balanced Trees
@@ -59,6 +68,10 @@ namespace _HackerRankSln
             // Median Updates -> available for C#
             #endregion
             // --------------- MATHEMATICS ---------------
+            #region 01 - Fundamentals
+            //Find_Point.FindPoint();
+            //Restaurant.gcdSquares();
+            #endregion
         }
     }
 }
