@@ -51,12 +51,13 @@ namespace _HackerRankSln
             //Sparse_Arrays.PrintTimes();
             #endregion
             #region Linked Lists
-            var node1 = new Node1();
-            //Print_the_Elements_of_a_Linked_List.Print(node1);
-            //Insert_a_Node_at_the_Tail_of_a_Linked_List.InsertTail(node1, 0);
-            //Insert_a_node_at_the_head_of_a_linked_list.InsertHead(node1, 0);
-            //Insert_a_node_at_a_specific_position_in_a_linked_list.InsertNth(node1, 0, 1);
-
+            var node = new Node();
+            //Print_the_Elements_of_a_Linked_List.Print(node);
+            //Insert_a_Node_at_the_Tail_of_a_Linked_List.InsertTail(node, 0);
+            //Insert_a_node_at_the_head_of_a_linked_list.InsertHead(node, 0);
+            //Insert_a_node_at_a_specific_position_in_a_linked_list.InsertNth(node, 0, 1);
+            //Delete_a_Node.Delete(node, 1);
+            //Print_in_Reverse.ReversePrint(node);
             #endregion
             #region 03 - Trees
             // Swap Nodes [Algo] -> Only one in the whole section with C# available

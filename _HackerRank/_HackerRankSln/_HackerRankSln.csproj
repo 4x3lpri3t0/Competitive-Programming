@@ -68,11 +68,13 @@
     <Compile Include="_Data Structures\01 - Arrays\Arrays - DS.cs" />
     <Compile Include="_Data Structures\01 - Arrays\Dynamic Array.cs" />
     <Compile Include="_Data Structures\01 - Arrays\Sparse Arrays.cs" />
-    <Compile Include="_Data Structures\02 - Linked Lists\Insert a node at a specific position in a linked list.cs" />
-    <Compile Include="_Data Structures\02 - Linked Lists\Insert a node at the head of a linked list.cs" />
-    <Compile Include="_Data Structures\02 - Linked Lists\Insert a Node at the Tail of a Linked List.cs" />
+    <Compile Include="_Data Structures\02 - Linked Lists\Delete a Node.cs" />
+    <Compile Include="_Data Structures\02 - Linked Lists\Insert a node at a specific position in a LL.cs" />
+    <Compile Include="_Data Structures\02 - Linked Lists\Insert a node at the Head of a LL.cs" />
+    <Compile Include="_Data Structures\02 - Linked Lists\Insert a Node at the Tail of a LL.cs" />
+    <Compile Include="_Data Structures\02 - Linked Lists\Print in Reverse.cs" />
     <Compile Include="_Data Structures\02 - Linked Lists\_Node2.cs" />
-    <Compile Include="_Data Structures\02 - Linked Lists\Print the Elements of a Linked List.cs" />
+    <Compile Include="_Data Structures\02 - Linked Lists\Print the Elements of a LL.cs" />
     <Compile Include="_Data Structures\02 - Linked Lists\_Node1.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Find Point.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Maximum Draws.cs" />
