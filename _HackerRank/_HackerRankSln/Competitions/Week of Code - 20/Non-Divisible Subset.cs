@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace _HackerRankSln.Week_of_Code___20
+namespace _HackerRankSln.Competitions.Week_of_Code___20
 {
     public class Non_Divisible_Subset
     {

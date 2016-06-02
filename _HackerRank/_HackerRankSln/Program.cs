@@ -2,10 +2,15 @@
 using _HackerRankSln._Algorithms._02___Implementation;
 using _HackerRankSln._Algorithms._04___Sorting;
 using _HackerRankSln._Data_Structures._01___Arrays;
+using LL = _HackerRankSln._Data_Structures._02___Linked_Lists;
 using _HackerRankSln._Data_Structures._02___Linked_Lists;
+using Trees = _HackerRankSln._Data_Structures._03___Trees;
+using _HackerRankSln._Data_Structures._03___Trees;
 using _HackerRankSln._Mathematics._01___Fundamentals;
-using _HackerRankSln.May_World_CodeSprint_2016;
-using _HackerRankSln.Week_of_Code___20;
+using _HackerRankSln.Competitions.May_World_CodeSprint_2016;
+using _HackerRankSln.Competitions.Week_of_Code___20;
+using _HackerRankSln._Algorithms._03___Strings;
+
 namespace _HackerRankSln
 {
     class Program
@@ -31,7 +36,9 @@ namespace _HackerRankSln
             //Extra_Long_Factorials.CalculateFactorial();
             //Taum_and_B_day.GiftCalculator();
             #endregion
-
+            #region 03 - Strings
+            //Alternating_Characters.CountDeletions();
+            #endregion
             #region 04 - Sorting
             //Insertion_Sort___Part_1.insertionSort();
             #endregion
@@ -43,30 +50,39 @@ namespace _HackerRankSln
             //Sparse_Arrays.PrintTimes();
             #endregion
             #region 02 - Linked Lists
-            var node = new Node();
-            //Print_the_Elements_of_a_Linked_List.Print(node);
-            //Insert_a_Node_at_the_Tail_of_a_Linked_List.InsertTail(node, 0);
-            //Insert_a_node_at_the_head_of_a_linked_list.InsertHead(node, 0);
-            //Insert_a_node_at_a_specific_position_in_a_linked_list.InsertNth(node, 0, 1);
-            //Delete_a_Node.Delete(node, 1);
-            //Print_in_Reverse.ReversePrint(node);
-            //Reverse_a_LL.Reverse(node);
-            //Compare_two_LL.CompareLists(node, node);
-            //Merge_two_sorted_LL.MergeLists(node, node);
-            //Get_Node_Value.GetNode(node, 0);
-            //Delete_duplicate_value_nodes_from_a_sorted_LL.RemoveDuplicates(node);
-            //Cycle_Detection.HasCycle(node);
-            //Find_Merge_Point_of_Two_LL.FindMergeNode(node, node);
-            var nodeDouble = new Node2();
-            //Insert_a_node_into_a_sorted_doubly_LL.SortedInsert(nodeDouble, 100);
-            //Reverse_a_doubly_LL.Reverse(nodeDouble);
+            var llNode = new LL.Node();
+            //Print_the_Elements_of_a_LL.Print(llNode);
+            //Insert_a_Node_at_the_Tail_of_a_LL.InsertTail(llNode, 0);
+            //Insert_a_node_at_the_Head_of_a_LL.InsertHead(llNode, 0);
+            //Insert_a_node_at_a_specific_position_in_a_LL.InsertNth(llNode, 0, 1);
+            //Delete_a_Node.Delete(llNode, 1);
+            //Print_in_Reverse.ReversePrint(llNode);
+            //Reverse_a_LL.Reverse(llNode);
+            //Compare_two_LL.CompareLists(llNode, llNode);
+            //Merge_two_sorted_LL.MergeLists(llNode, llNode);
+            //Get_Node_Value.GetNode(llNode, 0);
+            //Delete_duplicate_value_nodes_from_a_sorted_LL.RemoveDuplicates(llNode);
+            //Cycle_Detection.HasCycle(llNode);
+            //Find_Merge_Point_of_Two_LL.FindMergeNode(llNode, llNode);
+            var llDoubleNode = new LL.Node2();
+            //Insert_a_node_into_a_sorted_doubly_LL.SortedInsert(llDoubleNode, 100);
+            //Reverse_a_doubly_LL.Reverse(llDoubleNode);
             #endregion
             #region 03 - Trees
-
-            // Swap Nodes [Algo] -> Only one in the whole section with C# available
-            // Do the rest of the 'Trees' exercises using java, then migrate to C#
+            var treeNode = new Trees.Node();
+            //Preorder_Traversal.PreOrder(treeNode);
+            //Postorder_Traversal.PostOrder(treeNode);
+            //Inorder_Traversal.InOrder(treeNode);
+            //Get_Height.Height(treeNode);
+            //Top_View.TopView(treeNode);
+            //Level_Order_Traversal.LevelOrder(treeNode);
+            //Inorder_Traversal.InOrder(treeNode);
+            //Huffman_Decoding.Decode("ABACA", new Huffman_Decoding.Node());
+            //BST_Lowest_Common_Ancestor.LCA(treeNode, 1, 7);
+            //Swap_Nodes.Swap();
+            
+            // TODO -> Self balancing tree (AVL) -> ver en favoritos
             #endregion
-
             #region 04 - Balanced Trees
             // Array and simple queries -> available for C#
             // Median Updates -> available for C#

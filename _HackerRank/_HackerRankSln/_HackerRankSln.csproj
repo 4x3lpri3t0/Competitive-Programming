@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Week of Code - 20\Non-Divisible Subset.cs" />
+    <Compile Include="Competitions\Week of Code - 20\Non-Divisible Subset.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\A Very Big Sum.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Diagonal Difference.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Plus Minus.cs" />
@@ -58,9 +58,10 @@
     <Compile Include="_Algorithms\02 - Implementation\Sherlock and The Beast.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Taum and B%27day.cs" />
     <Compile Include="_Algorithms\02 - Implementation\The Grid Search.cs" />
+    <Compile Include="_Algorithms\03 - Strings\Alternating Characters.cs" />
     <Compile Include="_Algorithms\04 - Sorting\Insertion Sort - Part 1.cs" />
-    <Compile Include="May World CodeSprint 2016\Compare the Triplets.cs" />
-    <Compile Include="May World CodeSprint 2016\Richie Rich.cs" />
+    <Compile Include="Competitions\May World CodeSprint 2016\Compare the Triplets.cs" />
+    <Compile Include="Competitions\May World CodeSprint 2016\Richie Rich.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Simple Array Sum.cs" />
@@ -85,12 +86,22 @@
     <Compile Include="_Data Structures\02 - Linked Lists\_Node2.cs" />
     <Compile Include="_Data Structures\02 - Linked Lists\Print the Elements of a LL.cs" />
     <Compile Include="_Data Structures\02 - Linked Lists\_Node1.cs" />
+    <Compile Include="_Data Structures\03 - Trees\BST Lowest Common Ancestor.cs" />
+    <Compile Include="_Data Structures\03 - Trees\Get Height.cs" />
+    <Compile Include="_Data Structures\03 - Trees\Huffman Decoding.cs" />
+    <Compile Include="_Data Structures\03 - Trees\Inorder Traversal.cs" />
+    <Compile Include="_Data Structures\03 - Trees\BST Insertion.cs" />
+    <Compile Include="_Data Structures\03 - Trees\Level Order Traversal.cs" />
+    <Compile Include="_Data Structures\03 - Trees\Swap Nodes.cs" />
+    <Compile Include="_Data Structures\03 - Trees\Top View.cs" />
+    <Compile Include="_Data Structures\03 - Trees\_Node.cs" />
+    <Compile Include="_Data Structures\03 - Trees\Postorder Traversal.cs" />
+    <Compile Include="_Data Structures\03 - Trees\Preorder Traversal.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Find Point.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Maximum Draws.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Restaurant.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="_Algorithms\03 - Strings\" />
     <Folder Include="_Algorithms\05 - Search\" />
     <Folder Include="_Algorithms\06 - Graph Theory\" />
     <Folder Include="_Algorithms\07 - Greedy\" />
@@ -98,7 +109,6 @@
     <Folder Include="_Algorithms\09 - Bit Manipulation\" />
     <Folder Include="_Algorithms\10 - Game Theory\" />
     <Folder Include="_Algorithms\11 - NP Complete\" />
-    <Folder Include="_Data Structures\03 - Trees\" />
     <Folder Include="_Data Structures\04 - Balanced Trees\" />
     <Folder Include="_Data Structures\05 - Stacks\" />
     <Folder Include="_Data Structures\06- Queues\" />

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _HackerRankSln.May_World_CodeSprint_2016
+namespace _HackerRankSln.Competitions.May_World_CodeSprint_2016
 {
     public static class Compare_the_Triplets
     {

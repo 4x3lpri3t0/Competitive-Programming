@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _HackerRankSln.May_World_CodeSprint_2016
+namespace _HackerRankSln.Competitions.May_World_CodeSprint_2016
 {
     public static class Richie_Rich
     {
