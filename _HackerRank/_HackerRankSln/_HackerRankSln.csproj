@@ -44,6 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="30DaysOfCode\Day 10 - Binary Numbers.cs" />
+    <Compile Include="30DaysOfCode\Day 11 - 2DArrays.cs" />
+    <Compile Include="30DaysOfCode\Day 8 - Dictionaries and Maps.cs" />
+    <Compile Include="30DaysOfCode\Day 9 - Recursion.cs" />
     <Compile Include="Competitions\Week of Code - 20\Non-Divisible Subset.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\A Very Big Sum.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Diagonal Difference.cs" />
@@ -97,6 +101,7 @@
     <Compile Include="_Data Structures\03 - Trees\_Node.cs" />
     <Compile Include="_Data Structures\03 - Trees\Postorder Traversal.cs" />
     <Compile Include="_Data Structures\03 - Trees\Preorder Traversal.cs" />
+    <Compile Include="_Data Structures\04 - Balanced Trees\Self Balancing Tree %28AVL%29.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Find Point.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Maximum Draws.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Restaurant.cs" />
@@ -109,7 +114,6 @@
     <Folder Include="_Algorithms\09 - Bit Manipulation\" />
     <Folder Include="_Algorithms\10 - Game Theory\" />
     <Folder Include="_Algorithms\11 - NP Complete\" />
-    <Folder Include="_Data Structures\04 - Balanced Trees\" />
     <Folder Include="_Data Structures\05 - Stacks\" />
     <Folder Include="_Data Structures\06- Queues\" />
     <Folder Include="_Data Structures\07 - Heap\" />

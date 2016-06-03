@@ -10,6 +10,8 @@ using _HackerRankSln._Mathematics._01___Fundamentals;
 using _HackerRankSln.Competitions.May_World_CodeSprint_2016;
 using _HackerRankSln.Competitions.Week_of_Code___20;
 using _HackerRankSln._Algorithms._03___Strings;
+using _HackerRankSln._Data_Structures._04___Balanced_Trees;
+using _HackerRankSln._30DaysOfCode;
 
 namespace _HackerRankSln
 {
@@ -80,17 +82,27 @@ namespace _HackerRankSln
             //Huffman_Decoding.Decode("ABACA", new Huffman_Decoding.Node());
             //BST_Lowest_Common_Ancestor.LCA(treeNode, 1, 7);
             //Swap_Nodes.Swap();
-            
-            // TODO -> Self balancing tree (AVL) -> ver en favoritos
             #endregion
             #region 04 - Balanced Trees
+            //Self_Balancing_Tree__AVL_.Insert(new Self_Balancing_Tree__AVL_.Node(), 10);
             // Array and simple queries -> available for C#
             // Median Updates -> available for C#
+            #endregion
+
+            #region 05 - Stacks
+
             #endregion
             // --------------- MATHEMATICS ---------------
             #region 01 - Fundamentals
             //Find_Point.FindPoint();
             //Restaurant.gcdSquares();
+            #endregion
+            // --------------- 30DaysOfCode ---------------
+            #region 30
+            //Day_8___Dictionaries_and_Maps._Main();
+            //Day_9___Recursion._Main();
+            //Day_11___2DArrays._Main();
+            //Day_10___Binary_Numbers._Main();
             #endregion
             // --------------- COMPETITIONS ----------------
             #region May World CodeSprint 2016
