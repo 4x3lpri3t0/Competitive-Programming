@@ -12,6 +12,10 @@ using _HackerRankSln.Competitions.Week_of_Code___20;
 using _HackerRankSln._Algorithms._03___Strings;
 using _HackerRankSln._Data_Structures._04___Balanced_Trees;
 using _HackerRankSln._30DaysOfCode;
+using _HackerRankSln._Data_Structures._05___Stacks;
+using _HackerRankSln._Algorithms._08___Dynamic_Programming;
+using _HackerRankSln.Competitions.Zalando_CodeSprint;
+using _HackerRankSln._Algorithms._06___Graph_Theory;
 
 namespace _HackerRankSln
 {
@@ -43,6 +47,13 @@ namespace _HackerRankSln
             #endregion
             #region 04 - Sorting
             //Insertion_Sort___Part_1.insertionSort();
+            #endregion
+
+            #region 06 - Graph Theory
+            Even_Tree.Main(); // TODO: ---> Study this
+            #endregion
+            #region 08 - Dynamic Programming
+            //Fibonacci_Modified._Main();
             #endregion
             // --------------- DATA STRUCTURES -----------
             #region 01 - Arrays
@@ -90,7 +101,8 @@ namespace _HackerRankSln
             #endregion
 
             #region 05 - Stacks
-
+            //Maximum_Element._Main();
+            //Balanced_Parentheses._Main();
             #endregion
             // --------------- MATHEMATICS ---------------
             #region 01 - Fundamentals
@@ -103,6 +115,7 @@ namespace _HackerRankSln
             //Day_9___Recursion._Main();
             //Day_11___2DArrays._Main();
             //Day_10___Binary_Numbers._Main();
+
             #endregion
             // --------------- COMPETITIONS ----------------
             #region May World CodeSprint 2016
@@ -111,6 +124,10 @@ namespace _HackerRankSln
             #endregion
             #region Week of Code - 20
             // Non_Divisible_Subset._Main(); -> Not finished, sub-optimal... TODO: Look for others submissions
+            #endregion
+            #region Zalando CodeSprint
+            //Match_the_Shoes._Main();
+            //The_Inquiring_Manager._Main(); -> Timeout... TODO: Improve!!!
             #endregion
         }
     }
