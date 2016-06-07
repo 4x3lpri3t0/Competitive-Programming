@@ -9,18 +9,18 @@ namespace _HackerRankSln._Algorithms._01___Warmup_Problems
         {
             int n = Convert.ToInt32(Console.ReadLine());
             string[] arr_temp = Console.ReadLine().Split(' ');
-            int[] arr = Array.ConvertAll(arr_temp, Int32.Parse);
+            int[] arr = Array.ConvertAll(arr_temp, int.Parse);
 
             int positiveCount = arr.Count(x => x > 0);
-            decimal positiveFraction = Decimal.Divide(positiveCount, arr.Length);
+            decimal positiveFraction = decimal.Divide(positiveCount, arr.Length);
             Console.WriteLine(positiveFraction);
 
             int negativeCount = arr.Count(x => x < 0);
-            decimal negativeFraction = Decimal.Divide(negativeCount, arr.Length);
+            decimal negativeFraction = decimal.Divide(negativeCount, arr.Length);
             Console.WriteLine(negativeFraction);
 
             int zeroCount = arr.Count(x => x == 0);
-            decimal zeroFraction = Decimal.Divide(zeroCount, arr.Length);
+            decimal zeroFraction = decimal.Divide(zeroCount, arr.Length);
             Console.WriteLine(zeroFraction);
         }
     }
