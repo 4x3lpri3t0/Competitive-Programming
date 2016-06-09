@@ -140,6 +140,14 @@
     <Content Include="_Algorithms\01 - Warmup Problems\Simple Array Sum.txt" />
     <Content Include="_Algorithms\01 - Warmup Problems\Plus Minus.txt" />
     <Content Include="_Algorithms\01 - Warmup Problems\Diagonal Difference.txt" />
+    <Content Include="_Algorithms\02 - Implementation\Lisa%27s Workbook.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_Algorithms\02 - Implementation\Lisa%27s Workbook.txt" />
+    <Content Include="_Algorithms\02 - Implementation\Library Fine.txt" />
+    <Content Include="_Algorithms\02 - Implementation\Extra Long Factorials.txt" />
+    <Content Include="_Algorithms\02 - Implementation\Caesar Cipher.txt" />
+    <Content Include="_Algorithms\02 - Implementation\Angry Professor.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

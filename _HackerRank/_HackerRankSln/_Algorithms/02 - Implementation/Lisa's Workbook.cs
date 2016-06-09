@@ -6,10 +6,9 @@ namespace _HackerRankSln._Algorithms._02___Implementation
     {
         public static void PrintSpecialChapters()
         {
-            int[] firstRow = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
-            int numberOfChapters = firstRow[0];
-            int maxNumOfProblemsPerPage = firstRow[1];
-            int[] numberOfProblemsPerChapter = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+            int numberOfChapters, maxNumOfProblemsPerPage;
+            int[] numberOfProblemsPerChapter;
+            GetInput(out numberOfChapters, out maxNumOfProblemsPerPage, out numberOfProblemsPerChapter);
 
             int currentPage = 1;
             int specialProblemsCount = 0;
@@ -35,6 +34,14 @@ namespace _HackerRankSln._Algorithms._02___Implementation
             }
 
             Console.WriteLine(specialProblemsCount);
+        }
+
+        private static void GetInput(out int numberOfChapters, out int maxNumOfProblemsPerPage, out int[] numberOfProblemsPerChapter)
+        {
+            int[] firstRow = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+            numberOfChapters = firstRow[0];
+            maxNumOfProblemsPerPage = firstRow[1];
+            numberOfProblemsPerChapter = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
         }
     }
 }
