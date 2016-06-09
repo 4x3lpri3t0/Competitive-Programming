@@ -110,7 +110,9 @@
     <Compile Include="_Data Structures\03 - Trees\Preorder Traversal.cs" />
     <Compile Include="_Data Structures\04 - Balanced Trees\Self Balancing Tree %28AVL%29.cs" />
     <Compile Include="_Data Structures\05 - Stacks\Balanced Parentheses.cs" />
+    <Compile Include="_Data Structures\05 - Stacks\Largest Rectangle.cs" />
     <Compile Include="_Data Structures\05 - Stacks\Maximum Element.cs" />
+    <Compile Include="_Data Structures\05 - Stacks\Simple Text Editor.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Find Point.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Maximum Draws.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Restaurant.cs" />

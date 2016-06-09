@@ -50,7 +50,7 @@ namespace _HackerRankSln
             #endregion
 
             #region 06 - Graph Theory
-            Even_Tree.Main(); // TODO: ---> Study this
+            //Even_Tree.Main(); // TODO: ---> Study this
             #endregion
             #region 08 - Dynamic Programming
             //Fibonacci_Modified._Main();
@@ -103,6 +103,8 @@ namespace _HackerRankSln
             #region 05 - Stacks
             //Maximum_Element._Main();
             //Balanced_Parentheses._Main();
+            //Simple_Text_Editor.Main();
+            Largest_Rectangle.Main();
             #endregion
             // --------------- MATHEMATICS ---------------
             #region 01 - Fundamentals
