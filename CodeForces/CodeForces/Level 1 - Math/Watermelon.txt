@@ -1,0 +1,33 @@
+﻿Watermelon weighs w kilos.
+
+The two boys want to divide the watermelon in such a way that each of the two parts weighs
+even number of kilos, at the same time it is not obligatory that the parts are equal.
+
+Find out if we can divide the watermelon the way we want.
+Each of the boys should get a part.
+
+Input
+======
+
+The input line contains integer number w (1 ≤ w ≤ 100)— the weight of the watermelon.
+
+Output
+======
+
+Print YES, if the boys can divide the watermelon into two parts,
+each of them weighing even number of kilos; and NO in the opposite case.
+
+Examples:
+
+Input
+======
+
+8
+
+Output
+======
+YES
+
+Note:
+For example, the boys can divide the watermelon into two parts of 2 and 6 kilos respectively
+(another variant — two parts of 4 and 4 kilos).

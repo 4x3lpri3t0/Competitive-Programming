@@ -76,6 +76,7 @@
     <Compile Include="_Algorithms\01 - Warmup Problems\Simple Array Sum.cs" />
     <Compile Include="_Algorithms\06 - Graph Theory\Even Tree.cs" />
     <Compile Include="_Algorithms\08 - Dynamic Programming\Fibonacci Modified.cs" />
+    <Compile Include="_Algorithms\09 - Bit Manipulation\Lonely Integer.cs" />
     <Compile Include="_Data Structures\01 - Arrays\2D Array - DS.cs" />
     <Compile Include="_Data Structures\01 - Arrays\Arrays - DS.cs" />
     <Compile Include="_Data Structures\01 - Arrays\Dynamic Array.cs" />
@@ -110,7 +111,9 @@
     <Compile Include="_Data Structures\03 - Trees\Preorder Traversal.cs" />
     <Compile Include="_Data Structures\04 - Balanced Trees\Self Balancing Tree %28AVL%29.cs" />
     <Compile Include="_Data Structures\05 - Stacks\Balanced Parentheses.cs" />
+    <Compile Include="_Data Structures\05 - Stacks\Largest Rectangle.cs" />
     <Compile Include="_Data Structures\05 - Stacks\Maximum Element.cs" />
+    <Compile Include="_Data Structures\05 - Stacks\Simple Text Editor.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Find Point.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Maximum Draws.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Restaurant.cs" />
@@ -118,7 +121,6 @@
   <ItemGroup>
     <Folder Include="_Algorithms\05 - Search\" />
     <Folder Include="_Algorithms\07 - Greedy\" />
-    <Folder Include="_Algorithms\09 - Bit Manipulation\" />
     <Folder Include="_Algorithms\10 - Game Theory\" />
     <Folder Include="_Algorithms\11 - NP Complete\" />
     <Folder Include="_Data Structures\06- Queues\" />
@@ -149,6 +151,7 @@
     <Content Include="_Algorithms\02 - Implementation\Extra Long Factorials.txt" />
     <Content Include="_Algorithms\02 - Implementation\Caesar Cipher.txt" />
     <Content Include="_Algorithms\02 - Implementation\Angry Professor.txt" />
+    <Content Include="_Data Structures\05 - Stacks\Largest Rectangle.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

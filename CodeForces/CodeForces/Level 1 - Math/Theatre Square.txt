@@ -1,0 +1,28 @@
+﻿The Square is a rectangular shape with the size n × m meters.
+Each block is of the size a × a.
+
+What is the least number of blocks needed to pave the Square?
+It's allowed to cover the surface larger than the Square.
+
+Input
+======
+
+The input contains three positive integer numbers in the first line:
+n, m and a (1 ≤  n, m, a ≤ 10e9).
+
+Output
+======
+
+Write the needed number of flagstones.
+
+Examples:
+
+Input
+======
+
+6 6 4
+
+Output
+======
+
+4
