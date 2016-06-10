@@ -1,25 +1,5 @@
 ﻿using System;
 
-// Find the largest Decent Number having NN digits.
-
-////A Decent Number has the following properties:
-
-////    Its digits can only be 3's and/or 5's.
-////    The number of 3's it contains is divisible by 5.
-////    The number of 5's it contains is divisible by 3.
-////    If there are more than one such number, we pick the largest one.
-
-
-//// Input Format
-
-////The first line is an integer, TT, denoting the number of test cases.
-
-////The TT subsequent lines each contain an integer, NN, detailing the number of digits in the number.
-
-//// Output Format
-
-////Print the largest Decent Number having NN digits; if no such number exists, tell Sherlock by printing -1.
-
 namespace _HackerRankSln._Algorithms._02___Implementation
 {
     public static class Sherlock_and_The_Beast
