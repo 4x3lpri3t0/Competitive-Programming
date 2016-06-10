@@ -9,15 +9,14 @@ namespace _HackerRankSln._Algorithms._02___Implementation
             int t = Convert.ToInt32(Console.ReadLine());
             for (int a0 = 0; a0 < t; a0++)
             {
+                // factor -> conversion cost
                 long b, w, bCost, wCost, factor;
                 GetInput(out b, out w, out bCost, out wCost, out factor);
 
-                long temp1 = bCost * b + wCost * w;
-                long temp2 = bCost * (b + w) + factor * w;
-                long temp3 = wCost * (b + w) + factor * b;
-                long result = Math.Min(temp1, Math.Min(temp2, temp3));
+                long minB = Math.Min(b * bCost, b * (wCost + factor));
+                long minW = Math.Min(w * wCost, w * (bCost + factor));
 
-                Console.WriteLine(result);
+                Console.WriteLine(minB + minW);
             }
         }
 
