@@ -76,6 +76,7 @@
     <Compile Include="_Algorithms\01 - Warmup Problems\Simple Array Sum.cs" />
     <Compile Include="_Algorithms\06 - Graph Theory\Even Tree.cs" />
     <Compile Include="_Algorithms\08 - Dynamic Programming\Fibonacci Modified.cs" />
+    <Compile Include="_Algorithms\09 - Bit Manipulation\Lonely Integer.cs" />
     <Compile Include="_Data Structures\01 - Arrays\2D Array - DS.cs" />
     <Compile Include="_Data Structures\01 - Arrays\Arrays - DS.cs" />
     <Compile Include="_Data Structures\01 - Arrays\Dynamic Array.cs" />
@@ -120,7 +121,6 @@
   <ItemGroup>
     <Folder Include="_Algorithms\05 - Search\" />
     <Folder Include="_Algorithms\07 - Greedy\" />
-    <Folder Include="_Algorithms\09 - Bit Manipulation\" />
     <Folder Include="_Algorithms\10 - Game Theory\" />
     <Folder Include="_Algorithms\11 - NP Complete\" />
     <Folder Include="_Data Structures\06- Queues\" />

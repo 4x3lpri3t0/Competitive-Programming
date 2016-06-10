@@ -16,6 +16,7 @@ using _HackerRankSln._Data_Structures._05___Stacks;
 using _HackerRankSln._Algorithms._08___Dynamic_Programming;
 using _HackerRankSln.Competitions.Zalando_CodeSprint;
 using _HackerRankSln._Algorithms._06___Graph_Theory;
+using _HackerRankSln._Algorithms._09___Bit_Manipulation;
 
 namespace _HackerRankSln
 {
@@ -54,6 +55,9 @@ namespace _HackerRankSln
             #endregion
             #region 08 - Dynamic Programming
             //Fibonacci_Modified._Main();
+            #endregion
+            #region 09 - Bit Manipulation
+            //Lonely_Integer.Main();
             #endregion
             // --------------- DATA STRUCTURES -----------
             #region 01 - Arrays
@@ -104,7 +108,7 @@ namespace _HackerRankSln
             //Maximum_Element._Main();
             //Balanced_Parentheses._Main();
             //Simple_Text_Editor.Main();
-            Largest_Rectangle.Main();
+            //Largest_Rectangle.Main();
             #endregion
             // --------------- MATHEMATICS ---------------
             #region 01 - Fundamentals
