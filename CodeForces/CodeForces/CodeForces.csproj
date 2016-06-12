@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Level 1 - Implementation\Next Round.cs" />
     <Compile Include="Level 1 - Math\Theatre Square.cs" />
     <Compile Include="Level 1 - Math\Watermelon.cs" />
     <Compile Include="Level 1 - Strings\Way Too Long Words.cs" />
@@ -57,6 +58,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Level 1 - Implementation\Next Round.txt" />
     <Content Include="Level 1 - Math\Theatre Square.txt" />
     <Content Include="Level 1 - Strings\Way Too Long Words.txt" />
     <Content Include="Level 1 - Math\Watermelon.txt" />

@@ -17,6 +17,7 @@ using _HackerRankSln._Algorithms._08___Dynamic_Programming;
 using _HackerRankSln.Competitions.Zalando_CodeSprint;
 using _HackerRankSln._Algorithms._06___Graph_Theory;
 using _HackerRankSln._Algorithms._09___Bit_Manipulation;
+using _HackerRankSln.Competitions.BlackRock_CodeSprint;
 
 namespace _HackerRankSln
 {
@@ -133,7 +134,10 @@ namespace _HackerRankSln
             #endregion
             #region Zalando CodeSprint
             //Match_the_Shoes._Main();
-            //The_Inquiring_Manager._Main(); -> Timeout... TODO: Improve!!!
+            The_Inquiring_Manager.Solve();
+            #endregion
+            #region BlackRock CodeSprint
+            //Currency_Arbitrage.Main();
             #endregion
         }
     }
