@@ -114,6 +114,7 @@
     <Compile Include="_Data Structures\05 - Stacks\Balanced Parentheses.cs" />
     <Compile Include="_Data Structures\05 - Stacks\Largest Rectangle.cs" />
     <Compile Include="_Data Structures\05 - Stacks\Maximum Element.cs" />
+    <Compile Include="_Data Structures\05 - Stacks\Poisonous Plants.cs" />
     <Compile Include="_Data Structures\05 - Stacks\Simple Text Editor.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Find Point.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Maximum Draws.cs" />
@@ -153,6 +154,7 @@
     <Content Include="_Algorithms\02 - Implementation\Caesar Cipher.txt" />
     <Content Include="_Algorithms\02 - Implementation\Angry Professor.txt" />
     <Content Include="_Data Structures\05 - Stacks\Largest Rectangle.bmp" />
+    <Content Include="_Data Structures\05 - Stacks\Poisonous Plants.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
