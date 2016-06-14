@@ -134,7 +134,7 @@ namespace _HackerRankSln
             #endregion
             #region Zalando CodeSprint
             //Match_the_Shoes._Main();
-            The_Inquiring_Manager.Solve();
+            //The_Inquiring_Manager.Solve();
             #endregion
             #region BlackRock CodeSprint
             //Currency_Arbitrage.Main();

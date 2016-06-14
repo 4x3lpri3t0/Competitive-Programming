@@ -4,46 +4,35 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public class The_Inquiring_Manager
+public static class String_Task
 {
     public static void Solve()
     {
-        int qHead = 0, qTail = 0;
-        int N = ReadInt();
-        var q = new int[N];
-        var a = new long[N][];
-        for (int i = 0; i < N; i++)
+        string input = Read();
+        string output = "";
+        char[] vowels = { 'a', 'e', 'i', 'o', 'u', 'y' };
+        for (int i = 0; i < input.Length; i++)
         {
-            if (ReadInt() == 1) // Place order
+            char c = char.ToLower(input[i]);
+            
+            // It's not a vowel
+            if (!vowels.Contains(c))
             {
-                long P = ReadLong();
-                long T = ReadLong();
-
-                while (qHead > qTail && a[q[qHead - 1]][0] <= P)
-                    qHead--;
-
-                q[qHead++] = i;
-                a[i] = new[] { P, T };
-            }
-            else // Read greater order in last 60 min
-            {
-                long T = ReadLong();
-
-                while (qHead > qTail && a[q[qTail]][1] + 60 <= T)
-                    qTail++;
-
-                Write(qHead > qTail ? a[q[qTail]][0] : -1);
+                output += "." + c;
             }
         }
+
+        Write(output);
     }
 
     #region Main
 
-    protected static TextReader reader;
-    protected static TextWriter writer;
-    static void Main()
+    private static TextReader reader;
+    private static TextWriter writer;
+    public static void Main()
     {
 #if DEBUG
+        //reader = new StreamReader("C:\\Users\\Axel\\Desktop\\input.txt");
         reader = new StreamReader(Console.OpenStandardInput());
         writer = Console.Out;
         //writer = new StreamWriter("..\\..\\output.txt");
@@ -56,7 +45,7 @@ public class The_Inquiring_Manager
         try
         {
             Solve();
-            //var thread = new Thread(new Solver().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new String_Task().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }
@@ -77,10 +66,10 @@ public class The_Inquiring_Manager
     #region Read / Write
     private static Queue<string> currentLineTokens = new Queue<string>();
     private static string[] ReadAndSplitLine() { return reader.ReadLine().Split(new[] { ' ', '\t', }, StringSplitOptions.RemoveEmptyEntries); }
-    public static string ReadToken() { while (currentLineTokens.Count == 0) currentLineTokens = new Queue<string>(ReadAndSplitLine()); return currentLineTokens.Dequeue(); }
-    public static int ReadInt() { return int.Parse(ReadToken()); }
-    public static long ReadLong() { return long.Parse(ReadToken()); }
-    public static double ReadDouble() { return double.Parse(ReadToken(), CultureInfo.InvariantCulture); }
+    public static string Read() { while (currentLineTokens.Count == 0) currentLineTokens = new Queue<string>(ReadAndSplitLine()); return currentLineTokens.Dequeue(); }
+    public static int ReadInt() { return int.Parse(Read()); }
+    public static long ReadLong() { return long.Parse(Read()); }
+    public static double ReadDouble() { return double.Parse(Read(), CultureInfo.InvariantCulture); }
     public static int[] ReadIntArray() { return ReadAndSplitLine().Select(int.Parse).ToArray(); }
     public static long[] ReadLongArray() { return ReadAndSplitLine().Select(long.Parse).ToArray(); }
     public static double[] ReadDoubleArray() { return ReadAndSplitLine().Select(s => double.Parse(s, CultureInfo.InvariantCulture)).ToArray(); }
