@@ -3,17 +3,32 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Numerics;
 
-public static class Domino_piling
+public static class A___A_Good_Contest
 {
+    private const int RED = 2400;
+
     public static void Solve()
     {
-        int M = ReadInt();
-        int N = ReadInt();
+        long T = ReadLong();
+        bool good = false;
+        while (T-- != 0)
+        {
+            string handle = Read();
+            int before = ReadInt();
+            int after = ReadInt();
 
-        int total = (M * N) / 2;
+            if (before >= RED && after > before)
+            {
+                good = true;
+                break;
+            }
+        }
 
-        Write(total);
+        Write(good ? "YES" : "NO");
     }
 
     #region Main
@@ -36,7 +51,7 @@ public static class Domino_piling
         try
         {
             Solve();
-            //var thread = new Thread(new Domino_piling().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new A___A_Good_Contest().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

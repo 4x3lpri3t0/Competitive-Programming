@@ -4,16 +4,15 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Domino_piling
+public static class Team
 {
     public static void Solve()
     {
-        int M = ReadInt();
-        int N = ReadInt();
+        long T = ReadLong();
+        while (T-- != 0)
+        {
 
-        int total = (M * N) / 2;
-
-        Write(total);
+        }
     }
 
     #region Main
@@ -36,7 +35,7 @@ public static class Domino_piling
         try
         {
             Solve();
-            //var thread = new Thread(new Domino_piling().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new Team().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

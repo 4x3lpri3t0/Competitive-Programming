@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Level 1 - Greedy\Domino piling.cs" />
+    <Compile Include="Level 1 - Greedy\Team.cs" />
     <Compile Include="Level 1 - Implementation\Next Round.cs" />
     <Compile Include="Level 1 - Math\Theatre Square.cs" />
     <Compile Include="Level 1 - Math\Watermelon.cs" />
@@ -55,6 +56,8 @@
     <Compile Include="Level 1 - Strings\Way Too Long Words.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rounds\357\A - A Good Contest.cs" />
+    <Compile Include="Rounds\357\B - Economy Game.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
