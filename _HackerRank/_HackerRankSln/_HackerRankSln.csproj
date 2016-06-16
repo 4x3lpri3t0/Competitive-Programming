@@ -111,11 +111,11 @@
     <Compile Include="_Data Structures\03 - Trees\Postorder Traversal.cs" />
     <Compile Include="_Data Structures\03 - Trees\Preorder Traversal.cs" />
     <Compile Include="_Data Structures\04 - Balanced Trees\Self Balancing Tree %28AVL%29.cs" />
-    <Compile Include="_Data Structures\05 - Stacks\Balanced Parentheses.cs" />
     <Compile Include="_Data Structures\05 - Stacks\Largest Rectangle.cs" />
     <Compile Include="_Data Structures\05 - Stacks\Maximum Element.cs" />
     <Compile Include="_Data Structures\05 - Stacks\Poisonous Plants.cs" />
     <Compile Include="_Data Structures\05 - Stacks\Simple Text Editor.cs" />
+    <Compile Include="_Data Structures\05 - Stacks\Balanced Parentheses.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Find Point.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Maximum Draws.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Restaurant.cs" />
@@ -153,7 +153,10 @@
     <Content Include="_Algorithms\02 - Implementation\Extra Long Factorials.txt" />
     <Content Include="_Algorithms\02 - Implementation\Caesar Cipher.txt" />
     <Content Include="_Algorithms\02 - Implementation\Angry Professor.txt" />
+    <Content Include="_Algorithms\03 - Strings\Alternating Characters.txt" />
+    <Content Include="_Algorithms\04 - Sorting\Insertion Sort - Part 1.txt" />
     <Content Include="_Data Structures\05 - Stacks\Largest Rectangle.bmp" />
+    <Content Include="_Data Structures\05 - Stacks\Balanced Parentheses.txt" />
     <Content Include="_Data Structures\05 - Stacks\Poisonous Plants.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

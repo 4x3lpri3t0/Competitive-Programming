@@ -9,10 +9,27 @@ public static class Team
     public static void Solve()
     {
         long T = ReadLong();
+        int problemsToImplement = 0;
         while (T-- != 0)
         {
+            int[] friends = ReadIntArray();
+            int howManyKnow = 0;
+            for (int i = 0; i < friends.Length; i++)
+            {
+                if (friends[i] == 1)
+                {
+                    howManyKnow++;
+                }
 
+                if (howManyKnow == 2)
+                {
+                    problemsToImplement++;
+                    break;
+                }
+            }
         }
+
+        Write(problemsToImplement);
     }
 
     #region Main

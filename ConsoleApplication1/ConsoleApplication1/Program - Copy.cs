@@ -3,55 +3,62 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Numerics;
 
-public static class Balanced_Parentheses
+public static class Domino_piling
 {
     public static void Solve()
     {
-        int T = ReadInt();
-        while (T-- > 0)
+        int N = ReadInt();
+        int topA = 0;
+        int topB = 0;
+        int topC = 0;
+        bool possible = false;
+
+        if (N >= 1234567)
         {
-            bool isValid = IsValid(Read());
-            Write(isValid ? "YES" : "NO");
+            topA = (int)Math.Floor((decimal)N / 1234567);
         }
-    }
-
-    private static bool IsValid(string line)
-    {
-        var st = new Stack<char>();
-        foreach (var c in line)
+        if (N >= 123456)
         {
-            if (c == '{' || c == '[' || c == '(')
-            {
-                st.Push(c);
-            }
-            else
-            {
-                if (st.Count == 0)
-                {
-                    return false;
-                }
-                var prev = st.Pop();
-                if (prev == '{' && c != '}')
-                {
-                    return false;
-                }
-                if (prev == '[' && c != ']')
-                {
-                    return false;
-                }
-
-                if (prev == '(' && c != ')')
-                {
-                    return false;
-                }
-            }
+            topB = (int)Math.Floor((decimal)N / 123456);
+        }
+        if (N >= 1234)
+        {
+            topC = (int)Math.Floor((decimal)N / 1234);
         }
 
-        if (st.Count == 0)
-            return true;
-        else
-            return false;
+
+        for (int k = 0; k < topC; k++)
+        {
+            for (int j = 0; j <= topB; j++)
+            {
+                for (int i = 0; i <= topA; i++)
+                {
+                    int result = i * 1234567 + j * 123456 + k * 1234;
+                    if (result == N)
+                    {
+                        possible = true;
+                        break;
+                    }
+                }
+                if (possible)
+                {
+                    break;
+                }
+            }
+            if (possible)
+            {
+                break;
+            }
+
+            
+        }
+        
+
+        Write(possible ? "YES" : "NO");
     }
 
     #region Main
@@ -74,7 +81,7 @@ public static class Balanced_Parentheses
         try
         {
             Solve();
-            //var thread = new Thread(new String_Task().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new Domino_piling().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

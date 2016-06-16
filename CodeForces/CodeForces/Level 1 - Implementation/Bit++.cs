@@ -4,54 +4,20 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Balanced_Parentheses
+public static class Bit__
 {
     public static void Solve()
     {
         int T = ReadInt();
-        while (T-- > 0)
-        {
-            bool isValid = IsValid(Read());
-            Write(isValid ? "YES" : "NO");
-        }
-    }
+        int value = 0;
 
-    private static bool IsValid(string line)
-    {
-        var st = new Stack<char>();
-        foreach (var c in line)
+        while (--T >= 0)
         {
-            if (c == '{' || c == '[' || c == '(')
-            {
-                st.Push(c);
-            }
-            else
-            {
-                if (st.Count == 0)
-                {
-                    return false;
-                }
-                var prev = st.Pop();
-                if (prev == '{' && c != '}')
-                {
-                    return false;
-                }
-                if (prev == '[' && c != ']')
-                {
-                    return false;
-                }
-
-                if (prev == '(' && c != ')')
-                {
-                    return false;
-                }
-            }
+            string input = Read();
+            value += input.Contains("++") ? 1 : -1;
         }
 
-        if (st.Count == 0)
-            return true;
-        else
-            return false;
+        Write(value);
     }
 
     #region Main

@@ -4,54 +4,15 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Balanced_Parentheses
+public static class Solver1
 {
     public static void Solve()
     {
         int T = ReadInt();
-        while (T-- > 0)
+        while (T-- <= 0)
         {
-            bool isValid = IsValid(Read());
-            Write(isValid ? "YES" : "NO");
+
         }
-    }
-
-    private static bool IsValid(string line)
-    {
-        var st = new Stack<char>();
-        foreach (var c in line)
-        {
-            if (c == '{' || c == '[' || c == '(')
-            {
-                st.Push(c);
-            }
-            else
-            {
-                if (st.Count == 0)
-                {
-                    return false;
-                }
-                var prev = st.Pop();
-                if (prev == '{' && c != '}')
-                {
-                    return false;
-                }
-                if (prev == '[' && c != ']')
-                {
-                    return false;
-                }
-
-                if (prev == '(' && c != ')')
-                {
-                    return false;
-                }
-            }
-        }
-
-        if (st.Count == 0)
-            return true;
-        else
-            return false;
     }
 
     #region Main
