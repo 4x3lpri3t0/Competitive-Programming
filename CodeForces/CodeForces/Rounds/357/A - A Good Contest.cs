@@ -11,7 +11,7 @@ public static class A___A_Good_Contest
 {
     private const int RED = 2400;
 
-    public static void Solve()
+    private static void Solve()
     {
         long T = ReadLong();
         bool good = false;
