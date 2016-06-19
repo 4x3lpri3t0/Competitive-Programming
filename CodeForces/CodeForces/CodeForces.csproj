@@ -47,21 +47,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lvl 1\Brute Force\Beautiful Year.cs" />
+    <Compile Include="Lvl 1\Brute Force\IQ test.cs" />
     <Compile Include="Lvl 1\Greedy\Domino piling.cs" />
     <Compile Include="Lvl 1\Greedy\Team.cs" />
+    <Compile Include="Lvl 1\Implementation\Beautiful Matrix.cs" />
     <Compile Include="Lvl 1\Implementation\Bit++.cs" />
     <Compile Include="Lvl 1\Implementation\Boy or Girl.cs" />
+    <Compile Include="Lvl 1\Implementation\George and Accommodation.cs" />
     <Compile Include="Lvl 1\Implementation\HQ9+.cs" />
+    <Compile Include="Lvl 1\Implementation\Nearly Lucky Number.cs" />
     <Compile Include="Lvl 1\Implementation\Next Round.cs" />
+    <Compile Include="Lvl 1\Implementation\Presents.cs" />
     <Compile Include="Lvl 1\Implementation\Stones on the Table.cs" />
     <Compile Include="Lvl 1\Implementation\Tram.cs" />
+    <Compile Include="Lvl 1\Math\Double Cola.cs" />
+    <Compile Include="Lvl 1\Math\Insomnia cure.cs" />
+    <Compile Include="Lvl 1\Math\Soldier and Bananas.cs" />
     <Compile Include="Lvl 1\Math\Theatre Square.cs" />
     <Compile Include="Lvl 1\Math\Watermelon.cs" />
+    <Compile Include="Lvl 1\Number Theory\Design Tutorial - Learn from Math.cs" />
     <Compile Include="Lvl 1\Number Theory\Lucky Division.cs" />
     <Compile Include="Lvl 1\Sorting\Helpful Maths.cs" />
     <Compile Include="Lvl 1\Strings\cAPS lOCK.cs" />
     <Compile Include="Lvl 1\Strings\Football.cs" />
     <Compile Include="Lvl 1\Strings\Petya and Strings.cs" />
+    <Compile Include="Lvl 1\Strings\Translation.cs" />
     <Compile Include="Lvl 1\Strings\String Task.cs" />
     <Compile Include="Lvl 1\Strings\Way Too Long Words.cs" />
     <Compile Include="Lvl 1\Strings\Word Capitalization.cs" />
@@ -80,7 +91,9 @@
     <Content Include="Lvl 1\Implementation\Bit++.txt" />
     <Content Include="Lvl 1\Implementation\Boy or Girl.txt" />
     <Content Include="Lvl 1\Implementation\Next Round.txt" />
+    <Content Include="Lvl 1\Math\Double Cola.txt" />
     <Content Include="Lvl 1\Math\Theatre Square.txt" />
+    <Content Include="Lvl 1\Number Theory\Design Tutorial - Learn from Math.txt" />
     <Content Include="Lvl 1\Number Theory\Lucky Division.txt" />
     <Content Include="Lvl 1\Sorting\Helpful Maths.txt" />
     <Content Include="Lvl 1\Strings\cAPS lOCK.txt" />
