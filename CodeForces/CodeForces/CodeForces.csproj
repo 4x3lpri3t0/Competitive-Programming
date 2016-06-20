@@ -57,6 +57,7 @@
     <Compile Include="Lvl 1\Implementation\George and Accommodation.cs" />
     <Compile Include="Lvl 1\Implementation\HQ9+.cs" />
     <Compile Include="Lvl 1\Implementation\Nearly Lucky Number.cs" />
+    <Compile Include="Lvl 1\Implementation\New Year Candles.cs" />
     <Compile Include="Lvl 1\Implementation\Next Round.cs" />
     <Compile Include="Lvl 1\Implementation\Presents.cs" />
     <Compile Include="Lvl 1\Implementation\Stones on the Table.cs" />
