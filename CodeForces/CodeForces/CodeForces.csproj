@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Level 1 - Greedy\Domino piling.cs" />
+    <Compile Include="Level 1 - Greedy\Taxi.cs" />
     <Compile Include="Level 1 - Greedy\Team.cs" />
     <Compile Include="Level 1 - Implementation\Bit++.cs" />
     <Compile Include="Level 1 - Implementation\Next Round.cs" />
@@ -64,6 +65,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Level 1 - Greedy\Taxi.txt" />
     <Content Include="Level 1 - Greedy\Team.txt" />
     <Content Include="Level 1 - Implementation\Bit++.txt" />
     <Content Include="Level 1 - Implementation\Next Round.txt" />
