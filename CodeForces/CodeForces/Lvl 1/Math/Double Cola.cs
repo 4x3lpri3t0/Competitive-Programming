@@ -3,32 +3,29 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-/*
-We can simply try every a from 0 to n/ 1234567 and b from 0 tо n/ 123456,
-and if n - a* 1234567 - b* 123456 is non-negative and divided by 1234,
-then the answer is "YES".
 
-If there is no such a and b, then the answer is "NO".
-*/
-public static class B___Economy_Game
+public static class Double_Cola
 {
     private static void Solve()
     {
-        int N = ReadInt();
+        /*
+        The queue looks like: SH-L-P-R-G,
+        through 5 cans: SH-SH-L-L-P-P-R-R-G-G,
+        through 10 cans: SH-SH-SH-SH-L-L-L-L-P-P-P-P-R-R-R-R-G-G-G-G.
 
-        for (int a = 0; a <= N; a += 1234567)
-        {
-            for (int b = 0; b <= N - a; b += 123456)
-            {
-                if ((N - a - b) % 1234 == 0)
-                {
-                    Write("YES");
-                    return;
-                }
-            }
-        }
+        The regularity is clear, and the solution is very simple:
+        we will be iterating on p - we will find such minimum p that 5 * 2p > n
+        (thus if this number is less or equal than n, we will subtract it)
+        */
+        long n = ReadLong();
+        string[] queue = { "Sheldon", "Leonard", "Penny", "Rajesh", "Howard" };
 
-        Write("NO");
+        // Then we know that at first 2ep Sheldon's stand, then 2ep Leonard's and so on
+
+        while (n > 5)
+            n = (n / 2) - 2; // I still don't fully understand this magic formula...
+
+        Write(queue[n - 1]);
     }
 
     #region Main
@@ -51,7 +48,7 @@ public static class B___Economy_Game
         try
         {
             Solve();
-            //var thread = new Thread(new B___Economy_Game().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new Double_Cola().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

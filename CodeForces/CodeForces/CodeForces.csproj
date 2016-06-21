@@ -47,31 +47,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Level 1 - Greedy\Domino piling.cs" />
-    <Compile Include="Level 1 - Greedy\Taxi.cs" />
-    <Compile Include="Level 1 - Greedy\Team.cs" />
-    <Compile Include="Level 1 - Implementation\Bit++.cs" />
-    <Compile Include="Level 1 - Implementation\Next Round.cs" />
-    <Compile Include="Level 1 - Math\Theatre Square.cs" />
-    <Compile Include="Level 1 - Math\Watermelon.cs" />
-    <Compile Include="Level 1 - Strings\String Task.cs" />
-    <Compile Include="Level 1 - Strings\Way Too Long Words.cs" />
+    <Compile Include="Lvl 1\Brute Force\Beautiful Year.cs" />
+    <Compile Include="Lvl 1\Brute Force\IQ test.cs" />
+    <Compile Include="Lvl 1\Greedy\Domino piling.cs" />
+    <Compile Include="Lvl 1\Greedy\Team.cs" />
+    <Compile Include="Lvl 1\Implementation\Beautiful Matrix.cs" />
+    <Compile Include="Lvl 1\Implementation\Bit++.cs" />
+    <Compile Include="Lvl 1\Implementation\Boy or Girl.cs" />
+    <Compile Include="Lvl 1\Implementation\George and Accommodation.cs" />
+    <Compile Include="Lvl 1\Implementation\HQ9+.cs" />
+    <Compile Include="Lvl 1\Implementation\Nearly Lucky Number.cs" />
+    <Compile Include="Lvl 1\Implementation\New Year Candles.cs" />
+    <Compile Include="Lvl 1\Implementation\Next Round.cs" />
+    <Compile Include="Lvl 1\Implementation\Presents.cs" />
+    <Compile Include="Lvl 1\Implementation\Stones on the Table.cs" />
+    <Compile Include="Lvl 1\Implementation\Tram.cs" />
+    <Compile Include="Lvl 1\Math\Double Cola.cs" />
+    <Compile Include="Lvl 1\Math\Insomnia cure.cs" />
+    <Compile Include="Lvl 1\Math\Soldier and Bananas.cs" />
+    <Compile Include="Lvl 1\Math\Theatre Square.cs" />
+    <Compile Include="Lvl 1\Math\Watermelon.cs" />
+    <Compile Include="Lvl 1\Number Theory\Design Tutorial - Learn from Math.cs" />
+    <Compile Include="Lvl 1\Number Theory\Lucky Division.cs" />
+    <Compile Include="Lvl 1\Sorting\Helpful Maths.cs" />
+    <Compile Include="Lvl 1\Strings\cAPS lOCK.cs" />
+    <Compile Include="Lvl 1\Strings\Football.cs" />
+    <Compile Include="Lvl 1\Strings\Petya and Strings.cs" />
+    <Compile Include="Lvl 1\Strings\Translation.cs" />
+    <Compile Include="Lvl 1\Strings\String Task.cs" />
+    <Compile Include="Lvl 1\Strings\Way Too Long Words.cs" />
+    <Compile Include="Lvl 1\Strings\Word Capitalization.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rounds\357\A - A Good Contest.cs" />
     <Compile Include="Rounds\357\B - Economy Game.cs" />
+    <Compile Include="Rounds\358\A - Alyona and Numbers.cs" />
+    <Compile Include="Rounds\358\B - Alyona and Mex.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Level 1 - Greedy\Taxi.txt" />
-    <Content Include="Level 1 - Greedy\Team.txt" />
-    <Content Include="Level 1 - Implementation\Bit++.txt" />
-    <Content Include="Level 1 - Implementation\Next Round.txt" />
-    <Content Include="Level 1 - Math\Theatre Square.txt" />
-    <Content Include="Level 1 - Strings\Way Too Long Words.txt" />
-    <Content Include="Level 1 - Math\Watermelon.txt" />
+    <Content Include="Lvl 1\Greedy\Team.txt" />
+    <Content Include="Lvl 1\Implementation\Bit++.txt" />
+    <Content Include="Lvl 1\Implementation\Boy or Girl.txt" />
+    <Content Include="Lvl 1\Implementation\Next Round.txt" />
+    <Content Include="Lvl 1\Math\Double Cola.txt" />
+    <Content Include="Lvl 1\Math\Theatre Square.txt" />
+    <Content Include="Lvl 1\Number Theory\Design Tutorial - Learn from Math.txt" />
+    <Content Include="Lvl 1\Number Theory\Lucky Division.txt" />
+    <Content Include="Lvl 1\Sorting\Helpful Maths.txt" />
+    <Content Include="Lvl 1\Strings\cAPS lOCK.txt" />
+    <Content Include="Lvl 1\Strings\Petya and Strings.txt" />
+    <Content Include="Lvl 1\Strings\Football.txt" />
+    <Content Include="Lvl 1\Strings\Way Too Long Words.txt" />
+    <Content Include="Lvl 1\Math\Watermelon.txt" />
+    <Content Include="Rounds\358\A - Alyona and Numbers.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

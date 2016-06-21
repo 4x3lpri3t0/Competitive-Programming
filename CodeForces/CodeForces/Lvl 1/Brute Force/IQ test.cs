@@ -3,32 +3,34 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-/*
-We can simply try every a from 0 to n/ 1234567 and b from 0 tо n/ 123456,
-and if n - a* 1234567 - b* 123456 is non-negative and divided by 1234,
-then the answer is "YES".
 
-If there is no such a and b, then the answer is "NO".
-*/
-public static class B___Economy_Game
+public static class IQ_test
 {
     private static void Solve()
     {
-        int N = ReadInt();
+        int n = ReadInt();
+        int[] ar = ReadIntArray();
+        int difEvenIdx = -1;
+        int difOddIdx = -1;
+        int nOfEven = 0;
+        int nOfOdd = 0;
 
-        for (int a = 0; a <= N; a += 1234567)
+        for (int i = 0; i < n; i++)
         {
-            for (int b = 0; b <= N - a; b += 123456)
+            int cur = ar[i];
+            if (cur % 2 == 0)
             {
-                if ((N - a - b) % 1234 == 0)
-                {
-                    Write("YES");
-                    return;
-                }
+                nOfEven++;
+                difEvenIdx = i + 1;
+            }
+            else
+            {
+                nOfOdd++;
+                difOddIdx = i + 1;
             }
         }
 
-        Write("NO");
+        Write(nOfEven > nOfOdd ? difOddIdx : difEvenIdx);
     }
 
     #region Main
@@ -51,7 +53,7 @@ public static class B___Economy_Game
         try
         {
             Solve();
-            //var thread = new Thread(new B___Economy_Game().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new IQ_test().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

@@ -1,0 +1,51 @@
+﻿If the number of distinct characters in one's user name is odd, then he is a male,
+otherwise she is a female.
+
+Input
+======
+
+The first line contains a non-empty string, that contains only lowercase English letters — the user name. This string contains at most 100 letters.
+
+Output
+======
+
+If it is a female by our hero's method, print "CHAT WITH HER!" (without the quotes), otherwise, print "IGNORE HIM!" (without the quotes).
+
+Examples:
+
+Input
+======
+
+wjmzbmr
+
+Output
+======
+
+CHAT WITH HER!
+
+Input
+======
+
+xiaodao
+
+Output
+======
+
+IGNORE HIM!
+
+Input
+======
+
+sevenkplus
+
+Output
+======
+
+CHAT WITH HER!
+
+Note
+======
+
+For the first example. There are 6 distinct characters in "wjmzbmr".
+These characters are: "w", "j", "m", "z", "b", "r".
+So wjmzbmr is a female and you should print "CHAT WITH HER!".

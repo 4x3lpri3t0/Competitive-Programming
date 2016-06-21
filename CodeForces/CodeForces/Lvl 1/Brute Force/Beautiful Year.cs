@@ -3,32 +3,23 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-/*
-We can simply try every a from 0 to n/ 1234567 and b from 0 tо n/ 123456,
-and if n - a* 1234567 - b* 123456 is non-negative and divided by 1234,
-then the answer is "YES".
 
-If there is no such a and b, then the answer is "NO".
-*/
-public static class B___Economy_Game
+public static class Beautiful_Year
 {
     private static void Solve()
     {
-        int N = ReadInt();
-
-        for (int a = 0; a <= N; a += 1234567)
+        int year = ReadInt();
+        for (int i = year + 1; i <= 9012; i++)
         {
-            for (int b = 0; b <= N - a; b += 123456)
+            int distincts = i.ToString().Distinct().Count();
+            if (distincts == 4)
             {
-                if ((N - a - b) % 1234 == 0)
-                {
-                    Write("YES");
-                    return;
-                }
+                year = i;
+                break;
             }
         }
 
-        Write("NO");
+        Write(year);
     }
 
     #region Main
@@ -51,7 +42,7 @@ public static class B___Economy_Game
         try
         {
             Solve();
-            //var thread = new Thread(new B___Economy_Game().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new Beautiful_Year().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

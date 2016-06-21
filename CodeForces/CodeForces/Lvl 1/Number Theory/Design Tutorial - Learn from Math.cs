@@ -1,34 +1,57 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-/*
-We can simply try every a from 0 to n/ 1234567 and b from 0 tо n/ 123456,
-and if n - a* 1234567 - b* 123456 is non-negative and divided by 1234,
-then the answer is "YES".
 
-If there is no such a and b, then the answer is "NO".
-*/
-public static class B___Economy_Game
+public static class Design_Tutorial___Learn_from_Math
 {
-    private static void Solve()
+    // Get all primes up to N using the Sieve of Erathostenes
+    private static List<int> GetAllPrimesLessThan(int maxPrime)
     {
-        int N = ReadInt();
+        var primes = new List<int>();
+        var maxSquareRoot = (int)Math.Sqrt(maxPrime);
+        var eliminated = new BitArray(maxPrime + 1);
 
-        for (int a = 0; a <= N; a += 1234567)
+        for (int i = 2; i <= maxPrime; ++i)
         {
-            for (int b = 0; b <= N - a; b += 123456)
+            if (!eliminated[i])
             {
-                if ((N - a - b) % 1234 == 0)
+                primes.Add(i);
+                if (i <= maxSquareRoot)
                 {
-                    Write("YES");
-                    return;
+                    for (int j = i * i; j <= maxPrime; j += i)
+                    {
+                        eliminated[j] = true;
+                    }
                 }
             }
         }
+        return primes;
+    }
 
-        Write("NO");
+    private static bool IsPrime(int n)
+    {
+        return Primes.Contains(n);
+    }
+
+    private static List<int> Primes { get; set; }
+
+    private static void Solve()
+    {
+        int n = ReadInt();
+        Primes = GetAllPrimesLessThan(n);
+        for (int i = 2; i <= n; i++)
+        {
+            int n1 = i;
+            int n2 = n - i;
+            if (!IsPrime(n1) && !IsPrime(n2))
+            {
+                Write(n1 + " " + n2);
+                return;
+            }
+        }
     }
 
     #region Main
@@ -51,7 +74,7 @@ public static class B___Economy_Game
         try
         {
             Solve();
-            //var thread = new Thread(new B___Economy_Game().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new Design_Tutorial___Learn_from_Math().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

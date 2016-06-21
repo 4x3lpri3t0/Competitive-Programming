@@ -4,14 +4,25 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Taxi
+public static class New_Year_Candles
 {
-    public static void Solve()
+    private static void Solve()
     {
-        int childrenCount = ReadInt();
-        int[] children = ReadIntArray();
+        int a = ReadInt();
+        int b = ReadInt();
 
+        int total = 0;
+        int rest = 0;
+        int totalRest = 0;
+        while (a >= 1)
+        {
+            total += a;
+            rest = (a + totalRest) % b;
+            a = (a + totalRest) / b;
+            totalRest = rest;
+        }
 
+        Write(total);
     }
 
     #region Main
@@ -34,7 +45,7 @@ public static class Taxi
         try
         {
             Solve();
-            //var thread = new Thread(new String_Task().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new New_Year_Candles().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

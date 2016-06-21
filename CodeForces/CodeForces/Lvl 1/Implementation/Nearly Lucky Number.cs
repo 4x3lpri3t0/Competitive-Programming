@@ -4,25 +4,14 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class String_Task
+public static class Nearly_Lucky_Number
 {
-    public static void Solve()
+    private static void Solve()
     {
-        string input = Read();
-        string output = "";
-        char[] vowels = { 'a', 'e', 'i', 'o', 'u', 'y' };
-        for (int i = 0; i < input.Length; i++)
-        {
-            char c = char.ToLower(input[i]);
-            
-            // It's not a vowel
-            if (!vowels.Contains(c))
-            {
-                output += "." + c;
-            }
-        }
-
-        Write(output);
+        string n = Read();
+        long luckyDigitsCount = n.Where(c => c == '4' || c == '7').Count();
+        bool countIsLucky = luckyDigitsCount.ToString().All(c => c == '4' || c == '7');
+        Write(countIsLucky ? "YES" : "NO");
     }
 
     #region Main
@@ -45,7 +34,7 @@ public static class String_Task
         try
         {
             Solve();
-            //var thread = new Thread(new String_Task().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new Nearly_Lucky_Number().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }
