@@ -142,7 +142,7 @@ namespace _HackerRankSln
             #endregion
             #region 101 Hack June 2016
             //Points_On_a_Line.Main();
-            Easy_GCD.Main(); // TODO -> Improve!!
+            //Easy_GCD.Main(); // TODO -> Improve!!
             #endregion
             #endregion
         }

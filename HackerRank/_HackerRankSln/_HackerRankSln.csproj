@@ -51,8 +51,6 @@
     <Compile Include="30DaysOfCode\Day 11 - 2DArrays.cs" />
     <Compile Include="30DaysOfCode\Day 8 - Dictionaries and Maps.cs" />
     <Compile Include="30DaysOfCode\Day 9 - Recursion.cs" />
-    <Compile Include="Competitions\101 Hack June 2016\Easy GCD.cs" />
-    <Compile Include="Competitions\101 Hack June 2016\Points On a Line.cs" />
     <Compile Include="Competitions\BlackRock CodeSprint\Currency Arbitrage.cs" />
     <Compile Include="Competitions\Week of Code - 20\Non-Divisible Subset.cs" />
     <Compile Include="Competitions\Zalando CodeSprint\Match the Shoes.cs" />
@@ -123,6 +121,7 @@
     <Compile Include="_Mathematics\01 - Fundamentals\Restaurant.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Competitions\101 Hack June 2016\" />
     <Folder Include="_Algorithms\05 - Search\" />
     <Folder Include="_Algorithms\07 - Greedy\" />
     <Folder Include="_Algorithms\10 - Game Theory\" />

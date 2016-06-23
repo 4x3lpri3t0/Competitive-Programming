@@ -8,6 +8,7 @@
             #region Brute Force
             //Beautiful_Year.Main();
             //IQ_test.Main();
+            Vasya_and_Socks.Main();
             #endregion
             #region Greedy
             //Domino_piling.Main();

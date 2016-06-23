@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Lvl 1\Brute Force\Beautiful Year.cs" />
     <Compile Include="Lvl 1\Brute Force\IQ test.cs" />
+    <Compile Include="Lvl 1\Brute Force\Vasya and Socks.cs" />
     <Compile Include="Lvl 1\Greedy\Domino piling.cs" />
     <Compile Include="Lvl 1\Greedy\Team.cs" />
     <Compile Include="Lvl 1\Implementation\Beautiful Matrix.cs" />
