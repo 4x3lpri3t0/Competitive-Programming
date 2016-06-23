@@ -4,40 +4,35 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Chandu_and_his_Girlfriend
+public static class A___Free_Ice_Cream
 {
     private static void Solve()
     {
-        // Bubble sort - O(ne2) -> Horrible
-        int T = ReadInt();
-        while (T-- > 0)
+        long T = ReadLong();
+        long X = ReadLong();
+        long distressedKids = 0;
+        while (T-- != 0)
         {
-            int N = ReadInt();
-            int[] array = ReadIntArray();
-            bubble_sort(array, N);
-
-            WriteArray(array);
-        }
-    }
-
-    private static void bubble_sort(int[] A, int n)
-    {
-        int temp;
-        for (int k = 0; k < n - 1; k++)
-        {
-            // (n-k-1) is for ignoring comparisons of elements which
-            // have already been compared in earlier iterations
-            for (int i = 0; i < n - k - 1; i++)
+            string op = Read();
+            long opAmount = ReadLong();
+            if (op == "+")
             {
-                if (A[i] < A[i + 1])
+                X += opAmount;
+            }
+            else // -
+            {
+                if (opAmount <= X)
                 {
-                    // Swapping of positions
-                    temp = A[i];
-                    A[i] = A[i + 1];
-                    A[i + 1] = temp;
+                    X -= opAmount;
+                }
+                else
+                {
+                    distressedKids++;
                 }
             }
         }
+
+        Write(X + " " + distressedKids);
     }
 
     #region Main
@@ -60,7 +55,7 @@ public static class Chandu_and_his_Girlfriend
         try
         {
             Solve();
-            //var thread = new Thread(new Chandu_and_his_Girlfriend().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new A___Free_Ice_Cream().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

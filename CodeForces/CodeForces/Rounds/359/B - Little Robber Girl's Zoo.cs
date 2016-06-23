@@ -4,40 +4,68 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Chandu_and_his_Girlfriend
+public static class B___Little_Robber_Girl_s_Zoo
 {
     private static void Solve()
     {
-        // Bubble sort - O(ne2) -> Horrible
-        int T = ReadInt();
-        while (T-- > 0)
-        {
-            int N = ReadInt();
-            int[] array = ReadIntArray();
-            bubble_sort(array, N);
+        int N = ReadInt();
+        long[] array = ReadLongArray();
+        // Used to avoid checking every time if the current array is ordered
+        bool alreadyOrdered = false;
 
-            WriteArray(array);
+        while (!alreadyOrdered)
+        {
+            int l = -1;
+            int r = -1;
+            alreadyOrdered = true;
+            IteratePairs(0, N, array, ref alreadyOrdered, ref l, ref r);
+        }
+
+        alreadyOrdered = false;
+
+        while (!alreadyOrdered)
+        {
+            int l = -1;
+            int r = -1;
+            alreadyOrdered = true;
+            IteratePairs(1, N, array, ref alreadyOrdered, ref l, ref r);
         }
     }
 
-    private static void bubble_sort(int[] A, int n)
+    private static void IteratePairs(int startingAt, int N, long[] array, ref bool alreadyOrdered, ref int l, ref int r)
     {
-        int temp;
-        for (int k = 0; k < n - 1; k++)
+        for (int i = startingAt; i < N - 1; i += 2)
         {
-            // (n-k-1) is for ignoring comparisons of elements which
-            // have already been compared in earlier iterations
-            for (int i = 0; i < n - k - 1; i++)
+            int currentL = i;
+            int currentR = i + 1;
+            if (array[currentL] > array[currentR])
             {
-                if (A[i] < A[i + 1])
+                alreadyOrdered = false;
+                Swap(array, currentL, currentR);
+
+                if (l == -1)
                 {
-                    // Swapping of positions
-                    temp = A[i];
-                    A[i] = A[i + 1];
-                    A[i + 1] = temp;
+                    l = currentL;
+                }
+                if (currentR > r)
+                {
+                    r = currentR;
                 }
             }
         }
+        // We already started the swapping cycle, and now cycle finishes
+        if (l != -1 && r != -1)
+        {
+            // Output is 1-based index
+            Write((l + 1) + " " + (r + 1));
+        }
+    }
+
+    static void Swap(long[] array, long a, long b)
+    {
+        long temp = array[a];
+        array[a] = array[b];
+        array[b] = temp;
     }
 
     #region Main
@@ -60,7 +88,7 @@ public static class Chandu_and_his_Girlfriend
         try
         {
             Solve();
-            //var thread = new Thread(new Chandu_and_his_Girlfriend().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new B___Little_Robber_Girl_s_Zoo().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

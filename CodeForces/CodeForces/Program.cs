@@ -8,7 +8,7 @@
             #region Brute Force
             //Beautiful_Year.Main();
             //IQ_test.Main();
-            Vasya_and_Socks.Main();
+            //Vasya_and_Socks.Main();
             #endregion
             #region Greedy
             //Domino_piling.Main();
@@ -59,6 +59,9 @@
             // 358
             //A___Alyona_and_Numbers.Main();
             //B___Alyona_and_Mex.Main();
+            // 359
+            //A___Free_Ice_Cream.Main();
+            //B___Little_Robber_Girl_s_Zoo.Main(); -> Wrong, see editorial
             #endregion
         }
     }

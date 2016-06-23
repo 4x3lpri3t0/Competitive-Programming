@@ -4,40 +4,53 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Chandu_and_his_Girlfriend
+public static class Puchi_and_Luggage
 {
     private static void Solve()
     {
-        // Bubble sort - O(ne2) -> Horrible
+        // Selection Sort - O(ne2) -> Horrible
         int T = ReadInt();
         while (T-- > 0)
         {
             int N = ReadInt();
             int[] array = ReadIntArray();
-            bubble_sort(array, N);
+            SelectionSort(array, N);
 
             WriteArray(array);
         }
     }
 
-    private static void bubble_sort(int[] A, int n)
+    static void SelectionSort(int[] A, int n)
     {
-        int temp;
-        for (int k = 0; k < n - 1; k++)
+        // Temporary variable to store the position of minimum element
+        int minimum;
+
+        // Reduces the effective size of the array by one in each iteration.
+        for (int i = 0; i < n - 1; i++)
         {
-            // (n-k-1) is for ignoring comparisons of elements which
-            // have already been compared in earlier iterations
-            for (int i = 0; i < n - k - 1; i++)
+            // Assuming first element to be minimum of the unsorted array
+            minimum = i;
+
+            // Gives the effective size of unsorted array
+            for (int j = i + 1; j < n; j++)
             {
-                if (A[i] < A[i + 1])
-                {
-                    // Swapping of positions
-                    temp = A[i];
-                    A[i] = A[i + 1];
-                    A[i + 1] = temp;
+                if (A[j] < A[minimum])
+                {                
+                    // Finds the minimum element
+                    minimum = j;
                 }
             }
+            
+            // Putting minimum element on its proper position.
+            Swap(A, minimum, i);
         }
+    }
+
+    static void Swap(int[] array, int a, int b)
+    {
+        int temp = array[a];
+        array[a] = array[b];
+        array[b] = temp;
     }
 
     #region Main
@@ -60,7 +73,7 @@ public static class Chandu_and_his_Girlfriend
         try
         {
             Solve();
-            //var thread = new Thread(new Chandu_and_his_Girlfriend().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new Puchi_and_Luggage().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

@@ -51,6 +51,7 @@
     <Compile Include="CodeMonk\01 - Arrays n Strings\Prateek and his Friends.cs" />
     <Compile Include="CodeMonk\01 - Arrays n Strings\Terrible Chandu.cs" />
     <Compile Include="CodeMonk\02 - Sorting\Chandu and his Girlfriend.cs" />
+    <Compile Include="CodeMonk\02 - Sorting\Puchi and Luggage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -84,6 +84,8 @@
     <Compile Include="Rounds\357\B - Economy Game.cs" />
     <Compile Include="Rounds\358\A - Alyona and Numbers.cs" />
     <Compile Include="Rounds\358\B - Alyona and Mex.cs" />
+    <Compile Include="Rounds\359\A - Free Ice Cream.cs" />
+    <Compile Include="Rounds\359\B - Little Robber Girl%27s Zoo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
