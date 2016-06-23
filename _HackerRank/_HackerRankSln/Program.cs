@@ -125,6 +125,7 @@ namespace _HackerRankSln
 
             #endregion
             // --------------- COMPETITIONS ----------------
+            #region Competitions
             #region May World CodeSprint 2016
             //Compare_the_Triplets.Compare();
             //Richie_Rich.PrintMaxPalindrome();
@@ -138,6 +139,11 @@ namespace _HackerRankSln
             #endregion
             #region BlackRock CodeSprint
             //Currency_Arbitrage.Main();
+            #endregion
+            #region 101 Hack June 2016
+            //Points_On_a_Line.Main();
+            Easy_GCD.Main(); // TODO -> Improve!!
+            #endregion
             #endregion
         }
     }
