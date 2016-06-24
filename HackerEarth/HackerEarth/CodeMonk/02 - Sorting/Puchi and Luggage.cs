@@ -13,14 +13,19 @@ public static class Puchi_and_Luggage
         while (T-- > 0)
         {
             int N = ReadInt();
-            int[] array = ReadIntArray();
-            SelectionSort(array, N);
+            int[] array = new int[N];
+            for (int i = 0; i < N; i++)
+            {
+                array[i] = ReadInt();
+            }
+            int[] deltaArray = new int[N];
+            SelectionSortEnhanced(array, deltaArray, N);
 
-            WriteArray(array);
+            WriteArray(deltaArray);
         }
     }
 
-    static void SelectionSort(int[] A, int n)
+    static void SelectionSortEnhanced(int[] A, int[] delta, int n)
     {
         // Temporary variable to store the position of minimum element
         int minimum;
@@ -38,11 +43,14 @@ public static class Puchi_and_Luggage
                 {                
                     // Finds the minimum element
                     minimum = j;
+
+                    // Assign delta
+                    delta[i] = minimum - i;
                 }
             }
-            
-            // Putting minimum element on its proper position.
-            Swap(A, minimum, i);
+
+            // Instead of swapping like a regular Selection Sort; 
+            //Swap(A, minimum, i);
         }
     }
 
