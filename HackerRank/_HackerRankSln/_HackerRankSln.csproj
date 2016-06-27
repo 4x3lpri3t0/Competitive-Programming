@@ -54,6 +54,7 @@
     <Compile Include="Competitions\BlackRock CodeSprint\Currency Arbitrage.cs" />
     <Compile Include="Competitions\Week of Code - 20\Non-Divisible Subset.cs" />
     <Compile Include="Competitions\Week of Code - 21\Kangaroo.cs" />
+    <Compile Include="Competitions\Week of Code - 21\Luck Balance.cs" />
     <Compile Include="Competitions\World CodeSprint 4\Equal Stacks.cs" />
     <Compile Include="Competitions\World CodeSprint 4\Minimum Distances.cs" />
     <Compile Include="Competitions\Zalando CodeSprint\Match the Shoes.cs" />

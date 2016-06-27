@@ -148,6 +148,10 @@ namespace _HackerRankSln
             //Minimum_Distances.Main();
             Equal_Stacks.Main();
             #endregion
+            #region Week of Code - 21
+            Kangaroo.Main();
+            //Luck_Balance.Main();
+            #endregion
             #endregion
         }
     }

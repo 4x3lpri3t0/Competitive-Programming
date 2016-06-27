@@ -4,28 +4,44 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Kangaroo
+public static class Luck_Balance
 {
     public static void Solve()
     {
-        double x1 = Convert.ToDouble(ReadInt());
-        double v1 = Convert.ToDouble(ReadInt());
-        double x2 = Convert.ToDouble(ReadInt());
-        double v2 = Convert.ToDouble(ReadInt());
-
-        double n = (x1 - x2) / (v2 - v1);
-        if (n >= 0)
+        int N = ReadInt();
+        int K = ReadInt();
+        int accLuck = 0;
+        var ratedContests = new List<int>();
+        while (N-- > 0)
         {
-            // Check if number is integer (kangaroos can't jump decimal jumps)
-            if (n % 1 == 0)
+            int L = ReadInt();
+            int T = ReadInt();
+
+            if (T == 0) // Not important contest
             {
-                Write("YES");
+                accLuck += L; // ...so she can lose
             }
             else
             {
-                Write("NO");
+                ratedContests.Add(L);
             }
         }
+
+        ratedContests = ratedContests.OrderByDescending(x => x).ToList();
+        for (int i = 0; i < ratedContests.Count(); i++)
+        {
+            // She can lose up to K important contests
+            if (i < K)
+            {
+                accLuck += ratedContests[i];
+            }
+            else
+            {
+                accLuck -= ratedContests[i];
+            }
+        }
+
+        Write(accLuck);
     }
 
     #region Main
