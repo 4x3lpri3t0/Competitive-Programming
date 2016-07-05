@@ -4,61 +4,42 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Puchi_and_Luggage
+public static class A___Opponents
 {
-    private static void Solve()
+    public static void Solve()
     {
-        // Selection Sort - O(ne2) -> Horrible -> TODO: Use quicksort or mergesort for better performance
-        int T = ReadInt();
-        while (T-- > 0)
+        int N = ReadInt();
+        int d = ReadInt();
+        int totalConsecutiveD = 0;
+        int localConsecutiveD = 0;
+        while (--d >= 0)
         {
-            int N = ReadInt();
-            int[] array = new int[N];
+            string opponents = Read();
+            bool allOpponentsPresent = true;
             for (int i = 0; i < N; i++)
             {
-                array[i] = ReadInt();
-            }
-            int[] deltaArray = new int[N];
-            SelectionSortEnhanced(array, deltaArray, N);
-
-            WriteArray(deltaArray);
-        }
-    }
-
-    static void SelectionSortEnhanced(int[] A, int[] delta, int n)
-    {
-        // Temporary variable to store the position of minimum element
-        int minimum;
-
-        // Reduces the effective size of the array by one in each iteration.
-        for (int i = 0; i < n - 1; i++)
-        {
-            // Assuming first element to be minimum of the unsorted array
-            minimum = i;
-
-            // Gives the effective size of unsorted array
-            for (int j = i + 1; j < n; j++)
-            {
-                if (A[j] < A[minimum])
-                {                
-                    // Finds the minimum element
-                    minimum = j;
-
-                    // Assign delta
-                    delta[i] = minimum - i;
+                if (opponents[i] == '0')
+                {
+                    allOpponentsPresent = false;
                 }
             }
 
-            // Instead of swapping like a regular Selection Sort; 
-            //Swap(A, minimum, i);
-        }
-    }
+            if (allOpponentsPresent)
+            {
+                localConsecutiveD = 0;
+            }
+            else
+            {
+                localConsecutiveD++;
+            }
 
-    static void Swap(int[] array, int a, int b)
-    {
-        int temp = array[a];
-        array[a] = array[b];
-        array[b] = temp;
+            if (localConsecutiveD > totalConsecutiveD)
+            {
+                totalConsecutiveD = localConsecutiveD;
+            }
+        }
+
+        Write(totalConsecutiveD);
     }
 
     #region Main
@@ -81,7 +62,7 @@ public static class Puchi_and_Luggage
         try
         {
             Solve();
-            //var thread = new Thread(new Puchi_and_Luggage().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new String_Task().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }
