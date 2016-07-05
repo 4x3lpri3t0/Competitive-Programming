@@ -72,6 +72,7 @@
     <Compile Include="Lvl 1\Number Theory\Lucky Division.cs" />
     <Compile Include="Lvl 1\Sorting\Helpful Maths.cs" />
     <Compile Include="Lvl 1\Strings\cAPS lOCK.cs" />
+    <Compile Include="Lvl 1\Strings\Dubstep.cs" />
     <Compile Include="Lvl 1\Strings\Football.cs" />
     <Compile Include="Lvl 1\Strings\Petya and Strings.cs" />
     <Compile Include="Lvl 1\Strings\Translation.cs" />
