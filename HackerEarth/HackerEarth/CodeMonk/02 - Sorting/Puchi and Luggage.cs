@@ -4,61 +4,91 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+// Solved using Merge Sort
 public static class Puchi_and_Luggage
 {
-    private static void Solve()
+    public static int[] final = new int[1];
+    static void Solve()
     {
-        // Selection Sort - O(ne2) -> Horrible -> TODO: Use quicksort or mergesort for better performance
         int T = ReadInt();
-        while (T-- > 0)
+        for (int i = 0; i < T; i++)
         {
-            int N = ReadInt();
-            int[] array = new int[N];
-            for (int i = 0; i < N; i++)
+            int n = ReadInt();
+            final = new int[n];
+            var arr = new element[n];
+            for (int j = 0; j < n; j++)
             {
-                array[i] = ReadInt();
+                arr[j].key = ReadInt();
+                arr[j].position = j;
             }
-            int[] deltaArray = new int[N];
-            SelectionSortEnhanced(array, deltaArray, N);
-
-            WriteArray(deltaArray);
+            merge_sort(arr, 0, n - 1);
+            WriteArray(final);
         }
     }
 
-    static void SelectionSortEnhanced(int[] A, int[] delta, int n)
+    public struct element
     {
-        // Temporary variable to store the position of minimum element
-        int minimum;
+        public int key, position;
+    }
 
-        // Reduces the effective size of the array by one in each iteration.
-        for (int i = 0; i < n - 1; i++)
+    static void merge(element[] A, int start, int mid, int end)
+    {
+        int p = start, q = mid + 1;
+
+        element[] Arr = new element[end - start + 1];
+        int k = 0;
+
+        for (int i = start; i <= end; i++)
         {
-            // Assuming first element to be minimum of the unsorted array
-            minimum = i;
-
-            // Gives the effective size of unsorted array
-            for (int j = i + 1; j < n; j++)
+            if (p > mid)      // Checks if first part comes to an end or not
             {
-                if (A[j] < A[minimum])
-                {                
-                    // Finds the minimum element
-                    minimum = j;
-
-                    // Assign delta
-                    delta[i] = minimum - i;
-                }
+                if (q < i)
+                    final[A[q].position] += (i - q);
+                Arr[k++] = A[q++];
             }
+            else if (q > end)   // Checks if second part comes to an end or not
+            {
+                if (p < i)
+                    final[A[p].position] += (i - p);
+                Arr[k++] = A[p++];
+            }
+            else if (A[p].key < A[q].key)     // Checks which part has smaller element
+            {
+                if (p < i)
+                    final[A[p].position] += (i - p);
+                Arr[k++] = A[p++];
+            }
+            else
+            {
+                if (q < i)
+                    final[A[q].position] += (i - q);
+                Arr[k++] = A[q++];
+            }
+        }
 
-            // Instead of swapping like a regular Selection Sort; 
-            //Swap(A, minimum, i);
+        for (p = 0; p < k; p++)
+        {
+            // Now the real array has elements in sorted manner including both parts
+            A[start++] = Arr[p];
         }
     }
 
-    static void Swap(int[] array, int a, int b)
+    static void merge_sort(element[] arr, int start, int end)
     {
-        int temp = array[a];
-        array[a] = array[b];
-        array[b] = temp;
+        if (start < end)
+        {
+            // Defines the current array in 2 parts
+            int mid = (start + end) / 2;
+
+            // Sort the 1st part of array
+            merge_sort(arr, start, mid);
+            
+            // Sort the 2nd part of array
+            merge_sort(arr, mid + 1, end);
+
+            // Merge both parts by comparing elements of both parts
+            merge(arr, start, mid, end);
+        }
     }
 
     #region Main
