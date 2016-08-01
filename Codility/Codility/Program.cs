@@ -26,7 +26,11 @@ namespace Codility
             //_07___FrogRiverOne.Main();
             //_08___PermCheck.Main();
             //_09___MissingInteger.Main();
-            _10___MaxCounters.Main();
+            //_10___MaxCounters.Main(); // TODO!!
+
+            // PREFIX SUMS
+            //_11___PassingCars.Main();
+            _12___CountDiv.Main();
         }
     }
 }

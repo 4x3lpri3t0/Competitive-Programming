@@ -56,6 +56,8 @@
     <Compile Include="08 - PermCheck.cs" />
     <Compile Include="09 - MissingInteger.cs" />
     <Compile Include="10 - MaxCounters.cs" />
+    <Compile Include="11 - PassingCars.cs" />
+    <Compile Include="12 - CountDiv.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
