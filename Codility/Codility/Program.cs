@@ -30,7 +30,19 @@ namespace Codility
 
             // PREFIX SUMS
             //_11___PassingCars.Main();
-            _12___CountDiv.Main();
+            //_12___CountDiv.Main();
+
+            // SORTING
+            //_15___Distinct.Main();
+            //_16___MaxProductOfThree.Main();
+            //_17___Triangle.Main();
+
+            // STACKS & QUEUES
+            //_19___Fish.Main();
+
+            // TT
+            //TT___1.Main();
+            TT___2.Main();
         }
     }
 }

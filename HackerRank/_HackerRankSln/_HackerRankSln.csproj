@@ -65,6 +65,7 @@
     <Compile Include="_Algorithms\01 - Warmup Problems\Time Conversion.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Angry Professor.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Caesar Cipher.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\DivisibleSumPairs.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Extra Long Factorials.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Library Fine.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Lisa%27s Workbook.cs" />

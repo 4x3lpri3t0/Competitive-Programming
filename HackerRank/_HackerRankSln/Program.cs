@@ -1,5 +1,4 @@
-﻿using _HackerRankSln._Algorithms._01___Warmup_Problems;
-using _HackerRankSln._Algorithms._02___Implementation;
+﻿using _HackerRankSln._Algorithms._02___Implementation;
 using _HackerRankSln._Algorithms._04___Sorting;
 using _HackerRankSln._Data_Structures._01___Arrays;
 using LL = _HackerRankSln._Data_Structures._02___Linked_Lists;
@@ -27,11 +26,11 @@ namespace _HackerRankSln
         {
             // --------------- ALGORITHMS ----------------
             #region 01 - Warmup
-            //Console.WriteLine(Simple_Array_Sum.ArraySum());
-            //Console.WriteLine(A_Very_Big_Sum.VeryBigSum());
-            //Console.WriteLine(Diagonal_Difference.DiagonalDiff());
-            //Plus_Minus.PrintFractions();
-            //Time_Conversion.ConvertTime();
+            //Simple_Array_Sum.Main();
+            //A_Very_Big_Sum.Main();
+            //Diagonal_Difference.Main();
+            //Plus_Minus.Main();
+            //Time_Conversion.Main();
             #endregion
             #region 02 - Implementation
             //Angry_Professor.PrintCancelledClasses();
@@ -43,6 +42,7 @@ namespace _HackerRankSln
             //Library_Fine.CalculateFine();
             //Extra_Long_Factorials.CalculateFactorial();
             //Taum_and_B_day.GiftCalculator();
+            //DivisibleSumPairs.Main();
             #endregion
             #region 03 - Strings
             //Alternating_Characters.CountDeletions();
@@ -146,10 +146,10 @@ namespace _HackerRankSln
             #endregion
             #region World CodeSprint #4
             //Minimum_Distances.Main();
-            Equal_Stacks.Main();
+            //Equal_Stacks.Main();
             #endregion
             #region Week of Code - 21
-            Kangaroo.Main();
+            //Kangaroo.Main();
             //Luck_Balance.Main();
             #endregion
             #endregion

@@ -16,7 +16,7 @@ public class Simple_Array_Sum
 
     protected static TextReader reader;
     protected static TextWriter writer;
-    static void Main()
+    public static void Main()
     {
 #if DEBUG
         reader = new StreamReader(Console.OpenStandardInput());

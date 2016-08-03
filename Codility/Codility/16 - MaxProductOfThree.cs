@@ -4,37 +4,35 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public class Diagonal_Difference
+public static class _16___MaxProductOfThree
 {
-    public static void Solve()
+    private static void Solve()
     {
-        int n = ReadInt();
-        int[][] a = ReadIntMatrix(n);
+        //int[] A = { -3, 1, 2, -2, 5, 6 };
+        int[] A = { -1000, -1, 0, 5, 6 };
 
-        int firstSum = 0;
-        for (int i = 0; i < a.Length; i++)
-        {
-            firstSum += a[i][i];
-        }
+        A = A.OrderBy(x => x).ToArray();
 
-        int secondSum = 0,
-            j = 0;
-        for (int i = a.Length - 1; i >= 0; i--)
-        {
-            secondSum += a[j][i];
-            j++;
-        }
+        int[] positives = A.Skip(A.Length-3).Take(3).ToArray();
+        int[] negatives = A.Take(2)
+                           .Concat(A.Skip(A.Length - 1).Take(1))
+                           .ToArray();
+                           
 
-        Write(Math.Abs(firstSum - secondSum));
+        int positivesRes = positives[0] * positives[1] * positives[2];
+        int negativesRes = negatives[0] * negatives[1] * negatives[2];
+
+        Write(positivesRes > negativesRes ? positivesRes : negativesRes);
     }
 
     #region Main
 
-    protected static TextReader reader;
-    protected static TextWriter writer;
+    private static TextReader reader;
+    private static TextWriter writer;
     public static void Main()
     {
 #if DEBUG
+        //reader = new StreamReader("C:\\Users\\Axel\\Desktop\\input.txt");
         reader = new StreamReader(Console.OpenStandardInput());
         writer = Console.Out;
         //writer = new StreamWriter("..\\..\\output.txt");
@@ -47,7 +45,7 @@ public class Diagonal_Difference
         try
         {
             Solve();
-            //var thread = new Thread(new Solver().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new _16___MaxProductOfThree().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }
@@ -68,10 +66,10 @@ public class Diagonal_Difference
     #region Read / Write
     private static Queue<string> currentLineTokens = new Queue<string>();
     private static string[] ReadAndSplitLine() { return reader.ReadLine().Split(new[] { ' ', '\t', }, StringSplitOptions.RemoveEmptyEntries); }
-    public static string ReadToken() { while (currentLineTokens.Count == 0) currentLineTokens = new Queue<string>(ReadAndSplitLine()); return currentLineTokens.Dequeue(); }
-    public static int ReadInt() { return int.Parse(ReadToken()); }
-    public static long ReadLong() { return long.Parse(ReadToken()); }
-    public static double ReadDouble() { return double.Parse(ReadToken(), CultureInfo.InvariantCulture); }
+    public static string Read() { while (currentLineTokens.Count == 0) currentLineTokens = new Queue<string>(ReadAndSplitLine()); return currentLineTokens.Dequeue(); }
+    public static int ReadInt() { return int.Parse(Read()); }
+    public static long ReadLong() { return long.Parse(Read()); }
+    public static double ReadDouble() { return double.Parse(Read(), CultureInfo.InvariantCulture); }
     public static int[] ReadIntArray() { return ReadAndSplitLine().Select(int.Parse).ToArray(); }
     public static long[] ReadLongArray() { return ReadAndSplitLine().Select(long.Parse).ToArray(); }
     public static double[] ReadDoubleArray() { return ReadAndSplitLine().Select(s => double.Parse(s, CultureInfo.InvariantCulture)).ToArray(); }

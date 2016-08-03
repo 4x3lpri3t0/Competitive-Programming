@@ -18,7 +18,7 @@ public class A_Very_Big_Sum
 
     protected static TextReader reader;
     protected static TextWriter writer;
-    static void Main()
+    public static void Main()
     {
 #if DEBUG
         reader = new StreamReader(Console.OpenStandardInput());

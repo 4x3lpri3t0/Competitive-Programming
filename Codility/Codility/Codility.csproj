@@ -58,8 +58,14 @@
     <Compile Include="10 - MaxCounters.cs" />
     <Compile Include="11 - PassingCars.cs" />
     <Compile Include="12 - CountDiv.cs" />
+    <Compile Include="15 - Distinct.cs" />
+    <Compile Include="16 - MaxProductOfThree.cs" />
+    <Compile Include="17 - Triangle.cs" />
+    <Compile Include="19 - Fish.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TT - 1.cs" />
+    <Compile Include="TT - 2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

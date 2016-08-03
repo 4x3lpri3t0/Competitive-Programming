@@ -48,7 +48,7 @@ public class Time_Conversion
 
     protected static TextReader reader;
     protected static TextWriter writer;
-    static void Main()
+    public static void Main()
     {
 #if DEBUG
         reader = new StreamReader(Console.OpenStandardInput());

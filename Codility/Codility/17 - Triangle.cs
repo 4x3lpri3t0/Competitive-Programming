@@ -4,37 +4,56 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public class Diagonal_Difference
+public static class _17___Triangle
 {
-    public static void Solve()
+    private static void Solve()
     {
-        int n = ReadInt();
-        int[][] a = ReadIntMatrix(n);
+        // input
+        //int[] A = { 10, 2, 5, 1, 8, 20 };
+        //int[] A = { 10, 50, 5, 1 };
+        int[] a = { 2141483647, 2141483648, 2141483649 };
 
-        int firstSum = 0;
-        for (int i = 0; i < a.Length; i++)
+        // task
+        // We need to cast them to long to handle extreme sums correctly
+        long[] A = new long[a.Length]; 
+
+        Array.Copy(a, A, a.Length);
+
+        if (A.Length < 3)
         {
-            firstSum += a[i][i];
+            Write(0);
+            // return 0;
         }
 
-        int secondSum = 0,
-            j = 0;
-        for (int i = a.Length - 1; i >= 0; i--)
+        A = A.OrderBy(x => x).ToArray();
+
+        for (int i = 2; i < A.Length; i++)
         {
-            secondSum += a[j][i];
-            j++;
+            long not2 = A[i] + A[i - 1];
+            long not0 = A[i - 2] + A[i - 1];
+            long not1 = A[i] + A[i - 2];
+
+            if (not2 > A[i-2] &&
+                not0 > A[i] &&
+                not1 > A[i-1])
+            {
+                Write(1);
+                // return 1;
+            }
         }
 
-        Write(Math.Abs(firstSum - secondSum));
+        Write(0);
+        // return 0;
     }
 
     #region Main
 
-    protected static TextReader reader;
-    protected static TextWriter writer;
+    private static TextReader reader;
+    private static TextWriter writer;
     public static void Main()
     {
 #if DEBUG
+        //reader = new StreamReader("C:\\Users\\Axel\\Desktop\\input.txt");
         reader = new StreamReader(Console.OpenStandardInput());
         writer = Console.Out;
         //writer = new StreamWriter("..\\..\\output.txt");
@@ -47,7 +66,7 @@ public class Diagonal_Difference
         try
         {
             Solve();
-            //var thread = new Thread(new Solver().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new _17___Triangle().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }
@@ -68,10 +87,10 @@ public class Diagonal_Difference
     #region Read / Write
     private static Queue<string> currentLineTokens = new Queue<string>();
     private static string[] ReadAndSplitLine() { return reader.ReadLine().Split(new[] { ' ', '\t', }, StringSplitOptions.RemoveEmptyEntries); }
-    public static string ReadToken() { while (currentLineTokens.Count == 0) currentLineTokens = new Queue<string>(ReadAndSplitLine()); return currentLineTokens.Dequeue(); }
-    public static int ReadInt() { return int.Parse(ReadToken()); }
-    public static long ReadLong() { return long.Parse(ReadToken()); }
-    public static double ReadDouble() { return double.Parse(ReadToken(), CultureInfo.InvariantCulture); }
+    public static string Read() { while (currentLineTokens.Count == 0) currentLineTokens = new Queue<string>(ReadAndSplitLine()); return currentLineTokens.Dequeue(); }
+    public static int ReadInt() { return int.Parse(Read()); }
+    public static long ReadLong() { return long.Parse(Read()); }
+    public static double ReadDouble() { return double.Parse(Read(), CultureInfo.InvariantCulture); }
     public static int[] ReadIntArray() { return ReadAndSplitLine().Select(int.Parse).ToArray(); }
     public static long[] ReadLongArray() { return ReadAndSplitLine().Select(long.Parse).ToArray(); }
     public static double[] ReadDoubleArray() { return ReadAndSplitLine().Select(s => double.Parse(s, CultureInfo.InvariantCulture)).ToArray(); }

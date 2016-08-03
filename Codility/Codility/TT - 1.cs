@@ -4,37 +4,63 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public class Diagonal_Difference
+public static class TT___1
 {
-    public static void Solve()
+    private static void Solve()
     {
-        int n = ReadInt();
-        int[][] a = ReadIntMatrix(n);
+        int X = 5;
+        int[] A = { 5, 5, 1, 7, 2, 3, 5 };
+        //int[] A = { 5, 5, 1 };
+        //int[] A = { 1 };
+        //int[] A = { 5 };
+        //int[] A = { 1, 1, 8, 5, 5, 5 };
+        //int[] A = { 1, 1, 8, 9, 5, 5, 5 };
+        //int[] A = { 1, 1, 8, 9, 5, 5, 5 };
 
-        int firstSum = 0;
-        for (int i = 0; i < a.Length; i++)
+        int leftXCount = 0;
+        // Get all the X's first
+        for (int i = 0; i < A.Length; i++)
         {
-            firstSum += a[i][i];
+            if (A[i] == X)
+            {
+                leftXCount++;
+            }
         }
 
-        int secondSum = 0,
-            j = 0;
-        for (int i = a.Length - 1; i >= 0; i--)
+        int rightNonXCount = 0;
+        // Then seek for the balance
+        for (int i = A.Length - 1; i >= 0; i--)
         {
-            secondSum += a[j][i];
-            j++;
+            if (A[i] == X)
+            {
+                // Now we have this many X's to the left
+                leftXCount--;
+            }
+            else
+            {
+                rightNonXCount++;
+            }
+
+            if (leftXCount == rightNonXCount)
+            {
+                //return i;
+                Write(i);
+                return;
+            }
         }
 
-        Write(Math.Abs(firstSum - secondSum));
+        Write(0);
+        //return 0;
     }
 
     #region Main
 
-    protected static TextReader reader;
-    protected static TextWriter writer;
+    private static TextReader reader;
+    private static TextWriter writer;
     public static void Main()
     {
 #if DEBUG
+        //reader = new StreamReader("C:\\Users\\Axel\\Desktop\\input.txt");
         reader = new StreamReader(Console.OpenStandardInput());
         writer = Console.Out;
         //writer = new StreamWriter("..\\..\\output.txt");
@@ -47,7 +73,7 @@ public class Diagonal_Difference
         try
         {
             Solve();
-            //var thread = new Thread(new Solver().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new TT___1().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }
@@ -68,10 +94,10 @@ public class Diagonal_Difference
     #region Read / Write
     private static Queue<string> currentLineTokens = new Queue<string>();
     private static string[] ReadAndSplitLine() { return reader.ReadLine().Split(new[] { ' ', '\t', }, StringSplitOptions.RemoveEmptyEntries); }
-    public static string ReadToken() { while (currentLineTokens.Count == 0) currentLineTokens = new Queue<string>(ReadAndSplitLine()); return currentLineTokens.Dequeue(); }
-    public static int ReadInt() { return int.Parse(ReadToken()); }
-    public static long ReadLong() { return long.Parse(ReadToken()); }
-    public static double ReadDouble() { return double.Parse(ReadToken(), CultureInfo.InvariantCulture); }
+    public static string Read() { while (currentLineTokens.Count == 0) currentLineTokens = new Queue<string>(ReadAndSplitLine()); return currentLineTokens.Dequeue(); }
+    public static int ReadInt() { return int.Parse(Read()); }
+    public static long ReadLong() { return long.Parse(Read()); }
+    public static double ReadDouble() { return double.Parse(Read(), CultureInfo.InvariantCulture); }
     public static int[] ReadIntArray() { return ReadAndSplitLine().Select(int.Parse).ToArray(); }
     public static long[] ReadLongArray() { return ReadAndSplitLine().Select(long.Parse).ToArray(); }
     public static double[] ReadDoubleArray() { return ReadAndSplitLine().Select(s => double.Parse(s, CultureInfo.InvariantCulture)).ToArray(); }
