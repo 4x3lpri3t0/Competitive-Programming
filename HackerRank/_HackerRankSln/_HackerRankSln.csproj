@@ -60,6 +60,7 @@
     <Compile Include="Competitions\Zalando CodeSprint\Match the Shoes.cs" />
     <Compile Include="Competitions\Zalando CodeSprint\The Inquiring Manager.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\A Very Big Sum.cs" />
+    <Compile Include="_Algorithms\01 - Warmup Problems\Compare the Triplets.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Diagonal Difference.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Plus Minus.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Time Conversion.cs" />
