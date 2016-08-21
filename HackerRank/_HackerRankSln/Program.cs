@@ -43,7 +43,7 @@ namespace _HackerRankSln
             //Extra_Long_Factorials.CalculateFactorial();
             //Taum_and_B_day.GiftCalculator();
             //DivisibleSumPairs.Main();
-            Compare_the_Triplets.Main();
+            //Compare_the_Triplets.Main();
             #endregion
             #region 03 - Strings
             //Alternating_Characters.CountDeletions();
