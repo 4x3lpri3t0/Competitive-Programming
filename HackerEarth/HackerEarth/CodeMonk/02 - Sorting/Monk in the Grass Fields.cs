@@ -4,19 +4,11 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Chandu_and_his_Girlfriend
+public static class Monk_in_the_Grass_Fields
 {
-    private static void Solve()
+    public static void Solve()
     {
-        int T = ReadInt();
-        while (T-- > 0)
-        {
-            int N = ReadInt();
-            int[] array = ReadIntArray();
-            array = array.OrderByDescending(x => x).ToArray();
-
-            WriteArray(array);
-        }
+        // TODO
     }
 
     #region Main
@@ -44,7 +36,7 @@ public static class Chandu_and_his_Girlfriend
         {
             Solve();
 
-            //var thread = new Thread(new Chandu_and_his_Girlfriend().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new String_Task().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

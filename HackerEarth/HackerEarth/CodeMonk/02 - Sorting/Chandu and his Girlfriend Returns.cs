@@ -4,18 +4,27 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Chandu_and_his_Girlfriend
+public static class Chandu_and_his_Girlfriend_Returns
 {
-    private static void Solve()
+    public static void Solve()
     {
         int T = ReadInt();
         while (T-- > 0)
         {
-            int N = ReadInt();
-            int[] array = ReadIntArray();
-            array = array.OrderByDescending(x => x).ToArray();
+            var p = ReadIntArray();
+            int n = p[0];
+            int m = p[1];
+            var a = ReadIntArray();
+            var b = ReadIntArray();
+            int cLen = n + m;
+            var c = new int[cLen];
+            int i = 0;
+            int j = 0;
 
-            WriteArray(array);
+            for (int k = 0; k < cLen; ++k)
+                c[k] = i < n && (j == m || a[i] >= b[j]) ? a[i++] : b[j++];
+
+            WriteArray(c);
         }
     }
 
@@ -44,7 +53,7 @@ public static class Chandu_and_his_Girlfriend
         {
             Solve();
 
-            //var thread = new Thread(new Chandu_and_his_Girlfriend().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new String_Task().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

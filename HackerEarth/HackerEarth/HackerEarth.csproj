@@ -50,7 +50,9 @@
     <Compile Include="CodeMonk\01 - Arrays n Strings\Chandu and Consecutive Letters.cs" />
     <Compile Include="CodeMonk\01 - Arrays n Strings\Prateek and his Friends.cs" />
     <Compile Include="CodeMonk\01 - Arrays n Strings\Terrible Chandu.cs" />
+    <Compile Include="CodeMonk\02 - Sorting\Chandu and his Girlfriend Returns.cs" />
     <Compile Include="CodeMonk\02 - Sorting\Chandu and his Girlfriend.cs" />
+    <Compile Include="CodeMonk\02 - Sorting\Monk in the Grass Fields.cs" />
     <Compile Include="CodeMonk\02 - Sorting\Puchi and Luggage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
