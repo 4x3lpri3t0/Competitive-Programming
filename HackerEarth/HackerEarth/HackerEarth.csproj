@@ -55,6 +55,8 @@
     <Compile Include="CodeMonk\02 - Sorting\Monk in the Grass Fields.cs" />
     <Compile Include="CodeMonk\02 - Sorting\Puchi and Luggage.cs" />
     <Compile Include="CodeMonk\03 - Searching\01 - Discover the Monk.cs" />
+    <Compile Include="CodeMonk\03 - Searching\02 - Monk%27s Encounter with Polynomial.cs" />
+    <Compile Include="CodeMonk\03 - Searching\03 - The Old Monk.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
