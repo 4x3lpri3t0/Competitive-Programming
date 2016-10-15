@@ -125,6 +125,10 @@ namespace _HackerRankSln
             //Day_10___Binary_Numbers._Main();
 
             #endregion
+            // ------- Cracking the Coding Interview -------
+            #region Cracking the Coding Interview
+            Arrays___Left_Rotation.Main();
+            #endregion
             // --------------- COMPETITIONS ----------------
             #region Competitions
             #region May World CodeSprint 2016
@@ -141,17 +145,16 @@ namespace _HackerRankSln
             #region BlackRock CodeSprint
             //Currency_Arbitrage.Main();
             #endregion
-            #region 101 Hack June 2016
-            //Points_On_a_Line.Main();
-            //Easy_GCD.Main(); // TODO -> Improve!!
-            #endregion
-            #region World CodeSprint #4
+            #region World CodeSprint 4
             //Minimum_Distances.Main();
             //Equal_Stacks.Main();
             #endregion
             #region Week of Code - 21
             //Kangaroo.Main();
             //Luck_Balance.Main();
+            #endregion
+            #region World CodeSprint 7
+            //Sock_Merchant.Main();
             #endregion
             #endregion
         }
