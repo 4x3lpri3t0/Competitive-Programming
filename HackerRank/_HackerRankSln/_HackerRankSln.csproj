@@ -61,6 +61,7 @@
     <Compile Include="Competitions\Zalando CodeSprint\Match the Shoes.cs" />
     <Compile Include="Competitions\Zalando CodeSprint\The Inquiring Manager.cs" />
     <Compile Include="Cracking the Coding Interview\Arrays - Left Rotation.cs" />
+    <Compile Include="Cracking the Coding Interview\Strings - Making Anagrams.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\A Very Big Sum.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Compare the Triplets.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Diagonal Difference.cs" />

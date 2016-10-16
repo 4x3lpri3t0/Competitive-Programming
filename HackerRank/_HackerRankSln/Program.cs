@@ -127,7 +127,9 @@ namespace _HackerRankSln
             #endregion
             // ------- Cracking the Coding Interview -------
             #region Cracking the Coding Interview
-            Arrays___Left_Rotation.Main();
+            //Arrays___Left_Rotation.Main();
+            //Strings___Making_Anagrams.Main();
+
             #endregion
             // --------------- COMPETITIONS ----------------
             #region Competitions
