@@ -61,7 +61,11 @@
     <Compile Include="Competitions\Zalando CodeSprint\Match the Shoes.cs" />
     <Compile Include="Competitions\Zalando CodeSprint\The Inquiring Manager.cs" />
     <Compile Include="Cracking the Coding Interview\Arrays - Left Rotation.cs" />
+    <Compile Include="Cracking the Coding Interview\Hash Tables - Ransom Note.cs" />
+    <Compile Include="Cracking the Coding Interview\Queues - A Tale of Two Stacks.cs" />
+    <Compile Include="Cracking the Coding Interview\Stacks - Balanced Brackets.cs" />
     <Compile Include="Cracking the Coding Interview\Strings - Making Anagrams.cs" />
+    <Compile Include="Cracking the Coding Interview\Tries - Contacts.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\A Very Big Sum.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Compare the Triplets.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Diagonal Difference.cs" />
