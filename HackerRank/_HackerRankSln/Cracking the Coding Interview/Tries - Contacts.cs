@@ -6,14 +6,99 @@ using System.Linq;
 
 public static class Tries___Contacts
 {
-    private class TrieNode
+    private class Node
     {
-        
+        internal char Value;
+        internal int Words = 0;
+        internal List<Node> Children = new List<Node>();
+
+        internal Node(char value)
+        {
+            this.Value = value;
+            this.Words = 1;
+        }
+
+        internal Node()
+        {
+        }
+
+        internal void Add(string word)
+        {
+            char value = word[0];
+
+            if (!ContainsChild(value))
+            {
+                var child = new Node(value);
+                if (word.Length > 1)
+                {
+                    child.Add(word.Substring(1));
+                }
+
+                this.Children.Add(child);
+            }
+            else
+            {
+                AddToResponsibleChild(word);
+            }
+        }
+
+        internal bool ContainsChild(char value)
+        {
+            return this.Children.Any(x => x.Value == value);
+        }
+
+        internal void AddToResponsibleChild(string word)
+        {
+            var child = this.Children.First(x => x.Value == word[0]);
+            child.Words++;
+            child.Add(word.Substring(1));
+        }
+
+        internal int Find(string word)
+        {
+            char c = word[0];
+            var child = this.Children.FirstOrDefault(x => x.Value == c);
+            if (child == null)
+            {
+                return 0;
+            }
+
+            if (word.Length > 1)
+                return child.Find(word.Substring(1));
+            else // Last char
+            {
+                if (child.Value == word[0])
+                {
+                    return child.Words;
+                }
+
+                return 0;
+            }
+        }
     }
 
     private static void Solve()
     {
+        int n = ReadInt();
+        var trie = new Node();
 
+        while (n-- > 0)
+        {
+            string[] tokens = ReadAndSplitLine();
+            string op = tokens[0];
+            string word = tokens[1];
+
+            if (op == "add")
+            {
+                // add
+                trie.Add(word);
+            }
+            else
+            {
+                // find
+                Write(trie.Find(word));
+            }
+        }
     }
 
     #region Main
