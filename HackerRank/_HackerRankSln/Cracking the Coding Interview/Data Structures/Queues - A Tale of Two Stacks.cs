@@ -6,9 +6,62 @@ using System.Linq;
 
 public static class Queues___A_Tale_of_Two_Stacks
 {
+    private static Stack<int> stackA = new Stack<int>();
+    private static Stack<int> stackB = new Stack<int>();
+
+    private static void Enqueue(int num)
+    {
+        stackA.Push(num);
+    }
+
+    private static void Dequeue()
+    {
+        BalanceStacks();
+
+        stackB.Pop();
+    }
+
+    private static void Peek()
+    {
+        BalanceStacks();
+
+        int n = stackB.Peek();
+        Write(n);
+    }
+
+    private static void BalanceStacks()
+    {
+        if (stackB.Count == 0)
+        {
+            while (stackA.Count() > 0)
+            {
+                int n = stackA.Pop();
+                stackB.Push(n);
+            }
+        }
+    }
+
     private static void Solve()
     {
+        int q = ReadInt();
+        while (q-- > 0)
+        {
+            int qType = ReadInt();
 
+            if (qType == 1)
+            {
+                int num = ReadInt();
+                Enqueue(num);
+            }
+            else if (qType == 2)
+            {
+                Dequeue();
+            }
+            else
+            {
+                Peek();
+            }
+        }
     }
 
     #region Main
