@@ -6,12 +6,104 @@ using System.Linq;
 
 public static class Heaps___Find_the_Running_Median
 {
+    public class MediumHeap
+    {
+        List<int> elements;
+
+        public MediumHeap()
+        {
+            elements = new List<int>();
+        }
+
+        public void Add(int item)
+        {
+            if (elements.Count == 0)
+            {
+                elements.Add(item);
+                return;
+            }
+
+            int lo = 0;
+            int hi = elements.Count;
+
+            while (lo < hi)
+            {
+                int count = elements.Count;
+                int mid = (lo + hi) / 2;
+
+                if (item < elements[mid])
+                {
+                    hi = (mid - 1 > 0) ? mid - 1 : 0;
+                }
+                else if (item > elements[mid])
+                {
+                    AdjustHiLoToUpperBound(ref lo, ref hi, count, mid);
+                }
+                else
+                {
+                    elements.Insert(mid, item);
+                    return;
+                }
+            }
+
+            if (item > elements[lo])
+            {
+                lo++;
+            }
+
+            elements.Insert(lo, item);
+        }
+
+        private static void AdjustHiLoToUpperBound(ref int lo, ref int hi, int count, int mid)
+        {
+            if (lo < count - 1)
+            {
+                if (mid + 1 < count)
+                {
+                    lo = mid + 1;
+                }
+                else
+                {
+                    lo = count - 1;
+                }
+            }
+            else
+            {
+                hi = lo;
+            }
+        }
+
+        public decimal PeekMedian()
+        {
+            if (elements.Count == 0)
+            {
+                return 0;
+            }
+
+            if (elements.Count % 2 == 1)
+            {
+                return elements[elements.Count / 2];
+            }
+            else
+            {
+                int k0 = elements[elements.Count / 2];
+                int k1 = elements[elements.Count / 2 - 1];
+
+                return (decimal)(k0 + k1) / 2;
+            }
+        }
+    }
+
     private static void Solve()
     {
-        long T = ReadLong();
-        while (T-- != 0)
+        int n = ReadInt();
+        var heap = new MediumHeap();
+        while (n-- > 0)
         {
-
+            int v = ReadInt();
+            heap.Add(v);
+            var roundedMedian = Math.Round(heap.PeekMedian(), 1).ToString("#0.0");
+            Write(roundedMedian);
         }
     }
 
