@@ -67,6 +67,7 @@
     <Compile Include="Cracking the Coding Interview\Data Structures\Stacks - Balanced Brackets.cs" />
     <Compile Include="Cracking the Coding Interview\Data Structures\Strings - Making Anagrams.cs" />
     <Compile Include="Cracking the Coding Interview\Data Structures\Tries - Contacts.cs" />
+    <Compile Include="Cracking the Coding Interview\Merge Sort - Counting Inversions.cs" />
     <Compile Include="Cracking the Coding Interview\Sorting - Bubble Sort.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\A Very Big Sum.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Compare the Triplets.cs" />
