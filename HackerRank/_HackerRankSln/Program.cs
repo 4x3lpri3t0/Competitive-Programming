@@ -127,6 +127,8 @@ namespace _HackerRankSln
             #endregion
             // ------- Cracking the Coding Interview -------
             #region Cracking the Coding Interview
+            // DATA STRUCTURES
+
             //Arrays___Left_Rotation.Main();
             //Strings___Making_Anagrams.Main();
             //Hash_Tables___Ransom_Note.Main();
@@ -135,6 +137,9 @@ namespace _HackerRankSln
             //Tries___Contacts.Main();
             //Heaps___Find_the_Running_Median.Main();
 
+            // ALGORITHMS
+
+            //Sorting___Bubble_Sort.Main();
             #endregion
             // --------------- COMPETITIONS ----------------
             #region Competitions
