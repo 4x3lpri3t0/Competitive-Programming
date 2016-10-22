@@ -13,7 +13,62 @@ public static class Merge_Sort___Counting_Inversions
         {
             int n = ReadInt();
             int[] arr = ReadIntArray();
+            tempData = new int[n];
+            long swaps = mergesort(arr, 0, n - 1);
+
+            Write(swaps);
         }
+    }
+
+    static int[] tempData;
+
+    static long mergesort(int[] data, int leftStart, int rightEnd)
+    {
+        if (leftStart >= rightEnd)
+        {
+            // done
+            return 0;
+        }
+
+        int middle = leftStart + (rightEnd - leftStart) / 2;
+        long count = mergesort(data, leftStart, middle);
+        count += mergesort(data, middle + 1, rightEnd);
+        count += mergeData(data, leftStart, rightEnd);
+
+        return count;
+    }
+
+    static long mergeData(int[] data, int leftStart, int rightEnd)
+    {
+        int index = leftStart;
+        long count = 0;
+        int middle = leftStart + (rightEnd - leftStart) / 2;
+
+        int leftEnd = middle;
+        int rightStart = middle + 1;
+        int left = leftStart;
+        int right = rightStart;
+        while (left <= leftEnd || right <= rightEnd)
+        {
+            if (left > leftEnd) tempData[index] = data[right++];
+            else if (right > rightEnd) tempData[index] = data[left++];
+            else if (data[left] <= data[right])
+            {
+                tempData[index] = data[left++];
+            }
+            else
+            {
+                // swap
+                tempData[index] = data[right++];
+                count += middle + 1 - left;
+            }
+
+            index++;
+        }
+
+        Array.Copy(tempData, leftStart, data, leftStart, rightEnd - leftStart + 1);
+
+        return count;
     }
 
     #region Main

@@ -140,6 +140,7 @@ namespace _HackerRankSln
             // ALGORITHMS
 
             //Sorting___Bubble_Sort.Main();
+            Merge_Sort___Counting_Inversions.Main();
             #endregion
             // --------------- COMPETITIONS ----------------
             #region Competitions
