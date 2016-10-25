@@ -60,6 +60,7 @@
     <Compile Include="Competitions\World CodeSprint 7\Sock Merchant.cs" />
     <Compile Include="Competitions\Zalando CodeSprint\Match the Shoes.cs" />
     <Compile Include="Competitions\Zalando CodeSprint\The Inquiring Manager.cs" />
+    <Compile Include="Cracking the Coding Interview\Binary Search - Ice Cream Parlor.cs" />
     <Compile Include="Cracking the Coding Interview\Data Structures\Arrays - Left Rotation.cs" />
     <Compile Include="Cracking the Coding Interview\Data Structures\Hash Tables - Ransom Note.cs" />
     <Compile Include="Cracking the Coding Interview\Data Structures\Heaps - Find the Running Median.cs" />

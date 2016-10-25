@@ -1,38 +1,26 @@
-﻿using _HackerRankSln._Algorithms._02___Implementation;
-using _HackerRankSln._Algorithms._04___Sorting;
-using _HackerRankSln._Data_Structures._01___Arrays;
-using LL = _HackerRankSln._Data_Structures._02___Linked_Lists;
-using _HackerRankSln._Data_Structures._02___Linked_Lists;
+﻿using LL = _HackerRankSln._Data_Structures._02___Linked_Lists;
 using Trees = _HackerRankSln._Data_Structures._03___Trees;
-using _HackerRankSln._Data_Structures._03___Trees;
-using _HackerRankSln._Mathematics._01___Fundamentals;
-using _HackerRankSln.Competitions.May_World_CodeSprint_2016;
-using _HackerRankSln.Competitions.Week_of_Code___20;
-using _HackerRankSln._Algorithms._03___Strings;
-using _HackerRankSln._Data_Structures._04___Balanced_Trees;
-using _HackerRankSln._30DaysOfCode;
-using _HackerRankSln._Data_Structures._05___Stacks;
-using _HackerRankSln._Algorithms._08___Dynamic_Programming;
-using _HackerRankSln.Competitions.Zalando_CodeSprint;
-using _HackerRankSln._Algorithms._06___Graph_Theory;
-using _HackerRankSln._Algorithms._09___Bit_Manipulation;
-using _HackerRankSln.Competitions.BlackRock_CodeSprint;
 
 namespace _HackerRankSln
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             // --------------- ALGORITHMS ----------------
+
             #region 01 - Warmup
+
             //Simple_Array_Sum.Main();
             //A_Very_Big_Sum.Main();
             //Diagonal_Difference.Main();
             //Plus_Minus.Main();
             //Time_Conversion.Main();
-            #endregion
+
+            #endregion 01 - Warmup
+
             #region 02 - Implementation
+
             //Angry_Professor.PrintCancelledClasses();
             //Sherlock_and_The_Beast.CalculateLinearDiophantineEquation();
             //Sherlock_and_Squares.Sherlock();
@@ -44,32 +32,54 @@ namespace _HackerRankSln
             //Taum_and_B_day.GiftCalculator();
             //DivisibleSumPairs.Main();
             //Compare_the_Triplets.Main();
-            #endregion
+
+            #endregion 02 - Implementation
+
             #region 03 - Strings
+
             //Alternating_Characters.CountDeletions();
-            #endregion
+
+            #endregion 03 - Strings
+
             #region 04 - Sorting
+
             //Insertion_Sort___Part_1.insertionSort();
-            #endregion
+
+            #endregion 04 - Sorting
 
             #region 06 - Graph Theory
+
             //Even_Tree.Main(); // TODO: ---> Study this
-            #endregion
+
+            #endregion 06 - Graph Theory
+
             #region 08 - Dynamic Programming
+
             //Fibonacci_Modified._Main();
-            #endregion
+
+            #endregion 08 - Dynamic Programming
+
             #region 09 - Bit Manipulation
+
             //Lonely_Integer.Main();
-            #endregion
+
+            #endregion 09 - Bit Manipulation
+
             // --------------- DATA STRUCTURES -----------
+
             #region 01 - Arrays
+
             //Arrays___DS.PrintReversedElements();
             //_2D_Array___DS.FindMaxHourglass();
             //Dynamic_Array.PrintUpdatedLastAnswer();
             //Sparse_Arrays.PrintTimes();
-            #endregion
+
+            #endregion 01 - Arrays
+
             #region 02 - Linked Lists
+
             var llNode = new LL.Node();
+
             //Print_the_Elements_of_a_LL.Print(llNode);
             //Insert_a_Node_at_the_Tail_of_a_LL.InsertTail(llNode, 0);
             //Insert_a_node_at_the_Head_of_a_LL.InsertHead(llNode, 0);
@@ -84,11 +94,16 @@ namespace _HackerRankSln
             //Cycle_Detection.HasCycle(llNode);
             //Find_Merge_Point_of_Two_LL.FindMergeNode(llNode, llNode);
             var llDoubleNode = new LL.Node2();
+
             //Insert_a_node_into_a_sorted_doubly_LL.SortedInsert(llDoubleNode, 100);
             //Reverse_a_doubly_LL.Reverse(llDoubleNode);
-            #endregion
+
+            #endregion 02 - Linked Lists
+
             #region 03 - Trees
+
             var treeNode = new Trees.Node();
+
             //Preorder_Traversal.PreOrder(treeNode);
             //Postorder_Traversal.PostOrder(treeNode);
             //Inorder_Traversal.InOrder(treeNode);
@@ -99,34 +114,50 @@ namespace _HackerRankSln
             //Huffman_Decoding.Decode("ABACA", new Huffman_Decoding.Node());
             //BST_Lowest_Common_Ancestor.LCA(treeNode, 1, 7);
             //Swap_Nodes.Swap();
-            #endregion
+
+            #endregion 03 - Trees
+
             #region 04 - Balanced Trees
+
             //Self_Balancing_Tree__AVL_.Insert(new Self_Balancing_Tree__AVL_.Node(), 10);
             // Array and simple queries -> available for C#
             // Median Updates -> available for C#
-            #endregion
+
+            #endregion 04 - Balanced Trees
 
             #region 05 - Stacks
+
             //Maximum_Element._Main();
             //Balanced_Parentheses._Main();
             //Simple_Text_Editor.Main();
             //Largest_Rectangle.Main();
-            #endregion
+
+            #endregion 05 - Stacks
+
             // --------------- MATHEMATICS ---------------
+
             #region 01 - Fundamentals
+
             //Find_Point.FindPoint();
             //Restaurant.gcdSquares();
-            #endregion
+
+            #endregion 01 - Fundamentals
+
             // --------------- 30DaysOfCode ---------------
+
             #region 30
+
             //Day_8___Dictionaries_and_Maps._Main();
             //Day_9___Recursion._Main();
             //Day_11___2DArrays._Main();
             //Day_10___Binary_Numbers._Main();
 
-            #endregion
+            #endregion 30
+
             // ------- Cracking the Coding Interview -------
+
             #region Cracking the Coding Interview
+
             // DATA STRUCTURES
 
             //Arrays___Left_Rotation.Main();
@@ -140,36 +171,62 @@ namespace _HackerRankSln
             // ALGORITHMS
 
             //Sorting___Bubble_Sort.Main();
-            Merge_Sort___Counting_Inversions.Main();
-            #endregion
+            //Merge_Sort___Counting_Inversions.Main();
+            Binary_Search___Ice_Cream_Parlor.Main();
+
+            #endregion Cracking the Coding Interview
+
             // --------------- COMPETITIONS ----------------
+
             #region Competitions
+
             #region May World CodeSprint 2016
+
             //Compare_the_Triplets.Compare();
             //Richie_Rich.PrintMaxPalindrome();
-            #endregion
+
+            #endregion May World CodeSprint 2016
+
             #region Week of Code - 20
+
             // Non_Divisible_Subset._Main(); -> Not finished, sub-optimal... TODO: Look for others submissions
-            #endregion
+
+            #endregion Week of Code - 20
+
             #region Zalando CodeSprint
+
             //Match_the_Shoes._Main();
             //The_Inquiring_Manager.Solve();
-            #endregion
+
+            #endregion Zalando CodeSprint
+
             #region BlackRock CodeSprint
+
             //Currency_Arbitrage.Main();
-            #endregion
+
+            #endregion BlackRock CodeSprint
+
             #region World CodeSprint 4
+
             //Minimum_Distances.Main();
             //Equal_Stacks.Main();
-            #endregion
+
+            #endregion World CodeSprint 4
+
             #region Week of Code - 21
+
             //Kangaroo.Main();
             //Luck_Balance.Main();
-            #endregion
+
+            #endregion Week of Code - 21
+
             #region World CodeSprint 7
+
             //Sock_Merchant.Main();
-            #endregion
-            #endregion
+
+            #endregion World CodeSprint 7
+
+            #endregion Competitions
         }
     }
 }
