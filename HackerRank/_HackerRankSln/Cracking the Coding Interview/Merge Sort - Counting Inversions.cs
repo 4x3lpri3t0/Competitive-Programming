@@ -6,6 +6,8 @@ using System.Linq;
 
 public static class Merge_Sort___Counting_Inversions
 {
+    private static int[] tempData;
+
     public static void Solve()
     {
         int T = ReadInt();
@@ -20,9 +22,7 @@ public static class Merge_Sort___Counting_Inversions
         }
     }
 
-    static int[] tempData;
-
-    static long mergesort(int[] data, int leftStart, int rightEnd)
+    private static long mergesort(int[] data, int leftStart, int rightEnd)
     {
         if (leftStart >= rightEnd)
         {
@@ -38,7 +38,7 @@ public static class Merge_Sort___Counting_Inversions
         return count;
     }
 
-    static long mergeData(int[] data, int leftStart, int rightEnd)
+    private static long mergeData(int[] data, int leftStart, int rightEnd)
     {
         int index = leftStart;
         long count = 0;
@@ -50,8 +50,10 @@ public static class Merge_Sort___Counting_Inversions
         int right = rightStart;
         while (left <= leftEnd || right <= rightEnd)
         {
-            if (left > leftEnd) tempData[index] = data[right++];
-            else if (right > rightEnd) tempData[index] = data[left++];
+            if (left > leftEnd)
+                tempData[index] = data[right++];
+            else if (right > rightEnd)
+                tempData[index] = data[left++];
             else if (data[left] <= data[right])
             {
                 tempData[index] = data[left++];
