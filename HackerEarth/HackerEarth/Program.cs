@@ -6,6 +6,12 @@
         {
             #region CodeMonk
 
+            #region Basic Programming
+            // IO
+            //Toggle_String.Main();
+            //Palindromic_String.Main();
+            #endregion
+
             // Arrays n Strings
             //Prateek_and_his_Friends.Main();
 
@@ -18,7 +24,7 @@
             // Searching
             //_01___Discover_the_Monk.Main();
             //_02___Monk_s_Encounter_with_Polynomial.Main();
-            _03___The_Old_Monk.Main();
+            //_03___The_Old_Monk.Main();
 
             #endregion CodeMonk
         }
