@@ -10,6 +10,8 @@
             // IO
             //Toggle_String.Main();
             //Palindromic_String.Main();
+            //Count_Divisors.Main();
+            //Factorial_.Main();
             #endregion
 
             // Arrays n Strings
