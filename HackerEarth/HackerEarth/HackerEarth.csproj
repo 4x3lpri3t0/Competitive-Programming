@@ -50,6 +50,7 @@
     <Compile Include="CodeMonk\00 - Basic Programming\01 - IO\Count Divisors.cs" />
     <Compile Include="CodeMonk\00 - Basic Programming\01 - IO\Factorial!.cs" />
     <Compile Include="CodeMonk\00 - Basic Programming\01 - IO\Palindromic String.cs" />
+    <Compile Include="CodeMonk\00 - Basic Programming\01 - IO\Roy and Profile Picture.cs" />
     <Compile Include="CodeMonk\00 - Basic Programming\01 - IO\Toggle String.cs" />
     <Compile Include="CodeMonk\01 - Arrays n Strings\Chandu and Consecutive Letters.cs" />
     <Compile Include="CodeMonk\01 - Arrays n Strings\Prateek and his Friends.cs" />

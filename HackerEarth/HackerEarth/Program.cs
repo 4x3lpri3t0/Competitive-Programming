@@ -12,6 +12,7 @@
             //Palindromic_String.Main();
             //Count_Divisors.Main();
             //Factorial_.Main();
+            Roy_and_Profile_Picture.Main();
             #endregion
 
             // Arrays n Strings
