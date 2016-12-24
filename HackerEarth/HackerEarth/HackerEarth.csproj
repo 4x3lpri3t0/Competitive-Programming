@@ -47,6 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeMonk\00 - Basic Programming\01 - IO\Magical Word.cs" />
+    <Compile Include="CodeMonk\00 - Basic Programming\01 - IO\Find Product.cs" />
     <Compile Include="CodeMonk\00 - Basic Programming\01 - IO\Count Divisors.cs" />
     <Compile Include="CodeMonk\00 - Basic Programming\01 - IO\Factorial!.cs" />
     <Compile Include="CodeMonk\00 - Basic Programming\01 - IO\Palindromic String.cs" />

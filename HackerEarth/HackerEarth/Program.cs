@@ -12,7 +12,14 @@
             //Palindromic_String.Main();
             //Count_Divisors.Main();
             //Factorial_.Main();
-            Roy_and_Profile_Picture.Main();
+            //Roy_and_Profile_Picture.Main();
+            //Find_Product.Main();
+            Magical_Word.Main();
+
+            // IMPLEMENTATION
+
+            // BIT MANIPULATION
+
             #endregion
 
             // Arrays n Strings
