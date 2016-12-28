@@ -3,13 +3,29 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Numerics;
 
-public static class Magical_Word
+public static class Print_hackerearth
 {
     private static void Solve()
     {
-        // TODO
+        int N = ReadInt();
+        string str = Read();
+
+        int hCount = str.Where(x => x == 'h').Count();
+        int aCount = str.Where(x => x == 'a').Count();
+        int eCount = str.Where(x => x == 'e').Count();
+        int rCount = str.Where(x => x == 'r').Count();
+        int cCount = str.Where(x => x == 'c').Count();
+        int kCount = str.Where(x => x == 'k').Count();
+        int tCount = str.Where(x => x == 't').Count();
+
+        int min = new int[]
+        {
+            hCount /2, aCount/2, eCount/2, rCount/2,
+            cCount, kCount, tCount
+        }.Min();
+
+        Write(min);
     }
 
     #region Main
@@ -32,7 +48,7 @@ public static class Magical_Word
         try
         {
             Solve();
-            //var thread = new Thread(new Count_Divisors().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new Print_hackerearth().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }
