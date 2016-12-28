@@ -36,7 +36,9 @@
             //Min_Max.Main();
             //Print_hackerearth.Main();
             //Addition_ain_t_simple.Main();
-            Chess_Tournament.Main();
+            //Chess_Tournament.Main();
+            //Final_Destination.Main();
+            Bob_and_Bombs.Main(); // TODO!
 
             // BIT MANIPULATION
 

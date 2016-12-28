@@ -54,8 +54,10 @@
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\01 - IO\Roy and Profile Picture.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\01 - IO\Toggle String.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Addition ain%27t simple.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Bob and Bombs.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Chess Tournament.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Digit Problem.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Final Destination.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Little Jhool and psychic powers.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Min-Max.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Print hackerearth.cs" />
