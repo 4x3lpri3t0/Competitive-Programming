@@ -4,45 +4,31 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Bob_and_Bombs
+public static class Little_Shino_and_the_coins
 {
     private static void Solve()
     {
-        int T = ReadInt();
+        int K = ReadInt();
+        string str = Read();
 
-        while (T-- != 0)
+        int total = 0;
+
+        for (int i = 0; i < str.Length; i++)
         {
-            int count = 0;
-            char[] chars = Read().ToCharArray();
-            for (int i = 0; i < chars.Length; i++)
+            var set = new HashSet<char>();
+
+            for (int j = i; j < str.Length; j++)
             {
-                if (chars[i] != 'B')
-                    continue;
+                set.Add(str[j]);
 
-                if (i > 0)
-                    BreakWall(ref count, chars, i - 1);
-
-                if (i - 1 > 0)
-                    BreakWall(ref count, chars, i - 2);
-
-                if (i + 1 < chars.Length)
-                    BreakWall(ref count, chars, i + 1);
-
-                if (i + 2 < chars.Length)
-                    BreakWall(ref count, chars, i + 2);
+                if (set.Count() == K)
+                {
+                    total++;
+                }
             }
-
-            Write(count);
         }
-    }
 
-    private static void BreakWall(ref int count, char[] chars, int idx)
-    {
-        if (chars[idx] == 'W')
-        {
-            chars[idx] = ' ';
-            count++;
-        }
+        Write(total);
     }
 
     #region Main
@@ -65,7 +51,7 @@ public static class Bob_and_Bombs
         try
         {
             Solve();
-            //var thread = new Thread(new Bob_and_Bombs().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new Little_Shino_and_the_coins().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

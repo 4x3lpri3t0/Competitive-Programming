@@ -4,44 +4,79 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Bob_and_Bombs
+public static class C__
 {
-    private static void Solve()
+    private struct Node
     {
-        int T = ReadInt();
+        public int c;
+        public int d;
 
-        while (T-- != 0)
+        public Node(int c, int d)
         {
-            int count = 0;
-            char[] chars = Read().ToCharArray();
-            for (int i = 0; i < chars.Length; i++)
-            {
-                if (chars[i] != 'B')
-                    continue;
-
-                if (i > 0)
-                    BreakWall(ref count, chars, i - 1);
-
-                if (i - 1 > 0)
-                    BreakWall(ref count, chars, i - 2);
-
-                if (i + 1 < chars.Length)
-                    BreakWall(ref count, chars, i + 1);
-
-                if (i + 2 < chars.Length)
-                    BreakWall(ref count, chars, i + 2);
-            }
-
-            Write(count);
+            this.c = c;
+            this.d = d;
         }
     }
 
-    private static void BreakWall(ref int count, char[] chars, int idx)
+    private static void Solve()
     {
-        if (chars[idx] == 'W')
+        int n = ReadInt();
+        int rating = 0;
+
+        var stack = new Stack<Node>();
+        bool impossible = false;
+
+        while (n-- > 0)
         {
-            chars[idx] = ' ';
-            count++;
+            int c = ReadInt();
+            int d = ReadInt();
+
+            var node = new Node(c, d);
+            stack.Push(node);
+        }
+
+        var last = stack.Pop();
+
+        int tempRating;
+
+        if (last.d == 1)
+        {
+            rating = 1900;
+
+            tempRating = rating;
+
+            rating += last.c;
+        }
+        else
+        {
+            rating = 1899;
+
+            tempRating = rating;
+
+            rating += last.c;
+        }
+
+        while (stack.Count > 0)
+        {
+            var current = stack.Pop();
+
+            tempRating -= current.c;
+
+            if ((tempRating >= 1900 && current.d != 1) ||
+                (tempRating <= 1899 && current.d != 2))
+            {
+                impossible = true;
+                break;
+            }
+        }
+
+        if (impossible)
+        {
+            Write("Impossible");
+        }
+        else
+        {
+            Write(rating);
         }
     }
 
@@ -65,7 +100,7 @@ public static class Bob_and_Bombs
         try
         {
             Solve();
-            //var thread = new Thread(new Bob_and_Bombs().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new C__().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

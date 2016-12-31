@@ -4,44 +4,33 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Bob_and_Bombs
+public static class War
 {
     private static void Solve()
     {
         int T = ReadInt();
-
         while (T-- != 0)
         {
-            int count = 0;
-            char[] chars = Read().ToCharArray();
-            for (int i = 0; i < chars.Length; i++)
+            int N = ReadInt();
+
+            int[] bob = ReadIntArray();
+            int[] alice = ReadIntArray();
+
+            int bMax = 0;
+            int aMax = 0;
+
+            for (int i = 0; i < N; i++)
             {
-                if (chars[i] != 'B')
-                    continue;
+                int bSoldier = bob[i];
+                int aSoldier = alice[i];
 
-                if (i > 0)
-                    BreakWall(ref count, chars, i - 1);
-
-                if (i - 1 > 0)
-                    BreakWall(ref count, chars, i - 2);
-
-                if (i + 1 < chars.Length)
-                    BreakWall(ref count, chars, i + 1);
-
-                if (i + 2 < chars.Length)
-                    BreakWall(ref count, chars, i + 2);
+                if (bSoldier > bMax)
+                    bMax = bSoldier;
+                if (aSoldier > aMax)
+                    aMax = aSoldier;
             }
 
-            Write(count);
-        }
-    }
-
-    private static void BreakWall(ref int count, char[] chars, int idx)
-    {
-        if (chars[idx] == 'W')
-        {
-            chars[idx] = ' ';
-            count++;
+            Write(aMax > bMax ? "Alice" : bMax > aMax ? "Bob" : "Tie");
         }
     }
 
@@ -65,7 +54,7 @@ public static class Bob_and_Bombs
         try
         {
             Solve();
-            //var thread = new Thread(new Bob_and_Bombs().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new War().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

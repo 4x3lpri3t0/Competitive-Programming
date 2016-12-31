@@ -38,7 +38,13 @@
             //Addition_ain_t_simple.Main();
             //Chess_Tournament.Main();
             //Final_Destination.Main();
-            Bob_and_Bombs.Main(); // TODO!
+            //Bob_and_Bombs.Main();
+            //Samu_and_Card_Game.Main();
+            //Roy_s_Life_Cycle.Main();
+            //War.Main();
+            Little_Shino_and_the_tournament.Main(); // TODO
+            //Cricket_Rating.Main();
+            //Little_Shino_and_the_coins.Main();
 
             // BIT MANIPULATION
 

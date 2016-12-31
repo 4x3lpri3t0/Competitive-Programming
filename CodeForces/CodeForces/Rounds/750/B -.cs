@@ -4,44 +4,65 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Bob_and_Bombs
+public static class B__
 {
     private static void Solve()
     {
-        int T = ReadInt();
+        int n = ReadInt();
 
-        while (T-- != 0)
+        int x = 0;
+        int y = 0;
+        bool valid = true;
+
+        while (n-- > 0)
         {
-            int count = 0;
-            char[] chars = Read().ToCharArray();
-            for (int i = 0; i < chars.Length; i++)
+            int distance = ReadInt();
+            string direction = Read();
+
+            if (y == 0 && direction != "South")
             {
-                if (chars[i] != 'B')
-                    continue;
-
-                if (i > 0)
-                    BreakWall(ref count, chars, i - 1);
-
-                if (i - 1 > 0)
-                    BreakWall(ref count, chars, i - 2);
-
-                if (i + 1 < chars.Length)
-                    BreakWall(ref count, chars, i + 1);
-
-                if (i + 2 < chars.Length)
-                    BreakWall(ref count, chars, i + 2);
+                valid = false;
+                break;
             }
 
-            Write(count);
+            if (y == 20000 && direction != "North")
+            {
+                valid = false;
+                break;
+            }
+
+            Move(ref x, ref y, distance, direction);
+
+            if (y < 0 || y > 20000)
+            {
+                valid = false;
+                break;
+            }
         }
+
+        if (y != 0)
+            valid = false;
+
+        Write(valid ? "YES" : "NO");
     }
 
-    private static void BreakWall(ref int count, char[] chars, int idx)
+    private static void Move(ref int x, ref int y, int distance, string direction)
     {
-        if (chars[idx] == 'W')
+        if (direction == "North")
         {
-            chars[idx] = ' ';
-            count++;
+            y -= distance;
+        }
+        else if (direction == "South")
+        {
+            y += distance;
+        }
+        else if (direction == "East")
+        {
+            x += distance;
+        }
+        else if (direction == "West")
+        {
+            x -= distance;
         }
     }
 
@@ -65,7 +86,7 @@ public static class Bob_and_Bombs
         try
         {
             Solve();
-            //var thread = new Thread(new Bob_and_Bombs().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new B__().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

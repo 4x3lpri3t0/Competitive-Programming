@@ -4,45 +4,43 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Bob_and_Bombs
+public static class Roy_s_Life_Cycle
 {
     private static void Solve()
     {
-        int T = ReadInt();
+        long T = ReadLong();
+        long X = 0;
+        long Y = 0;
+        long tempY = 0;
 
         while (T-- != 0)
         {
-            int count = 0;
-            char[] chars = Read().ToCharArray();
-            for (int i = 0; i < chars.Length; i++)
+            string str = Read();
+            int localX = 0;
+
+            for (int i = 0; i < str.Length; i++)
             {
-                if (chars[i] != 'B')
-                    continue;
+                char cur = str[i];
 
-                if (i > 0)
-                    BreakWall(ref count, chars, i - 1);
+                if (cur == 'C')
+                {
+                    localX++;
+                    tempY++;
 
-                if (i - 1 > 0)
-                    BreakWall(ref count, chars, i - 2);
-
-                if (i + 1 < chars.Length)
-                    BreakWall(ref count, chars, i + 1);
-
-                if (i + 2 < chars.Length)
-                    BreakWall(ref count, chars, i + 2);
+                    if (localX > X)
+                        X = localX;
+                    if (tempY > Y)
+                        Y = tempY;
+                }
+                else
+                {
+                    localX = 0;
+                    tempY = 0;
+                }
             }
-
-            Write(count);
         }
-    }
 
-    private static void BreakWall(ref int count, char[] chars, int idx)
-    {
-        if (chars[idx] == 'W')
-        {
-            chars[idx] = ' ';
-            count++;
-        }
+        Write(X + " " + Y);
     }
 
     #region Main
@@ -65,7 +63,7 @@ public static class Bob_and_Bombs
         try
         {
             Solve();
-            //var thread = new Thread(new Bob_and_Bombs().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new Roy_s_Life_Cycle().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

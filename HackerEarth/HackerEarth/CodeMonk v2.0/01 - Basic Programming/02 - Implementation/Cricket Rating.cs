@@ -4,45 +4,33 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Bob_and_Bombs
+public static class Cricket_Rating
 {
     private static void Solve()
     {
-        int T = ReadInt();
+        int N = ReadInt();
 
-        while (T-- != 0)
+        int maxSum = 0;
+        int localSum = 0;
+
+        for (int i = 0; i < N; i++)
         {
-            int count = 0;
-            char[] chars = Read().ToCharArray();
-            for (int i = 0; i < chars.Length; i++)
+            int rating = ReadInt();
+
+            localSum += rating;
+
+            if (localSum < 0)
             {
-                if (chars[i] != 'B')
-                    continue;
-
-                if (i > 0)
-                    BreakWall(ref count, chars, i - 1);
-
-                if (i - 1 > 0)
-                    BreakWall(ref count, chars, i - 2);
-
-                if (i + 1 < chars.Length)
-                    BreakWall(ref count, chars, i + 1);
-
-                if (i + 2 < chars.Length)
-                    BreakWall(ref count, chars, i + 2);
+                // Reset
+                localSum = 0;
             }
-
-            Write(count);
+            else if (localSum > maxSum)
+            {
+                maxSum = localSum;
+            }
         }
-    }
 
-    private static void BreakWall(ref int count, char[] chars, int idx)
-    {
-        if (chars[idx] == 'W')
-        {
-            chars[idx] = ' ';
-            count++;
-        }
+        Write(maxSum);
     }
 
     #region Main
@@ -65,7 +53,7 @@ public static class Bob_and_Bombs
         try
         {
             Solve();
-            //var thread = new Thread(new Bob_and_Bombs().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new Cricket_Rating().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

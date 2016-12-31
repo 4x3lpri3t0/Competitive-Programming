@@ -1,48 +1,79 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Bob_and_Bombs
+public static class Little_Shino_and_the_tournament
 {
     private static void Solve()
     {
-        int T = ReadInt();
+        int N = ReadInt();
+        int Q = ReadInt();
+        int[] fightersArray = ReadIntArray();
 
-        while (T-- != 0)
+        var fighters = new List<KeyValuePair<int, int>>();
+        for (int i = 0; i < fightersArray.Length; i++)
         {
-            int count = 0;
-            char[] chars = Read().ToCharArray();
-            for (int i = 0; i < chars.Length; i++)
-            {
-                if (chars[i] != 'B')
-                    continue;
+            fighters.Add(new KeyValuePair<int, int>(i, fightersArray[i]));
+        }
 
-                if (i > 0)
-                    BreakWall(ref count, chars, i - 1);
+        // fighter idx, fights fought by fighter
+        var fightsCounter = fightersArray.ToDictionary(x => x);
+        foreach (var key in fightsCounter.Keys.ToList())
+        {
+            fightsCounter[key] = 0;
+        }
 
-                if (i - 1 > 0)
-                    BreakWall(ref count, chars, i - 2);
+        do
+        {
+            DoRound(fighters, fightsCounter);
 
-                if (i + 1 < chars.Length)
-                    BreakWall(ref count, chars, i + 1);
+        } while (fighters.Count > 1);
 
-                if (i + 2 < chars.Length)
-                    BreakWall(ref count, chars, i + 2);
-            }
+        while (Q-- > 0)
+        {
+            // -1 because we actually start indexing from 0
+            int q = ReadInt() - 1;
 
-            Write(count);
+            Write(fightsCounter[q]);
         }
     }
 
-    private static void BreakWall(ref int count, char[] chars, int idx)
+    private static void DoRound(
+        List<KeyValuePair<int, int>> fighters, Dictionary<int, int> fightsCounter)
     {
-        if (chars[idx] == 'W')
+        var keysToRemove = new List<int>();
+
+        foreach (var fighter in fighters)
         {
-            chars[idx] = ' ';
-            count++;
+            // Skip odd iterations
+            if (fighter.Key % 2 == 1)
+                continue;
+
+            int nextFighterIdx = fighter.Key + 1;
+            if (nextFighterIdx >= fighters.Count - 1)
+                break;
+
+            var nextFighter = fighters.ElementAt(nextFighterIdx);
+
+            if (fighter.Value > nextFighter.Value)
+            {
+                fightsCounter[fighter.Key + 1]++;
+
+                keysToRemove.Add(nextFighterIdx);
+            }
+            else
+            {
+                fightsCounter[nextFighterIdx + 1]++;
+
+                keysToRemove.Add(fighter.Key);
+            }
         }
+
+        // Since we can't remove while iterating...
+        fighters.RemoveAll(x => keysToRemove.Contains(x.Key));
     }
 
     #region Main
@@ -65,7 +96,7 @@ public static class Bob_and_Bombs
         try
         {
             Solve();
-            //var thread = new Thread(new Bob_and_Bombs().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new Little_Shino_and_the_tournament().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

@@ -90,6 +90,9 @@
     <Compile Include="Rounds\360\A - Opponents.cs" />
     <Compile Include="Rounds\361\A - Mike and Cellphone.cs" />
     <Compile Include="Rounds\368\A - Brain%27s Photos.cs" />
+    <Compile Include="Rounds\750\A -.cs" />
+    <Compile Include="Rounds\750\B -.cs" />
+    <Compile Include="Rounds\750\C -.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

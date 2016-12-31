@@ -4,45 +4,49 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Bob_and_Bombs
+public static class Samu_and_Card_Game
 {
     private static void Solve()
     {
-        int T = ReadInt();
-
+        long T = ReadLong();
         while (T-- != 0)
         {
-            int count = 0;
-            char[] chars = Read().ToCharArray();
-            for (int i = 0; i < chars.Length; i++)
+            long N = ReadLong();
+            long M = ReadLong();
+            int K = ReadInt();
+
+            long totalJumps = 0;
+            long X = 1;
+            long Y = 1;
+
+            while (K-- != 0)
             {
-                if (chars[i] != 'B')
-                    continue;
-
-                if (i > 0)
-                    BreakWall(ref count, chars, i - 1);
-
-                if (i - 1 > 0)
-                    BreakWall(ref count, chars, i - 2);
-
-                if (i + 1 < chars.Length)
-                    BreakWall(ref count, chars, i + 1);
-
-                if (i + 2 < chars.Length)
-                    BreakWall(ref count, chars, i + 2);
+                Jump(ref X, ref Y, ref totalJumps, N, M);
             }
 
-            Write(count);
+            Write(totalJumps);
         }
     }
 
-    private static void BreakWall(ref int count, char[] chars, int idx)
+    private static void Jump(ref long X, ref long Y, ref long totalJumps, long N, long M)
     {
-        if (chars[idx] == 'W')
+        long A = ReadLong();
+        long B = ReadLong();
+        
+        while (ValidJump(X, Y, N, M, A, B))
         {
-            chars[idx] = ' ';
-            count++;
+            X += A;
+            Y += B;
+            totalJumps++;
         }
+    }
+
+    private static bool ValidJump(long X, long Y, long N, long M, long A, long B)
+    {
+        bool validX = X + A >= 1 && X + A <= N;
+        bool validY = Y + B >= 1 && Y + B <= M;
+
+        return validX && validY;
     }
 
     #region Main
@@ -65,7 +69,7 @@ public static class Bob_and_Bombs
         try
         {
             Solve();
-            //var thread = new Thread(new Bob_and_Bombs().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new Samu_and_Card_Game().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

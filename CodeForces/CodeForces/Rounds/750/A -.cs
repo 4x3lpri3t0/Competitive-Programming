@@ -4,45 +4,31 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Bob_and_Bombs
+public static class A__
 {
     private static void Solve()
     {
-        int T = ReadInt();
+        int minsToMidnight = 60 * 4;
+        int n = ReadInt();
+        int k = ReadInt();
 
-        while (T-- != 0)
+        int minsLeftForSolving = minsToMidnight - k;
+
+        int solved = 0;
+
+        for (int i = 1; i <= n; i++)
         {
-            int count = 0;
-            char[] chars = Read().ToCharArray();
-            for (int i = 0; i < chars.Length; i++)
-            {
-                if (chars[i] != 'B')
-                    continue;
+            int timeToSolveCurrent = i * 5;
 
-                if (i > 0)
-                    BreakWall(ref count, chars, i - 1);
+            if (minsLeftForSolving - timeToSolveCurrent < 0)
+                break;
 
-                if (i - 1 > 0)
-                    BreakWall(ref count, chars, i - 2);
+            minsLeftForSolving -= timeToSolveCurrent;
 
-                if (i + 1 < chars.Length)
-                    BreakWall(ref count, chars, i + 1);
-
-                if (i + 2 < chars.Length)
-                    BreakWall(ref count, chars, i + 2);
-            }
-
-            Write(count);
+            solved++;
         }
-    }
 
-    private static void BreakWall(ref int count, char[] chars, int idx)
-    {
-        if (chars[idx] == 'W')
-        {
-            chars[idx] = ' ';
-            count++;
-        }
+        Write(solved);
     }
 
     #region Main
@@ -65,7 +51,7 @@ public static class Bob_and_Bombs
         try
         {
             Solve();
-            //var thread = new Thread(new Bob_and_Bombs().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new A__().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }
