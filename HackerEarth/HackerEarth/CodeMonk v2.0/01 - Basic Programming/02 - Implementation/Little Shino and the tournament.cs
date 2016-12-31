@@ -7,73 +7,49 @@ using System.Linq;
 
 public static class Little_Shino_and_the_tournament
 {
-    private static void Solve()
+    static void Solve()
     {
         int N = ReadInt();
         int Q = ReadInt();
-        int[] fightersArray = ReadIntArray();
-
-        var fighters = new List<KeyValuePair<int, int>>();
-        for (int i = 0; i < fightersArray.Length; i++)
+        var strengths = ReadIntArray();
+        var fighters = new int[N];
+        var a = Enumerable.Range(0, N).ToArray();
+        
+        while (N > 1)
         {
-            fighters.Add(new KeyValuePair<int, int>(i, fightersArray[i]));
-        }
+            int h = N >> 1;
+            int w = 0;
+            int r = 0;
 
-        // fighter idx, fights fought by fighter
-        var fightsCounter = fightersArray.ToDictionary(x => x);
-        foreach (var key in fightsCounter.Keys.ToList())
-        {
-            fightsCounter[key] = 0;
-        }
-
-        do
-        {
-            DoRound(fighters, fightsCounter);
-
-        } while (fighters.Count > 1);
-
-        while (Q-- > 0)
-        {
-            // -1 because we actually start indexing from 0
-            int q = ReadInt() - 1;
-
-            Write(fightsCounter[q]);
-        }
-    }
-
-    private static void DoRound(
-        List<KeyValuePair<int, int>> fighters, Dictionary<int, int> fightsCounter)
-    {
-        var keysToRemove = new List<int>();
-
-        foreach (var fighter in fighters)
-        {
-            // Skip odd iterations
-            if (fighter.Key % 2 == 1)
-                continue;
-
-            int nextFighterIdx = fighter.Key + 1;
-            if (nextFighterIdx >= fighters.Count - 1)
-                break;
-
-            var nextFighter = fighters.ElementAt(nextFighterIdx);
-
-            if (fighter.Value > nextFighter.Value)
+            while (w < h)
             {
-                fightsCounter[fighter.Key + 1]++;
+                int i = a[r++];
+                int j = a[r++];
+                int k = strengths[i] > strengths[j] ? i : j;
 
-                keysToRemove.Add(nextFighterIdx);
+                ++fighters[i];
+                ++fighters[j];
+                a[w++] = k;
             }
-            else
-            {
-                fightsCounter[nextFighterIdx + 1]++;
 
-                keysToRemove.Add(fighter.Key);
-            }
+            if (r != N)
+                a[w] = a[r];
+
+            N -= h;
         }
 
-        // Since we can't remove while iterating...
-        fighters.RemoveAll(x => keysToRemove.Contains(x.Key));
+        var queries = new int[Q];
+
+        for (int i = 0; i < Q; ++i)
+        {
+            // -1 because queries from input start with index 1
+            queries[i] = ReadInt() - 1;
+        }
+
+        for (int i = 0; i < Q; ++i)
+        {
+            Write(fighters[queries[i]]);
+        }
     }
 
     #region Main

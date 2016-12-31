@@ -42,7 +42,7 @@
             //Samu_and_Card_Game.Main();
             //Roy_s_Life_Cycle.Main();
             //War.Main();
-            Little_Shino_and_the_tournament.Main(); // TODO
+            Little_Shino_and_the_tournament.Main(); /** MEDIUM **/
             //Cricket_Rating.Main();
             //Little_Shino_and_the_coins.Main();
 
