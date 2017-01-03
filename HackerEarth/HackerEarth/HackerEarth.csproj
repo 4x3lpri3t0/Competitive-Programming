@@ -68,6 +68,7 @@
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Print hackerearth.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Roy%27s Life Cycle.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Samu and Card Game.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\String Sum.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\The Great Kian.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\War.cs" />
     <Compile Include="CodeMonk\01 - Arrays n Strings\Chandu and Consecutive Letters.cs" />
