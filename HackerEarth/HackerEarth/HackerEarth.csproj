@@ -63,6 +63,8 @@
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Little Shino and the coins.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Little Shino and the tournament.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Min-Max.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Passing the Parcel.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Passing the Parcel_DarthGizka.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Print hackerearth.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Roy%27s Life Cycle.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Samu and Card Game.cs" />
@@ -84,7 +86,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Competitions\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -42,15 +42,19 @@
             //Samu_and_Card_Game.Main();
             //Roy_s_Life_Cycle.Main();
             //War.Main();
-            Little_Shino_and_the_tournament.Main(); /** MEDIUM **/
+            ////Little_Shino_and_the_tournament.Main(); /** MEDIUM **/ // TO REVIEW!!!!
             //Cricket_Rating.Main();
             //Little_Shino_and_the_coins.Main();
+            //Passing_the_Parcel.Main();
+            Passing_the_Parcel_DarthGizka.Main(); // DarthGizka cryptic! // TO REVIEW!!!!
 
             // BIT MANIPULATION
 
             #endregion
 
             #endregion
+
+
         }
     }
 }
