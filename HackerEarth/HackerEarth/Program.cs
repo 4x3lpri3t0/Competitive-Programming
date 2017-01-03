@@ -5,6 +5,7 @@
         private static void Main()
         {
             #region CodeMonk (Old)
+
             // Arrays n Strings
             //Prateek_and_his_Friends.Main();
 
@@ -18,10 +19,13 @@
             //_01___Discover_the_Monk.Main();
             //_02___Monk_s_Encounter_with_Polynomial.Main();
             //_03___The_Old_Monk.Main();
-            #endregion
+
+            #endregion CodeMonk (Old)
 
             #region CodeMonk v2.0
+
             #region 01 - Basic Programming
+
             // IO
             //Toggle_String.Main();
             //Palindromic_String.Main();
@@ -48,14 +52,14 @@
             //Passing_the_Parcel.Main();
             //Passing_the_Parcel_DarthGizka.Main(); // DarthGizka cryptic! // TO REVIEW!!!!
             //String_Sum.Main();
+            //Acronym.Main();
+            //Acronym_azukun.Main();
 
             // BIT MANIPULATION
 
-            #endregion
+            #endregion 01 - Basic Programming
 
-            #endregion
-
-
+            #endregion CodeMonk v2.0
         }
     }
 }

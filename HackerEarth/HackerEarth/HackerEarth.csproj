@@ -53,6 +53,8 @@
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\01 - IO\Palindromic String.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\01 - IO\Roy and Profile Picture.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\01 - IO\Toggle String.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Acronym.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Acronym_azukun.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Addition ain%27t simple.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Bob and Bombs.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Chess Tournament.cs" />
