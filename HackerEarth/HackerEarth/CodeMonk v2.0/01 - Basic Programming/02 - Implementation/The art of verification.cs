@@ -14,7 +14,7 @@ public static class The_art_of_verification
         foreach (var k in "username pwd profile role key".Split(' '))
             q = q.Replace("&" + k + "=", "\t#" + k + ": ");
 
-        foreach (var p in q.Trim().Split('\t').Where(x => x[0] == '#'))
+        foreach (var p in q.Trim().Split('\t'))
             Write(p.Substring(1));
     }
 
