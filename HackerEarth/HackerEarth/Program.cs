@@ -57,6 +57,7 @@
             //Shil_and_Square_Sum.Main(); // TO REVIEW!!!!
             //Recursive_Sums.Main();
             //Illegible_String.Main();
+            The_art_of_verification.Main();
 
             // BIT MANIPULATION
 
