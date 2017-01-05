@@ -61,6 +61,7 @@
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Cricket Rating.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Digit Problem.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Final Destination.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Illegible String.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Little Jhool and psychic powers.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Little Shino and the coins.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Little Shino and the tournament.cs" />
@@ -68,8 +69,10 @@
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Passing the Parcel.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Passing the Parcel_DarthGizka.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Print hackerearth.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Recursive Sums.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Roy%27s Life Cycle.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Samu and Card Game.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Shil and Square Sum.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\String Sum.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\The Great Kian.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\War.cs" />
