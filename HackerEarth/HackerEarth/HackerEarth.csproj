@@ -57,6 +57,7 @@
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Acronym_azukun.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Addition ain%27t simple.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Bob and Bombs.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Car Names.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Chess Tournament.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Cricket Rating.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Digit Problem.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\The best Internet Browser.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\The Great Kian.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\War.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\What is the string made of.cs" />
     <Compile Include="CodeMonk\01 - Arrays n Strings\Chandu and Consecutive Letters.cs" />
     <Compile Include="CodeMonk\01 - Arrays n Strings\Prateek and his Friends.cs" />
     <Compile Include="CodeMonk\01 - Arrays n Strings\Terrible Chandu.cs" />
