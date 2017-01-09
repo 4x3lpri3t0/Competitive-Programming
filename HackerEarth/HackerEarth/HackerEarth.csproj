@@ -71,6 +71,7 @@
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Palindromic Ciphers.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Passing the Parcel.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Passing the Parcel_DarthGizka.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Perfect Baseline.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Print hackerearth.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Recursive Sums.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Roy%27s Life Cycle.cs" />
