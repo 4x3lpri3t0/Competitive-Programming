@@ -11,26 +11,27 @@ public static class Perfect_Baseline
         int T = ReadInt();
         while (--T >= 0)
         {
-            int n = ReadInt();
-            int k = ReadInt();
+            int N = ReadInt();
+            int length = ReadInt();
 
-            string[] numbers = new string[n];
-            for (int i = 0; i < n; i++)
+            string[] numbers = new string[N];
+            for (int i = 0; i < N; i++)
             {
                 numbers[i] = Read();
             }
 
             string output = string.Empty;
-            for (int j = 0; j < k; j++)
+            for (int j = 0; j < length; j++)
             {
-                char[] charArray = new char[n];
-                for (int i = 0; i < n; i++)
+                char[] charArray = new char[N];
+                for (int i = 0; i < N; i++)
                 {
                     charArray[i] = numbers[i][j];
                 }
 
                 Array.Sort(charArray);
-                output += charArray[(n - 1) / 2];
+                int median = (N - 1) / 2;
+                output += charArray[median];
             }
 
             Write(output);
