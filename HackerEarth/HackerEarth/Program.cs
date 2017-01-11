@@ -67,6 +67,7 @@
             //Fun_at_Cake_Shop.Main();
             //Recursive_Function.Main();
             //Sherlock_and_Date.Main();
+            //The_Psychic_Type.Main();
 
             // BIT MANIPULATION
 
