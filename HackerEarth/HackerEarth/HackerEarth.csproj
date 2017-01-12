@@ -60,6 +60,7 @@
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Bob and Bombs.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Car Names.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Chess Tournament.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Complete String.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Cricket Rating.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Digit Problem.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Final Destination.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Little Shino and the tournament.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Min-Max.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Palindromic Ciphers.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Palindromic Numbers.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Passing the Parcel.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Passing the Parcel_DarthGizka.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Perfect Baseline.cs" />

@@ -22,9 +22,9 @@
 
             #endregion CodeMonk (Old)
 
-            #region CodeMonk v2.0
+            ////#region CodeMonk v2.0
 
-            #region 01 - Basic Programming
+            ////#region 01 - Basic Programming
 
             // IO
             //Toggle_String.Main();
@@ -69,12 +69,14 @@
             //Sherlock_and_Date.Main();
             //The_Psychic_Type.Main();
             //The_savior.Main();
+            //Palindromic_Numbers.Main();
+            //Complete_String.Main();
 
             // BIT MANIPULATION
 
-            #endregion 01 - Basic Programming
+            ////#endregion 01 - Basic Programming
 
-            #endregion CodeMonk v2.0
+            ////#endregion CodeMonk v2.0
         }
     }
 }
