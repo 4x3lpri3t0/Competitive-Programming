@@ -71,6 +71,11 @@
             //The_savior.Main();
             //Palindromic_Numbers.Main();
             //Complete_String.Main();
+            //_2_Fast_2_Furious.Main();
+            //Little_Jhool_and_his_breakup.Main();
+
+
+
 
             // BIT MANIPULATION
 

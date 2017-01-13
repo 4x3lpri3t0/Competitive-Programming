@@ -53,6 +53,7 @@
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\01 - IO\Palindromic String.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\01 - IO\Roy and Profile Picture.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\01 - IO\Toggle String.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\2 Fast 2 Furious.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Acronym.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Acronym_azukun.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Addition ain%27t simple.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Final Destination.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Fun at Cake Shop.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Illegible String.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Little Jhool and his breakup.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Little Jhool and psychic powers.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Little Shino and the coins.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Little Shino and the tournament.cs" />
