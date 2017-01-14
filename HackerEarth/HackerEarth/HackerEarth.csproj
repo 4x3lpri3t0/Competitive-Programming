@@ -58,6 +58,7 @@
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Acronym_azukun.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Addition ain%27t simple.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Aniruddha%27s Queue.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Battle Of Words.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Bob and Bombs.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Car Names.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Chess Tournament.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Little Jhool and psychic powers.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Little Shino and the coins.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Little Shino and the tournament.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Matrix Symmetry.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Min-Max.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Palindromic Ciphers.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Palindromic Numbers.cs" />

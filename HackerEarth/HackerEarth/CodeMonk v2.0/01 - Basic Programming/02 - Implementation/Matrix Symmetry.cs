@@ -4,25 +4,63 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Palindromic_String
+public static class Matrix_Symmetry
 {
     private static void Solve()
     {
-        string str = Read();
-        bool isPal = true;
-
-        int half = str.Length >> 1;
-
-        for (int i = 0; i < half; i++)
+        int T = ReadInt();
+        while (T-- != 0)
         {
-            if (str[i] != str[str.Length - i - 1])
-            {
-                isPal = false;
-                break;
-            }
-        }
+            int N = ReadInt();
+            char[][] matrix = ReadCharMatrix(N);
 
-        Write(isPal ? "YES" : "NO");
+            int half = N >> 1;
+            bool hSymmetric = true;
+            bool vSymmetric = true;
+            
+            // VERTICAL
+            for (int i = 0; i < N; i++)
+            {
+                for (int j = 0; j < half; j++)
+                {
+                    char left = matrix[i][j];
+                    char right = matrix[i][N - j - 1];
+
+                    if (left != right)
+                    {
+                        vSymmetric = false;
+                        break;
+                    }
+                }
+
+                if (!vSymmetric)
+                    break;
+            }
+
+            // HORIZONTAL
+            for (int i = 0; i < N; i++)
+            {
+                for (int j = 0; j < half; j++)
+                {
+                    char top = matrix[j][i];
+                    char bottom = matrix[N - j - 1][i];
+
+                    if (top != bottom)
+                    {
+                        hSymmetric = false;
+                        break;
+                    }
+                }
+
+                if (!hSymmetric)
+                    break;
+            }
+
+            Write(hSymmetric && vSymmetric ? "BOTH" :
+                hSymmetric ? "HORIZONTAL" :
+                vSymmetric ? "VERTICAL" :
+                "NO");
+        }
     }
 
     #region Main
@@ -45,7 +83,7 @@ public static class Palindromic_String
         try
         {
             Solve();
-            //var thread = new Thread(new Palindromic_String().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new Matrix_Symmetry().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }
@@ -74,6 +112,7 @@ public static class Palindromic_String
     public static long[] ReadLongArray() { return ReadAndSplitLine().Select(long.Parse).ToArray(); }
     public static double[] ReadDoubleArray() { return ReadAndSplitLine().Select(s => double.Parse(s, CultureInfo.InvariantCulture)).ToArray(); }
     public static int[][] ReadIntMatrix(int numberOfRows) { int[][] matrix = new int[numberOfRows][]; for (int i = 0; i < numberOfRows; i++) matrix[i] = ReadIntArray(); return matrix; }
+    public static char[][] ReadCharMatrix(int nOfRows) { char[][] matrix = new char[nOfRows][]; for (int i = 0; i < nOfRows; i++) matrix[i] = Read().ToCharArray(); return matrix; }
     public static int[][] ReadAndTransposeIntMatrix(int numberOfRows)
     {
         int[][] matrix = ReadIntMatrix(numberOfRows); int[][] ret = new int[matrix[0].Length][];

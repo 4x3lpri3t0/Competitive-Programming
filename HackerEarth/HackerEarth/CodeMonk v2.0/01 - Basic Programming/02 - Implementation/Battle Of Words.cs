@@ -4,25 +4,25 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class Palindromic_String
+public static class Battle_Of_Words
 {
     private static void Solve()
     {
-        string str = Read();
-        bool isPal = true;
-
-        int half = str.Length >> 1;
-
-        for (int i = 0; i < half; i++)
+        long T = ReadLong();
+        while (T-- != 0)
         {
-            if (str[i] != str[str.Length - i - 1])
-            {
-                isPal = false;
-                break;
-            }
-        }
+            var aLine = string.Join("", reader.ReadLine().Split(' ')).ToCharArray();
+            var a = new List<char>(aLine);
+            var bLine = string.Join("", reader.ReadLine().Split(' ')).ToCharArray();
+            var b = new List<char>(bLine);
 
-        Write(isPal ? "YES" : "NO");
+            var aWithoutB = a.Except(b);
+            var bWithoutA = b.Except(a);
+
+            Write(aWithoutB.Count() == 0 && bWithoutA.Count() > 0 ? "You lose some." :
+                  bWithoutA.Count() == 0 && aWithoutB.Count() > 0 ? "You win some." :
+                  "You draw some.");
+        }
     }
 
     #region Main
@@ -45,7 +45,7 @@ public static class Palindromic_String
         try
         {
             Solve();
-            //var thread = new Thread(new Palindromic_String().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new Battle_Of_Words().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }
