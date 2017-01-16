@@ -32,6 +32,9 @@ namespace _HackerRankSln
             //Taum_and_B_day.GiftCalculator();
             //DivisibleSumPairs.Main();
             //Compare_the_Triplets.Main();
+            //Mini_Max_Sum.Main();
+            //Designer_PDF_Viewer.Main();
+            //Bon_Appétit.Main();
 
             #endregion 02 - Implementation
 
@@ -172,7 +175,7 @@ namespace _HackerRankSln
 
             //Sorting___Bubble_Sort.Main();
             //Merge_Sort___Counting_Inversions.Main();
-            Binary_Search___Ice_Cream_Parlor.Main();
+            //Binary_Search___Ice_Cream_Parlor.Main();
 
             #endregion Cracking the Coding Interview
 

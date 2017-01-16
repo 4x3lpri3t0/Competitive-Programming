@@ -86,6 +86,7 @@
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Samu and Card Game.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Sherlock and Date.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Shil and Square Sum.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Strange addition.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\String Sum.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\The art of verification.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\The best Internet Browser.cs" />
