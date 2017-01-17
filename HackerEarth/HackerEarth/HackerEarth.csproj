@@ -67,6 +67,7 @@
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Digit Problem.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Final Destination.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Fun at Cake Shop.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Furniture Transportation.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Illegible String.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Little Jhool and his breakup.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Little Jhool and psychic powers.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Print hackerearth.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Recursive Function.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Recursive Sums.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Roy and Counting Sorted Substrings.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Roy%27s Life Cycle.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Samu and Card Game.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Sherlock and Date.cs" />

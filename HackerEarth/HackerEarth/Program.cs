@@ -22,7 +22,7 @@
 
             #endregion CodeMonk (Old)
 
-            ////#region CodeMonk v2.0
+            //// ---- CodeMonk v2.0 ----
 
             ////#region 01 - Basic Programming
 
@@ -76,12 +76,12 @@
             //Matrix_Symmetry.Main();
             //Battle_Of_Words.Main(); // TODO (Complete)
             //Strange_addition.Main();
+            //Furniture_Transportation.Main();
+            //Roy_and_Counting_Sorted_Substrings.Main(); // TODO (Complete)
 
             // BIT MANIPULATION
 
             ////#endregion 01 - Basic Programming
-
-            ////#endregion CodeMonk v2.0
         }
     }
 }
