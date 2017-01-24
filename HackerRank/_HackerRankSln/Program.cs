@@ -16,7 +16,7 @@ namespace _HackerRankSln
             //Diagonal_Difference.Main();
             //Plus_Minus.Main();
             //Time_Conversion.Main();
-            Circular_Array_Rotation.Main(); // MAGIC MAGIC MAGIC
+            //Circular_Array_Rotation.Main(); // MAGIC MAGIC MAGIC
 
             #endregion 01 - Warmup
 
@@ -36,6 +36,9 @@ namespace _HackerRankSln
             //Mini_Max_Sum.Main();
             //Designer_PDF_Viewer.Main();
             //Bon_Appétit.Main();
+            //AppleAndOrange.Main();
+            //Sock_Merchant.Main();
+            Beautiful_Days_at_the_Movies.Main();
 
             #endregion 02 - Implementation
 
@@ -223,12 +226,6 @@ namespace _HackerRankSln
             //Luck_Balance.Main();
 
             #endregion Week of Code - 21
-
-            #region World CodeSprint 7
-
-            //Sock_Merchant.Main();
-
-            #endregion World CodeSprint 7
 
             #endregion Competitions
         }
