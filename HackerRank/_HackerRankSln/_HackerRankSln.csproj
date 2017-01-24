@@ -71,6 +71,7 @@
     <Compile Include="Cracking the Coding Interview\Merge Sort - Counting Inversions.cs" />
     <Compile Include="Cracking the Coding Interview\Sorting - Bubble Sort.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\A Very Big Sum.cs" />
+    <Compile Include="_Algorithms\01 - Warmup Problems\Circular Array Rotation.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Compare the Triplets.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Diagonal Difference.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Plus Minus.cs" />

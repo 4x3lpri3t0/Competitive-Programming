@@ -16,6 +16,7 @@ namespace _HackerRankSln
             //Diagonal_Difference.Main();
             //Plus_Minus.Main();
             //Time_Conversion.Main();
+            Circular_Array_Rotation.Main(); // MAGIC MAGIC MAGIC
 
             #endregion 01 - Warmup
 
