@@ -75,6 +75,7 @@
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Little Shino and the tournament.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Matrix Symmetry.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Min-Max.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Mishki Playing Games.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Palindromic Ciphers.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Palindromic Numbers.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\Passing the Parcel.cs" />
