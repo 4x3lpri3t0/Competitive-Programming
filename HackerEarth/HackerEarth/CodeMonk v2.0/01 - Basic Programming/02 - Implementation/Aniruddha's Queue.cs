@@ -8,36 +8,24 @@ public static class Aniruddha_s_Queue
 {
     public static void Solve()
     {
-        int T = ReadInt();
-        while (--T >= 0)
+        for (int T = ReadInt(); T-- > 0;)
         {
-            int daysInYear = ReadInt();
-            long[] distanceInDays = ReadLongArray();
-            long targetDistance = ReadLong();
+            int N = ReadInt();
+            var A = ReadIntArray();
+            var ac = new long[N];
 
-            long distanceTraveled = 0;
-            int currentDay = 0;
+            long accum = 0;
+            for (long i = 0; i < N; ++i)
+                ac[i] = (accum += A[i]);
 
-            targetDistance %= distanceInDays.Sum();
+            long M = ReadLong() % accum;
+            long find = M > 0 ? M : accum;
+            int d = Array.BinarySearch(ac, find);
 
-            while (distanceTraveled < targetDistance)
-            {
-                // TODO
-                long currentDayDistance = distanceInDays[currentDay];
-                distanceTraveled += currentDayDistance;
+            for (d ^= (d >> 31); d > 0 && ac[d - 1] == ac[d];)
+                --d;
 
-                if (distanceTraveled < targetDistance)
-                {
-                    currentDay++;
-                    if (currentDay >= daysInYear)
-                    {
-                        currentDay = 0;
-                    }
-                }
-            }
-
-            // From 0-based index to 1-based
-            Write(currentDay + 1);
+            Write((d ^ (d >> 31)) + 1);
         }
     }
 

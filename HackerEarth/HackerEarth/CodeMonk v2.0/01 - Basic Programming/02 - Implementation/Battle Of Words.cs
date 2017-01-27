@@ -6,22 +6,34 @@ using System.Linq;
 
 public static class Battle_Of_Words
 {
+    static int[] OccurrenceCounts(string s)
+    {
+        var A = new int[1 + 'z'];
+
+        foreach (char c in s)
+            A[c]++;
+
+        return A;
+    }
+
     private static void Solve()
     {
-        long T = ReadLong();
-        while (T-- != 0)
+        for (int T = ReadInt(); T-- > 0;)
         {
-            var aLine = string.Join("", reader.ReadLine().Split(' ')).ToCharArray();
-            var a = new List<char>(aLine);
-            var bLine = string.Join("", reader.ReadLine().Split(' ')).ToCharArray();
-            var b = new List<char>(bLine);
+            var a = OccurrenceCounts(string.Join(" ", ReadAndSplitLine()));
+            var b = OccurrenceCounts(string.Join(" ", ReadAndSplitLine()));
+            int na = 0, nb = 0;
 
-            var aWithoutB = a.Except(b);
-            var bWithoutA = b.Except(a);
+            for (int c = 'a'; c <= 'z'; c++)
+            {
+                int min = Math.Min(a[c], b[c]);
+                na += a[c] - min;
+                nb += b[c] - min;
+            }
 
-            Write(aWithoutB.Count() == 0 && bWithoutA.Count() > 0 ? "You lose some." :
-                  bWithoutA.Count() == 0 && aWithoutB.Count() > 0 ? "You win some." :
-                  "You draw some.");
+            bool nil_a = na == 0, nil_b = nb == 0;
+
+            Write(string.Format("You {0} some.", nil_a == nil_b ? "draw" : (nil_a ? "lose" : "win")));
         }
     }
 
@@ -37,10 +49,10 @@ public static class Battle_Of_Words
         writer = Console.Out;
         //writer = new StreamWriter("..\\..\\output.txt");
 #else
-        reader = new StreamReader(Console.OpenStandardInput());
-        writer = new StreamWriter(Console.OpenStandardOutput());
-        //reader = new StreamReader("input.txt");
-        //writer = new StreamWriter("output.txt");
+            reader = new StreamReader(Console.OpenStandardInput());
+            writer = new StreamWriter(Console.OpenStandardOutput());
+            //reader = new StreamReader("input.txt");
+            //writer = new StreamWriter("output.txt");
 #endif
         try
         {
@@ -54,7 +66,7 @@ public static class Battle_Of_Words
             Console.WriteLine(ex);
 #if DEBUG
 #else
-            throw;
+                throw;
 #endif
         }
         reader.Close();
