@@ -52,6 +52,14 @@
     <Compile Include="1 - Arrays and Strings\1-5 StringCompression.cs" />
     <Compile Include="1 - Arrays and Strings\1-6 RotateMatrix.cs" />
     <Compile Include="1 - Arrays and Strings\1-7 ZeroMatrix.cs" />
+    <Compile Include="1 - Arrays and Strings\1-8 StringRotation.cs" />
+    <Compile Include="2 - Linked Lists\2-1 RemoveDuplicates.cs" />
+    <Compile Include="2 - Linked Lists\2-2 KthToLast.cs" />
+    <Compile Include="2 - Linked Lists\2-3 DeleteNode.cs" />
+    <Compile Include="2 - Linked Lists\2-4 PartitionAroundX.cs" />
+    <Compile Include="2 - Linked Lists\2-5 LinkedDigits.cs" />
+    <Compile Include="2 - Linked Lists\2-6 Loop.cs" />
+    <Compile Include="2 - Linked Lists\Node.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
