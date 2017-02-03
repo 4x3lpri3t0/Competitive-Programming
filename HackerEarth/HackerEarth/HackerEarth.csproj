@@ -98,6 +98,7 @@
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\The savior.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\War.cs" />
     <Compile Include="CodeMonk v2.0\01 - Basic Programming\02 - Implementation\What is the string made of.cs" />
+    <Compile Include="CodeMonk v2.0\01 - Basic Programming\03 - Bit Manipulation\Count the bits.cs" />
     <Compile Include="CodeMonk\01 - Arrays n Strings\Chandu and Consecutive Letters.cs" />
     <Compile Include="CodeMonk\01 - Arrays n Strings\Prateek and his Friends.cs" />
     <Compile Include="CodeMonk\01 - Arrays n Strings\Terrible Chandu.cs" />
