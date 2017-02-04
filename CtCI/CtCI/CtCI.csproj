@@ -60,6 +60,8 @@
     <Compile Include="2 - Linked Lists\2-5 LinkedDigits.cs" />
     <Compile Include="2 - Linked Lists\2-6 Loop.cs" />
     <Compile Include="2 - Linked Lists\Node.cs" />
+    <Compile Include="3 - Stacks and Queues\_Queue.cs" />
+    <Compile Include="3 - Stacks and Queues\_Stack.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
