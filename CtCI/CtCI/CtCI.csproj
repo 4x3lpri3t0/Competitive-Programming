@@ -32,11 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CtCI.Program</StartupObject>
+    <StartupObject>Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,8 +61,18 @@
     <Compile Include="2 - Linked Lists\2-5 LinkedDigits.cs" />
     <Compile Include="2 - Linked Lists\2-6 Loop.cs" />
     <Compile Include="2 - Linked Lists\Node.cs" />
+    <Compile Include="3 - Stacks and Queues\3-1-A OneArrayThreeStacks.cs" />
+    <Compile Include="3 - Stacks and Queues\3-1-B OneArrayThreeStacks.cs" />
+    <Compile Include="3 - Stacks and Queues\3-2 StackMin.cs" />
+    <Compile Include="3 - Stacks and Queues\3-3 SetOfStacks.cs" />
     <Compile Include="3 - Stacks and Queues\_Queue.cs" />
     <Compile Include="3 - Stacks and Queues\_Stack.cs" />
+    <Compile Include="Library\AssortedMethods.cs" />
+    <Compile Include="Library\BTreePrinter.cs" />
+    <Compile Include="Library\LinkedListNode.cs" />
+    <Compile Include="Library\TreeNode.cs" />
+    <Compile Include="Library\Trie.cs" />
+    <Compile Include="Library\TrieNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

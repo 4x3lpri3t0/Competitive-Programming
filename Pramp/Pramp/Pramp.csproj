@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{89BBDADD-A19D-4A78-AEB2-A1B0E9E2A856}</ProjectGuid>
+    <ProjectGuid>{85FFE45C-89FC-41FF-8906-AB6962AA0F23}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>InterviewBit</RootNamespace>
-    <AssemblyName>InterviewBit</AssemblyName>
+    <RootNamespace>Pramp</RootNamespace>
+    <AssemblyName>Pramp</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -42,9 +45,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Arrays\Find Duplicate in Array.cs" />
-    <Compile Include="Arrays\SpiralOrder.cs" />
-    <Compile Include="Arrays\Max Non Negative SubArray.cs" />
+    <Compile Include="Problems\Array_of_Array_Products.cs" />
+    <Compile Include="Problems\Arr_IndexAndElement_Equal.cs" />
+    <Compile Include="Problems\BST_Successor.cs" />
+    <Compile Include="Problems\Budget_Cuts.cs" />
+    <Compile Include="Problems\Busiest_Time.cs" />
+    <Compile Include="Problems\Drone_Flight_Planner.cs" />
+    <Compile Include="Problems\Flatten_Dictionary.cs" />
+    <Compile Include="Problems\Getting_Diff_Number.cs" />
+    <Compile Include="Problems\H-Tree.cs" />
+    <Compile Include="Problems\Island_Count.cs" />
+    <Compile Include="Problems\K-Messed_Array_Sort.cs" />
+    <Compile Include="Problems\Matrix_Spiral_Print.cs" />
+    <Compile Include="Problems\Merge_Packages.cs" />
+    <Compile Include="Problems\Quad_Combination.cs" />
+    <Compile Include="Problems\Sentence_Reverse.cs" />
+    <Compile Include="Problems\Shifted_Array_Search.cs" />
+    <Compile Include="Problems\Smallest_Substring.cs" />
+    <Compile Include="Problems\Sudoku_Solver.cs" />
+    <Compile Include="Problems\Word_Count_Engine.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
