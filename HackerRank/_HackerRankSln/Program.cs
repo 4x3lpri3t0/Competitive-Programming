@@ -1,4 +1,5 @@
-﻿using LL = _HackerRankSln._Data_Structures._02___Linked_Lists;
+﻿using _HackerRankSln.Cracking_the_Coding_Interview;
+using LL = _HackerRankSln._Data_Structures._02___Linked_Lists;
 using Trees = _HackerRankSln._Data_Structures._03___Trees;
 
 namespace _HackerRankSln
@@ -38,7 +39,7 @@ namespace _HackerRankSln
             //Bon_Appétit.Main();
             //AppleAndOrange.Main();
             //Sock_Merchant.Main();
-            Beautiful_Days_at_the_Movies.Main();
+            //Beautiful_Days_at_the_Movies.Main();
 
             #endregion 02 - Implementation
 
@@ -180,6 +181,8 @@ namespace _HackerRankSln
             //Sorting___Bubble_Sort.Main();
             //Merge_Sort___Counting_Inversions.Main();
             //Binary_Search___Ice_Cream_Parlor.Main();
+            //DFS___Connected_Cell_in_a_Grid.Main();
+            BFS___Shortest_Reach_in_a_Graph.Main();
 
             #endregion Cracking the Coding Interview
 

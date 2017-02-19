@@ -8,7 +8,7 @@ public static class Merge_Sort___Counting_Inversions
 {
     private static int[] tempData;
 
-    public static void Solve()
+    private static void Solve()
     {
         int T = ReadInt();
         while (--T >= 0)

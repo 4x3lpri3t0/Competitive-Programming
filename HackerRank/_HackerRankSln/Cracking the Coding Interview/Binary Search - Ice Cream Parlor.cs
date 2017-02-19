@@ -7,7 +7,7 @@ using System.Linq;
 public static class Binary_Search___Ice_Cream_Parlor
 {
     // I didn't actually used Binary search for this, as it doesn't seem necessary
-    public static void Solve()
+    private static void Solve()
     {
         int T = ReadInt();
         while (--T >= 0)
