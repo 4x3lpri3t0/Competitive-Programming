@@ -48,6 +48,7 @@
     <Compile Include="Arcade\Intro\Level 1\CenturyFromYear.cs" />
     <Compile Include="Arcade\Intro\Level 1\CheckPalindrome.cs" />
     <Compile Include="Arcade\Intro\Level 2\AdjacentElementsProduct.cs" />
+    <Compile Include="Arcade\Intro\Level 2\ShapeArea.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

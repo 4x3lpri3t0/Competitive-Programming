@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using CodeFights.Arcade.Intro.Level_2;
+using System.Linq;
 
 namespace CodeFights
 {
@@ -9,6 +10,7 @@ namespace CodeFights
             //CenturyFromYear.Main();
             //CheckPalindrome.Main();
             //AdjacentElementsProduct.Main();
+            ShapeArea.Main();
         }
     }
 }
