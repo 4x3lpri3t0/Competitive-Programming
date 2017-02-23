@@ -75,6 +75,7 @@
     <Compile Include="Cracking the Coding Interview\Techniques\DP - Coin Change.cs" />
     <Compile Include="Cracking the Coding Interview\Algorithms\Merge Sort - Counting Inversions.cs" />
     <Compile Include="Cracking the Coding Interview\Algorithms\Sorting - Bubble Sort.cs" />
+    <Compile Include="Cracking the Coding Interview\Techniques\Recursion - Davis%27 Staircase.cs" />
     <Compile Include="Cracking the Coding Interview\Techniques\Recursion - Fibonacci Numbers.cs" />
     <Compile Include="Cracking the Coding Interview\Techniques\Time Complexity - Primality.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\A Very Big Sum.cs" />
