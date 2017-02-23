@@ -3,16 +3,67 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _HackerRankSln.Cracking_the_Coding_Interview
 {
-    class BFS___Shortest_Reach_in_a_Graph
+    public class BFS___Shortest_Reach_in_a_Graph
     {
         private static void Solve()
         {
+            int q = ReadInt();
+            while (q-- > 0)
+            {
+                int n, s;
+                List<int>[] g;
+                GetInput(out n, out g, out s);
 
+                int[] a = Enumerable.Repeat(-1, n).ToArray();
+
+                var queue = new Queue<Tuple<int, int>>();
+                queue.Enqueue(Tuple.Create(s, 0));
+
+                while (queue.Count > 0)
+                {
+                    Tuple<int, int> node = queue.Dequeue();
+
+                    if (a[node.Item1] != -1)
+                    {
+                        continue;
+                    }
+
+                    a[node.Item1] = node.Item2 * 6;
+
+                    if (g[node.Item1] != null)
+                    {
+                        foreach (int v in g[node.Item1])
+                        {
+                            queue.Enqueue(Tuple.Create(v, node.Item2 + 1));
+                        }
+                    }
+                }
+
+                WriteArray(a.Where(ai => ai != 0));
+            }
+        }
+
+        private static void GetInput(out int n, out List<int>[] g, out int s)
+        {
+            n = ReadInt();
+            var m = ReadInt();
+            g = new List<int>[n];
+            for (int i = 0; i < m; i++)
+            {
+                var u = ReadInt() - 1;
+                var v = ReadInt() - 1;
+                if (g[u] == null) g[u] = new List<int>();
+                if (g[v] == null) g[v] = new List<int>();
+
+                // Add edges to both nodes
+                g[u].Add(v);
+                g[v].Add(u);
+            }
+
+            s = ReadInt() - 1;
         }
 
         #region Main

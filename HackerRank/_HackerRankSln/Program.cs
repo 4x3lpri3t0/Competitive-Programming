@@ -1,4 +1,5 @@
 ﻿using _HackerRankSln.Cracking_the_Coding_Interview;
+using _HackerRankSln.Cracking_the_Coding_Interview.Techniques;
 using LL = _HackerRankSln._Data_Structures._02___Linked_Lists;
 using Trees = _HackerRankSln._Data_Structures._03___Trees;
 
@@ -175,6 +176,8 @@ namespace _HackerRankSln
             //Queues___A_Tale_of_Two_Stacks.Main();
             //Tries___Contacts.Main();
             //Heaps___Find_the_Running_Median.Main();
+            //Trees___Is_This_a_Binary_Search_Tree.Main();
+            //Linked_Lists___Detect_a_Cycle.Main();
 
             // ALGORITHMS
 
@@ -182,7 +185,13 @@ namespace _HackerRankSln
             //Merge_Sort___Counting_Inversions.Main();
             //Binary_Search___Ice_Cream_Parlor.Main();
             //DFS___Connected_Cell_in_a_Grid.Main();
-            BFS___Shortest_Reach_in_a_Graph.Main();
+            //BFS___Shortest_Reach_in_a_Graph.Main(); // TODO: Need to grok this
+
+            // TECHNIQUES
+
+            //DP___Coin_Change.Main(); // TODO: Need to grok this
+            //Time_Complexity___Primality.Main();
+            // ... etc
 
             #endregion Cracking the Coding Interview
 
@@ -232,5 +241,5 @@ namespace _HackerRankSln
 
             #endregion Competitions
         }
-    }
+}
 }
