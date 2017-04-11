@@ -11,21 +11,20 @@ public class Diagonal_Difference
         int n = ReadInt();
         int[][] a = ReadIntMatrix(n);
 
-        int firstSum = 0;
-        for (int i = 0; i < a.Length; i++)
+        int sum = 0;
+        int len = a.Length;
+        
+        for (int i = 0; i < len; i++)
         {
-            firstSum += a[i][i];
+            sum += a[i][i];
         }
 
-        int secondSum = 0,
-            j = 0;
-        for (int i = a.Length - 1; i >= 0; i--)
+        for (int i = len - 1; i >= 0; i--)
         {
-            secondSum += a[j][i];
-            j++;
+            sum -= a[len - i - 1][i];
         }
 
-        Write(Math.Abs(firstSum - secondSum));
+        Write(Math.Abs(sum));
     }
 
     #region Main
