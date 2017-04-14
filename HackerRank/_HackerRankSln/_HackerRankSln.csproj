@@ -79,6 +79,7 @@
     <Compile Include="Cracking the Coding Interview\Techniques\Recursion - Fibonacci Numbers.cs" />
     <Compile Include="Cracking the Coding Interview\Techniques\Time Complexity - Primality.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\A Very Big Sum.cs" />
+    <Compile Include="_Algorithms\01 - Warmup Problems\Birthday Cake Candles.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Circular Array Rotation.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Compare the Triplets.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Diagonal Difference.cs" />
@@ -92,6 +93,7 @@
     <Compile Include="_Algorithms\02 - Implementation\Designer PDF Viewer.cs" />
     <Compile Include="_Algorithms\02 - Implementation\DivisibleSumPairs.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Extra Long Factorials.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Grading Students.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Library Fine.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Lisa%27s Workbook.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Mini-Max Sum.cs" />

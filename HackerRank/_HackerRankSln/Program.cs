@@ -16,7 +16,8 @@ namespace _HackerRankSln
             //Diagonal_Difference.Main();
             //Plus_Minus.Main();
             //Time_Conversion.Main();
-            //Circular_Array_Rotation.Main(); // MAGIC MAGIC MAGIC
+            //Circular_Array_Rotation.Main();
+            //Birthday_Cake_Candles.Main();
 
             #endregion 01 - Warmup
 
@@ -39,6 +40,7 @@ namespace _HackerRankSln
             //AppleAndOrange.Main();
             //Sock_Merchant.Main();
             //Beautiful_Days_at_the_Movies.Main();
+            //Grading_Students.Main();
 
             #endregion 02 - Implementation
 
