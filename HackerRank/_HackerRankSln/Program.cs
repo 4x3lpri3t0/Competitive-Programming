@@ -1,6 +1,4 @@
-﻿using _HackerRankSln.Cracking_the_Coding_Interview;
-using _HackerRankSln.Cracking_the_Coding_Interview.Techniques;
-using LL = _HackerRankSln._Data_Structures._02___Linked_Lists;
+﻿using LL = _HackerRankSln._Data_Structures._02___Linked_Lists;
 using Trees = _HackerRankSln._Data_Structures._03___Trees;
 
 namespace _HackerRankSln
@@ -241,5 +239,5 @@ namespace _HackerRankSln
 
             #endregion Competitions
         }
-}
+    }
 }
