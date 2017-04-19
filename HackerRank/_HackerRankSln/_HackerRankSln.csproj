@@ -89,11 +89,14 @@
     <Compile Include="_Algorithms\02 - Implementation\AppleAndOrange.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Beautiful Days at the Movies.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Bon Appétit.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Breaking the Records.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Caesar Cipher.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Cats and a Mouse.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Designer PDF Viewer.cs" />
     <Compile Include="_Algorithms\02 - Implementation\DivisibleSumPairs.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Extra Long Factorials.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Grading Students.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Jumping on the Clouds.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Library Fine.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Lisa%27s Workbook.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Mini-Max Sum.cs" />
@@ -102,6 +105,7 @@
     <Compile Include="_Algorithms\02 - Implementation\Sock Merchant.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Taum and B%27day.cs" />
     <Compile Include="_Algorithms\02 - Implementation\The Grid Search.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\The Hurdle Race.cs" />
     <Compile Include="_Algorithms\03 - Strings\Alternating Characters.cs" />
     <Compile Include="_Algorithms\04 - Sorting\Insertion Sort - Part 1.cs" />
     <Compile Include="Competitions\May World CodeSprint 2016\Compare the Triplets.cs" />

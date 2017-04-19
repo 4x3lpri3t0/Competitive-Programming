@@ -41,6 +41,10 @@ namespace _HackerRankSln
             //Sock_Merchant.Main();
             //Beautiful_Days_at_the_Movies.Main();
             //Grading_Students.Main();
+            //Breaking_the_Records.Main();
+            //Cats_and_a_Mouse.Main();
+            //The_Hurdle_Race.Main();
+            //Jumping_on_the_Clouds.Main();
 
             #endregion 02 - Implementation
 
