@@ -45,6 +45,8 @@ namespace _HackerRankSln
             //Cats_and_a_Mouse.Main();
             //The_Hurdle_Race.Main();
             //Jumping_on_the_Clouds.Main();
+            //Drawing_Book.Main();
+            //Birthday_Chocolate.Main();
 
             #endregion 02 - Implementation
 

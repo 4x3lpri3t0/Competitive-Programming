@@ -88,12 +88,14 @@
     <Compile Include="_Algorithms\02 - Implementation\Angry Professor.cs" />
     <Compile Include="_Algorithms\02 - Implementation\AppleAndOrange.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Beautiful Days at the Movies.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Birthday Chocolate.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Bon Appétit.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Breaking the Records.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Caesar Cipher.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Cats and a Mouse.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Designer PDF Viewer.cs" />
     <Compile Include="_Algorithms\02 - Implementation\DivisibleSumPairs.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Drawing Book.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Extra Long Factorials.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Grading Students.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Jumping on the Clouds.cs" />
