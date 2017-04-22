@@ -1,5 +1,4 @@
 ﻿using System.Linq;
-using CodeFights.Arcade.Intro.Level_2;
 
 namespace CodeFights
 {
@@ -11,7 +10,9 @@ namespace CodeFights
             //CheckPalindrome.Main();
             //AdjacentElementsProduct.Main();
             //ShapeArea.Main();
-            MakeArrayConsecutive2.Main();
+            //MakeArrayConsecutive2.Main();
+            //AlmostIncreasingSequence.Main();
+            //MatrixElementsSum.Main();
         }
     }
 }

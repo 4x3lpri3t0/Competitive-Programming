@@ -48,10 +48,15 @@
     <Compile Include="Arcade\Intro\Level 1\CenturyFromYear.cs" />
     <Compile Include="Arcade\Intro\Level 1\CheckPalindrome.cs" />
     <Compile Include="Arcade\Intro\Level 2\AdjacentElementsProduct.cs" />
+    <Compile Include="Arcade\Intro\Level 2\AlmostIncreasingSequence.cs" />
     <Compile Include="Arcade\Intro\Level 2\MakeArrayConsecutive2.cs" />
+    <Compile Include="Arcade\Intro\Level 2\MatrixElementsSum.cs" />
     <Compile Include="Arcade\Intro\Level 2\ShapeArea.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Arcade\Intro\Level 3\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
