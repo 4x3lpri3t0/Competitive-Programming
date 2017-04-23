@@ -1,20 +1,28 @@
 ﻿namespace CodeForces
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             #region Lvl 1
+
             #region Brute Force
+
             //Beautiful_Year.Main();
             //IQ_test.Main();
             //Vasya_and_Socks.Main();
-            #endregion
+
+            #endregion Brute Force
+
             #region Greedy
+
             //Domino_piling.Main();
             //Team.Main();
-            #endregion
+
+            #endregion Greedy
+
             #region Implementation
+
             //Next_Round.Main();
             //Bit__.Main();
             //Stones_on_the_Table.Main();
@@ -25,22 +33,34 @@
             //Nearly_Lucky_Number.Main();
             //Presents.Main();
             //New_Year_Candles.Main();
-            #endregion
+
+            #endregion Implementation
+
             #region Math
+
             //Theatre_Square.Main();
             //Watermelon.Main();
             //Insomnia_cure.Main();
             //Soldier_and_Bananas.Main();
             //Double_Cola.Main();
-            #endregion
+
+            #endregion Math
+
             #region Number Theory
+
             //Lucky_Division.Main();
             //Design_Tutorial___Learn_from_Math.Main();
-            #endregion
+
+            #endregion Number Theory
+
             #region Sorting
+
             //Helpful_Maths.Main();
-            #endregion
+
+            #endregion Sorting
+
             #region Strings
+
             //Way_Too_Long_Words.Main();
             //String_Task.Main();
             //Football.Main();
@@ -50,10 +70,13 @@
             //Word_Capitalization.Main();
             //Translation.Main();
             //Dubstep.Main();
-            #endregion
-            #endregion
+
+            #endregion Strings
+
+            #endregion Lvl 1
 
             #region Rounds
+
             // 357
             //A___A_Good_Contest.Main();
             //B___Economy_Game.Main();
@@ -70,8 +93,13 @@
             // 750
             //A__.Main();
             //B__.Main();
-            C__.Main();
-            #endregion
+            //C__.Main();
+
+            // 793 (Tinkoff)
+            //A___Oleg_and_shares.Main();
+            B___Igor_and_his_way_to_work.Main();
+
+            #endregion Rounds
         }
     }
 }

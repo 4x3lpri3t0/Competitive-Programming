@@ -93,6 +93,8 @@
     <Compile Include="Rounds\750\A -.cs" />
     <Compile Include="Rounds\750\B -.cs" />
     <Compile Include="Rounds\750\C -.cs" />
+    <Compile Include="Rounds\793\A - Oleg and shares.cs" />
+    <Compile Include="Rounds\793\B - Igor and his way to work.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
