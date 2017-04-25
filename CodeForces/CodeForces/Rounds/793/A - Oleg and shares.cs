@@ -10,28 +10,26 @@ public class A___Oleg_and_shares
     {
         long n = ReadInt();
         long k = ReadInt();
+        long[] a = ReadLongArray();
 
-        long[] prices = ReadLongArray();
+        long min = a.Min();
         long total = 0;
-
         bool doable = true;
-        long min = prices.Min();
-        for (int i = 0; i < prices.Length; i++)
+
+        for (int i = 0; i < n; i++)
         {
-            long curr = prices[i];
-            if ((curr - min) % k != 0)
+            if ((a[i] - min) % k == 0)
+            {
+                total += (a[i] - min) / k;
+            }
+            else
             {
                 doable = false;
                 break;
             }
-
-            total += (curr - min) / k;
         }
 
-        if (!doable)
-            Write(-1);
-        else
-            Write(total);
+        Write(doable ? total : -1);
     }
 
     #region Main
