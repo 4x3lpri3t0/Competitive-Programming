@@ -1,19 +1,19 @@
-﻿using System;
+﻿using _HackerRankSln._Data_Structures._03___Trees;
+using System;
 
-namespace _HackerRankSln._Data_Structures._03___Trees
+// https://www.hackerrank.com/challenges/tree-inorder-traversal
+
+public static class Inorder_Traversal
 {
-    public static class Inorder_Traversal
+    public static void InOrder(Node root)
     {
-        public static void InOrder(Node root)
+        if (root == null)
         {
-            if (root == null)
-            {
-                return;
-            }
-
-            InOrder(root.left);
-            Console.WriteLine(root.data + " ");
-            InOrder(root.right);
+            return;
         }
+
+        InOrder(root.left);
+        Console.WriteLine(root.data + " ");
+        InOrder(root.right);
     }
 }

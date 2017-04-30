@@ -4,6 +4,8 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+// https://www.hackerrank.com/challenges/grading
+
 public class Grading_Students
 {
     private static void Solve()

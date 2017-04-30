@@ -1,31 +1,31 @@
-﻿using System;
+﻿using _HackerRankSln._Data_Structures._03___Trees;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _HackerRankSln._Data_Structures._03___Trees
+// https://www.hackerrank.com/challenges/tree-preorder-traversal
+
+public static class Preorder_Traversal
 {
-    public static class Preorder_Traversal
+    public static void PreOrder(Node root)
     {
-        public static void PreOrder(Node root)
+        Stack<Node> stack = new Stack<Node>();
+        stack.Push(root);
+
+        while (stack.Count() > 0)
         {
-            Stack<Node> stack = new Stack<Node>();
-            stack.Push(root);
-
-            while (stack.Count() > 0)
+            Node currentNode = stack.Pop();
+            if (currentNode.right != null)
             {
-                Node currentNode = stack.Pop();
-                if (currentNode.right != null)
-                {
-                    stack.Push(currentNode.right);
-                }
-
-                if (currentNode.left != null)
-                {
-                    stack.Push(currentNode.left);
-                }
-
-                Console.WriteLine(currentNode.data + " ");
+                stack.Push(currentNode.right);
             }
+
+            if (currentNode.left != null)
+            {
+                stack.Push(currentNode.left);
+            }
+
+            Console.WriteLine(currentNode.data + " ");
         }
     }
 }

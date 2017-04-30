@@ -4,6 +4,8 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+// https://www.hackerrank.com/challenges/birthday-cake-candles
+
 public class Birthday_Cake_Candles
 {
     private static void Solve()

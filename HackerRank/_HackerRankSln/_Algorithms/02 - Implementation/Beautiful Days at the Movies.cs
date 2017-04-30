@@ -4,6 +4,8 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+// https://www.hackerrank.com/challenges/beautiful-days-at-the-movies
+
 public static class Beautiful_Days_at_the_Movies
 {
     public static void Solve()

@@ -80,7 +80,7 @@
     <Compile Include="Cracking the Coding Interview\Techniques\Time Complexity - Primality.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\A Very Big Sum.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Birthday Cake Candles.cs" />
-    <Compile Include="_Algorithms\01 - Warmup Problems\Circular Array Rotation.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Circular Array Rotation.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Compare the Triplets.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Diagonal Difference.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Plus Minus.cs" />
@@ -91,7 +91,7 @@
     <Compile Include="_Algorithms\02 - Implementation\Birthday Chocolate.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Bon Appétit.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Breaking the Records.cs" />
-    <Compile Include="_Algorithms\02 - Implementation\Caesar Cipher.cs" />
+    <Compile Include="_Algorithms\03 - Strings\Caesar Cipher.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Cats and a Mouse.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Designer PDF Viewer.cs" />
     <Compile Include="_Algorithms\02 - Implementation\DivisibleSumPairs.cs" />
@@ -101,9 +101,9 @@
     <Compile Include="_Algorithms\02 - Implementation\Jumping on the Clouds.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Library Fine.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Lisa%27s Workbook.cs" />
-    <Compile Include="_Algorithms\02 - Implementation\Mini-Max Sum.cs" />
+    <Compile Include="_Algorithms\01 - Warmup Problems\Mini-Max Sum.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Sherlock and Squares.cs" />
-    <Compile Include="_Algorithms\02 - Implementation\Sherlock and The Beast.cs" />
+    <Compile Include="_Algorithms\07 - Greedy\Sherlock and The Beast.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Sock Merchant.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Taum and B%27day.cs" />
     <Compile Include="_Algorithms\02 - Implementation\The Grid Search.cs" />
@@ -153,7 +153,6 @@
     <Compile Include="_Data Structures\04 - Balanced Trees\Self Balancing Tree %28AVL%29.cs" />
     <Compile Include="_Data Structures\05 - Stacks\Largest Rectangle.cs" />
     <Compile Include="_Data Structures\05 - Stacks\Maximum Element.cs" />
-    <Compile Include="_Data Structures\05 - Stacks\Poisonous Plants.cs" />
     <Compile Include="_Data Structures\05 - Stacks\Simple Text Editor.cs" />
     <Compile Include="_Data Structures\05 - Stacks\Balanced Parentheses.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Find Point.cs" />
@@ -162,7 +161,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="_Algorithms\05 - Search\" />
-    <Folder Include="_Algorithms\07 - Greedy\" />
     <Folder Include="_Algorithms\10 - Game Theory\" />
     <Folder Include="_Algorithms\11 - NP Complete\" />
     <Folder Include="_Data Structures\06- Queues\" />
@@ -176,28 +174,6 @@
     <Folder Include="_Mathematics\04 - Algebra\" />
     <Folder Include="_Mathematics\05 - Geometry\" />
     <Folder Include="_Mathematics\06 - Probability\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="_Algorithms\01 - Warmup Problems\Time Conversion.txt" />
-    <Content Include="_Algorithms\01 - Warmup Problems\Simple Array Sum.txt" />
-    <Content Include="_Algorithms\01 - Warmup Problems\Plus Minus.txt" />
-    <Content Include="_Algorithms\01 - Warmup Problems\Diagonal Difference.txt" />
-    <Content Include="_Algorithms\02 - Implementation\Taum and B%27day.txt" />
-    <Content Include="_Algorithms\02 - Implementation\Sherlock and The Beast.txt" />
-    <Content Include="_Algorithms\02 - Implementation\Sherlock and Squares.txt" />
-    <Content Include="_Algorithms\02 - Implementation\Lisa%27s Workbook.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="_Algorithms\02 - Implementation\Lisa%27s Workbook.txt" />
-    <Content Include="_Algorithms\02 - Implementation\Library Fine.txt" />
-    <Content Include="_Algorithms\02 - Implementation\Extra Long Factorials.txt" />
-    <Content Include="_Algorithms\02 - Implementation\Caesar Cipher.txt" />
-    <Content Include="_Algorithms\02 - Implementation\Angry Professor.txt" />
-    <Content Include="_Algorithms\03 - Strings\Alternating Characters.txt" />
-    <Content Include="_Algorithms\04 - Sorting\Insertion Sort - Part 1.txt" />
-    <Content Include="_Data Structures\05 - Stacks\Largest Rectangle.bmp" />
-    <Content Include="_Data Structures\05 - Stacks\Balanced Parentheses.txt" />
-    <Content Include="_Data Structures\05 - Stacks\Poisonous Plants.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

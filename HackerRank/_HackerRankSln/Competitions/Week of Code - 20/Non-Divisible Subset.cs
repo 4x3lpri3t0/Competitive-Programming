@@ -14,7 +14,6 @@ namespace _HackerRankSln.Competitions.Week_of_Code___20
 
             // Load collisions count for each n in arrLong
             var collisionCountByIndex = new long[n];
-            bool setIsClear = true;
 
             for (int i = 0; i < n; i++)
             {
@@ -26,12 +25,9 @@ namespace _HackerRankSln.Competitions.Week_of_Code___20
                     if ((arrLong[i] + arrLong[j]) % k == 0)
                     {
                         collisionCountByIndex[i]++;
-                        setIsClear = false;
                     }
                 }
             }
-
-
 
             // Iterate -> Get index with more collisions
             long worstIndx = collisionCountByIndex.Max();

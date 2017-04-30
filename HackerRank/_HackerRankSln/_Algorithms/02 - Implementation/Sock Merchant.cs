@@ -4,6 +4,8 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+// https://www.hackerrank.com/challenges/sock-merchant
+
 public static class Sock_Merchant
 {
     public static void Solve()
