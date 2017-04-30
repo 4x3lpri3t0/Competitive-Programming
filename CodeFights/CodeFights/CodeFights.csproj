@@ -53,6 +53,7 @@
     <Compile Include="Arcade\Intro\Level 2\MatrixElementsSum.cs" />
     <Compile Include="Arcade\Intro\Level 2\ShapeArea.cs" />
     <Compile Include="Arcade\Intro\Level 3\allLongestStrings.cs" />
+    <Compile Include="Arcade\Intro\Level 3\commonCharacterCount.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

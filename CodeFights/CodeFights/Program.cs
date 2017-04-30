@@ -14,6 +14,7 @@ namespace CodeFights
             //AlmostIncreasingSequence.Main();
             //MatrixElementsSum.Main();
             //_allLongestStrings.Main();
+            _commonCharacterCount.Main();
         }
     }
 }
