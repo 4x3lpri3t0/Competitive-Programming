@@ -49,6 +49,8 @@ namespace _HackerRankSln
             //Birthday_Chocolate.Main();
             //Kangaroo.Main();
             //Between_Two_Sets.Main();
+            //Viral_Advertising.Main();
+            //Equalize_the_Array.Main();
 
             #endregion 02 - Implementation
 

@@ -91,7 +91,9 @@
     <Compile Include="_Algorithms\02 - Implementation\Birthday Chocolate.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Bon Appétit.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Breaking the Records.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Equalize the Array.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Kangaroo.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Viral Advertising.cs" />
     <Compile Include="_Algorithms\03 - Strings\Caesar Cipher.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Cats and a Mouse.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Designer PDF Viewer.cs" />
