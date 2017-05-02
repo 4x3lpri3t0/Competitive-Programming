@@ -79,6 +79,7 @@
     <Compile Include="Cracking the Coding Interview\Techniques\Time Complexity - Primality.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\A Very Big Sum.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Birthday Cake Candles.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Beautiful Triplets.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Between Two Sets.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Circular Array Rotation.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Compare the Triplets.cs" />
