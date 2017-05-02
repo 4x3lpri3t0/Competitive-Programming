@@ -47,6 +47,8 @@ namespace _HackerRankSln
             //Jumping_on_the_Clouds.Main();
             //Drawing_Book.Main();
             //Birthday_Chocolate.Main();
+            //Migratory_Birds.Main();
+            //Day_of_the_Programmer.Main();
 
             #endregion 02 - Implementation
 

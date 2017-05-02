@@ -91,6 +91,8 @@
     <Compile Include="_Algorithms\02 - Implementation\Birthday Chocolate.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Bon Appétit.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Breaking the Records.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Day of the Programmer.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Migratory Birds.cs" />
     <Compile Include="_Algorithms\03 - Strings\Caesar Cipher.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Cats and a Mouse.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Designer PDF Viewer.cs" />
