@@ -56,7 +56,9 @@ namespace _HackerRankSln
             //Counting_Valleys.Main();
             //Electronics_Shop.Main();
             //Repeated_String.Main();
-            Sequence_Equation.Main();
+            //Sequence_Equation.Main();
+            //Picking_Numbers.Main();
+            //Jumping_on_the_Clouds___Revisited.Main();
 
             #endregion 02 - Implementation
 

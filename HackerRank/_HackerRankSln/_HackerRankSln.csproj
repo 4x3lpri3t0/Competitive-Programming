@@ -94,10 +94,13 @@
     <Compile Include="_Algorithms\02 - Implementation\Counting Valleys.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Day of the Programmer.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Electronics Shop.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Jumping on the Clouds - Revisited.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Migratory Birds.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Equalize the Array.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Kangaroo.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Picking Numbers.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Repeated String.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Sequence Equation.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Viral Advertising.cs" />
     <Compile Include="_Algorithms\03 - Strings\Caesar Cipher.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Cats and a Mouse.cs" />
