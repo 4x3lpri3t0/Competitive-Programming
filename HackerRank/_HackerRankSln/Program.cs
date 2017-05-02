@@ -59,6 +59,7 @@ namespace _HackerRankSln
             //Sequence_Equation.Main();
             //Picking_Numbers.Main();
             //Jumping_on_the_Clouds___Revisited.Main();
+            Encryption.Main();
 
             #endregion 02 - Implementation
 

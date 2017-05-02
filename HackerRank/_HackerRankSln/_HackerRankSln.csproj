@@ -94,6 +94,7 @@
     <Compile Include="_Algorithms\02 - Implementation\Counting Valleys.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Day of the Programmer.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Electronics Shop.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Encryption.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Jumping on the Clouds - Revisited.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Migratory Birds.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Equalize the Array.cs" />
