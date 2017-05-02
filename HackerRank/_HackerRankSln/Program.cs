@@ -49,6 +49,10 @@ namespace _HackerRankSln
             //Birthday_Chocolate.Main();
             //Migratory_Birds.Main();
             //Day_of_the_Programmer.Main();
+            //Kangaroo.Main();
+            //Between_Two_Sets.Main();
+            //Viral_Advertising.Main();
+            //Equalize_the_Array.Main();
 
             #endregion 02 - Implementation
 
@@ -242,7 +246,6 @@ namespace _HackerRankSln
 
             #region Week of Code - 21
 
-            //Kangaroo.Main();
             //Luck_Balance.Main();
 
             #endregion Week of Code - 21

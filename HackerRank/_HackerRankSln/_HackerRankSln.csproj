@@ -53,7 +53,6 @@
     <Compile Include="30DaysOfCode\Day 9 - Recursion.cs" />
     <Compile Include="Competitions\BlackRock CodeSprint\Currency Arbitrage.cs" />
     <Compile Include="Competitions\Week of Code - 20\Non-Divisible Subset.cs" />
-    <Compile Include="Competitions\Week of Code - 21\Kangaroo.cs" />
     <Compile Include="Competitions\Week of Code - 21\Luck Balance.cs" />
     <Compile Include="Competitions\World CodeSprint 4\Equal Stacks.cs" />
     <Compile Include="Competitions\World CodeSprint 4\Minimum Distances.cs" />
@@ -80,6 +79,7 @@
     <Compile Include="Cracking the Coding Interview\Techniques\Time Complexity - Primality.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\A Very Big Sum.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Birthday Cake Candles.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Between Two Sets.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Circular Array Rotation.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Compare the Triplets.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Diagonal Difference.cs" />
@@ -93,6 +93,9 @@
     <Compile Include="_Algorithms\02 - Implementation\Breaking the Records.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Day of the Programmer.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Migratory Birds.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Equalize the Array.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Kangaroo.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Viral Advertising.cs" />
     <Compile Include="_Algorithms\03 - Strings\Caesar Cipher.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Cats and a Mouse.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Designer PDF Viewer.cs" />
