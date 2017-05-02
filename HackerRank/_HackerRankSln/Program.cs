@@ -53,6 +53,9 @@ namespace _HackerRankSln
             //Between_Two_Sets.Main();
             //Viral_Advertising.Main();
             //Equalize_the_Array.Main();
+            //Counting_Valleys.Main();
+            //Electronics_Shop.Main();
+            //Repeated_String.Main();
 
             #endregion 02 - Implementation
 
