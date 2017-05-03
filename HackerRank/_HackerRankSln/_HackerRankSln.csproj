@@ -52,10 +52,9 @@
     <Compile Include="30DaysOfCode\Day 8 - Dictionaries and Maps.cs" />
     <Compile Include="30DaysOfCode\Day 9 - Recursion.cs" />
     <Compile Include="Competitions\BlackRock CodeSprint\Currency Arbitrage.cs" />
-    <Compile Include="Competitions\Week of Code - 20\Non-Divisible Subset.cs" />
     <Compile Include="Competitions\Week of Code - 21\Luck Balance.cs" />
-    <Compile Include="Competitions\World CodeSprint 4\Equal Stacks.cs" />
-    <Compile Include="Competitions\World CodeSprint 4\Minimum Distances.cs" />
+    <Compile Include="_Data Structures\05 - Stacks\Equal Stacks.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Minimum Distances.cs" />
     <Compile Include="Competitions\Zalando CodeSprint\Match the Shoes.cs" />
     <Compile Include="Competitions\Zalando CodeSprint\The Inquiring Manager.cs" />
     <Compile Include="Cracking the Coding Interview\Algorithms\BFS - Shortest Reach in a Graph.cs" />
@@ -102,7 +101,9 @@
     <Compile Include="_Algorithms\02 - Implementation\Kangaroo.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Picking Numbers.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Repeated String.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\Save the Prisoner.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Sequence Equation.cs" />
+    <Compile Include="_Algorithms\02 - Implementation\The Time in Words.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Viral Advertising.cs" />
     <Compile Include="_Algorithms\03 - Strings\Caesar Cipher.cs" />
     <Compile Include="_Algorithms\02 - Implementation\Cats and a Mouse.cs" />
@@ -123,8 +124,6 @@
     <Compile Include="_Algorithms\02 - Implementation\The Hurdle Race.cs" />
     <Compile Include="_Algorithms\03 - Strings\Alternating Characters.cs" />
     <Compile Include="_Algorithms\04 - Sorting\Insertion Sort - Part 1.cs" />
-    <Compile Include="Competitions\May World CodeSprint 2016\Compare the Triplets.cs" />
-    <Compile Include="Competitions\May World CodeSprint 2016\Richie Rich.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="_Algorithms\01 - Warmup Problems\Simple Array Sum.cs" />

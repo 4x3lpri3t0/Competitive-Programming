@@ -60,7 +60,10 @@ namespace _HackerRankSln
             //Picking_Numbers.Main();
             //Jumping_on_the_Clouds___Revisited.Main();
             //Encryption.Main();
-            Beautiful_Triplets.Main();
+            //Beautiful_Triplets.Main();
+            //Save_the_Prisoner.Main();
+            //The_Time_in_Words.Main();
+            //Minimum_Distances.Main();
 
             #endregion 02 - Implementation
 
@@ -160,6 +163,7 @@ namespace _HackerRankSln
             //Balanced_Parentheses._Main();
             //Simple_Text_Editor.Main();
             //Largest_Rectangle.Main();
+            //Equal_Stacks.Main();
 
             #endregion 05 - Stacks
 
@@ -215,22 +219,9 @@ namespace _HackerRankSln
 
             #endregion Cracking the Coding Interview
 
-            // --------------- COMPETITIONS ----------------
+            // --------------- COMPETITIONS 2017 ----------------
 
-            #region Competitions
-
-            #region May World CodeSprint 2016
-
-            //Compare_the_Triplets.Compare();
-            //Richie_Rich.PrintMaxPalindrome();
-
-            #endregion May World CodeSprint 2016
-
-            #region Week of Code - 20
-
-            // Non_Divisible_Subset._Main(); -> Not finished, sub-optimal... TODO: Look for others submissions
-
-            #endregion Week of Code - 20
+            #region [some] Competitions 2016
 
             #region Zalando CodeSprint
 
@@ -245,20 +236,19 @@ namespace _HackerRankSln
 
             #endregion BlackRock CodeSprint
 
-            #region World CodeSprint 4
-
-            //Minimum_Distances.Main();
-            //Equal_Stacks.Main();
-
-            #endregion World CodeSprint 4
-
             #region Week of Code - 21
 
             //Luck_Balance.Main();
 
             #endregion Week of Code - 21
 
-            #endregion Competitions
+            #endregion [some] Competitions 2016
+
+            #region Competitions 2017
+
+            // ...
+
+            #endregion Competitions 2017
         }
     }
 }
