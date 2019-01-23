@@ -47,38 +47,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Lvl 1\Brute Force\Beautiful Year.cs" />
-    <Compile Include="Lvl 1\Brute Force\IQ test.cs" />
-    <Compile Include="Lvl 1\Brute Force\Vasya and Socks.cs" />
-    <Compile Include="Lvl 1\Greedy\Domino piling.cs" />
-    <Compile Include="Lvl 1\Greedy\Team.cs" />
-    <Compile Include="Lvl 1\Implementation\Beautiful Matrix.cs" />
-    <Compile Include="Lvl 1\Implementation\Bit++.cs" />
-    <Compile Include="Lvl 1\Implementation\Boy or Girl.cs" />
-    <Compile Include="Lvl 1\Implementation\George and Accommodation.cs" />
-    <Compile Include="Lvl 1\Implementation\HQ9+.cs" />
-    <Compile Include="Lvl 1\Implementation\Nearly Lucky Number.cs" />
-    <Compile Include="Lvl 1\Implementation\New Year Candles.cs" />
-    <Compile Include="Lvl 1\Implementation\Next Round.cs" />
-    <Compile Include="Lvl 1\Implementation\Presents.cs" />
-    <Compile Include="Lvl 1\Implementation\Stones on the Table.cs" />
-    <Compile Include="Lvl 1\Implementation\Tram.cs" />
-    <Compile Include="Lvl 1\Math\Double Cola.cs" />
-    <Compile Include="Lvl 1\Math\Insomnia cure.cs" />
-    <Compile Include="Lvl 1\Math\Soldier and Bananas.cs" />
-    <Compile Include="Lvl 1\Math\Theatre Square.cs" />
-    <Compile Include="Lvl 1\Math\Watermelon.cs" />
-    <Compile Include="Lvl 1\Number Theory\Design Tutorial - Learn from Math.cs" />
-    <Compile Include="Lvl 1\Number Theory\Lucky Division.cs" />
-    <Compile Include="Lvl 1\Sorting\Helpful Maths.cs" />
-    <Compile Include="Lvl 1\Strings\cAPS lOCK.cs" />
-    <Compile Include="Lvl 1\Strings\Dubstep.cs" />
-    <Compile Include="Lvl 1\Strings\Football.cs" />
-    <Compile Include="Lvl 1\Strings\Petya and Strings.cs" />
-    <Compile Include="Lvl 1\Strings\Translation.cs" />
-    <Compile Include="Lvl 1\Strings\String Task.cs" />
-    <Compile Include="Lvl 1\Strings\Way Too Long Words.cs" />
-    <Compile Include="Lvl 1\Strings\Word Capitalization.cs" />
+    <Compile Include="Year 2016\Brute Force\Beautiful Year.cs" />
+    <Compile Include="Year 2016\Brute Force\IQ test.cs" />
+    <Compile Include="Year 2016\Brute Force\Vasya and Socks.cs" />
+    <Compile Include="Year 2016\Greedy\Domino piling.cs" />
+    <Compile Include="Year 2016\Greedy\Team.cs" />
+    <Compile Include="Year 2016\Implementation\Beautiful Matrix.cs" />
+    <Compile Include="Year 2016\Implementation\Bit++.cs" />
+    <Compile Include="Year 2016\Implementation\Boy or Girl.cs" />
+    <Compile Include="Year 2016\Implementation\George and Accommodation.cs" />
+    <Compile Include="Year 2016\Implementation\HQ9+.cs" />
+    <Compile Include="Year 2016\Implementation\Nearly Lucky Number.cs" />
+    <Compile Include="Year 2016\Implementation\New Year Candles.cs" />
+    <Compile Include="Year 2016\Implementation\Next Round.cs" />
+    <Compile Include="Year 2016\Implementation\Presents.cs" />
+    <Compile Include="Year 2016\Implementation\Stones on the Table.cs" />
+    <Compile Include="Year 2016\Implementation\Tram.cs" />
+    <Compile Include="Year 2016\Math\Double Cola.cs" />
+    <Compile Include="Year 2016\Math\Insomnia cure.cs" />
+    <Compile Include="Year 2016\Math\Soldier and Bananas.cs" />
+    <Compile Include="Year 2016\Math\Theatre Square.cs" />
+    <Compile Include="Year 2016\Math\Watermelon.cs" />
+    <Compile Include="Year 2016\Number Theory\Design Tutorial - Learn from Math.cs" />
+    <Compile Include="Year 2016\Number Theory\Lucky Division.cs" />
+    <Compile Include="Year 2016\Sorting\Helpful Maths.cs" />
+    <Compile Include="Year 2016\Strings\cAPS lOCK.cs" />
+    <Compile Include="Year 2016\Strings\Dubstep.cs" />
+    <Compile Include="Year 2016\Strings\Football.cs" />
+    <Compile Include="Year 2016\Strings\Petya and Strings.cs" />
+    <Compile Include="Year 2016\Strings\Translation.cs" />
+    <Compile Include="Year 2016\Strings\String Task.cs" />
+    <Compile Include="Year 2016\Strings\Way Too Long Words.cs" />
+    <Compile Include="Year 2016\Strings\Word Capitalization.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rounds\357\A - A Good Contest.cs" />
@@ -100,23 +100,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Lvl 1\Greedy\Team.txt" />
-    <Content Include="Lvl 1\Implementation\Bit++.txt" />
-    <Content Include="Lvl 1\Implementation\Boy or Girl.txt" />
-    <Content Include="Lvl 1\Implementation\Next Round.txt" />
-    <Content Include="Lvl 1\Math\Double Cola.txt" />
-    <Content Include="Lvl 1\Math\Theatre Square.txt" />
-    <Content Include="Lvl 1\Number Theory\Design Tutorial - Learn from Math.txt" />
-    <Content Include="Lvl 1\Number Theory\Lucky Division.txt" />
-    <Content Include="Lvl 1\Sorting\Helpful Maths.txt" />
-    <Content Include="Lvl 1\Strings\cAPS lOCK.txt" />
-    <Content Include="Lvl 1\Strings\Petya and Strings.txt" />
-    <Content Include="Lvl 1\Strings\Football.txt" />
-    <Content Include="Lvl 1\Strings\Way Too Long Words.txt" />
-    <Content Include="Lvl 1\Math\Watermelon.txt" />
+    <Content Include="Year 2016\Greedy\Team.txt" />
+    <Content Include="Year 2016\Implementation\Bit++.txt" />
+    <Content Include="Year 2016\Implementation\Boy or Girl.txt" />
+    <Content Include="Year 2016\Implementation\Next Round.txt" />
+    <Content Include="Year 2016\Math\Double Cola.txt" />
+    <Content Include="Year 2016\Math\Theatre Square.txt" />
+    <Content Include="Year 2016\Number Theory\Design Tutorial - Learn from Math.txt" />
+    <Content Include="Year 2016\Number Theory\Lucky Division.txt" />
+    <Content Include="Year 2016\Sorting\Helpful Maths.txt" />
+    <Content Include="Year 2016\Strings\cAPS lOCK.txt" />
+    <Content Include="Year 2016\Strings\Petya and Strings.txt" />
+    <Content Include="Year 2016\Strings\Football.txt" />
+    <Content Include="Year 2016\Strings\Way Too Long Words.txt" />
+    <Content Include="Year 2016\Math\Watermelon.txt" />
     <Content Include="Rounds\358\A - Alyona and Numbers.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="1300s\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
