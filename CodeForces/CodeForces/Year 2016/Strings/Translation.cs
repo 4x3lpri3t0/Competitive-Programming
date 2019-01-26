@@ -4,13 +4,14 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+// https://codeforces.com/problemset/problem/41/A
 public static class Translation
 {
     private static void Solve()
     {
         string s1 = Read();
         string s2 = Read();
-        string reverseds1 = string.Join("", s1.Reverse());
+        string reverseds1 = string.Concat(s1.Reverse());
         Write(Equals(s2, reverseds1) ? "YES" : "NO");
     }
 

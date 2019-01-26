@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+// https://codeforces.com/problemset/problem/131/A
 public static class cAPS_lOCK
 {
     private static void Solve()

@@ -1,5 +1,6 @@
 ﻿using System;
 
+// https://codeforces.com/problemset/problem/71/A
 public static class Way_Too_Long_Words
 {
     public static void Main()

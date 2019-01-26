@@ -68,7 +68,7 @@
             //Tram.Main();
             //cAPS_lOCK.Main();
             //Word_Capitalization.Main();
-            //Translation.Main();
+            Translation.Main();
             //Dubstep.Main();
 
             #endregion Strings
