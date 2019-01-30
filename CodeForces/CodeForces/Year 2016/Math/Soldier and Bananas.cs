@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Numerics;
 
+// https://codeforces.com/problemset/problem/546/A
 public static class Soldier_and_Bananas
 {
     private static void Solve()

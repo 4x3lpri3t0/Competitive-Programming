@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+// https://codeforces.com/problemset/problem/339/A
 public static class Helpful_Maths
 {
     public static void Solve()

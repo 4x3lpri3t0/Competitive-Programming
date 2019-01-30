@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+// https://codeforces.com/problemset/problem/110/A
 public static class Nearly_Lucky_Number
 {
     private static void Solve()

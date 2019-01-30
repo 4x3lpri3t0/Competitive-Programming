@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+// https://codeforces.com/problemset/problem/379/A
 public static class New_Year_Candles
 {
     private static void Solve()

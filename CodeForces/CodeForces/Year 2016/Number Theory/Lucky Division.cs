@@ -4,18 +4,17 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+// https://codeforces.com/problemset/problem/122/A
 public static class Lucky_Division
 {
     private static void Solve()
     {
         int n = ReadInt();
-        List<int> luckyNumbers = GetLuckyNumbers();
+        List<int> luckyNumbers = GetLuckyNumbers(n);
 
-        foreach (int ln in luckyNumbers)
+        foreach (int luckyNumber in luckyNumbers)
         {
-            if (ln > n)
-                break;
-            if (n % ln == 0)
+            if (n % luckyNumber == 0)
             {
                 Write("YES");
                 return;
@@ -25,10 +24,10 @@ public static class Lucky_Division
         Write("NO");
     }
 
-    private static List<int> GetLuckyNumbers()
+    private static List<int> GetLuckyNumbers(int n)
     {
         var luckyNumbers = new List<int>();
-        for (int i = 4; i <= 1000; i++)
+        for (int i = 4; i <= n; i++)
         {
             string s = i.ToString();
             if (s.All(c => Equals(c, '4') || Equals(c, '7')))

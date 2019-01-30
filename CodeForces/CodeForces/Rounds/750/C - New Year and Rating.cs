@@ -4,31 +4,12 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class A__
+// https://codeforces.com/contest/750/problem/C
+public static class C__
 {
     private static void Solve()
     {
-        int minsToMidnight = 60 * 4;
-        int n = ReadInt();
-        int k = ReadInt();
-
-        int minsLeftForSolving = minsToMidnight - k;
-
-        int solved = 0;
-
-        for (int i = 1; i <= n; i++)
-        {
-            int timeToSolveCurrent = i * 5;
-
-            if (minsLeftForSolving - timeToSolveCurrent < 0)
-                break;
-
-            minsLeftForSolving -= timeToSolveCurrent;
-
-            solved++;
-        }
-
-        Write(solved);
+        // TODO: https://codeforces.com/contest/750/status/C
     }
 
     #region Main
@@ -51,7 +32,7 @@ public static class A__
         try
         {
             Solve();
-            //var thread = new Thread(new A__().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new C__().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

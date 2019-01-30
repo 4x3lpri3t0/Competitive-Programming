@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+// https://codeforces.com/problemset/problem/82/A
 public static class Double_Cola
 {
     private static void Solve()
@@ -23,7 +24,7 @@ public static class Double_Cola
         // Then we know that at first 2ep Sheldon's stand, then 2ep Leonard's and so on
 
         while (n > 5)
-            n = (n / 2) - 2; // I still don't fully understand this magic formula...
+            n = (n / 2) - 2; // - 2 to go from the middle to the first?
 
         Write(queue[n - 1]);
     }

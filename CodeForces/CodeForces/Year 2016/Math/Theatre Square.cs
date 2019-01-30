@@ -1,5 +1,6 @@
 ﻿using System;
 
+// https://codeforces.com/problemset/problem/1/A
 public static class Theatre_Square
 {
     public static void Main()

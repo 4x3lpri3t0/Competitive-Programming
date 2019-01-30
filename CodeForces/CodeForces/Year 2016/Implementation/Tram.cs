@@ -4,6 +4,9 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+using static System.Math;
+
+// https://codeforces.com/problemset/problem/116/A
 public static class Tram
 {
     public static void Solve()
@@ -17,10 +20,7 @@ public static class Tram
             int b = ReadInt();
 
             current = current - a + b;
-            if (current > max)
-            {
-                max = current;
-            }
+            max = Max(max, current);
         }
 
         Write(max);

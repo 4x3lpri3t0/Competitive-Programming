@@ -4,6 +4,9 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+using static System.Math;
+
+// https://codeforces.com/problemset/problem/263/A
 public static class Beautiful_Matrix
 {
     private static void Solve()
@@ -12,24 +15,23 @@ public static class Beautiful_Matrix
 
         int row = 0;
         int col = 0;
-        bool found = false;
 
-        for (int i = 0; i < matrix.Length && !found; i++)
+        for (int i = 0; i < matrix.Length; i++)
         {
-            for (int j = 0; j < matrix[i].Length && !found; j++)
+            for (int j = 0; j < matrix[i].Length; j++)
             {
                 if (matrix[i][j] == 1)
                 {
                     row = i;
                     col = j;
-                    found = true;
+                    break;
                 }
             }
         }
 
         // center is 2, 2
-        int absYMov = Math.Abs(row - 2);
-        int absXMov = Math.Abs(col - 2);
+        int absYMov = Abs(row - 2);
+        int absXMov = Abs(col - 2);
         Write(absYMov + absXMov);
     }
 

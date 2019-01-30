@@ -68,7 +68,7 @@
             //Tram.Main();
             //cAPS_lOCK.Main();
             //Word_Capitalization.Main();
-            Translation.Main();
+            //Translation.Main();
             //Dubstep.Main();
 
             #endregion Strings
@@ -80,16 +80,22 @@
             // 357
             //A___A_Good_Contest.Main();
             //B___Economy_Game.Main();
+            //C___Heap_Operations.Main(); // TODO: Upsolve!
+
             // 358
-            //A___Alyona_and_Numbers.Main();
+            //A___Alyona_and_Numbers.Main(); // Interesting - Number Theory
             //B___Alyona_and_Mex.Main();
+
             // 359
             //A___Free_Ice_Cream.Main();
             //B___Little_Robber_Girl_s_Zoo.Main(); -> Wrong, see editorial
+
             // 360
             //A___Opponents.Main();
+
             // 368
             //A___Brain_s_Photos.Main();
+
             // 750
             //A__.Main();
             //B__.Main();

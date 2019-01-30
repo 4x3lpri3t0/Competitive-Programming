@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 
+// https://codeforces.com/problemset/problem/158/A
 public static class Next_Round
 {
     public static void Main()
@@ -10,8 +11,7 @@ public static class Next_Round
         int[] a = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
 
         int kValue = a[k - 1];
-        int passing = a.Where(x => x >= kValue && x != 0)
-                       .Count();
+        int passing = a.Where(x => x >= kValue).Count();
 
         Console.WriteLine(passing);
     }

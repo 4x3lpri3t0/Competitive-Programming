@@ -4,35 +4,36 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class A___Alyona_and_Numbers
+// https://codeforces.com/problemset/problem/686/A
+public static class A___Free_Ice_Cream
 {
     private static void Solve()
     {
-        int n = ReadInt();
-        int m = ReadInt();
-        long[] nRemainderFrequency = new long[5];
-        long[] mRemainderFrequency = new long[5];
-
-        for (int i = 1; i <= n; i++)
+        long T = ReadLong();
+        long X = ReadLong();
+        long distressedKids = 0;
+        while (T-- != 0)
         {
-            int rem = i % 5;
-            nRemainderFrequency[rem]++;
+            string op = Read();
+            long opAmount = ReadLong();
+            if (op == "+")
+            {
+                X += opAmount;
+            }
+            else // -
+            {
+                if (opAmount <= X)
+                {
+                    X -= opAmount;
+                }
+                else
+                {
+                    distressedKids++;
+                }
+            }
         }
 
-        for (int j = 1; j <= m; j++)
-        {
-            int rem = j % 5;
-            mRemainderFrequency[rem]++;
-        }
-
-        long totalPairs = nRemainderFrequency[0] * mRemainderFrequency[0];
-        for (int i = 1; i <= 4; i++)
-        {
-            long iPairs = nRemainderFrequency[i] * mRemainderFrequency[5-i];
-            totalPairs += iPairs;
-        }
-
-        Write(totalPairs);
+        Write(X + " " + distressedKids);
     }
 
     #region Main
@@ -55,7 +56,7 @@ public static class A___Alyona_and_Numbers
         try
         {
             Solve();
-            //var thread = new Thread(new A___Alyona_and_Numbers().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new A___Free_Ice_Cream().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

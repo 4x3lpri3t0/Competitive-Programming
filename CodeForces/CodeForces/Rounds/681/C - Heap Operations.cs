@@ -1,71 +1,21 @@
-﻿using System;
+﻿#region Usings
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 
-// https://codeforces.com/problemset/problem/793/B
-public class B___Igor_and_his_way_to_work
-{
-    private static int N;
-    private static int M;
-    private static char[,] matrix;
-    private static bool[,] check;
-    private static bool found = false;
+using static System.Math;
+#endregion
 
+// https://codeforces.com/contest/681/problem/C
+public class C___Heap_Operations
+{
     private static void Solve()
     {
-        N = ReadInt();
-        M = ReadInt();
+        int n = ReadInt();
 
-        int startY = -1;
-        int startX = -1;
-
-        matrix = new char[N, M];
-        for (int i = 0; i < N; i++)
-        {
-            string row = Read();
-            for (int j = 0; j < M; j++)
-            {
-                char c = row[j];
-                matrix[i, j] = c;
-
-                if (c == 'S')
-                {
-                    startY = i;
-                    startX = j;
-                }
-            }
-        }
-
-        check = new bool[N, M];
-        int turns = 0;
-        NeighborIsT(startX, startY - 1, turns, "up");
-        NeighborIsT(startX, startY + 1, turns, "down");
-        NeighborIsT(startX - 1, startY, turns, "left");
-        NeighborIsT(startX + 1, startY, turns, "right");
-
-        Write(found ? "YES" : "NO");
-    }
-
-    private static void NeighborIsT(int x, int y, int turns, string prevDirection)
-    {
-        if (x < 0 || x > M - 1) return;
-        if (y < 0 || y > N - 1) return;
-
-        if (check[y, x] || matrix[y, x] == '*' || found || turns > 2) return;
-
-        check[y, x] = true;
-
-        if (matrix[y, x] == 'T')
-        {
-            found = true;
-        }
-
-        NeighborIsT(x, y - 1, prevDirection == "up" ? turns : turns++, "up");
-        NeighborIsT(x, y + 1, prevDirection == "down" ? turns : turns++, "down");
-        NeighborIsT(x - 1, y, prevDirection == "left" ? turns : turns++, "left");
-        NeighborIsT(x + 1, y, prevDirection == "right" ? turns : turns++, "right");
+        Write();
     }
 
     #region Main

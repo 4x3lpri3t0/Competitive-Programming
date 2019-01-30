@@ -4,79 +4,57 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class C__
+// https://codeforces.com/contest/750/problem/B
+public static class B__
 {
-    private struct Node
-    {
-        public int c;
-        public int d;
-
-        public Node(int c, int d)
-        {
-            this.c = c;
-            this.d = d;
-        }
-    }
-
     private static void Solve()
     {
         int n = ReadInt();
-        int rating = 0;
 
-        var stack = new Stack<Node>();
-        bool impossible = false;
+        int y = 0;
+        bool valid = true;
 
         while (n-- > 0)
         {
-            int c = ReadInt();
-            int d = ReadInt();
+            int distance = ReadInt();
+            string direction = Read();
 
-            var node = new Node(c, d);
-            stack.Push(node);
-        }
-
-        var last = stack.Pop();
-
-        int tempRating;
-
-        if (last.d == 1)
-        {
-            rating = 1900;
-
-            tempRating = rating;
-
-            rating += last.c;
-        }
-        else
-        {
-            rating = 1899;
-
-            tempRating = rating;
-
-            rating += last.c;
-        }
-
-        while (stack.Count > 0)
-        {
-            var current = stack.Pop();
-
-            tempRating -= current.c;
-
-            if ((tempRating >= 1900 && current.d != 1) ||
-                (tempRating <= 1899 && current.d != 2))
+            if (y == 0 && direction != "South")
             {
-                impossible = true;
+                valid = false;
+                break;
+            }
+
+            if (y == 20000 && direction != "North")
+            {
+                valid = false;
+                break;
+            }
+
+            Move(ref y, distance, direction);
+
+            if (y < 0 || y > 20000)
+            {
+                valid = false;
                 break;
             }
         }
 
-        if (impossible)
+        if (y != 0)
+            valid = false;
+
+        Write(valid ? "YES" : "NO");
+    }
+
+    private static void Move(ref int y, int distance, string direction)
+    {
+        if (direction == "North")
         {
-            Write("Impossible");
+            y -= distance;
         }
-        else
+        else if (direction == "South")
         {
-            Write(rating);
+            y += distance;
         }
     }
 
@@ -100,7 +78,7 @@ public static class C__
         try
         {
             Solve();
-            //var thread = new Thread(new C__().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new B__().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

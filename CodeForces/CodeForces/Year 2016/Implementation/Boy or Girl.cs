@@ -4,23 +4,12 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+// https://codeforces.com/contest/236/problem/A
 public static class Boy_or_Girl
 {
     private static void Solve()
     {
-        string s = Read();
-        var list = new List<char>();
-
-        for (int i = 0; i < s.Length; i++)
-        {
-            char c = s[i];
-            if (!list.Contains(c))
-            {
-                list.Add(c);
-            }
-        }
-
-        Write(list.Count % 2 == 0 ? "CHAT WITH HER!" : "IGNORE HIM!");
+        Write(Read().Distinct().Count() % 2 == 0 ? "CHAT WITH HER!" : "IGNORE HIM!");
     }
 
     #region Main

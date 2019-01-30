@@ -4,23 +4,24 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+// https://codeforces.com/problemset/problem/133/A
 public static class HQ9_
 {
     private static void Solve()
     {
         string p = Read();
 
-        bool output = false;
         for (int i = 0; i < p.Length; i++)
         {
             char c = p[i];
             if (c == 'H' || c == 'Q' || c == '9')
             {
-                output = true;
+                Write("YES");
+                return;
             }
         }
 
-        Write(output ? "YES" : "NO");
+        Write("NO");
     }
 
     #region Main

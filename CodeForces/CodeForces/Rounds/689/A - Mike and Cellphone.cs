@@ -3,32 +3,24 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Numerics;
 
-public static class A___A_Good_Contest
+// https://codeforces.com/problemset/problem/689/A
+public static class A___Mike_and_Cellphone
 {
-    private const int RED = 2400;
-
     private static void Solve()
     {
         long T = ReadLong();
-        bool good = false;
+        var fingerMov = new List<int>();
         while (T-- != 0)
         {
-            string handle = Read();
-            int before = ReadInt();
-            int after = ReadInt();
-
-            if (before >= RED && after > before)
-            {
-                good = true;
-                break;
-            }
+            int curDigit = ReadInt();
+            fingerMov.Add(curDigit);
         }
 
-        Write(good ? "YES" : "NO");
+        for (int i = 0; i < 3; i++)
+        {
+
+        }
     }
 
     #region Main
@@ -51,7 +43,7 @@ public static class A___A_Good_Contest
         try
         {
             Solve();
-            //var thread = new Thread(new A___A_Good_Contest().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new A___Mike_and_Cellphone().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+// https://codeforces.com/problemset/problem/271/A
 public static class Beautiful_Year
 {
     private static void Solve()

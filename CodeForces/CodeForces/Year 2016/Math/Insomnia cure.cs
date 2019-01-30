@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+// https://codeforces.com/problemset/problem/148/A
 public static class Insomnia_cure
 {
     private static void Solve()

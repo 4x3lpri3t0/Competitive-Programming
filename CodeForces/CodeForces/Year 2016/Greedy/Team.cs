@@ -4,12 +4,13 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+// https://codeforces.com/problemset/problem/231/A
 public static class Team
 {
     public static void Solve()
     {
         long T = ReadLong();
-        int problemsToImplement = 0;
+        int result = 0;
         while (T-- != 0)
         {
             int[] friends = ReadIntArray();
@@ -23,13 +24,13 @@ public static class Team
 
                 if (howManyKnow == 2)
                 {
-                    problemsToImplement++;
+                    result++;
                     break;
                 }
             }
         }
 
-        Write(problemsToImplement);
+        Write(result);
     }
 
     #region Main

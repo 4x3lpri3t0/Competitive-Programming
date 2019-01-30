@@ -4,34 +4,69 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class B___Alyona_and_Mex
+// https://codeforces.com/problemset/problem/686/B
+public static class B___Little_Robber_Girl_s_Zoo
 {
     private static void Solve()
     {
-        long length = ReadLong();
+        int N = ReadInt();
+        long[] array = ReadLongArray();
+        // Used to avoid checking every time if the current array is ordered
+        bool alreadyOrdered = false;
 
-        int[] array = ReadIntArray();
-        array = array.OrderByDescending(x => x).ToArray();
-        int max = array.Max();
-        int missing = 0;
-
-        for (int i = max-1; i >= 1; i--)
+        while (!alreadyOrdered)
         {
-            if (!array.Contains(i))
+            int l = -1;
+            int r = -1;
+            alreadyOrdered = true;
+            IteratePairs(0, N, array, ref alreadyOrdered, ref l, ref r);
+        }
+
+        alreadyOrdered = false;
+
+        while (!alreadyOrdered)
+        {
+            int l = -1;
+            int r = -1;
+            alreadyOrdered = true;
+            IteratePairs(1, N, array, ref alreadyOrdered, ref l, ref r);
+        }
+    }
+
+    private static void IteratePairs(int startingAt, int N, long[] array, ref bool alreadyOrdered, ref int l, ref int r)
+    {
+        for (int i = startingAt; i < N - 1; i += 2)
+        {
+            int currentL = i;
+            int currentR = i + 1;
+            if (array[currentL] > array[currentR])
             {
-                missing = i;
-                break;
+                alreadyOrdered = false;
+                Swap(array, currentL, currentR);
+
+                if (l == -1)
+                {
+                    l = currentL;
+                }
+                if (currentR > r)
+                {
+                    r = currentR;
+                }
             }
         }
+        // We already started the swapping cycle, and now cycle finishes
+        if (l != -1 && r != -1)
+        {
+            // Output is 1-based index
+            Write((l + 1) + " " + (r + 1));
+        }
+    }
 
-        if (missing == 0)
-        {
-            Write(max + 1);
-        }
-        else
-        {
-            Write(missing);
-        }
+    static void Swap(long[] array, long a, long b)
+    {
+        long temp = array[a];
+        array[a] = array[b];
+        array[b] = temp;
     }
 
     #region Main
@@ -54,7 +89,7 @@ public static class B___Alyona_and_Mex
         try
         {
             Solve();
-            //var thread = new Thread(new Alyona_and_Mex().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new B___Little_Robber_Girl_s_Zoo().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

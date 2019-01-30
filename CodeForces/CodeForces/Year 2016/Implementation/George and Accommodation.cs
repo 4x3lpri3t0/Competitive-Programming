@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+// https://codeforces.com/problemset/problem/467/A
 public static class George_and_Accommodation
 {
     private static void Solve()

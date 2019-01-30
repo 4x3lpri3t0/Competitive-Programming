@@ -4,68 +4,36 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-public static class B___Little_Robber_Girl_s_Zoo
+// https://codeforces.com/problemset/problem/682/A
+public static class A___Alyona_and_Numbers
 {
     private static void Solve()
     {
-        int N = ReadInt();
-        long[] array = ReadLongArray();
-        // Used to avoid checking every time if the current array is ordered
-        bool alreadyOrdered = false;
+        int n = ReadInt();
+        int m = ReadInt();
+        long[] nRemainderFrequency = new long[5];
+        long[] mRemainderFrequency = new long[5];
 
-        while (!alreadyOrdered)
+        for (int i = 1; i <= n; i++)
         {
-            int l = -1;
-            int r = -1;
-            alreadyOrdered = true;
-            IteratePairs(0, N, array, ref alreadyOrdered, ref l, ref r);
+            int rem = i % 5;
+            nRemainderFrequency[rem]++;
         }
 
-        alreadyOrdered = false;
-
-        while (!alreadyOrdered)
+        for (int j = 1; j <= m; j++)
         {
-            int l = -1;
-            int r = -1;
-            alreadyOrdered = true;
-            IteratePairs(1, N, array, ref alreadyOrdered, ref l, ref r);
+            int rem = j % 5;
+            mRemainderFrequency[rem]++;
         }
-    }
 
-    private static void IteratePairs(int startingAt, int N, long[] array, ref bool alreadyOrdered, ref int l, ref int r)
-    {
-        for (int i = startingAt; i < N - 1; i += 2)
+        long totalPairs = nRemainderFrequency[0] * mRemainderFrequency[0];
+        for (int i = 1; i <= 4; i++)
         {
-            int currentL = i;
-            int currentR = i + 1;
-            if (array[currentL] > array[currentR])
-            {
-                alreadyOrdered = false;
-                Swap(array, currentL, currentR);
-
-                if (l == -1)
-                {
-                    l = currentL;
-                }
-                if (currentR > r)
-                {
-                    r = currentR;
-                }
-            }
+            long iPairs = nRemainderFrequency[i] * mRemainderFrequency[5-i];
+            totalPairs += iPairs;
         }
-        // We already started the swapping cycle, and now cycle finishes
-        if (l != -1 && r != -1)
-        {
-            // Output is 1-based index
-            Write((l + 1) + " " + (r + 1));
-        }
-    }
 
-    static void Swap(long[] array, long a, long b)
-    {
-        long temp = array[a];
-        array[a] = array[b];
-        array[b] = temp;
+        Write(totalPairs);
     }
 
     #region Main
@@ -88,7 +56,7 @@ public static class B___Little_Robber_Girl_s_Zoo
         try
         {
             Solve();
-            //var thread = new Thread(new B___Little_Robber_Girl_s_Zoo().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new A___Alyona_and_Numbers().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }

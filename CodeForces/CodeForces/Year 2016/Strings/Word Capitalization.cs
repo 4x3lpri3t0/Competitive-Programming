@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+// https://codeforces.com/problemset/problem/281/A
 public static class Word_Capitalization
 {
     private static void Solve()

@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
+// https://codeforces.com/problemset/problem/266/A
 public static class Stones_on_the_Table
 {
     private static void Solve()
