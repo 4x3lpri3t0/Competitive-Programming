@@ -7,6 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UVa", "UVa.vcxproj", "{8040
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions", "Solutions", "{B4932720-64DE-442E-B926-FAFA2AD94959}"
 	ProjectSection(SolutionItems) = preProject
+		1124 - Celebrity jeopardy.cpp = 1124 - Celebrity jeopardy.cpp
 		272 - TEX Quotes.cpp = 272 - TEX Quotes.cpp
 	EndProjectSection
 EndProject
