@@ -18,54 +18,11 @@ public class B___Igor_and_his_way_to_work
         N = ReadInt();
         M = ReadInt();
 
-        int startY = -1;
-        int startX = -1;
-
         matrix = new char[N, M];
-        for (int i = 0; i < N; i++)
-        {
-            string row = Read();
-            for (int j = 0; j < M; j++)
-            {
-                char c = row[j];
-                matrix[i, j] = c;
 
-                if (c == 'S')
-                {
-                    startY = i;
-                    startX = j;
-                }
-            }
-        }
-
-        check = new bool[N, M];
-        int turns = 0;
-        NeighborIsT(startX, startY - 1, turns, "up");
-        NeighborIsT(startX, startY + 1, turns, "down");
-        NeighborIsT(startX - 1, startY, turns, "left");
-        NeighborIsT(startX + 1, startY, turns, "right");
+        // TODO: Upsolve
 
         Write(found ? "YES" : "NO");
-    }
-
-    private static void NeighborIsT(int x, int y, int turns, string prevDirection)
-    {
-        if (x < 0 || x > M - 1) return;
-        if (y < 0 || y > N - 1) return;
-
-        if (check[y, x] || matrix[y, x] == '*' || found || turns > 2) return;
-
-        check[y, x] = true;
-
-        if (matrix[y, x] == 'T')
-        {
-            found = true;
-        }
-
-        NeighborIsT(x, y - 1, prevDirection == "up" ? turns : turns++, "up");
-        NeighborIsT(x, y + 1, prevDirection == "down" ? turns : turns++, "down");
-        NeighborIsT(x - 1, y, prevDirection == "left" ? turns : turns++, "left");
-        NeighborIsT(x + 1, y, prevDirection == "right" ? turns : turns++, "right");
     }
 
     #region Main
