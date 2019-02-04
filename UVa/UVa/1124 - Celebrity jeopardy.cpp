@@ -1,11 +1,9 @@
-#pragma region Includes
 #include <cstdio>
 #include <cstring>
 #include <sstream>
 #include <string>
 #include <iostream>
 using namespace std;
-#pragma endregion
 
 int main() {
 	string s;
