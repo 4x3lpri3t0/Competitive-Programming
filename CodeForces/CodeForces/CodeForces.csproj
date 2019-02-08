@@ -48,7 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="1200 or less\Mishka and Game.cs" />
-    <Compile Include="Rounds\681\C - Heap Operations.cs" />
+    <Compile Include="Rounds\0681\C - Heap Operations.cs" />
+    <Compile Include="Rounds\1111\A - Superhero Transformation.cs" />
+    <Compile Include="Rounds\1111\B - Average Superhero Gang Power.cs" />
     <Compile Include="Year 2016\Brute Force\Beautiful Year.cs" />
     <Compile Include="Year 2016\Brute Force\IQ test.cs" />
     <Compile Include="Year 2016\Brute Force\Vasya and Socks.cs" />
@@ -83,20 +85,19 @@
     <Compile Include="Year 2016\Strings\Word Capitalization.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rounds\681\A - A Good Contest.cs" />
-    <Compile Include="Rounds\681\B - Economy Game.cs" />
-    <Compile Include="Rounds\682\A - Alyona and Numbers.cs" />
-    <Compile Include="Rounds\682\B - Alyona and Mex.cs" />
-    <Compile Include="Rounds\686\A - Free Ice Cream.cs" />
-    <Compile Include="Rounds\686\B - Little Robber Girl%27s Zoo.cs" />
-    <Compile Include="Rounds\688\A - Opponents.cs" />
-    <Compile Include="Rounds\689\A - Mike and Cellphone.cs" />
-    <Compile Include="Rounds\707\A - Brain%27s Photos.cs" />
-    <Compile Include="Rounds\750\A - New Year and Hurry.cs" />
-    <Compile Include="Rounds\750\B - New Year and North Pole.cs" />
-    <Compile Include="Rounds\750\C - New Year and Rating.cs" />
-    <Compile Include="Rounds\793\A - Oleg and shares.cs" />
-    <Compile Include="Rounds\793\B - Igor and his way to work.cs" />
+    <Compile Include="Rounds\0681\A - A Good Contest.cs" />
+    <Compile Include="Rounds\0681\B - Economy Game.cs" />
+    <Compile Include="Rounds\0682\A - Alyona and Numbers.cs" />
+    <Compile Include="Rounds\0682\B - Alyona and Mex.cs" />
+    <Compile Include="Rounds\0686\A - Free Ice Cream.cs" />
+    <Compile Include="Rounds\0686\B - Little Robber Girl%27s Zoo.cs" />
+    <Compile Include="Rounds\0688\A - Opponents.cs" />
+    <Compile Include="Rounds\0707\A - Brain%27s Photos.cs" />
+    <Compile Include="Rounds\0750\A - New Year and Hurry.cs" />
+    <Compile Include="Rounds\0750\B - New Year and North Pole.cs" />
+    <Compile Include="Rounds\0750\C - New Year and Rating.cs" />
+    <Compile Include="Rounds\0793\A - Oleg and shares.cs" />
+    <Compile Include="Rounds\0793\B - Igor and his way to work.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

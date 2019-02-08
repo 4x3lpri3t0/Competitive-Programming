@@ -8,7 +8,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions", "Solutions", "{B4932720-64DE-442E-B926-FAFA2AD94959}"
 	ProjectSection(SolutionItems) = preProject
 		1124 - Celebrity jeopardy.cpp = 1124 - Celebrity jeopardy.cpp
-		11727 - Cost Cutting.cpp = 11727 - Cost Cutting.cpp
 		272 - TEX Quotes.cpp = 272 - TEX Quotes.cpp
 	EndProjectSection
 EndProject

@@ -5,21 +5,15 @@ class Program
 {
     static void Main(string[] args)
     {
-        //PrintList(new Solution().FizzBuzz(15));
-        //Print(new Solution().ReverseString("hello"));
-        // MaxIncreaseKeepingSkyline
-    }
+        // *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+        // *** *** *** *** Interesting/Hard problems to review *** *** *** *** ***
+        // *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
 
-    private static void Print<T>(T data)
-    {
-        Console.WriteLine(data);
-    }
+        //SortedSquares // Merge sort
+        //InsertIntoBST // Trees
+        //KClosest // Sorting
 
-    private static void PrintList<T>(IList<T> list)
-    {
-        foreach (var item in list)
-        {
-            Console.WriteLine(item);
-        }
+        // TODO: Improve: https://leetcode.com/submissions/detail/206295901/
+        //Console.WriteLine(Solution.ShortestCompletingWord("1s3 PSt", new string[] { "step", "steps", "stripe", "stepple" })); 
     }
 }

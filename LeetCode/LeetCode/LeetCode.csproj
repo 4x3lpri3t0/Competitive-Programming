@@ -44,10 +44,28 @@
   <ItemGroup>
     <Compile Include="344 - Reverse String.cs" />
     <Compile Include="412 - Fizz Buzz.cs" />
+    <Compile Include="509 - Fibonacci Number.cs" />
+    <Compile Include="700 - Search in a Binary Search Tree.cs" />
+    <Compile Include="701 - Insert into a Binary Search Tree.cs" />
+    <Compile Include="748 - Shortest Completing Word.cs" />
     <Compile Include="807 - Max Increase to Keep City Skyline.cs" />
+    <Compile Include="852 - Peak Index in a Mountain Array.cs" />
+    <Compile Include="890 - Find and Replace Pattern.cs" />
+    <Compile Include="905 - Sort Array By Parity.cs" />
+    <Compile Include="921 - Minimum Add to Make Parentheses Valid.cs" />
+    <Compile Include="922 - Sort Array By Parity II.cs" />
+    <Compile Include="933 - Number of Recent Calls.cs" />
     <Compile Include="938 - Range Sum of BST.cs" />
+    <Compile Include="942 - DI String Match.cs" />
+    <Compile Include="944 - Delete Columns to Make Sorted.cs" />
+    <Compile Include="961 - RepeatedNTimes.cs" />
+    <Compile Include="973 - K Closest Points to Origin.cs" />
+    <Compile Include="977 - Squares of a Sorted Array.cs" />
+    <Compile Include="985 - Sum of Even Numbers After Queries.cs" />
+    <Compile Include="965 - Univalued Binary Tree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TreeNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

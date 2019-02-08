@@ -1,12 +1,4 @@
-﻿public class TreeNode
-{
-    public int val;
-    public TreeNode left;
-    public TreeNode right;
-    public TreeNode(int x) { val = x; }
-}
-
-// https://leetcode.com/problems/range-sum-of-bst/
+﻿// https://leetcode.com/problems/range-sum-of-bst/
 public partial class Solution
 {
     public int RangeSumBST(TreeNode root, int L, int R)

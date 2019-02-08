@@ -77,23 +77,23 @@
 
             #region Rounds
 
-            // 357
+            // 681
             //A___A_Good_Contest.Main();
             //B___Economy_Game.Main();
             //C___Heap_Operations.Main(); // TODO: Upsolve!
 
-            // 358
+            // 682
             //A___Alyona_and_Numbers.Main(); // Interesting - Number Theory
             //B___Alyona_and_Mex.Main();
 
-            // 359
+            // 686
             //A___Free_Ice_Cream.Main();
             //B___Little_Robber_Girl_s_Zoo.Main(); -> Wrong, see editorial
 
-            // 360
+            // 688
             //A___Opponents.Main();
 
-            // 368
+            // 707
             //A___Brain_s_Photos.Main();
 
             // 750
@@ -101,9 +101,13 @@
             //B__.Main();
             //C__.Main();
 
-            // 793 (Tinkoff)
+            // 793
             //A___Oleg_and_shares.Main();
             //B___Igor_and_his_way_to_work.Main(); // TODO: Upsolve
+
+            // 1111
+            //A___Superhero_Transformation.Main();
+            B___Average_Superhero_Gang_Power.Main(); // TODO: Upsolve
 
             #endregion Rounds
         }
