@@ -46,6 +46,7 @@
     <Compile Include="344 - Reverse String.cs" />
     <Compile Include="412 - Fizz Buzz.cs" />
     <Compile Include="509 - Fibonacci Number.cs" />
+    <Compile Include="661 - Image Smoother.cs" />
     <Compile Include="700 - Search in a Binary Search Tree.cs" />
     <Compile Include="701 - Insert into a Binary Search Tree.cs" />
     <Compile Include="748 - Shortest Completing Word.cs" />
