@@ -49,6 +49,7 @@
     <Compile Include="392 - Is Subsequence.cs" />
     <Compile Include="406 - Queue Reconstruction by Height.cs" />
     <Compile Include="412 - Fizz Buzz.cs" />
+    <Compile Include="452 - Minimum Number of Arrows to Burst Balloons.cs" />
     <Compile Include="455 - Assign Cookies.cs" />
     <Compile Include="509 - Fibonacci Number.cs" />
     <Compile Include="575 - Distribute Candies.cs" />

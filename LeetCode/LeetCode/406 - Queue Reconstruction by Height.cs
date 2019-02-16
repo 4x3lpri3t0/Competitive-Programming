@@ -6,7 +6,7 @@ public partial class Solution
 {
     public int[,] ReconstructQueue(int[,] people)
     {
-        #region Annoying conversion to jagged array
+        #region Convert to jagged array
         int[][] pp = new int[people.GetLength(0)][];
         for (int i = 0; i < pp.Length; i++)
         {
@@ -27,7 +27,7 @@ public partial class Solution
             ans.Insert(pp[i][1], pp[i]);
         }
 
-        #region Annoying conversion to rectangular array
+        #region Convert to rectangular array
         for (int i = 0; i < pp.Length; i++)
         {
             people[i, 0] = ans[i][0];
