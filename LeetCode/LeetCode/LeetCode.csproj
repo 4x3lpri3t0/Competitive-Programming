@@ -58,6 +58,7 @@
     <Compile Include="700 - Search in a Binary Search Tree.cs" />
     <Compile Include="701 - Insert into a Binary Search Tree.cs" />
     <Compile Include="748 - Shortest Completing Word.cs" />
+    <Compile Include="765 - Couples Holding Hands.cs" />
     <Compile Include="784 - Letter Case Permutation.cs" />
     <Compile Include="807 - Max Increase to Keep City Skyline.cs" />
     <Compile Include="821 - Shortest Distance to a Character.cs" />
