@@ -48,9 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="1200 or less\Mishka and Game.cs" />
+    <Compile Include="1300s\A - Bus Game.cs" />
     <Compile Include="Rounds\0681\C - Heap Operations.cs" />
     <Compile Include="Rounds\1111\A - Superhero Transformation.cs" />
     <Compile Include="Rounds\1111\B - Average Superhero Gang Power.cs" />
+    <Compile Include="Rounds\1139\A - Even Substrings.cs" />
+    <Compile Include="Rounds\1139\B - Chocolates.cs" />
     <Compile Include="Year 2016\Brute Force\Beautiful Year.cs" />
     <Compile Include="Year 2016\Brute Force\IQ test.cs" />
     <Compile Include="Year 2016\Brute Force\Vasya and Socks.cs" />
@@ -102,9 +105,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="1300s\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
