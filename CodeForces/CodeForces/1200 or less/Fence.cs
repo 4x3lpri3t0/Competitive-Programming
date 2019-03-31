@@ -13,31 +13,28 @@ public class Fence
         int k = ReadInt();
         int[] h = ReadIntArray();
 
-        int idx = 0;
-        int currentTotal = 0;
+        int[] dp = new int[n - k + 1];
 
-        // Precompute current k length
+        // Precompute first idx
         for (int i = 0; i < k; i++)
-        {
-            currentTotal += h[i];
-        }
+            dp[0] += h[i];
 
-        int minTotal = currentTotal;
+        int minTotal = dp[0];
+        int startIdx = 0;
 
-        // Update just current iteration
+        // Update with new iteration
         for (int i = 1; i < n - k + 1; i++)
         {
-            currentTotal -= h[i - 1];
-            currentTotal += h[i + k - 1];
+            dp[i] = dp[i - 1] - h[i - 1] + h[i + k - 1];
 
-            if (currentTotal < minTotal)
+            if (dp[i] < minTotal)
             {
-                minTotal = currentTotal;
-                idx = i;
+                minTotal = dp[i];
+                startIdx = i;
             }
         }
 
-        Write(idx);
+        Write(startIdx + 1);
     }
 
     #region Main
