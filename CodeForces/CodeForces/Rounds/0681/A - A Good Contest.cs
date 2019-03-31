@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Numerics;
 
 // https://codeforces.com/contest/681/problem/A
 public static class A___A_Good_Contest
