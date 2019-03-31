@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1200 or less\Fence.cs" />
     <Compile Include="1200 or less\Mishka and Game.cs" />
     <Compile Include="1300s\A - Bus Game.cs" />
     <Compile Include="1300s\A - Where Are My Flakes.cs" />

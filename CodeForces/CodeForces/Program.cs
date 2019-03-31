@@ -76,8 +76,9 @@
             #endregion Lvl 1
 
             #region Year 2019
+            Fence.Main();
             //A___Bus_Game.Main();
-            A___Where_Are_My_Flakes.Main();
+            //A___Where_Are_My_Flakes.Main();
             #endregion
 
             #region Rounds
