@@ -56,6 +56,10 @@
     <Compile Include="Rounds\1111\B - Average Superhero Gang Power.cs" />
     <Compile Include="Rounds\1139\A - Even Substrings.cs" />
     <Compile Include="Rounds\1139\B - Chocolates.cs" />
+    <Compile Include="Rounds\1144\A - Diverse Strings.cs" />
+    <Compile Include="Rounds\1144\B - Parity Alternated Deletions.cs" />
+    <Compile Include="Rounds\1144\C - Two Shuffled Sequences.cs" />
+    <Compile Include="Rounds\1144\D - Equalize Them All.cs" />
     <Compile Include="Year 2016\Brute Force\Beautiful Year.cs" />
     <Compile Include="Year 2016\Brute Force\IQ test.cs" />
     <Compile Include="Year 2016\Brute Force\Vasya and Socks.cs" />

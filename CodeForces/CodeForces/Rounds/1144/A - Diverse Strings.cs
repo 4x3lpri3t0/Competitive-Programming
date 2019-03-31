@@ -4,34 +4,41 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+
+using static System.Math;
 #endregion
 
-// http://codeforces.com/problemset/problem/60/A
-public class A___Where_Are_My_Flakes
+// http://codeforces.com/contest/1144/problem/A
+public class A___Diverse_Strings
 {
     private static void Solve()
     {
         int n = ReadInt();
-        int m = ReadInt();
 
-        int leftIdx = 1;
-        int rightIdx = n;
-
-        while (m-- > 0)
+        while (n-- > 0)
         {
-            string[] hint = ReadAndSplitLine();
-            string position = hint[2];
-            int idx = Convert.ToInt32(hint[hint.Length - 1]);
-            if (position.Equals("right") && idx >= leftIdx)
+            DoIteration();
+        }
+    }
+
+    private static void DoIteration()
+    {
+        char[] str = Read().ToCharArray();
+        str = str.OrderBy(x => x).ToArray();
+
+        char prev = str[0];
+        for (int i = 1; i < str.Length; i++)
+        {
+            if (str[i] - 0 != prev + 1)
             {
-                leftIdx = idx + 1;
-            } else if (idx <= rightIdx) // To the left of
-            {
-                rightIdx = idx - 1;
+                Write("No");
+                return;
             }
+
+            prev = str[i];
         }
 
-        Write(rightIdx - leftIdx >= 0 ? rightIdx - leftIdx + 1 : -1);
+        Write("Yes");
     }
 
     #region Main

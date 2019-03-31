@@ -4,34 +4,19 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+
+using static System.Math;
 #endregion
 
-// http://codeforces.com/problemset/problem/60/A
-public class A___Where_Are_My_Flakes
+// http://codeforces.com/contest/1144/problem/D
+public class D_EqualizeThemAll
 {
     private static void Solve()
     {
         int n = ReadInt();
-        int m = ReadInt();
+        int[] a = ReadIntArray();
 
-        int leftIdx = 1;
-        int rightIdx = n;
-
-        while (m-- > 0)
-        {
-            string[] hint = ReadAndSplitLine();
-            string position = hint[2];
-            int idx = Convert.ToInt32(hint[hint.Length - 1]);
-            if (position.Equals("right") && idx >= leftIdx)
-            {
-                leftIdx = idx + 1;
-            } else if (idx <= rightIdx) // To the left of
-            {
-                rightIdx = idx - 1;
-            }
-        }
-
-        Write(rightIdx - leftIdx >= 0 ? rightIdx - leftIdx + 1 : -1);
+        Write();
     }
 
     #region Main

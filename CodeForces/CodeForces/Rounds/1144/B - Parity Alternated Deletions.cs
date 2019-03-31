@@ -1,37 +1,62 @@
 ﻿#region Usings
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 #endregion
 
-// http://codeforces.com/problemset/problem/60/A
-public class A___Where_Are_My_Flakes
+// http://codeforces.com/contest/1144/problem/B
+public class B__Parity_Alternated_Deletions
 {
     private static void Solve()
     {
         int n = ReadInt();
-        int m = ReadInt();
+        int[] a = ReadIntArray();
 
-        int leftIdx = 1;
-        int rightIdx = n;
-
-        while (m-- > 0)
+        a = a.OrderByDescending(x => x).ToArray();
+        var odds = new ArrayList();
+        var evens = new ArrayList();
+        for (int i = 0; i < n; i++)
         {
-            string[] hint = ReadAndSplitLine();
-            string position = hint[2];
-            int idx = Convert.ToInt32(hint[hint.Length - 1]);
-            if (position.Equals("right") && idx >= leftIdx)
-            {
-                leftIdx = idx + 1;
-            } else if (idx <= rightIdx) // To the left of
-            {
-                rightIdx = idx - 1;
-            }
+            if (a[i] % 2 == 0)
+                evens.Add(a[i]);
+            else
+                odds.Add(a[i]);
         }
 
-        Write(rightIdx - leftIdx >= 0 ? rightIdx - leftIdx + 1 : -1);
+        bool turnOdds = odds.Count > evens.Count ? true : false;
+        while (true)
+        {
+            if (turnOdds)
+            {
+                if (odds.Count == 0)
+                    break;
+
+                odds.RemoveAt(0);
+            }
+            else // even
+            {
+                if (evens.Count == 0)
+                    break;
+
+                evens.RemoveAt(0);
+            }
+            turnOdds = !turnOdds;
+        }
+
+        long total = 0;
+        for (int i = 0; i < odds.Count; i++)
+        {
+            total += (int)odds[i];
+        }
+        for (int i = 0; i < evens.Count; i++)
+        {
+            total += (int)evens[i];
+        }
+
+        Write(total);
     }
 
     #region Main

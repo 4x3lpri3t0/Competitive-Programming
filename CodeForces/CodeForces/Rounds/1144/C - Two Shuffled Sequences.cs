@@ -1,37 +1,50 @@
 ﻿#region Usings
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+
+using static System.Math;
 #endregion
 
-// http://codeforces.com/problemset/problem/60/A
-public class A___Where_Are_My_Flakes
+// http://codeforces.com/contest/1144/problem/C
+public class C___Two_Shuffled_Sequences
 {
     private static void Solve()
     {
         int n = ReadInt();
-        int m = ReadInt();
+        int[] a = ReadIntArray();
 
-        int leftIdx = 1;
-        int rightIdx = n;
+        a = a.OrderBy(x => x).ToArray();
 
-        while (m-- > 0)
+        // Check
+        for (int i = 2; i < n; i++)
         {
-            string[] hint = ReadAndSplitLine();
-            string position = hint[2];
-            int idx = Convert.ToInt32(hint[hint.Length - 1]);
-            if (position.Equals("right") && idx >= leftIdx)
+            if (a[i] == a[i - 2])
             {
-                leftIdx = idx + 1;
-            } else if (idx <= rightIdx) // To the left of
-            {
-                rightIdx = idx - 1;
+                Write("NO");
+                return;
             }
         }
 
-        Write(rightIdx - leftIdx >= 0 ? rightIdx - leftIdx + 1 : -1);
+        var inc = new List<int>();
+        var dec = new List<int>();
+        inc.Add(a[0]);
+        for (int i = 1; i < n; i++)
+        {
+            if (a[i] != a[i - 1])
+                inc.Add(a[i]);
+            else
+                dec.Insert(0, a[i]);
+        }
+
+        Write("YES");
+        Write(inc.Count());
+        WriteArray(inc);
+        Write(dec.Count());
+        WriteArray(dec);
     }
 
     #region Main
