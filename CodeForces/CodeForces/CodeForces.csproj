@@ -54,8 +54,10 @@
     <Compile Include="1200 or less\A - Sasha and His Trip.cs" />
     <Compile Include="1200 or less\A - The Way to Home.cs" />
     <Compile Include="1200 or less\B - Cormen.cs" />
+    <Compile Include="1200 or less\B - Ilya and Queries.cs" />
     <Compile Include="1200 or less\B - Interesting drink.cs" />
     <Compile Include="1200 or less\B - Sereja and Suffixes.cs" />
+    <Compile Include="1200 or less\B - Vitamins.cs" />
     <Compile Include="1200 or less\Fence.cs" />
     <Compile Include="1200 or less\Mishka and Game.cs" />
     <Compile Include="1300s\A - Bus Game.cs" />

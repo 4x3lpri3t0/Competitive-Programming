@@ -86,7 +86,10 @@
             //A___Hit_the_Lottery.Main();
             //A___Maximum_Increase.Main();
             //A___Sasha_and_His_Trip.Main();
-            A___The_Way_to_Home.Main();
+            // QAQ -> TODO review
+            //A___The_Way_to_Home.Main();
+            //B___Ilya_and_Queries.Main(); // TODO: Review (easy)
+            B___Vitamins.Main();
             #endregion
 
             #region Rounds
