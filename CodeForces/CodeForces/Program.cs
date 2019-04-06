@@ -76,9 +76,15 @@
             #endregion Lvl 1
 
             #region Year 2019
+            //B___Interesting_drink.Main();
+            //B___Sereja_and_Suffixes.Main();
+            //B___Cormen.Main();
             //Fence.Main();
             //A___Bus_Game.Main();
             //A___Where_Are_My_Flakes.Main(); // TODO: Broken
+            //A___Flipping_Game.Main(); // TODO: Review
+            //A___Hit_the_Lottery.Main();
+
             #endregion
 
             #region Rounds

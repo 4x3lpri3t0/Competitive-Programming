@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1200 or less\A - Flipping Game.cs" />
+    <Compile Include="1200 or less\A - Hit the Lottery.cs" />
+    <Compile Include="1200 or less\A - QAQ.cs" />
+    <Compile Include="1200 or less\B - Cormen.cs" />
+    <Compile Include="1200 or less\B - Interesting drink.cs" />
+    <Compile Include="1200 or less\B - Sereja and Suffixes.cs" />
     <Compile Include="1200 or less\Fence.cs" />
     <Compile Include="1200 or less\Mishka and Game.cs" />
     <Compile Include="1300s\A - Bus Game.cs" />
