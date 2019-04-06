@@ -84,7 +84,9 @@
             //A___Where_Are_My_Flakes.Main(); // TODO: Broken
             //A___Flipping_Game.Main(); // TODO: Review
             //A___Hit_the_Lottery.Main();
-
+            //A___Maximum_Increase.Main();
+            //A___Sasha_and_His_Trip.Main();
+            A___The_Way_to_Home.Main();
             #endregion
 
             #region Rounds
