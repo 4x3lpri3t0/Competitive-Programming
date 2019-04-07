@@ -89,7 +89,9 @@
             // QAQ -> TODO review
             //A___The_Way_to_Home.Main();
             //B___Ilya_and_Queries.Main(); // TODO: Review (easy)
-            B___Vitamins.Main();
+            //B___Vitamins.Main();
+            //B___Petr_and_a_Combination_Lock.Main(); // TODO: Review (easy)
+            //B___Creating_the_Contest.Main();
             #endregion
 
             #region Rounds
