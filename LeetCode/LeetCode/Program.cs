@@ -20,5 +20,11 @@
 
         // TODO: Improve: https://leetcode.com/submissions/detail/206295901/
         //Console.WriteLine(Solution.ShortestCompletingWord("1s3 PSt", new string[] { "step", "steps", "stripe", "stepple" })); 
+
+
+        // *** 2019 *** DP focus ***
+        //StoneGame // TODO: Refactor to bottom-up
+        //MinFallingPathSum
+        //MincostTickets
     }
 }

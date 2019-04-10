@@ -86,12 +86,16 @@
             //A___Hit_the_Lottery.Main();
             //A___Maximum_Increase.Main();
             //A___Sasha_and_His_Trip.Main();
-            // QAQ -> TODO review
+            //A___QAQ.Main(); // TODO review
             //A___The_Way_to_Home.Main();
             //B___Ilya_and_Queries.Main(); // TODO: Review (easy)
-            //B___Vitamins.Main();
+            //B___Vitamins.Main(); // TODO?
             //B___Petr_and_a_Combination_Lock.Main(); // TODO: Review (easy)
             //B___Creating_the_Contest.Main();
+            //A___Joysticks.Main();
+            //B___Perfect_Number.Main(); // TODO: Review
+            //B___Game_of_Credit_Cards.Main();
+            //B___Dreamoon_and_WiFi.Main(); // TODO
             #endregion
 
             #region Rounds

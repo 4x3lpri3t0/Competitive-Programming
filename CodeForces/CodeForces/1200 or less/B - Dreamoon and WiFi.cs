@@ -8,32 +8,128 @@ using System.Linq;
 using static System.Math;
 #endregion
 
-// https://codeforces.com/contest/894/problem/A
-public class A___QAQ
+// https://codeforces.com/problemset/problem/476/B
+public class B___Dreamoon_and_WiFi
 {
-    static string s, t;
-    static int n;
-    static long solve(int idx, int i)
+    public static long combination(long n, long r)
     {
-        if (i == 3)
-            return 1; // Reached end of QAQ
+        long i;
+        long ans;
+        long x;
+        long k = 1;
 
-        if (idx == n)
-            return 0; // Reached end of string
+        x = Math.Max(r, n - r);
+        ans = 1;
+        for (i = n; i > x; i--)
+        {
+            ans = ans * i;
+            ans = ans / k;
+            k++;
+        }
+        return ans;
 
-        long s1 = solve(idx + 1, i);
-        if (s[idx] == t[i])
-            s1 += solve(idx + 1, i + 1);
-
-        return s1;
     }
+
+    
 
     private static void Solve()
     {
-        s = Read();
-        n = s.Length;
-        t = "QAQ";
-        Write(solve(0, 0));
+        string initial = Read();
+        string received = Read();
+
+        int iPlus = 0, iMinus = 0;
+        int rPlus = 0, rMinus = 0, rQuest = 0;
+        double prob = 0;
+        int questAsPlus = 0;
+        int questAsMinus = 0;
+        string result;
+        int endPosition = 0;
+        int endPositionR = 0;
+
+        for (int i = 0; i < initial.Length; i++)
+        {
+            switch (initial[i])
+            {
+                case '+':
+                    iPlus++;
+                    endPosition++;
+                    break;
+                case '-':
+                    iMinus++;
+                    endPosition--;
+                    break;
+                default:
+                    break;
+            }
+            switch (received[i])
+            {
+                case '+':
+                    rPlus++;
+                    endPositionR++;
+                    break;
+                case '-':
+                    rMinus++;
+                    endPositionR--;
+                    break;
+                case '?':
+                    rQuest++;
+                    break;
+                default:
+                    break;
+            }
+        }
+        int originalQuest = rQuest;
+        int originalPlus = rPlus;
+        int originalMinus = rMinus;
+
+        if (rMinus == iMinus && rPlus == iPlus) prob = 1;
+        else if (iMinus < rMinus || iPlus < rPlus) prob = 0;
+        else
+        {
+            if (iMinus > rMinus)
+            {
+                while (iMinus > rMinus && rQuest > 0)
+                {
+                    rMinus++;
+                    rQuest--;
+                    questAsMinus++;
+                }
+            }
+            if (iPlus > rPlus)
+            {
+                while (iPlus > rPlus && rQuest > 0)
+                {
+                    rPlus++;
+                    rQuest--;
+                    questAsPlus++;
+                }
+            }
+
+            if (rMinus != iMinus || rPlus != iPlus) prob = 0;
+            else
+            {
+                int distance = Math.Abs(endPosition - endPositionR);
+                if (endPosition < endPositionR) distance = -distance;
+
+                //Console.WriteLine("distance: {0}", distance);
+                //Console.WriteLine("minus: {0}",questAsMinus);
+                //Console.WriteLine("plus: {0}", questAsPlus);
+
+                double possibleWays = combination(questAsMinus + questAsPlus, questAsPlus);
+                //Console.WriteLine("possible ways: {0}", possibleWays);
+
+                prob = possibleWays / Math.Pow(2, originalQuest);
+                result = prob.ToString();
+
+            }
+
+        }
+        result = prob.ToString();
+        for (int i = 0; i < result.Length; i++)
+        {
+            if (result[i] == ',') Console.Write('.');
+            else Console.Write(result[i]);
+        }
     }
 
     #region Main

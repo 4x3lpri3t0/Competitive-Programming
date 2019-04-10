@@ -4,36 +4,39 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-
-using static System.Math;
 #endregion
 
-// https://codeforces.com/contest/894/problem/A
-public class A___QAQ
+// https://codeforces.com/problemset/problem/919/B
+public class B___Perfect_Number
 {
-    static string s, t;
-    static int n;
-    static long solve(int idx, int i)
+    static IEnumerable<int> DigitSum10(int size, int prefix, int prefixSize, int prefixSum)
     {
-        if (i == 3)
-            return 1; // Reached end of QAQ
+        if (prefixSize == size)
+        {
+            if (prefixSum == 10)
+                yield return prefix;
+        }
+        else if (prefixSum <= 10)
+        {
+            var lower = prefix == 0 ? 1 : 0;
+            for (int i = lower; i < 10; ++i)
+                foreach (var j in DigitSum10(size, prefix * 10 + i, prefixSize + 1, prefixSum + i))
+                    yield return j;
+        }
+    }
 
-        if (idx == n)
-            return 0; // Reached end of string
-
-        long s1 = solve(idx + 1, i);
-        if (s[idx] == t[i])
-            s1 += solve(idx + 1, i + 1);
-
-        return s1;
+    static IEnumerable<int> DigitSum10()
+    {
+        for (int i = 1; ; ++i)
+            foreach (var j in DigitSum10(i, 0, 0, 0))
+                yield return j;
     }
 
     private static void Solve()
     {
-        s = Read();
-        n = s.Length;
-        t = "QAQ";
-        Write(solve(0, 0));
+        int k = ReadInt();
+
+        Write(DigitSum10().ElementAt(k - 1));
     }
 
     #region Main

@@ -49,14 +49,18 @@
   <ItemGroup>
     <Compile Include="1200 or less\A - Flipping Game.cs" />
     <Compile Include="1200 or less\A - Hit the Lottery.cs" />
+    <Compile Include="1200 or less\A - Joysticks.cs" />
     <Compile Include="1200 or less\A - Maximum Increase.cs" />
     <Compile Include="1200 or less\A - QAQ.cs" />
     <Compile Include="1200 or less\A - Sasha and His Trip.cs" />
     <Compile Include="1200 or less\A - The Way to Home.cs" />
     <Compile Include="1200 or less\B - Cormen.cs" />
     <Compile Include="1200 or less\B - Creating the Contest.cs" />
+    <Compile Include="1200 or less\B - Dreamoon and WiFi.cs" />
+    <Compile Include="1200 or less\B - Game of Credit Cards.cs" />
     <Compile Include="1200 or less\B - Ilya and Queries.cs" />
     <Compile Include="1200 or less\B - Interesting drink.cs" />
+    <Compile Include="1200 or less\B - Perfect Number.cs" />
     <Compile Include="1200 or less\B - Petr and a Combination Lock.cs" />
     <Compile Include="1200 or less\B - Sereja and Suffixes.cs" />
     <Compile Include="1200 or less\B - Vitamins.cs" />

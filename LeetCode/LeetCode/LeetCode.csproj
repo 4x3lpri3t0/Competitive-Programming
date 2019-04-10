@@ -65,12 +65,14 @@
     <Compile Include="852 - Peak Index in a Mountain Array.cs" />
     <Compile Include="860 - Lemonade Change.cs" />
     <Compile Include="876 - Middle of the Linked List.cs" />
+    <Compile Include="877 - Stone Game.cs" />
     <Compile Include="884 - Uncommon Words from Two Sentences.cs" />
     <Compile Include="890 - Find and Replace Pattern.cs" />
     <Compile Include="896 - Monotonic Array.cs" />
     <Compile Include="905 - Sort Array By Parity.cs" />
     <Compile Include="921 - Minimum Add to Make Parentheses Valid.cs" />
     <Compile Include="922 - Sort Array By Parity II.cs" />
+    <Compile Include="931 - Minimum Falling Path Sum.cs" />
     <Compile Include="933 - Number of Recent Calls.cs" />
     <Compile Include="938 - Range Sum of BST.cs" />
     <Compile Include="941 - Valid Mountain Array.cs" />
@@ -79,6 +81,7 @@
     <Compile Include="961 - RepeatedNTimes.cs" />
     <Compile Include="973 - K Closest Points to Origin.cs" />
     <Compile Include="977 - Squares of a Sorted Array.cs" />
+    <Compile Include="983 - Minimum Cost For Tickets.cs" />
     <Compile Include="984 - String Without AAA or BBB.cs" />
     <Compile Include="985 - Sum of Even Numbers After Queries.cs" />
     <Compile Include="965 - Univalued Binary Tree.cs" />

@@ -8,32 +8,47 @@ using System.Linq;
 using static System.Math;
 #endregion
 
-// https://codeforces.com/contest/894/problem/A
-public class A___QAQ
+// https://codeforces.com/problemset/problem/777/B
+public class B___Game_of_Credit_Cards
 {
-    static string s, t;
-    static int n;
-    static long solve(int idx, int i)
-    {
-        if (i == 3)
-            return 1; // Reached end of QAQ
-
-        if (idx == n)
-            return 0; // Reached end of string
-
-        long s1 = solve(idx + 1, i);
-        if (s[idx] == t[i])
-            s1 += solve(idx + 1, i + 1);
-
-        return s1;
-    }
-
     private static void Solve()
     {
-        s = Read();
-        n = s.Length;
-        t = "QAQ";
-        Write(solve(0, 0));
+        int n = ReadInt();
+        string s = Read();
+        string m = Read();
+
+        var S = s.OrderByDescending(x => x).ToArray();
+        var M = m.OrderByDescending(x => x).ToArray();
+
+        int mIndex = 0;
+        int flicksReceived = 0;
+        for (int i = 0; i < n; i++)
+        {
+            if (M[mIndex] >= S[i])
+            {
+                mIndex++;
+            } else
+            {
+                flicksReceived++;
+            }
+        }
+
+        // Min flicks received
+        Write(flicksReceived);
+
+        mIndex = 0;
+        int flicksGiven = 0;
+        for (int i = 0; i < n; i++)
+        {
+            if (M[mIndex] > S[i])
+            {
+                flicksGiven++;
+                mIndex++;
+            }
+        }
+
+        // Max flicks given
+        Write(flicksGiven);
     }
 
     #region Main

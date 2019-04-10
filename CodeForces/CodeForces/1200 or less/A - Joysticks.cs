@@ -4,36 +4,37 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-
-using static System.Math;
 #endregion
 
-// https://codeforces.com/contest/894/problem/A
-public class A___QAQ
+// https://codeforces.com/problemset/problem/651/A
+public class A___Joysticks
 {
-    static string s, t;
-    static int n;
-    static long solve(int idx, int i)
-    {
-        if (i == 3)
-            return 1; // Reached end of QAQ
-
-        if (idx == n)
-            return 0; // Reached end of string
-
-        long s1 = solve(idx + 1, i);
-        if (s[idx] == t[i])
-            s1 += solve(idx + 1, i + 1);
-
-        return s1;
-    }
-
     private static void Solve()
     {
-        s = Read();
-        n = s.Length;
-        t = "QAQ";
-        Write(solve(0, 0));
+        int a = ReadInt();
+        int b = ReadInt();
+
+        int minutes = 0;
+        while (a > 0 && b > 0)
+        {
+            if (a == 1 && b == 1)
+                break;
+
+            minutes++;
+
+            if (a <= b)
+            {
+                a++;
+                b -= 2;
+            }
+            else
+            {
+                b++;
+                a -= 2;
+            }
+        }
+
+        Write(minutes);
     }
 
     #region Main
