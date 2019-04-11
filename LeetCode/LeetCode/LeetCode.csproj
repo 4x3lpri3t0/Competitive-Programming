@@ -57,6 +57,7 @@
     <Compile Include="665 - Non-decreasing Array.cs" />
     <Compile Include="700 - Search in a Binary Search Tree.cs" />
     <Compile Include="701 - Insert into a Binary Search Tree.cs" />
+    <Compile Include="746 - Min Cost Climbing Stairs.cs" />
     <Compile Include="748 - Shortest Completing Word.cs" />
     <Compile Include="765 - Couples Holding Hands.cs" />
     <Compile Include="784 - Letter Case Permutation.cs" />
