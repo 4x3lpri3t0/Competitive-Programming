@@ -96,6 +96,8 @@
             //B___Perfect_Number.Main(); // TODO: Review
             //B___Game_of_Credit_Cards.Main();
             //B___Dreamoon_and_WiFi.Main(); // TODO
+            //B___Little_Girl_and_Game.Main(); // TODO: Review
+            //D___Equalize_Them_All.Main(); // TODO: Review
             #endregion
 
             #region Rounds

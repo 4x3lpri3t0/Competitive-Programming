@@ -66,8 +66,10 @@
     <Compile Include="1200 or less\B - Vitamins.cs" />
     <Compile Include="1200 or less\Fence.cs" />
     <Compile Include="1200 or less\Mishka and Game.cs" />
-    <Compile Include="1300s\A - Bus Game.cs" />
-    <Compile Include="1300s\A - Where Are My Flakes.cs" />
+    <Compile Include="1300\A - Bus Game.cs" />
+    <Compile Include="1300\A - Where Are My Flakes.cs" />
+    <Compile Include="1400\B - Little Girl and Game.cs" />
+    <Compile Include="1400\D - Equalize Them All.cs" />
     <Compile Include="Rounds\0681\C - Heap Operations.cs" />
     <Compile Include="Rounds\1111\A - Superhero Transformation.cs" />
     <Compile Include="Rounds\1111\B - Average Superhero Gang Power.cs" />
