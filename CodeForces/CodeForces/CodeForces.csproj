@@ -77,6 +77,9 @@
     <Compile Include="Rounds\1144\B - Parity Alternated Deletions.cs" />
     <Compile Include="Rounds\1144\C - Two Shuffled Sequences.cs" />
     <Compile Include="Rounds\1144\D - Equalize Them All.cs" />
+    <Compile Include="Rounds\1153\A - Serval and Bus.cs" />
+    <Compile Include="Rounds\1153\B - Serval and Toy Bricks.cs" />
+    <Compile Include="Rounds\1153\C - Serval and Parenthesis Sequence.cs" />
     <Compile Include="Year 2016\Brute Force\Beautiful Year.cs" />
     <Compile Include="Year 2016\Brute Force\IQ test.cs" />
     <Compile Include="Year 2016\Brute Force\Vasya and Socks.cs" />
