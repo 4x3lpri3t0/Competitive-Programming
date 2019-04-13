@@ -66,8 +66,10 @@
     <Compile Include="1200 or less\B - Vitamins.cs" />
     <Compile Include="1200 or less\Fence.cs" />
     <Compile Include="1200 or less\Mishka and Game.cs" />
-    <Compile Include="1300s\A - Bus Game.cs" />
-    <Compile Include="1300s\A - Where Are My Flakes.cs" />
+    <Compile Include="1300\A - Bus Game.cs" />
+    <Compile Include="1300\A - Where Are My Flakes.cs" />
+    <Compile Include="1400\B - Little Girl and Game.cs" />
+    <Compile Include="1400\D - Equalize Them All.cs" />
     <Compile Include="Rounds\0681\C - Heap Operations.cs" />
     <Compile Include="Rounds\1111\A - Superhero Transformation.cs" />
     <Compile Include="Rounds\1111\B - Average Superhero Gang Power.cs" />
@@ -76,7 +78,6 @@
     <Compile Include="Rounds\1144\A - Diverse Strings.cs" />
     <Compile Include="Rounds\1144\B - Parity Alternated Deletions.cs" />
     <Compile Include="Rounds\1144\C - Two Shuffled Sequences.cs" />
-    <Compile Include="Rounds\1144\D - Equalize Them All.cs" />
     <Compile Include="Year 2016\Brute Force\Beautiful Year.cs" />
     <Compile Include="Year 2016\Brute Force\IQ test.cs" />
     <Compile Include="Year 2016\Brute Force\Vasya and Socks.cs" />

@@ -4,19 +4,59 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-
-using static System.Math;
 #endregion
 
-// http://codeforces.com/contest/1144/problem/D
-public class D_EqualizeThemAll
+// https://codeforces.com/contest/1144/problem/D
+// https://codeforces.com/blog/entry/66307
+public class D___Equalize_Them_All
 {
     private static void Solve()
     {
-        int n = ReadInt();
-        int[] a = ReadIntArray();
+        int N = ReadInt();
+        int[] A = ReadIntArray();
 
-        Write();
+        // 1. Store frequency of integers
+        // 2. Get most frequent number and index of it
+        var di = new Dictionary<int, int>();
+        int maxVal = -1, maxNum = -1, maxIdx = -1;
+        for (int i = 0; i < N; i++)
+        {
+            int n = A[i];
+
+            if (!di.ContainsKey(n))
+                di.Add(n, 0);
+            di[n]++;
+
+            if (di[n] > maxVal)
+            {
+                maxVal = di[n];
+                maxNum = n;
+                maxIdx = i;
+            }
+        }
+
+        var ans = new List<string>();
+
+        for (int i = maxIdx - 1; i >= 0; i--) // Go left
+        {
+            // +1 because of output format
+            if (A[i] < maxNum)
+                ans.Add(string.Format("{0} {1} {2}", 1, i + 1, i + 1 + 1));
+            else if (A[i] > maxNum)
+                ans.Add(string.Format("{0} {1} {2}", 2, i + 1, i + 1 + 1));
+        }
+
+        for (int i = maxIdx + 1; i < N; i++) // Go right
+        {
+            // +1 because of output format
+            if (A[i] < maxNum)
+                ans.Add(string.Format("{0} {1} {2}", 1, i + 1, i - 1 + 1));
+            else if (A[i] > maxNum)
+                ans.Add(string.Format("{0} {1} {2}", 2, i + 1, i - 1 + 1));
+        }
+
+        Write(ans.Count);
+        WriteArray(ans);
     }
 
     #region Main
