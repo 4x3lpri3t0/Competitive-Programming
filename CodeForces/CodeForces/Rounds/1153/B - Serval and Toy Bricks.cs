@@ -17,43 +17,18 @@ public class ServalAndToyBricks
         int M = ReadInt();
         int H = ReadInt();
 
+        var a = ReadIntArray();
+        var b = ReadIntArray();
+
         int[][] result = new int[N][];
 
         for (int i = 0; i < N; i++)
+        {
+            var h = ReadIntArray();
             result[i] = new int[M];
-
-        for (int m = 0; m < M; m++)
-        {
-            int curI = ReadInt();
-
-            for (int n = 0; n < N; n++)
-            {
-                result[n][m] = curI;
-            }
-        }
-
-        //2
-        for (int n = 0; n < N; n++)
-        {
-            int curI = ReadInt();
-
-            for (int m = 0; m < M; m++)
-            {
-                result[n][m] = Math.Min(result[n][m], curI);
-            }
-        }
-
-        //3
-        for (int i = 0; i < N; i++)
-        {
             for (int j = 0; j < M; j++)
-            {
-                int cur = ReadInt();
-                if (cur == 0)
-                {
-                    result[i][j] = 0;
-                }
-            }
+                if (h[j] == 1)
+                    result[i][j] = Min(a[j], b[i]);
         }
 
         foreach (var row in result)

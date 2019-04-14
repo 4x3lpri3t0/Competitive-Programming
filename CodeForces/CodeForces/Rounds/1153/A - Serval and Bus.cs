@@ -4,8 +4,6 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-
-using static System.Math;
 #endregion
 
 // https://codeforces.com/contest/1153/problem/A
@@ -24,26 +22,13 @@ public class ServalAndBus
             int s = ReadInt();
             int d = ReadInt();
 
-            if (s >= t)
-            {
-                if (s < minVal)
-                {
-                    minVal = s;
-                    minIdx = idx;
-                }
-            } else
-            {
-                int sd = s + d;
-                while (sd < t)
-                {
-                    sd += d;
-                }
+            while (s < t)
+                s += d;
 
-                if (sd < minVal)
-                {
-                    minVal = sd;
-                    minIdx = idx;
-                }
+            if (s < minVal)
+            {
+                minVal = s;
+                minIdx = idx;
             }
 
             idx++;
