@@ -52,12 +52,14 @@
     <Compile Include="1200 or less\A - Joysticks.cs" />
     <Compile Include="1200 or less\A - Maximum Increase.cs" />
     <Compile Include="1200 or less\A - QAQ.cs" />
+    <Compile Include="1200 or less\A - Santa Claus and Candies.cs" />
     <Compile Include="1200 or less\A - Sasha and His Trip.cs" />
     <Compile Include="1200 or less\A - The Way to Home.cs" />
     <Compile Include="1200 or less\B - Cormen.cs" />
     <Compile Include="1200 or less\B - Creating the Contest.cs" />
     <Compile Include="1200 or less\B - Dreamoon and WiFi.cs" />
     <Compile Include="1200 or less\B - Game of Credit Cards.cs" />
+    <Compile Include="1200 or less\B - George and Round.cs" />
     <Compile Include="1200 or less\B - Ilya and Queries.cs" />
     <Compile Include="1200 or less\B - Interesting drink.cs" />
     <Compile Include="1200 or less\B - Perfect Number.cs" />
@@ -69,8 +71,11 @@
     <Compile Include="1200 or less\A - Mishka and Game.cs" />
     <Compile Include="1300\A - Bus Game.cs" />
     <Compile Include="1300\A - Where Are My Flakes.cs" />
+    <Compile Include="1300\B - Painting Pebbles.cs" />
+    <Compile Include="1400\B - Complete the Word.cs" />
     <Compile Include="1400\B - Little Girl and Game.cs" />
     <Compile Include="1400\D - Equalize Them All.cs" />
+    <Compile Include="1400\D - Queue.cs" />
     <Compile Include="Rounds\0681\C - Heap Operations.cs" />
     <Compile Include="Rounds\1111\A - Superhero Transformation.cs" />
     <Compile Include="Rounds\1111\B - Average Superhero Gang Power.cs" />
@@ -82,6 +87,9 @@
     <Compile Include="Rounds\1153\A - Serval and Bus.cs" />
     <Compile Include="Rounds\1153\B - Serval and Toy Bricks.cs" />
     <Compile Include="Rounds\1153\C - Serval and Parenthesis Sequence.cs" />
+    <Compile Include="Rounds\1154\A - Restoring Three Numbers.cs" />
+    <Compile Include="Rounds\1154\B - Make Them Equal.cs" />
+    <Compile Include="Rounds\1154\C - Gourmet Cat.cs" />
     <Compile Include="Year 2016\Brute Force\Beautiful Year.cs" />
     <Compile Include="Year 2016\Brute Force\IQ test.cs" />
     <Compile Include="Year 2016\Brute Force\Vasya and Socks.cs" />
@@ -133,7 +141,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="1500\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

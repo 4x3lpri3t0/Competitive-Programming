@@ -98,6 +98,11 @@
             //B___Dreamoon_and_WiFi.Main(); // TODO
             //B___Little_Girl_and_Game.Main(); // TODO: Review
             //D___Equalize_Them_All.Main(); // TODO: Review
+            //B___Complete_the_Word.Main(); // TODO
+            //D___Queue.Main();
+            //B___Painting_Pebbles.Main();
+            //B___George_and_Round.Main();
+            //A___Santa_Claus_and_Candies.Main();
             #endregion
 
             #region Rounds
@@ -149,6 +154,10 @@
             //ServalAndToyBricks.Main(); // TODO: Review - Easy but simplified
             //ServalAndParenthesisSequence.Main(); // TODO: Broken
 
+            // 1154
+            //A.Main();
+            //B.Main();
+            //C.Main();
             #endregion Rounds
         }
     }
