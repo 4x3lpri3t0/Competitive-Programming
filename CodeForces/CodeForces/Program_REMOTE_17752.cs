@@ -98,7 +98,7 @@
             //B___Dreamoon_and_WiFi.Main(); // TODO
             //B___Little_Girl_and_Game.Main(); // TODO: Review
             //D___Equalize_Them_All.Main(); // TODO: Review
-            //B___Petya_and_Staircases.Main();
+            B___Petya_and_Staircases.Main();
             #endregion
 
             #region Rounds
@@ -146,14 +146,8 @@
             //D.Main(); // TODO
 
             // 1153
-            //ServalAndBus
-            //ServalAndToyBricks.Main(); // TODO: Review - Easy but simplified
-            //ServalAndParenthesisSequence.Main(); // TODO: Broken
-
-            // 1154
             //A.Main();
             //B.Main();
-            //C.Main();
             //ServalAndParenthesisSequence.Main(); // TODO: Review
 
             #endregion Rounds

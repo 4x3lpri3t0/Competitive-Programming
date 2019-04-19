@@ -4,84 +4,43 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+
+using static System.Math;
 #endregion
 
-// https://codeforces.com/contest/1153/problem/C
-public class ServalAndParenthesisSequence
+// https://codeforces.com/problemset/problem/362/B
+public class B___Petya_and_Staircases
 {
     private static void Solve()
     {
-        int N = ReadInt();
-        string S = Read();
+        int n = ReadInt();
+        int m = ReadInt();
 
-        if (S[0] == ')' || S[N - 1] == '(')
+        if (m == 0)
         {
-            Write(":(");
-            return;
-        }
-        if (N % 2 == 1)
-        {
-            Write(":(");
-            return;
-        }
-        if (N == 2)
-        {
-            Write("()");
+            Write("YES");
             return;
         }
 
-        var res = new char[N];
-        res[0] = '(';
-        res[N - 1] = ')';
+        int[] A = ReadIntArray();
+        A = A.OrderBy(x => x).ToArray();
 
-        int NN = N - 2;
-        int l = 0;
-        int r = 0;
-        for (int i = 1; i < N - 1; i++)
-            if (S[i] == '(')
-                l++;
-            else if (S[i] == ')')
-                r++;
-
-        l = NN / 2 - l;
-        r = NN / 2 - r;
-        if (l < 0 || r < 0)
+        if (A[0] == 1 || A[m - 1] == n)
         {
-            Write(":(");
+            Write("NO");
             return;
         }
-        for (int i = 1; i < N - 1; i++)
-        {
-            if (S[i] == '?')
-                if (l > 0)
-                {
-                    res[i] = '(';
-                    l--;
-                }
-                else
-                {
-                    res[i] = ')';
-                    r--;
-                }
-            else
-                res[i] = S[i];
-        }
 
-        int c = 0;
-        for (int i = 0; i < N; i++)
+        for (int i = 2; i < m; i++)
         {
-            if (res[i] == '(')
-                c++;
-            if (res[i] == ')')
-                c--;
-            if (i < N - 1 && c == 0)
+            if (A[i - 2] + 1 == A[i - 1] && A[i - 1] + 1 == A[i])
             {
-                Write(":(");
+                Write("NO");
                 return;
             }
         }
 
-        Write(new string(res));
+        Write("YES");
     }
 
     #region Main

@@ -98,7 +98,15 @@
             //B___Dreamoon_and_WiFi.Main(); // TODO
             //B___Little_Girl_and_Game.Main(); // TODO: Review
             //D___Equalize_Them_All.Main(); // TODO: Review
-            //B___Petya_and_Staircases.Main();
+<<<<<<< Updated upstream
+            //B___Complete_the_Word.Main(); // TODO
+            //D___Queue.Main();
+            //B___Painting_Pebbles.Main();
+            //B___George_and_Round.Main();
+            //A___Santa_Claus_and_Candies.Main();
+=======
+            B___Petya_and_Staircases.Main();
+>>>>>>> Stashed changes
             #endregion
 
             #region Rounds
@@ -153,9 +161,12 @@
             // 1154
             //A.Main();
             //B.Main();
+<<<<<<< Updated upstream
             //C.Main();
+=======
             //ServalAndParenthesisSequence.Main(); // TODO: Review
 
+>>>>>>> Stashed changes
             #endregion Rounds
         }
     }
