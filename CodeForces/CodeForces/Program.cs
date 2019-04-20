@@ -99,6 +99,12 @@
             //B___Little_Girl_and_Game.Main(); // TODO: Review
             //D___Equalize_Them_All.Main(); // TODO: Review
             //B___Petya_and_Staircases.Main();
+            //B___Complete_the_Word.Main(); // TODO
+            //D___Queue.Main();
+            //B___Painting_Pebbles.Main();
+            //B___George_and_Round.Main();
+            //A___Santa_Claus_and_Candies.Main();
+            C___Given_Length_and_Sum_of_Digits.Main(); //TODO: Review
             #endregion
 
             #region Rounds

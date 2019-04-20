@@ -75,6 +75,7 @@
     <Compile Include="1300\B - Painting Pebbles.cs" />
     <Compile Include="1400\B - Complete the Word.cs" />
     <Compile Include="1400\B - Little Girl and Game.cs" />
+    <Compile Include="1400\C - Given Length and Sum of Digits.cs" />
     <Compile Include="1400\D - Equalize Them All.cs" />
     <Compile Include="1400\D - Queue.cs" />
     <Compile Include="Rounds\0681\C - Heap Operations.cs" />
