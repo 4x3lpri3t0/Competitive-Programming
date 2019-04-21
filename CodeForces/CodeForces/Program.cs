@@ -107,6 +107,8 @@
             //C___Given_Length_and_Sum_of_Digits.Main(); //TODO: Review
             //A___Boredom.Main();
             //A___Two_Substrings.Main(); // TODO: Review
+            //C___Divisibility_by_Eight.Main(); // TODO: Review
+            A___Vacations.Main(); //TODO: Simplify with: https://codeforces.com/contest/698/submission/20292321
             #endregion
 
             #region Rounds

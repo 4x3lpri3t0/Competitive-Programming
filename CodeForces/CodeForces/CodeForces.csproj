@@ -73,12 +73,14 @@
     <Compile Include="1300\A - Bus Game.cs" />
     <Compile Include="1300\A - Where Are My Flakes.cs" />
     <Compile Include="1300\B - Painting Pebbles.cs" />
+    <Compile Include="1400\A - Vacations.cs" />
     <Compile Include="1400\B - Complete the Word.cs" />
     <Compile Include="1400\B - Little Girl and Game.cs" />
     <Compile Include="1400\C - Given Length and Sum of Digits.cs" />
     <Compile Include="1400\D - Equalize Them All.cs" />
     <Compile Include="1400\D - Queue.cs" />
     <Compile Include="1500\A - Two Substrings.cs" />
+    <Compile Include="1500\C - Divisibility by Eight.cs" />
     <Compile Include="1600\A - Boredom.cs" />
     <Compile Include="Rounds\0681\C - Heap Operations.cs" />
     <Compile Include="Rounds\1111\A - Superhero Transformation.cs" />
