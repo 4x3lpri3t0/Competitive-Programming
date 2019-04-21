@@ -104,7 +104,9 @@
             //B___Painting_Pebbles.Main();
             //B___George_and_Round.Main();
             //A___Santa_Claus_and_Candies.Main();
-            C___Given_Length_and_Sum_of_Digits.Main(); //TODO: Review
+            //C___Given_Length_and_Sum_of_Digits.Main(); //TODO: Review
+            //A___Boredom.Main();
+            //A___Two_Substrings.Main(); // TODO: Review
             #endregion
 
             #region Rounds

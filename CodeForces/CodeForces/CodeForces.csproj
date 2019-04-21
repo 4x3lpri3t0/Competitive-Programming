@@ -78,6 +78,8 @@
     <Compile Include="1400\C - Given Length and Sum of Digits.cs" />
     <Compile Include="1400\D - Equalize Them All.cs" />
     <Compile Include="1400\D - Queue.cs" />
+    <Compile Include="1500\A - Two Substrings.cs" />
+    <Compile Include="1600\A - Boredom.cs" />
     <Compile Include="Rounds\0681\C - Heap Operations.cs" />
     <Compile Include="Rounds\1111\A - Superhero Transformation.cs" />
     <Compile Include="Rounds\1111\B - Average Superhero Gang Power.cs" />
@@ -143,9 +145,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="1500\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

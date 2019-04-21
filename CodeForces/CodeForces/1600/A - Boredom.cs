@@ -5,52 +5,22 @@ using System.IO;
 using System.Linq;
 using static System.Math;
 
-// https://codeforces.com/problemset/problem/489/C
-public class C___Given_Length_and_Sum_of_Digits
+// https://codeforces.com/problemset/problem/455/A
+public class A___Boredom
 {
     private static void Solve()
     {
-        int mDigits = ReadInt(), s = ReadInt();
+        ReadInt();
+        int[] sequence = ReadIntArray();
+        long[] sol = new long[100_001];
 
-        if (s == 0 && mDigits == 1)
-        {
-            Write("0 0");
-            return;
-        }
-        if (s == 0 || s > 9 * mDigits)
-        {
-            Write("-1 -1");
-            return;
-        }
+        foreach (int x in sequence)
+            sol[x]++;
 
-        // Smallest
-        int targetSum = s;
-        var solution = new List<int>();
-        for (int i = 0; i < mDigits; i++)
-        {
-            if (i == mDigits - 1) // Last
-                solution.Insert(index: 0, targetSum);
-            else if (targetSum == 1) // Not the last one, fill with zero
-                solution.Insert(index: 0, 0);
-            else
-            {
-                int next = Min(9, targetSum - 1); // Greedily get next digit
-                solution.Insert(index: 0, next);
-                targetSum -= next;
-            }
-        }
-        Write(string.Join("", solution));
+        for (int i = 2; i < 100001; i++)
+            sol[i] = Max(sol[i - 1], sol[i - 2] + sol[i] * i);
 
-        // Biggest
-        solution.Clear();
-        targetSum = s;
-        for (int i = 0; i < mDigits; i++)
-        {
-            int next = Min(9, targetSum);
-            solution.Add(next);
-            targetSum -= next;
-        }
-        Write(string.Join("", solution));
+        Write(sol[100000]);
     }
 
     #region Main

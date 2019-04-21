@@ -5,52 +5,35 @@ using System.IO;
 using System.Linq;
 using static System.Math;
 
-// https://codeforces.com/problemset/problem/489/C
-public class C___Given_Length_and_Sum_of_Digits
+// https://codeforces.com/problemset/problem/550/A
+public class A___Two_Substrings
 {
     private static void Solve()
     {
-        int mDigits = ReadInt(), s = ReadInt();
+        string str = Read();
 
-        if (s == 0 && mDigits == 1)
+        // AB then BA
+        int abIdx = str.IndexOf("AB");
+        int baIdx = str.IndexOf("BA", abIdx + 2);
+
+        if (abIdx != -1 && baIdx != -1)
         {
-            Write("0 0");
+            Write("YES");
             return;
         }
-        if (s == 0 || s > 9 * mDigits)
+
+        // BA then AB
+        baIdx = str.IndexOf("BA");
+        abIdx = str.IndexOf("AB", baIdx + 2);
+
+        if (baIdx != -1 && abIdx != -1)
         {
-            Write("-1 -1");
+            Write("YES");
             return;
         }
 
-        // Smallest
-        int targetSum = s;
-        var solution = new List<int>();
-        for (int i = 0; i < mDigits; i++)
-        {
-            if (i == mDigits - 1) // Last
-                solution.Insert(index: 0, targetSum);
-            else if (targetSum == 1) // Not the last one, fill with zero
-                solution.Insert(index: 0, 0);
-            else
-            {
-                int next = Min(9, targetSum - 1); // Greedily get next digit
-                solution.Insert(index: 0, next);
-                targetSum -= next;
-            }
-        }
-        Write(string.Join("", solution));
-
-        // Biggest
-        solution.Clear();
-        targetSum = s;
-        for (int i = 0; i < mDigits; i++)
-        {
-            int next = Min(9, targetSum);
-            solution.Add(next);
-            targetSum -= next;
-        }
-        Write(string.Join("", solution));
+        // Else...
+        Write("NO");
     }
 
     #region Main
