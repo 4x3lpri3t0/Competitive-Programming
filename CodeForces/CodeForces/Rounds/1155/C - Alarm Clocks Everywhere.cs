@@ -5,25 +5,14 @@ using System.IO;
 using System.Linq;
 using static System.Math;
 
-// https://codeforces.com/problemset/problem/698/A
-public class A___Vacations
+// https://codeforces.com/contest/1155/problem/C
+public class AlarmClocksEverywhere
 {
     private static void Solve()
     {
         int n = ReadInt();
-        var days = ReadIntArray();
 
-        for (int i = 0; i < n - 1; i++)
-        {
-            if (days[i] == 1 && days[i + 1] == 1 || days[i] == 2 && days[i + 1] == 2)
-                days[i + 1] = 0;
-            else if (days[i] == 1 && days[i + 1] == 3)
-                days[i + 1] = 2;
-            else if (days[i] == 2 && days[i + 1] == 3)
-                days[i + 1] = 1;
-        }
-
-        Write(days.Count(c => c == 0));
+        Write();
     }
 
     #region Main

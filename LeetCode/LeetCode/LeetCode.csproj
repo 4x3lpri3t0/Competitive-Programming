@@ -57,6 +57,7 @@
     <Compile Include="575 - Distribute Candies.cs" />
     <Compile Include="661 - Image Smoother.cs" />
     <Compile Include="665 - Non-decreasing Array.cs" />
+    <Compile Include="687 - Longest Univalue Path.cs" />
     <Compile Include="700 - Search in a Binary Search Tree.cs" />
     <Compile Include="701 - Insert into a Binary Search Tree.cs" />
     <Compile Include="746 - Min Cost Climbing Stairs.cs" />
@@ -66,7 +67,6 @@
     <Compile Include="807 - Max Increase to Keep City Skyline.cs" />
     <Compile Include="821 - Shortest Distance to a Character.cs" />
     <Compile Include="852 - Peak Index in a Mountain Array.cs" />
-    <Compile Include="860 - Lemonade Change.cs" />
     <Compile Include="876 - Middle of the Linked List.cs" />
     <Compile Include="877 - Stone Game.cs" />
     <Compile Include="884 - Uncommon Words from Two Sentences.cs" />

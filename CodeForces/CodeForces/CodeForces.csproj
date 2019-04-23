@@ -81,7 +81,9 @@
     <Compile Include="1400\D - Queue.cs" />
     <Compile Include="1500\A - Two Substrings.cs" />
     <Compile Include="1500\C - Divisibility by Eight.cs" />
+    <Compile Include="1500\C - Woodcutters.cs" />
     <Compile Include="1600\A - Boredom.cs" />
+    <Compile Include="1600\C - k-Tree.cs" />
     <Compile Include="Rounds\0681\C - Heap Operations.cs" />
     <Compile Include="Rounds\1111\A - Superhero Transformation.cs" />
     <Compile Include="Rounds\1111\B - Average Superhero Gang Power.cs" />
@@ -96,6 +98,9 @@
     <Compile Include="Rounds\1154\A - Restoring Three Numbers.cs" />
     <Compile Include="Rounds\1154\B - Make Them Equal.cs" />
     <Compile Include="Rounds\1154\C - Gourmet Cat.cs" />
+    <Compile Include="Rounds\1155\A - Reverse a Substring.cs" />
+    <Compile Include="Rounds\1155\B - Game with Telephone Numbers.cs" />
+    <Compile Include="Rounds\1155\C - Alarm Clocks Everywhere.cs" />
     <Compile Include="Year 2016\Brute Force\Beautiful Year.cs" />
     <Compile Include="Year 2016\Brute Force\IQ test.cs" />
     <Compile Include="Year 2016\Brute Force\Vasya and Socks.cs" />

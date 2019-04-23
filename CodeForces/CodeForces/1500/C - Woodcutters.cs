@@ -5,25 +5,38 @@ using System.IO;
 using System.Linq;
 using static System.Math;
 
-// https://codeforces.com/problemset/problem/698/A
-public class A___Vacations
+// https://codeforces.com/problemset/problem/545/C
+public class C___Woodcutters
 {
-    private static void Solve()
+    private static void Solve() // Greedy approach
     {
         int n = ReadInt();
-        var days = ReadIntArray();
-
-        for (int i = 0; i < n - 1; i++)
+        int[] x = new int[n];
+        int[] h = new int[n];
+        for (int i = 0; i < n; i++)
         {
-            if (days[i] == 1 && days[i + 1] == 1 || days[i] == 2 && days[i + 1] == 2)
-                days[i + 1] = 0;
-            else if (days[i] == 1 && days[i + 1] == 3)
-                days[i + 1] = 2;
-            else if (days[i] == 2 && days[i + 1] == 3)
-                days[i + 1] = 1;
+            x[i] = ReadInt();
+            h[i] = ReadInt();
         }
 
-        Write(days.Count(c => c == 0));
+        // First and last trees can always be cut
+        int total = n > 1 ? 2 : 1;
+        for (int i = 1; i < n - 1; i++)
+        {
+            // If x - h > previous x ... then cut to left
+            if (x[i] - h[i] > x[i - 1])
+            {
+                total++;
+            }
+            // If x + h < previous x ... then cut to right
+            else if (x[i] + h[i] < x[i + 1])
+            {
+                x[i] += h[i];
+                total++;
+            }
+        }
+
+        Write(total);
     }
 
     #region Main
