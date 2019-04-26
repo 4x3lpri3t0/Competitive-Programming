@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1021 - Remove Outermost Parentheses.cs" />
     <Compile Include="198 - House Robber.cs" />
     <Compile Include="268 - Missing Number.cs" />
     <Compile Include="303 - Range Sum Query - Immutable.cs" />

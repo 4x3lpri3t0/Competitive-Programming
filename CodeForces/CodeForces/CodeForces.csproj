@@ -92,6 +92,9 @@
     <Compile Include="Rounds\1144\A - Diverse Strings.cs" />
     <Compile Include="Rounds\1144\B - Parity Alternated Deletions.cs" />
     <Compile Include="Rounds\1144\C - Two Shuffled Sequences.cs" />
+    <Compile Include="Rounds\1152\A.cs" />
+    <Compile Include="Rounds\1152\B.cs" />
+    <Compile Include="Rounds\1152\C.cs" />
     <Compile Include="Rounds\1153\A - Serval and Bus.cs" />
     <Compile Include="Rounds\1153\B - Serval and Toy Bricks.cs" />
     <Compile Include="Rounds\1153\C - Serval and Parenthesis Sequence.cs" />
