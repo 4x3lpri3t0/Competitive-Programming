@@ -5,14 +5,45 @@ using System.IO;
 using System.Linq;
 using static System.Math;
 
-// 
-public class C
+// http://codeforces.com/contest/1157/problem/A
+public class ReachableNumbers
 {
+    static int Fx(int n)
+    {
+        n += 1;
+
+        for (int i = n.ToString().Length - 1; i>= 0; i--)
+        {
+            if (n % 10 == 0)
+                n /= 10;
+            else
+                break;
+        }
+
+        return n;
+    }
+
     private static void Solve()
     {
         int n = ReadInt();
+        var set = new HashSet<int>();
+        set.Add(n);
 
-        Write();
+        while (n > 0)
+        {
+            n++;
+
+            while (n % 10 == 0)
+                n /= 10;
+
+            if (set.Contains(n))
+            {
+                Write(set.Count);
+                return;
+            }
+
+            set.Add(n);
+        }
     }
 
     #region Main

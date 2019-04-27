@@ -3,16 +3,41 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Text;
 using static System.Math;
 
-// 
-public class A
+// http://codeforces.com/contest/1157/problem/B
+public class LongNumber
 {
     private static void Solve()
     {
-        int n = ReadInt();
+        int k = ReadInt();
+        int[] originalNumber = Read().ToCharArray().Select(x => int.Parse(x.ToString())).ToArray();
+        int[] map = ReadIntArray();
+        int replaced = 0;
 
-        Write();
+        var sb = new StringBuilder();
+        for (int i = 0; i < k; i++)
+        {
+            int mappedSymbol = map[originalNumber[i] - 1];
+
+            // Start or continue sequence for bigger numbers or
+            // Don't start sequence with same number, but OK to continue if already started and number is equal
+            if ((mappedSymbol > originalNumber[i] && replaced >= 0)
+                || (replaced > 0 && mappedSymbol == originalNumber[i]))
+            {
+                sb.Append(mappedSymbol);
+                replaced++;
+            }
+            else
+            {
+                sb.Append(originalNumber[i]);
+                if (replaced > 0)
+                    replaced = -1;
+            }
+        }
+
+        Write(sb.ToString());
     }
 
     #region Main

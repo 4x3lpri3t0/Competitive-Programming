@@ -3,16 +3,35 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Text;
 using static System.Math;
 
-// 
-public class B
+// http://codeforces.com/contest/1157/problem/C1
+public class IncreasingSubsequenceEasy
 {
     private static void Solve()
     {
-        int n = ReadInt();
-
-        Write();
+        int num = ReadInt();
+        int[] ar = ReadIntArray();
+        int last = 0;
+        int left = 0;
+        int right = num - 1;
+        var res = new StringBuilder();
+        while (left <= right && (ar[left] > last || ar[right] > last))
+        {
+            if (ar[right] > last && (ar[left] > ar[right] || ar[left] < last))
+            {
+                last = ar[right--];
+                res.Append("R");
+            }
+            else // (ar[left] > last) || (ar[left] >= last && ar[left] <= ar[right])
+            {
+                last = ar[left++];
+                res.Append("L");
+            }
+        }
+        Write(res.Length);
+        Write(res.ToString());
     }
 
     #region Main

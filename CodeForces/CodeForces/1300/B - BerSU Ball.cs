@@ -5,14 +5,37 @@ using System.IO;
 using System.Linq;
 using static System.Math;
 
-// https://codeforces.com/problemset/problem/431/C
-public class C___k_Tree
+// http://codeforces.com/problemset/problem/489/B
+public class B___BerSU_Ball
 {
     private static void Solve()
     {
-        int n = ReadInt(), k = ReadInt(), d = ReadInt();
+        int n = ReadInt();
+        int[] a = ReadIntArray().OrderBy(x => x).ToArray();
+        int m = ReadInt();
+        int[] b = ReadIntArray().OrderBy(x => x).ToArray();
 
-        Write();
+        int ai = 0;
+        int bi = 0;
+        int result = 0;
+        while (ai < n && bi < m)
+        {
+            if (Abs(a[ai] - b[bi]) <= 1)
+            {
+                result++;
+                ai++;
+                bi++;
+            }
+            else if (a[ai] > b[bi])
+            {
+                bi++;
+            } else
+            {
+                ai++;
+            }
+        }
+
+        Write(result);
     }
 
     #region Main
