@@ -71,9 +71,12 @@
     <Compile Include="1200 or less\B - Fence.cs" />
     <Compile Include="1200 or less\A - Mishka and Game.cs" />
     <Compile Include="1300\A - Bus Game.cs" />
+    <Compile Include="1300\A - Party.cs" />
     <Compile Include="1300\A - Where Are My Flakes.cs" />
     <Compile Include="1300\B - BerSU Ball.cs" />
     <Compile Include="1300\B - Painting Pebbles.cs" />
+    <Compile Include="1300\B - Pashmak and Flowers.cs" />
+    <Compile Include="1300\B - Soldier and Badges.cs" />
     <Compile Include="1300\B - Worms.cs" />
     <Compile Include="1400\A - Vacations.cs" />
     <Compile Include="1400\B - Complete the Word.cs" />

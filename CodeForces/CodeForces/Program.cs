@@ -112,6 +112,9 @@
             //C___Woodcutters.Main();
             //B___BerSU_Ball.Main();
             //B___Worms.Main(); // TODO: Review BS
+            //B___Pashmak_and_Flowers.Main();
+            //A___Party.Main();
+            B___Soldier_and_Badges.Main();
             #endregion
 
             #region Rounds
