@@ -114,7 +114,10 @@
             //B___Worms.Main(); // TODO: Review BS
             //B___Pashmak_and_Flowers.Main();
             //A___Party.Main();
-            B___Soldier_and_Badges.Main();
+            //B___Soldier_and_Badges.Main();
+            //C___A_and_B_and_Team_Training.Main();
+            //B___Vanya_and_Books.Main(); // TODO: Review
+            B___Simple_Game.Main(); // TODO
             #endregion
 
             #region Rounds
@@ -181,6 +184,11 @@
             //A.Main();
             //LongNumber.Main();
             //IncreasingSubsequenceEasy.Main();
+
+            // 1150
+            //A.Main();
+            //B.Main();
+            //C.Main();
 
             #endregion Rounds
         }

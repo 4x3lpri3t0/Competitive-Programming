@@ -76,8 +76,11 @@
     <Compile Include="1300\B - BerSU Ball.cs" />
     <Compile Include="1300\B - Painting Pebbles.cs" />
     <Compile Include="1300\B - Pashmak and Flowers.cs" />
+    <Compile Include="1300\B - Simple Game.cs" />
     <Compile Include="1300\B - Soldier and Badges.cs" />
+    <Compile Include="1300\B - Vanya and Books.cs" />
     <Compile Include="1300\B - Worms.cs" />
+    <Compile Include="1300\C - A and B and Team Training.cs" />
     <Compile Include="1400\A - Vacations.cs" />
     <Compile Include="1400\B - Complete the Word.cs" />
     <Compile Include="1400\B - Little Girl and Game.cs" />
@@ -96,6 +99,9 @@
     <Compile Include="Rounds\1144\A - Diverse Strings.cs" />
     <Compile Include="Rounds\1144\B - Parity Alternated Deletions.cs" />
     <Compile Include="Rounds\1144\C - Two Shuffled Sequences.cs" />
+    <Compile Include="Rounds\1150\A - Stock Arbitraging.cs" />
+    <Compile Include="Rounds\1150\B - Tiling Challenge.cs" />
+    <Compile Include="Rounds\1150\C - Prefix Sum Primes.cs" />
     <Compile Include="Rounds\1153\A - Serval and Bus.cs" />
     <Compile Include="Rounds\1153\B - Serval and Toy Bricks.cs" />
     <Compile Include="Rounds\1153\C - Serval and Parenthesis Sequence.cs" />
