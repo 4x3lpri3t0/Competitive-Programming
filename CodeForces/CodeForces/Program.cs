@@ -117,7 +117,7 @@
             //B___Soldier_and_Badges.Main();
             //C___A_and_B_and_Team_Training.Main();
             //B___Vanya_and_Books.Main(); // TODO: Review
-            B___Simple_Game.Main(); // TODO
+            //B___Simple_Game.Main(); // TODO
             #endregion
 
             #region Rounds
@@ -189,6 +189,9 @@
             //A.Main();
             //B.Main();
             //C.Main();
+
+            // 1325
+            NameTest.Main();
 
             #endregion Rounds
         }
