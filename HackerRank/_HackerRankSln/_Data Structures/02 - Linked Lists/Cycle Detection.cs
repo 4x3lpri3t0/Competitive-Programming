@@ -7,27 +7,21 @@ public static class Cycle_Detection
     public static bool HasCycle(Node head)
     {
         if (head == null)
-        {
             return false;
-        }
 
         Node tortoise = head;
-        Node hare = head;
+        Node hare = head.next;
 
-        while (tortoise != null && tortoise.next != null)
+        while (tortoise != null && hare != null)
         {
+            if (hare == tortoise)
+                return true;
+
+            if (hare.next == null)
+                return false;
+
             tortoise = tortoise.next;
             hare = hare.next.next;
-
-            if (hare == null || tortoise == null)
-            {
-                return false;
-            }
-
-            if (hare == tortoise)
-            {
-                return true;
-            }
         }
 
         return false;

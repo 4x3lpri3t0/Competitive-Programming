@@ -190,6 +190,9 @@
             //B.Main();
             //C.Main();
 
+            // 1325
+            NameTest.Main();
+
             #endregion Rounds
         }
     }
