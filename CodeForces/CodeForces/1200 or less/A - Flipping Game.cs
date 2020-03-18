@@ -15,11 +15,11 @@ public class A___Flipping_Game
     {
         int n = ReadInt();
         int[] a = ReadIntArray();
-        int[] sumOfOne = new int[n + 1];
+        int[] dp = new int[n + 1];
 
         // Init
         for (int i = 0; i < n; i++)
-            sumOfOne[i + 1] = a[i] + sumOfOne[i];
+            dp[i + 1] = a[i] + dp[i];
 
         int maxOfOne = 0;
         // Count
@@ -27,7 +27,7 @@ public class A___Flipping_Game
             for (int j = i; j <= n; j++)
                 maxOfOne = Max(
                     maxOfOne,
-                    sumOfOne[i - 1] + j - i + 1 - sumOfOne[j] + sumOfOne[i - 1] + sumOfOne[n] - sumOfOne[j]);
+                    dp[i - 1] + j - i + 1 - dp[j] + dp[i - 1] + dp[n] - dp[j]);
 
         Write(maxOfOne);
     }

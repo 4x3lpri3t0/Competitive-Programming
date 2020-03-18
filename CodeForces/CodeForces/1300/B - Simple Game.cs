@@ -12,7 +12,7 @@ public class B___Simple_Game
     {
         int n = ReadInt();
 
-        Write();
+        Write(n);
     }
 
     #region Main

@@ -11,14 +11,7 @@ public class B___Vanya_and_Books
     private static void Solve()
     {
         long n = ReadInt();
-        long length = 1;
-
-        long m = n;
-        while (m >= 10)
-        {
-            m /= 10;
-            length++;
-        }
+        long length = GetLength(n);
 
         long result = length * (n + 1);
         var k = 1;
@@ -29,6 +22,20 @@ public class B___Vanya_and_Books
         }
 
         Write(result);
+    }
+
+    private static long GetLength(long n)
+    {
+        long length = 1;
+
+        long m = n;
+        while (m >= 10)
+        {
+            m /= 10;
+            length++;
+        }
+
+        return length;
     }
 
     #region Main
