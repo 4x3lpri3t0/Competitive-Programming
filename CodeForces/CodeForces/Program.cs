@@ -190,8 +190,10 @@
             //B.Main();
             //C.Main();
 
-            // 1325
-            NameTest.Main();
+            // 1326
+            //A.Main();
+            //B.Main();
+            //C.Main(); //TODO
 
             #endregion Rounds
         }

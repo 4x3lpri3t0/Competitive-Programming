@@ -249,6 +249,8 @@ namespace _HackerRankSln
             // === 2020 review ===
 
             //NewYearChaos // Arrays
+            //MinimumSwaps2 // Arrays
+            //ArrayManipulation // Arrays
         }
     }
 }
