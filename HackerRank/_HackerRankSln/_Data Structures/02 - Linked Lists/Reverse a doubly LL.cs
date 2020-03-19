@@ -4,7 +4,7 @@
 
 public static class Reverse_a_doubly_LL
 {
-    public static Node2 Reverse(Node2 head)
+    public static DLLNode Reverse(DLLNode head)
     {
         if (head == null)
         {
@@ -13,7 +13,7 @@ public static class Reverse_a_doubly_LL
 
         while (head != null)
         {
-            Node2 i = head.prev;
+            DLLNode i = head.prev;
             head.prev = head.next;
             head.next = i;
 

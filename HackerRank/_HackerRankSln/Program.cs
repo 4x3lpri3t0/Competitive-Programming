@@ -110,8 +110,6 @@ namespace _HackerRankSln
 
             #region 02 - Linked Lists
 
-            var llNode = new LL.Node();
-
             //Print_the_Elements_of_a_LL.Print(llNode);
             //Insert_a_Node_at_the_Tail_of_a_LL.InsertTail(llNode, 0);
             //Insert_a_node_at_the_Head_of_a_LL.InsertHead(llNode, 0);
@@ -125,8 +123,6 @@ namespace _HackerRankSln
             //Delete_duplicate_value_nodes_from_a_sorted_LL.RemoveDuplicates(llNode);
             //Cycle_Detection.HasCycle(llNode);
             //Find_Merge_Point_of_Two_LL.FindMergeNode(llNode, llNode);
-            var llDoubleNode = new LL.Node2();
-
             //Insert_a_node_into_a_sorted_doubly_LL.SortedInsert(llDoubleNode, 100);
             //Reverse_a_doubly_LL.Reverse(llDoubleNode);
 

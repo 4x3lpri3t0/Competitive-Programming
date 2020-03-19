@@ -1,9 +1,14 @@
 ﻿namespace _HackerRankSln._Data_Structures._02___Linked_Lists
 {
-    public class Node2
+    public class DLLNode
     {
+        public DLLNode(int data)
+        {
+            this.data = data;
+        }
+
         public int data;
-        public Node2 next;
-        public Node2 prev;
+        public DLLNode next;
+        public DLLNode prev;
     }
 }
