@@ -51,6 +51,8 @@
     <Compile Include="Old\02 - product of other numbers.cs" />
     <Compile Include="Old\03 - highest product of 3.cs" />
     <Compile Include="Questions\01 - MergingMeetingTimes.cs" />
+    <Compile Include="Questions\02 - ReverseStringInPlace.cs" />
+    <Compile Include="Questions\03 - ReverseWordsInPlace.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

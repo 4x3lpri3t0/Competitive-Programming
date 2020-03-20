@@ -42,7 +42,7 @@ namespace InterviewCake.Questions
                 if (lastMeeting.EndTime >= currentMeeting.StartTime)
                 {
                     // Merge
-                    lastMeeting.EndTime = currentMeeting.EndTime;
+                    lastMeeting.EndTime = Math.Max(lastMeeting.EndTime, currentMeeting.EndTime);
                 }
                 else
                 {
