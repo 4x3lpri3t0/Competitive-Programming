@@ -18,7 +18,11 @@ namespace InterviewCake
 
             //MergeMeetings();
             //ReverseString();
+            //ReverseWordsInPlace();
+        }
 
+        private static void ReverseWordsInPlace()
+        {
             char[] str1 = "cake pound steal".ToCharArray();
             var result = _03___ReverseWordsInPlace.ReverseWords(str1);
             WriteLine(result);
