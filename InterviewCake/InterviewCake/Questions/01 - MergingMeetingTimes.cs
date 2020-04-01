@@ -48,7 +48,7 @@ namespace InterviewCake.Questions
                 {
                     mergedMeetings.Add(lastMeeting);
                     lastMeeting = currentMeeting;
-                }                
+                }
             }
 
             // Add last one

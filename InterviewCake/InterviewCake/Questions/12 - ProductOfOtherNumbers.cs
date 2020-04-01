@@ -1,18 +1,8 @@
-﻿using System;
-using System.Linq;
-
-namespace InterviewCake.Questions
+﻿namespace InterviewCake.Questions
 {
-    public class _02___product_of_other_numbers
+    public class _12___ProductOfOtherNumbers
     {
-        public static void Main()
-        {
-            int[] ints = { 1, 7, 3, 4 };
-            var result = GetProductsOfAllIntsExceptAtIndex(ints);
-            Console.WriteLine(string.Join(" ", result));
-        }
-
-        private static int[] GetProductsOfAllIntsExceptAtIndex(int[] nums)
+        public static int[] GetProductsOfAllIntsExceptAtIndex(int[] nums)
         {
             int[] otherProds = new int[nums.Length];
 

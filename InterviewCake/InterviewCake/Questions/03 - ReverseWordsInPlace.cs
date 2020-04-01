@@ -19,8 +19,6 @@ namespace InterviewCake.Questions
                 start = stop + 1;
             }
 
-            // TODO: Fix
-
             return words;
         }
 

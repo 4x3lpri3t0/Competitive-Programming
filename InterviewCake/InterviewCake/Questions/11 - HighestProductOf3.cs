@@ -1,18 +1,10 @@
 ﻿using System;
-using System.Linq;
 
 namespace InterviewCake.Questions
 {
-    public class _03___highest_product_of_3
+    public class _11___HighestProductOf3
     {
-        public static void Main()
-        {
-            int[] arrayOfInts = { 1, 10, -5, 1, -100 };
-            int result = HighestProductOf3(arrayOfInts);
-            Console.WriteLine(result);
-        }
-
-        private static int HighestProductOf3(int[] arrayOfInts)
+        public static int HighestProductOf3(int[] arrayOfInts)
         {
             if (arrayOfInts.Length < 3)
             {
