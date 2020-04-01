@@ -170,6 +170,8 @@
     <Compile Include="_Data Structures\05 - Stacks\Maximum Element.cs" />
     <Compile Include="_Data Structures\05 - Stacks\Simple Text Editor.cs" />
     <Compile Include="_Data Structures\05 - Stacks\Balanced Parentheses.cs" />
+    <Compile Include="_Data Structures\12 - Dictionaries and HashMaps\Sherlock and Anagrams.cs" />
+    <Compile Include="_Data Structures\12 - Dictionaries and HashMaps\Two Strings.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Find Point.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Maximum Draws.cs" />
     <Compile Include="_Mathematics\01 - Fundamentals\Restaurant.cs" />

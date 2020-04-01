@@ -47,6 +47,7 @@
     <Compile Include="198 - House Robber.cs" />
     <Compile Include="268 - Missing Number.cs" />
     <Compile Include="303 - Range Sum Query - Immutable.cs" />
+    <Compile Include="30days\01 - SingleNumber.cs" />
     <Compile Include="338 - Counting Bits.cs" />
     <Compile Include="344 - Reverse String.cs" />
     <Compile Include="392 - Is Subsequence.cs" />
