@@ -50,6 +50,8 @@
     <Compile Include="30days\01 - SingleNumber.cs" />
     <Compile Include="30days\02 - Happy Number.cs" />
     <Compile Include="30days\03 - Maximum Subarray.cs" />
+    <Compile Include="30days\04 - Move Zeroes.cs" />
+    <Compile Include="30days\05 - Best Time to Buy and Sell Stock II.cs" />
     <Compile Include="338 - Counting Bits.cs" />
     <Compile Include="344 - Reverse String.cs" />
     <Compile Include="392 - Is Subsequence.cs" />
@@ -92,6 +94,8 @@
     <Compile Include="984 - String Without AAA or BBB.cs" />
     <Compile Include="985 - Sum of Even Numbers After Queries.cs" />
     <Compile Include="965 - Univalued Binary Tree.cs" />
+    <Compile Include="Contests\BW 23\5360 - Count Largest Group.cs" />
+    <Compile Include="Contests\BW 23\5362 - Construct K Palindrome Strings.cs" />
     <Compile Include="ListNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -100,6 +104,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

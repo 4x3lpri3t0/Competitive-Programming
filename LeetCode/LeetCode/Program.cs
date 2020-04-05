@@ -1,4 +1,6 @@
-﻿class Program
+﻿using System;
+
+class Program
 {
 	static void Main(string[] args)
 	{
@@ -32,7 +34,24 @@
 		//NumArray
 
 		// *** 2020 ***
-		var array = new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-		solution.MaxSubArray(array);
+		//int[] testArray1 = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+		//solution.MaxSubArray(testArray1);
+
+		//int[] testArray2 = { 0, 1, 0, 3, 12 };
+		//solution.MoveZeroes(testArray2);
+
+		//Console.WriteLine(solution.CountLargestGroup(13));
+		//Console.WriteLine(solution.CountLargestGroup(2));
+		//Console.WriteLine(solution.CountLargestGroup(15));
+		//Console.WriteLine(solution.CountLargestGroup(24));
+
+		//Console.WriteLine(solution.CanConstruct("annabelle", 2));
+		//Console.WriteLine(solution.CanConstruct("leetcode", 3));
+		//Console.WriteLine(solution.CanConstruct("true", 4));
+		//Console.WriteLine(solution.CanConstruct("yzyzyzyzyzyzyzy", 2));
+		//Console.WriteLine(solution.CanConstruct("cr", 7)); // Should be FALSE
+		//Console.WriteLine(solution.CanConstruct("qlkzenwmmnpkopu", 15)); // Should be TRUE
+
+
 	}
 }
