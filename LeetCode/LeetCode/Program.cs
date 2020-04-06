@@ -52,6 +52,13 @@ class Program
 		//Console.WriteLine(solution.CanConstruct("cr", 7)); // Should be FALSE
 		//Console.WriteLine(solution.CanConstruct("qlkzenwmmnpkopu", 15)); // Should be TRUE
 
-
+		var test = new int[][] {
+			new int[] { 1, 2 },
+			new int[] { 1, 2 },
+			new int[] { 3, 3 },
+			new int[] { 1, 5 },
+			new int[] { 1, 5 },
+		};
+		Console.WriteLine(solution.MaxEvents(test));
 	}
 }
