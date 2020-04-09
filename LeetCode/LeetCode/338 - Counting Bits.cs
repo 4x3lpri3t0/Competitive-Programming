@@ -6,7 +6,7 @@ public partial class Solution
         int[] result = new int[num + 1];
 
         for (int i = 1; i <= num; i++)
-            result[i] = result[i >> 1] + (i & 1);
+            result[i] = result[i >> 1] + (i & 1); // Whatever took for half of it + odd bit
 
         return result;
     }

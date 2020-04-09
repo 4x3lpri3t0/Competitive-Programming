@@ -21,17 +21,12 @@ public partial class Solution
 
         foreach (var word in list)
         {
-            if (!repeatedWords.Contains(word))
-            {
-                if (words.Contains(word))
-                {
-                    words.Remove(word);
-                    repeatedWords.Add(word);
-                } else
-                {
-                    words.Add(word);
-                }
-            }
+            if (repeatedWords.Contains(word))
+                words.Remove(word);
+            else
+                words.Add(word);
+
+            repeatedWords.Add(word);
         }
 
         return words;

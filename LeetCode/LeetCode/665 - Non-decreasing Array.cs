@@ -1,36 +1,24 @@
 ﻿// https://leetcode.com/problems/non-decreasing-array/
 public partial class Solution
 {
-    public bool CheckPossibility(int[] nums)
+    public bool CheckPossibility(int[] numbers)
     {
-        var flipped = false;
-        var length = nums.Length;
-        var lengthMinusOne = length - 1;
-
-        for (int i = 1; i < length; i++)
+        int changes = 0;
+        for (int i = 0; i < numbers.Length - 1; i++)
         {
-            if (nums[i - 1] > nums[i])
+            if (numbers[i] > numbers[i + 1])
             {
-                if (flipped)
-                    return false;
-
-                if (i < lengthMinusOne && nums[i - 1] > nums[i + 1])
+                if (i > 0 && numbers[i - 1] > numbers[i + 1])
                 {
-                    nums[i - 1] = nums[i];
-                    if (i - 2 >= 0 && nums[i - 2] > nums[i - 1])
-                    {
-                        return false;
-                    }
-                }
-                else
-                {
-                    nums[i] = nums[i - 1];
+                    numbers[i + 1] = numbers[i];
+                    changes++;
+                    continue;
                 }
 
-                flipped = true;
+                numbers[i] = numbers[i + 1];
+                changes++;
             }
         }
-
-        return true;
+        return changes < 2;
     }
 }
