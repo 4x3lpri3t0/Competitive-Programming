@@ -19,6 +19,7 @@ public partial class Solution
 
 		var list = listA.Concat(listB);
 
+<<<<<<< HEAD
 		foreach (var word in list)
 		{
 			if (!repeatedWords.Contains(word))
@@ -34,6 +35,17 @@ public partial class Solution
 				}
 			}
 		}
+=======
+        foreach (var word in list)
+        {
+            if (repeatedWords.Contains(word))
+                words.Remove(word);
+            else
+                words.Add(word);
+
+            repeatedWords.Add(word);
+        }
+>>>>>>> 3b1b9e78cd7fadc333e7dd3e75f37131d5b9dfae
 
 		return words;
 	}

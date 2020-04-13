@@ -1,39 +1,70 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 // https://leetcode.com/problems/queue-reconstruction-by-height/
 public partial class Solution
 {
-    public int[,] ReconstructQueue(int[,] people)
+    public int[][] ReconstructQueue(int[][] people)
     {
-        #region Convert to jagged array
-        int[][] pp = new int[people.GetLength(0)][];
-        for (int i = 0; i < pp.Length; i++)
-        {
-            pp[i] = new int[2];
-            pp[i][0] = people[i, 0];
-            pp[i][1] = people[i, 1];
-        }
-        #endregion
+        // Order first by height, then people in front
+        var sortedPeople = people.OrderByDescending(h => h[0]).ThenBy(p => p[1]);
+        var result = new List<int[]>();
+        foreach (var person in sortedPeople)
+            result.Insert(person[1], person);
 
-        // Equal height ? people in front : height
-        Array.Sort(pp, (x, y) => x[0] == y[0] ?
-                  x[1] - y[1] : y[0] - x[0]);
+        // Order of insertion:
+        // [[7,0]]
+        // [[7,0], [7,1]]
+        // [[7,0], [6,1], [7,1]]
+        // [[5,0], [7,0], [6,1], [7,1]]
+        // [[5,0], [7,0], [5,2], [6,1], [7,1]]
+        // [[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]
 
-        // Greedily insert people according to people in front
-        List<int[]> ans = new List<int[]>();
-        for (int i = 0; i < pp.Length; i++)
+        return result.ToArray();
+    }
+
+    public int[][] ReconstructQueue_Alt(int[][] people)
+    {
+
+        // Custom sort the array by height, then by k value
+        Array.Sort(people, (x, y) =>
         {
-            ans.Insert(pp[i][1], pp[i]);
+            // Note x and y are of type int[]
+
+            // If the heights are different, return descending height order y - x
+            if (x[0] != y[0])
+            {
+                return y[0] - x[0];
+            }
+
+            // If heights are the same, return ascending k order x - y
+            return x[1] - y[1];
+        });
+
+        // So in our example: [[7,0], [4,4], [7,1], [5,0], [6,1], [5,2]]
+        // Sorted order will be: [[7,0], [7,1], [6,1], [5,0], [5,2], [4,4]]
+
+        // From the tallest person to the shortest person, insert them by their k value into the array
+        // This works because at a given height, we know all elements in the current array are taller
+        // So just insert them at index k so that it satisfies the requirement that there are k people in front that have equal or greater height
+        var result = new List<int[]>();
+        foreach (var person in people)
+        {
+            // Note we don't have the check the bounds of the index to insert (person[1]), because we have already sorted by height
+            // So it is impossible for the tallest person to have a k != 0, unless there is also a person with the same height, which is sorted
+            // after the person with k = 0
+            result.Insert(person[1], person);
         }
 
-        #region Convert to rectangular array
-        for (int i = 0; i < pp.Length; i++)
-        {
-            people[i, 0] = ans[i][0];
-            people[i, 1] = ans[i][1];
-        }
-        #endregion
-        return people;
+        // Order of insertion:
+        // [[7,0]]
+        // [[7,0], [7,1]]
+        // [[7,0], [6,1], [7,1]]
+        // [[5,0], [7,0], [6,1], [7,1]]
+        // [[5,0], [7,0], [5,2], [6,1], [7,1]]
+        // [[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]
+
+        return result.ToArray();
     }
 }

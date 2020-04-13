@@ -1,24 +1,21 @@
-﻿using System;
-
-// https://leetcode.com/problems/middle-of-the-linked-list/
+﻿// https://leetcode.com/problems/middle-of-the-linked-list/
 public partial class Solution
 {
     public ListNode MiddleNode(ListNode head)
     {
-        int counter = 1;
-        ListNode iterator = head;
-        while (iterator.next != null)
+        int size = 0;
+        ListNode current = head;
+        while (current != null)
         {
-            counter++;
-            iterator = iterator.next;
+            current = current.next;
+            size++;
         }
 
-        int middle = (counter / 2) + 1;
-        for (int i = 1; i < middle; i++)
-        {
-            head = head.next;
-        }
+        int mid = size / 2;
+        current = head;
+        for (int i = 0; i < mid; i++)
+            current = current.next;
 
-        return head;
+        return current;
     }
 }

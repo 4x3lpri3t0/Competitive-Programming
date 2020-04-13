@@ -3,16 +3,16 @@
 // https://leetcode.com/problems/assign-cookies/
 public partial class Solution
 {
-    public int FindContentChildren(int[] g, int[] s)
+    public int FindContentChildren(int[] kids, int[] cookies)
     {
+        Array.Sort(kids);
+        Array.Sort(cookies);
+
         int currentKidIndex = 0;
 
-        Array.Sort(g);
-        Array.Sort(s);
-
-        for (int i = 0; i < s.Length && currentKidIndex < g.Length; i++)
+        for (int i = 0; i < cookies.Length && currentKidIndex < kids.Length; i++)
         {
-            if (s[i] >= g[currentKidIndex])
+            if (cookies[i] >= kids[currentKidIndex])
             {
                 currentKidIndex++;
             }
