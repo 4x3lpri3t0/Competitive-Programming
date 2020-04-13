@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exercises\Bracket Match.cs" />
     <Compile Include="Exercises\K-Messed Array Sort.cs" />
     <Compile Include="Exercises\Sales Path.cs" />
     <Compile Include="Exercises\Sudoku Solver.cs" />

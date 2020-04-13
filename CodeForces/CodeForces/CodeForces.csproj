@@ -118,6 +118,10 @@
     <Compile Include="Rounds\1326\A.cs" />
     <Compile Include="Rounds\1326\B.cs" />
     <Compile Include="Rounds\1326\C.cs" />
+    <Compile Include="Rounds\1335\D.cs" />
+    <Compile Include="Rounds\1335\C.cs" />
+    <Compile Include="Rounds\1335\B.cs" />
+    <Compile Include="Rounds\1335\A.cs" />
     <Compile Include="Year 2016\Brute Force\Beautiful Year.cs" />
     <Compile Include="Year 2016\Brute Force\IQ test.cs" />
     <Compile Include="Year 2016\Brute Force\Vasya and Socks.cs" />
