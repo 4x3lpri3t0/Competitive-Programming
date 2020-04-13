@@ -21,6 +21,7 @@ class Program
 		//ReconstructQueue // Greedy
 		//FindMinArrowShots // Greedy
 		//MinSwapsCouples // UnionFind                  *** DEBUG ***
+		//FindMaxLength
 
 		// TODO: Improve: https://leetcode.com/submissions/detail/206295901/
 		//Console.WriteLine(Solution.ShortestCompletingWord("1s3 PSt", new string[] { "step", "steps", "stripe", "stepple" })); 
@@ -52,13 +53,20 @@ class Program
 		//Console.WriteLine(solution.CanConstruct("cr", 7)); // Should be FALSE
 		//Console.WriteLine(solution.CanConstruct("qlkzenwmmnpkopu", 15)); // Should be TRUE
 
-		var test = new int[][] {
-			new int[] { 1, 2 },
-			new int[] { 1, 2 },
-			new int[] { 3, 3 },
-			new int[] { 1, 5 },
-			new int[] { 1, 5 },
-		};
-		Console.WriteLine(solution.MaxEvents(test));
+		//var test = new int[][] {
+		//	new int[] { 1, 2 },
+		//	new int[] { 1, 2 },
+		//	new int[] { 3, 3 },
+		//	new int[] { 1, 5 },
+		//	new int[] { 1, 5 },
+		//};
+		//Console.WriteLine(solution.MaxEvents(test));
+
+		//var test = new string[] { "eat", "tea", "tan", "ate", "nat", "bat" };
+
+		//Console.WriteLine(solution.GroupAnagrams(test));
+
+		var test = new int[] { 1, 0, 0, 1 };
+		Console.WriteLine(solution.FindMaxLength(test));
 	}
 }

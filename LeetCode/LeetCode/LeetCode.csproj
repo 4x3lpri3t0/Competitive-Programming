@@ -54,6 +54,9 @@
     <Compile Include="30days\03 - Maximum Subarray.cs" />
     <Compile Include="30days\04 - Move Zeroes.cs" />
     <Compile Include="30days\05 - Best Time to Buy and Sell Stock II.cs" />
+    <Compile Include="30days\06 - Group Anagrams.cs" />
+    <Compile Include="30days\07 - Counting Elements.cs" />
+    <Compile Include="30days\13 - Contiguous Array.cs" />
     <Compile Include="338 - Counting Bits.cs" />
     <Compile Include="344 - Reverse String.cs" />
     <Compile Include="392 - Is Subsequence.cs" />

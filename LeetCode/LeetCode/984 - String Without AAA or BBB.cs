@@ -5,7 +5,7 @@ public partial class Solution
 {
     public string StrWithout3a3b(int A, int B)
     {
-        StringBuilder res = new StringBuilder(A + B);
+        var sb = new StringBuilder(A + B);
         char hi = 'a', lo = 'b';
         int i = A, j = B;
 
@@ -18,16 +18,16 @@ public partial class Solution
 
         while (i-- > 0)
         {
-            res.Append(hi);
+            sb.Append(hi);
             if (i > j) {
-                res.Append(hi);
+                sb.Append(hi);
                 i--;
             }
 
             if (j-- > 0)
-                res.Append(lo);
+                sb.Append(lo);
         }
 
-        return res.ToString();
+        return sb.ToString();
     }
 }
