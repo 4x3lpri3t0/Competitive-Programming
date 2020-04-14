@@ -35,6 +35,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,7 +59,12 @@
     <Compile Include="30days\05 - Best Time to Buy and Sell Stock II.cs" />
     <Compile Include="30days\06 - Group Anagrams.cs" />
     <Compile Include="30days\07 - Counting Elements.cs" />
+    <Compile Include="30days\08 - Middle of the Linked List.cs" />
+    <Compile Include="30days\09 - Backspace String Compare.cs" />
+    <Compile Include="30days\10 - Min Stack.cs" />
+    <Compile Include="30days\11 - Diameter of Binary Tree.cs" />
     <Compile Include="30days\13 - Contiguous Array.cs" />
+    <Compile Include="30days\14 - Perform String Shifts.cs" />
     <Compile Include="338 - Counting Bits.cs" />
     <Compile Include="344 - Reverse String.cs" />
     <Compile Include="392 - Is Subsequence.cs" />
