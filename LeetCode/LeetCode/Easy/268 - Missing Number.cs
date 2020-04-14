@@ -10,6 +10,6 @@ public partial class Solution
             total -= nums[i];
         }
 
-        return total;
+        return total; // Missing number
     }
 }

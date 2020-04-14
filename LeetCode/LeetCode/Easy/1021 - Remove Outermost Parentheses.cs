@@ -13,17 +13,13 @@ public partial class Solution
             if (cur == '(')
             {
                 if (opened != 0)
-                {
                     result.Append(cur);
-                }
                 opened++;
             }
             else // ')'
             {
                 if (opened > 1)
-                {
                     result.Append(cur);
-                }
                 opened--;
             }
         }

@@ -3,8 +3,6 @@
 // https://leetcode.com/problems/house-robber/
 public partial class Solution
 {
-    int[] dp;
-
     // The order is: prev2, prev1, num
     public int Rob(int[] nums)
     {

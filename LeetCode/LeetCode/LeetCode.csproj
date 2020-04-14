@@ -63,6 +63,7 @@
     <Compile Include="30days\09 - Backspace String Compare.cs" />
     <Compile Include="30days\10 - Min Stack.cs" />
     <Compile Include="30days\11 - Diameter of Binary Tree.cs" />
+    <Compile Include="30days\12 - Last Stone Weight.cs" />
     <Compile Include="30days\13 - Contiguous Array.cs" />
     <Compile Include="30days\14 - Perform String Shifts.cs" />
     <Compile Include="338 - Counting Bits.cs" />

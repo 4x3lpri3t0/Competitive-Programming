@@ -23,6 +23,9 @@ class Program
 		//MinSwapsCouples // UnionFind                  *** DEBUG ***
 		//FindMaxLength
 		//DiameterOfBinaryTree
+		//LastStoneWeight // Array
+		//ContainsNearbyDuplicate // Nice solution (sliding window + set)
+		//CountBits // Bitwise
 
 		// TODO: Improve: https://leetcode.com/submissions/detail/206295901/
 		//Console.WriteLine(Solution.ShortestCompletingWord("1s3 PSt", new string[] { "step", "steps", "stripe", "stepple" })); 

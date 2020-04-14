@@ -9,13 +9,10 @@ public partial class Solution
         Array.Sort(cookies);
 
         int currentKidIndex = 0;
-
         for (int i = 0; i < cookies.Length && currentKidIndex < kids.Length; i++)
         {
             if (cookies[i] >= kids[currentKidIndex])
-            {
                 currentKidIndex++;
-            }
         }
 
         return currentKidIndex;
