@@ -62,7 +62,7 @@ partial class Solution
         return distance;
     }
 
-    public static void DeletionDistance()
+    public static void DeletionDistance_Recursive()
     {
         Console.WriteLine(DeletionDistance("dog", "frog", 0, 0, null));
         Console.WriteLine(DeletionDistance("some", "thing", 0, 0, null));

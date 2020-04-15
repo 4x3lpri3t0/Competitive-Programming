@@ -43,28 +43,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Drone Flight Planner.cs" />
     <Compile Include="Exercises\Array Index Element Equality.cs" />
     <Compile Include="Exercises\Array of Array Products.cs" />
     <Compile Include="Exercises\Array Quadruplet.cs" />
-    <Compile Include="Exercises\Award Budget Cut.cs" />
     <Compile Include="Exercises\Busiest Time in the Mall.cs" />
     <Compile Include="Exercises\Bracket Match.cs" />
-    <Compile Include="Exercises\Decrypt Message.cs" />
     <Compile Include="Exercises\Deletion Distance.cs" />
     <Compile Include="Exercises\Flatten A Dictionary.cs" />
     <Compile Include="Exercises\K-Messed Array Sort.cs" />
     <Compile Include="Exercises\Matrix Spiral Copy.cs" />
     <Compile Include="Exercises\Number of Paths.cs" />
     <Compile Include="Exercises\Pair with Specific Difference.cs" />
-    <Compile Include="Exercises\Pancake Sort.cs" />
-    <Compile Include="Exercises\Root of Number.cs" />
+    <Compile Include="Not yet seen\Pancake Sort.cs" />
+    <Compile Include="Not yet seen\Root of Number.cs" />
     <Compile Include="Exercises\Sales Path.cs" />
-    <Compile Include="Exercises\Sentence Reverse.cs" />
-    <Compile Include="Exercises\Shifted Array Search.cs" />
+    <Compile Include="Not yet seen\Sentence Reverse.cs" />
+    <Compile Include="Not yet seen\Shifted Array Search.cs" />
     <Compile Include="Exercises\Sudoku Solver.cs" />
     <Compile Include="Exercises\Word Count Engine.cs" />
+    <Compile Include="Not yet seen\Award Budget Cut.cs" />
+    <Compile Include="Not yet seen\Decrypt Message.cs" />
     <Compile Include="Not yet seen\Deletion Distance.cs" />
+    <Compile Include="Not yet seen\Drone Flight Planner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
