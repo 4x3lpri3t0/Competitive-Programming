@@ -49,9 +49,7 @@ partial class Solution
     public static int[] SortKMessedArray(int[] arr, int k)
     {
         if (arr == null || arr.Length == 0 || k < 0)
-        {
             return new int[0];
-        }
 
         int length = arr.Length;
 

@@ -90,7 +90,7 @@ partial class Solution
     }
 
 
-    static void SudokuSolver(string[] args)
+    public static void SudokuSolver()
     {
 
     }
