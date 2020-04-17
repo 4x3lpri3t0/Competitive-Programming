@@ -3,35 +3,26 @@
 // URL ???
 partial class Solution
 {
-    // 2, 100, 50, 120, 1000 - 190
     public static double FindGrantsCap(double[] grantsArray, double newBudget)
     {
-        // your code goes here
         if (grantsArray == null || grantsArray.Length == 0)
-        {
             return -1;
-        }
 
         Array.Sort(grantsArray); // 2, 50, 100, 120, 1000
 
-        // linear scan the array and then find the cut
-        int length = grantsArray.Length; // 5
-
-        double sum = 0; // 0 
-
+        int length = grantsArray.Length;
+        double sum = 0;
         for (int i = 0; i < length; i++)
         {
-            var visit = grantsArray[i]; // 2, 50
+            var current = grantsArray[i]; // 2, 50
             var number = (length - i); // 5, 4
 
-            // check if the visit value needs to be cut or not
-            bool needCut = (sum + visit * number) > newBudget; // 0 + 2 * 5 vs 190 , 2 + 50 * 4 vs 190
-            if (needCut) // true
-            {
+            // Check if current needs to be cut or not
+            bool needCut = (sum + current * number) > newBudget; // 0 + 2 * 5 vs 190 , 2 + 50 * 4 vs 190
+            if (needCut)
                 return (newBudget - sum) / number; // 190 - 2/ 4 = 47
-            }
 
-            sum += visit; // sum = 2
+            sum += current; // sum = 2
         }
 
         return grantsArray[length - 1];

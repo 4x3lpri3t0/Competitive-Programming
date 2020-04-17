@@ -48,7 +48,6 @@
     <Compile Include="Exercises\Array Quadruplet.cs" />
     <Compile Include="Exercises\Busiest Time in the Mall.cs" />
     <Compile Include="Exercises\Bracket Match.cs" />
-    <Compile Include="Exercises\Deletion Distance.cs" />
     <Compile Include="Exercises\Flatten A Dictionary.cs" />
     <Compile Include="Exercises\K-Messed Array Sort.cs" />
     <Compile Include="Exercises\Matrix Spiral Copy.cs" />

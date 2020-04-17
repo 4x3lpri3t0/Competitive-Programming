@@ -26,6 +26,7 @@ class Program
 		//LastStoneWeight // Array
 		//ContainsNearbyDuplicate // Nice solution (sliding window + set)
 		//CountBits // Bitwise
+		//CheckValidString
 
 		// TODO: Improve: https://leetcode.com/submissions/detail/206295901/
 		//Console.WriteLine(Solution.ShortestCompletingWord("1s3 PSt", new string[] { "step", "steps", "stripe", "stepple" })); 
@@ -72,5 +73,14 @@ class Program
 
 		//var test = new int[] { 1, 0, 0, 1 };
 		//Console.WriteLine(solution.FindMaxLength(test));
+
+		var grid = new char[][]
+		{
+			"11110".ToCharArray(),
+			"11010".ToCharArray(),
+			"11000".ToCharArray(),
+			"00000".ToCharArray(),
+		};
+		Console.WriteLine(solution.NumIslands(grid));
 	}
 }

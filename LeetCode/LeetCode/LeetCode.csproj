@@ -70,6 +70,8 @@
     <Compile Include="1-Easy\344 - Reverse String.cs" />
     <Compile Include="1-Easy\392 - Is Subsequence.cs" />
     <Compile Include="30days\15 - Product of Array Except Self.cs" />
+    <Compile Include="30days\16 - Valid Parenthesis String.cs" />
+    <Compile Include="30days\17 - Number of Islands.cs" />
     <Compile Include="406 - Queue Reconstruction by Height.cs" />
     <Compile Include="1-Easy\412 - Fizz Buzz.cs" />
     <Compile Include="452 - Minimum Number of Arrows to Burst Balloons.cs" />

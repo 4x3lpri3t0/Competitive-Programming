@@ -5,17 +5,12 @@ partial class Solution
 {
     static string decrypt(string word)
     {
-        // your code goes here
         if (word == null || word.Length == 0)
-        {
             return "";
-        }
 
         int length = word.Length;
         var message = new char[length];
-
         message[0] = (char)(word[0] - 1);
-
         for (int i = 1; i < length; i++)
         {
             var visit = word[i];
@@ -25,9 +20,8 @@ partial class Solution
             // 114 -> encrypt 
             // 100 + 114 = 214
             // 214 - 26 * multiple(4) = 214 - 104
-            // 
 
-            int difference = (int)visit - (int)previous; // 10
+            int difference = visit - previous; // 10
             // go back to 214, then reduce 26 multilple time   //
             while (difference - 'a' < 0) // 10 + 104 = 114
             {
