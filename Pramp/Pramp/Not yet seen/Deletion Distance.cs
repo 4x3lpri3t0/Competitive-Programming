@@ -28,31 +28,37 @@ using System;
 
 partial class Solution
 {
-    static int GetDeletionDistance(string s1, string s2)
+    public static int GetDeletionDistance(string str1, string str2)
     {
-        if (string.IsNullOrEmpty(s1))
-            return s2.Length;
-        if (string.IsNullOrEmpty(s2))
-            return s1.Length;
+        if (str1.Length == 0 && str2.Length != 0)
+            return str2.Length;
+        if (str2.Length == 0 && str1.Length != 0)
+            return str1.Length;
+        if (str1 == str2)
+            return 0;
 
-        // Need DP matrix?
-        int[][] dp = new int[s1.Length + 1][];
-        for (int i = 0; i < s2.Length; i++)
+        var matrix = new int[str1.Length + 1, str2.Length + 1];
+        for (var i = 0; i < str1.Length + 1; i++)
+            matrix[i, 0] = i;
+        for (var j = 0; j < str2.Length + 1; j++)
+            matrix[0, j] = j;
+
+        for (var i = 1; i < str1.Length + 1; i++)
         {
-            dp[i] = new int[s2.Length];
+            for (var j = 1; j < str2.Length + 1; j++)
+            {
+                if (str1[i - 1] == str2[j - 1]) // Same
+                    matrix[i, j] = matrix[i - 1, j - 1]; // Continue with next
+                else
+                    matrix[i, j] = Math.Min(matrix[i - 1, j], matrix[i, j - 1]) + 1;
+            }
         }
-
-        // TODO
-
-        return 0;
+        return matrix[str1.Length, str2.Length];
     }
 
     public static void DeletionDistance()
     {
-        Console.WriteLine(GetDeletionDistance("frog", "dog"));
-        Console.WriteLine(GetDeletionDistance("some", "thing"));
+        Console.WriteLine(GetDeletionDistance("frog", "dog")); // 3
+        Console.WriteLine(GetDeletionDistance("some", "thing")); // 9
     }
 }
-
-// hate
-// atenas
