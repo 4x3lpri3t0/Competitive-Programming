@@ -32,7 +32,7 @@ namespace Pramp
             // Basic Regex Parser
 
             // [TODO] Not yet asked:
-            DeletionDistance();
+            //DeletionDistance();
             //Drone Flight Planner
             //Decrypt Message
             //Sentence Reverse
