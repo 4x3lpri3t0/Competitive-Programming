@@ -114,6 +114,9 @@
     <Compile Include="965 - Univalued Binary Tree.cs" />
     <Compile Include="Contests\BW 23\5360 - Count Largest Group.cs" />
     <Compile Include="Contests\BW 23\5362 - Construct K Palindrome Strings.cs" />
+    <Compile Include="Contests\BW 24\5372 - Minimum Value to Get Positive Step by Step Sum.cs" />
+    <Compile Include="Contests\BW 24\5373 - Find the Minimum Number of Fibonacci Numbers Whose Sum Is K.cs" />
+    <Compile Include="Contests\BW 24\5374 - The k-th Lexicographical String of All Happy Strings of Length n.cs" />
     <Compile Include="ListNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -27,6 +27,7 @@ class Program
 		//ContainsNearbyDuplicate // Nice solution (sliding window + set)
 		//CountBits // Bitwise
 		//CheckValidString
+		//GetHappyString // TODO
 
 		// TODO: Improve: https://leetcode.com/submissions/detail/206295901/
 		//Console.WriteLine(Solution.ShortestCompletingWord("1s3 PSt", new string[] { "step", "steps", "stripe", "stepple" })); 
@@ -83,12 +84,27 @@ class Program
 		//};
 		//Console.WriteLine(solution.NumIslands(grid));
 
-		var grid = new int[][]
-		{
-			new int[] { 1,3,1 },
-			new int[] { 1,5,1 },
-			new int[] { 4,2,1 },
-		};
-		Console.WriteLine(solution.MinPathSum(grid));
+		//var grid = new int[][]
+		//{
+		//	new int[] { 1,3,1 },
+		//	new int[] { 1,5,1 },
+		//	new int[] { 4,2,1 },
+		//};
+		//Console.WriteLine(solution.MinPathSum(grid));
+
+		//Console.WriteLine(solution.MinStartValue(new int[] { 1, 2 })); 
+		//Console.WriteLine(solution.MinStartValue(new int[] { 1, -2, -3 }));
+		//Console.WriteLine(solution.MinStartValue(new int[] { -3, 2, -3, 4, 2 }));
+		
+		//Console.WriteLine(solution.FindMinFibonacciNumbers(7));
+		//Console.WriteLine(solution.FindMinFibonacciNumbers(10));
+		//Console.WriteLine(solution.FindMinFibonacciNumbers(19));
+
+		//Console.WriteLine(solution.GetHappyString(1, 3));
+		//Console.WriteLine(solution.GetHappyString(1, 4));
+		Console.WriteLine(solution.GetHappyString(3, 9));
+		//Console.WriteLine(solution.GetHappyString(2, 7));
+		//Console.WriteLine(solution.GetHappyString(10, 100));
+		
 	}
 }
