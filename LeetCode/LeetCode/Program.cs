@@ -74,13 +74,21 @@ class Program
 		//var test = new int[] { 1, 0, 0, 1 };
 		//Console.WriteLine(solution.FindMaxLength(test));
 
-		var grid = new char[][]
+		//var grid = new char[][]
+		//{
+		//	"11110".ToCharArray(),
+		//	"11010".ToCharArray(),
+		//	"11000".ToCharArray(),
+		//	"00000".ToCharArray(),
+		//};
+		//Console.WriteLine(solution.NumIslands(grid));
+
+		var grid = new int[][]
 		{
-			"11110".ToCharArray(),
-			"11010".ToCharArray(),
-			"11000".ToCharArray(),
-			"00000".ToCharArray(),
+			new int[] { 1,3,1 },
+			new int[] { 1,5,1 },
+			new int[] { 4,2,1 },
 		};
-		Console.WriteLine(solution.NumIslands(grid));
+		Console.WriteLine(solution.MinPathSum(grid));
 	}
 }
