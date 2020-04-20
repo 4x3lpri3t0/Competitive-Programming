@@ -10,6 +10,7 @@ namespace Pramp
             //KMessedArraySort(); // Review
             //SudokuSolve(); // Review
             //BracketMatch();
+            ValidateIpAddress();
 
             // TODO (Code here but needs refactor):
             //Busiest

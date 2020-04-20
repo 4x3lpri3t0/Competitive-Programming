@@ -28,6 +28,7 @@ class Program
 		//CountBits // Bitwise
 		//CheckValidString
 		//GetHappyString // TODO
+		//Search // Search in Rotated Sorted Array
 
 		// TODO: Improve: https://leetcode.com/submissions/detail/206295901/
 		//Console.WriteLine(Solution.ShortestCompletingWord("1s3 PSt", new string[] { "step", "steps", "stripe", "stepple" })); 
@@ -95,16 +96,16 @@ class Program
 		//Console.WriteLine(solution.MinStartValue(new int[] { 1, 2 })); 
 		//Console.WriteLine(solution.MinStartValue(new int[] { 1, -2, -3 }));
 		//Console.WriteLine(solution.MinStartValue(new int[] { -3, 2, -3, 4, 2 }));
-		
+
 		//Console.WriteLine(solution.FindMinFibonacciNumbers(7));
 		//Console.WriteLine(solution.FindMinFibonacciNumbers(10));
 		//Console.WriteLine(solution.FindMinFibonacciNumbers(19));
 
 		//Console.WriteLine(solution.GetHappyString(1, 3));
 		//Console.WriteLine(solution.GetHappyString(1, 4));
-		Console.WriteLine(solution.GetHappyString(3, 9));
+		//Console.WriteLine(solution.GetHappyString(3, 9));
 		//Console.WriteLine(solution.GetHappyString(2, 7));
 		//Console.WriteLine(solution.GetHappyString(10, 100));
-		
+
 	}
 }
