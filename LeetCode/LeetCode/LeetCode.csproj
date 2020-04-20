@@ -73,6 +73,7 @@
     <Compile Include="30days\16 - Valid Parenthesis String.cs" />
     <Compile Include="30days\17 - Number of Islands.cs" />
     <Compile Include="30days\18 - Minimum Path Sum.cs" />
+    <Compile Include="30days\19 - Search in Rotated Sorted Array.cs" />
     <Compile Include="406 - Queue Reconstruction by Height.cs" />
     <Compile Include="1-Easy\412 - Fizz Buzz.cs" />
     <Compile Include="452 - Minimum Number of Arrows to Burst Balloons.cs" />
