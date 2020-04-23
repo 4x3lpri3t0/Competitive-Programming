@@ -1,16 +1,19 @@
-﻿using static InterviewCake.Questions._01___MergingMeetingTimes;
-using static InterviewCake.Questions._02___ReverseStringInPlace;
-using static InterviewCake.Questions._03___ReverseWordsInPlace;
-using static InterviewCake.Questions._04___MergeSortedArrays;
-using static InterviewCake.Questions._05___CafeOrderChecker;
-using static InterviewCake.Questions._06___InflightEntertainment;
-using static InterviewCake.Questions._07___PermutationPalindrome;
-using static InterviewCake.Questions._08___Word_Cloud;
-using static InterviewCake.Questions._09___TopScores;
-using static InterviewCake.Questions._10___StockPrice;
-using static InterviewCake.Questions._11___HighestProductOf3;
-using static InterviewCake.Questions._12___ProductOfOtherNumbers;
-using static InterviewCake.Questions._13___FindRotationPoint;
+﻿using static _01___MergingMeetingTimes;
+using static _02___ReverseStringInPlace;
+using static _03___ReverseWordsInPlace;
+using static _04___MergeSortedArrays;
+using static _05___CafeOrderChecker;
+using static _06___InflightEntertainment;
+using static _07___PermutationPalindrome;
+using static _08___Word_Cloud;
+using static _09___TopScores;
+using static _10___StockPrice;
+using static _11___HighestProductOf3;
+using static _12___ProductOfOtherNumbers;
+using static _13___FindRotationPoint;
+using static _16___Find_Unique_Int_Among_Duplicates;
+using static _17___Which_Appears_Twice;
+using static _18___Shuffle;
 using static System.Console;
 
 namespace InterviewCake
@@ -38,6 +41,31 @@ namespace InterviewCake
             //HighestProductOf3Test(); // REVIEW
             //ProductOfOthersTest(); // REVIEW
             //FindRotationPointTest(); // REVIEW
+            //FindRectangularOverlap // REVIEW
+            //FindUniqueIntegerTest();
+            //GetDuplicateTest();
+            //ShuffleTest();
+        }
+
+        private static void ShuffleTest()
+        {
+            int[] deck = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            Shuffle(deck);
+            WriteLine(string.Join(", ", deck));
+        }
+
+        private static void GetDuplicateTest()
+        {
+            int[] test = { 1, 2, 3, 4, 2, 5 };
+            WriteLine(GetDuplicate(test));
+        }
+
+        private static void FindUniqueIntegerTest()
+        {
+            int[] test = { 1, 1, 3, 2, 3 };
+            WriteLine(FindUniqueInteger(test));
+            test = new int[] { 2, 3, 4, 5, 1, 5, 4, 3, 2 };
+            WriteLine(FindUniqueInteger(test));
         }
 
         private static void FindRotationPointTest()

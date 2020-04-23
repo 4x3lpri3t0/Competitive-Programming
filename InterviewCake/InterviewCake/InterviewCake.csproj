@@ -60,6 +60,12 @@
     <Compile Include="Questions\10 - StockPrice.cs" />
     <Compile Include="Questions\11 - HighestProductOf3.cs" />
     <Compile Include="Questions\13 - FindRotationPoint.cs" />
+    <Compile Include="Questions\15 - Temperature Tracker.cs" />
+    <Compile Include="Questions\16 - Find Unique Int Among Duplicates.cs" />
+    <Compile Include="Questions\17 - Which Appears Twice.cs" />
+    <Compile Include="Questions\18 - Shuffle.cs" />
+    <Compile Include="System Design\Find Duplicate Files.cs" />
+    <Compile Include="Questions\14 - Rectangular Overlap.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

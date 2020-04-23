@@ -1,28 +1,25 @@
 ﻿using System.Collections.Generic;
 
-namespace InterviewCake.Questions
+public class _06___InflightEntertainment
 {
-    public class _06___InflightEntertainment
+    public static bool TwoMoviesExist(int flightLength, int[] movies)
     {
-        public static bool TwoMoviesExist(int flightLength, int[] movies)
+        // Complements
+        var movieLengthsSet = new HashSet<int>();
+
+        // Iterate, check if complement exist, populate complement
+        for (int i = 0; i < movies.Length; i++)
         {
-            // Complements
-            var movieLengthsSet = new HashSet<int>();
+            if (movies[i] >= flightLength)
+                continue;
 
-            // Iterate, check if complement exist, populate complement
-            for (int i = 0; i < movies.Length; i++)
-            {
-                if (movies[i] >= flightLength)
-                    continue;
+            int complement = flightLength - movies[i];
+            if (movieLengthsSet.Contains(complement))
+                return true;
 
-                int complement = flightLength - movies[i];
-                if (movieLengthsSet.Contains(complement))
-                    return true;
-
-                movieLengthsSet.Add(movies[i]);
-            }
-
-            return false;
+            movieLengthsSet.Add(movies[i]);
         }
+
+        return false;
     }
 }
