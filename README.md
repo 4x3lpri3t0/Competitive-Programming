@@ -2,4 +2,4 @@
 
 
 
-My solutions in C# for competitive programming problems.
+Some attempts to solve competitive programming problems in C#.
