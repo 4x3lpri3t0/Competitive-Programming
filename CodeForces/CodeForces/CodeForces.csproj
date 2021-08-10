@@ -88,6 +88,7 @@
     <Compile Include="1400\C - Given Length and Sum of Digits.cs" />
     <Compile Include="1400\D - Equalize Them All.cs" />
     <Compile Include="1400\D - Queue.cs" />
+    <Compile Include="1500\A - Presents.cs" />
     <Compile Include="1500\A - Two Substrings.cs" />
     <Compile Include="1500\C - Divisibility by Eight.cs" />
     <Compile Include="1500\C - Woodcutters.cs" />

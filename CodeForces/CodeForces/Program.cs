@@ -1,4 +1,6 @@
-﻿namespace CodeForces
+﻿using CodeForces._1500;
+
+namespace CodeForces
 {
     internal class Program
     {
@@ -73,9 +75,10 @@
 
             #endregion Strings
 
-            #endregion Lvl 1
+            #endregion Year 2016
 
             #region Year 2019
+
             //B___Interesting_drink.Main();
             //B___Sereja_and_Suffixes.Main();
             //B___Cormen.Main();
@@ -118,7 +121,14 @@
             //C___A_and_B_and_Team_Training.Main();
             //B___Vanya_and_Books.Main(); // TODO: Review
             //B___Simple_Game.Main(); // TODO
-            #endregion
+
+            #endregion Year 2019
+
+            #region 2021
+
+            //A___Presents.Main();
+
+            #endregion 2021
 
             #region Rounds
 

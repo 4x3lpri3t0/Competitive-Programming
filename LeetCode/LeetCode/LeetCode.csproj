@@ -114,6 +114,7 @@
     <Compile Include="984 - String Without AAA or BBB.cs" />
     <Compile Include="985 - Sum of Even Numbers After Queries.cs" />
     <Compile Include="965 - Univalued Binary Tree.cs" />
+    <Compile Include="26 - Remove Duplicates from Sorted Array.cs" />
     <Compile Include="Contests\BW 23\5360 - Count Largest Group.cs" />
     <Compile Include="Contests\BW 23\5362 - Construct K Palindrome Strings.cs" />
     <Compile Include="Contests\BW 24\5372 - Minimum Value to Get Positive Step by Step Sum.cs" />
