@@ -124,11 +124,13 @@ namespace CodeForces
 
             #endregion Year 2019
 
-            #region 2021
+            #region 2022
 
-            //A___Presents.Main();
+            //A___Maxmina.Main();
+            //B___Rebellion.Main();
+            C___Permutation_Operations.Main();
 
-            #endregion 2021
+            #endregion 2022
 
             #region Rounds
 

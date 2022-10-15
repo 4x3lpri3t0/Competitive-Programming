@@ -123,6 +123,9 @@
     <Compile Include="Rounds\1335\C.cs" />
     <Compile Include="Rounds\1335\B.cs" />
     <Compile Include="Rounds\1335\A.cs" />
+    <Compile Include="Rounds\1746\A - Maxmina.cs" />
+    <Compile Include="Rounds\1746\C - Permutation Operations.cs" />
+    <Compile Include="Rounds\1746\B - Rebellion.cs" />
     <Compile Include="Year 2016\Brute Force\Beautiful Year.cs" />
     <Compile Include="Year 2016\Brute Force\IQ test.cs" />
     <Compile Include="Year 2016\Brute Force\Vasya and Socks.cs" />
