@@ -123,6 +123,8 @@
     <Compile Include="Rounds\1335\C.cs" />
     <Compile Include="Rounds\1335\B.cs" />
     <Compile Include="Rounds\1335\A.cs" />
+    <Compile Include="Rounds\1744\A - Number Replacement - Copy.cs" />
+    <Compile Include="Rounds\1744\B - Even-Odd Increments.cs" />
     <Compile Include="Rounds\1746\A - Maxmina.cs" />
     <Compile Include="Rounds\1746\C - Permutation Operations.cs" />
     <Compile Include="Rounds\1746\B - Rebellion.cs" />

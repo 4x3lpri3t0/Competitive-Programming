@@ -126,9 +126,14 @@ namespace CodeForces
 
             #region 2022
 
+            // 1744
+            //A___NumberReplacement.Main();
+            B___EvenOdd_Increments.Main();
+
+            // 1746
             //A___Maxmina.Main();
             //B___Rebellion.Main();
-            C___Permutation_Operations.Main();
+            //C___Permutation_Operations.Main();
 
             #endregion 2022
 
