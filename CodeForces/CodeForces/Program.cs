@@ -128,12 +128,17 @@ namespace CodeForces
 
             // 1744
             //A___NumberReplacement.Main();
-            B___EvenOdd_Increments.Main();
+            //B___EvenOdd_Increments.Main();
 
             // 1746
             //A___Maxmina.Main();
             //B___Rebellion.Main();
             //C___Permutation_Operations.Main();
+
+            // Practice
+            //C___Kth_Not_Divisible_by_n.Main();
+            //A___Dima_and_Friends.Main();
+            A___Jzzhu_and_Children.Main();
 
             #endregion 2022
 

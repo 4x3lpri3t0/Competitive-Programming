@@ -51,6 +51,7 @@
     <Compile Include="1200 or less\A - Flipping Game.cs" />
     <Compile Include="1200 or less\A - Hit the Lottery.cs" />
     <Compile Include="1200 or less\A - Joysticks.cs" />
+    <Compile Include="1200 or less\A - Jzzhu and Children.cs" />
     <Compile Include="1200 or less\A - Maximum Increase.cs" />
     <Compile Include="1200 or less\A - QAQ.cs" />
     <Compile Include="1200 or less\A - Santa Claus and Candies.cs" />
@@ -68,9 +69,11 @@
     <Compile Include="1200 or less\B - Petya and Staircases.cs" />
     <Compile Include="1200 or less\B - Sereja and Suffixes.cs" />
     <Compile Include="1200 or less\B - Vitamins.cs" />
+    <Compile Include="1200 or less\A - Dima and Friends.cs" />
     <Compile Include="1200 or less\C - Simple Strings.cs" />
     <Compile Include="1200 or less\B - Fence.cs" />
     <Compile Include="1200 or less\A - Mishka and Game.cs" />
+    <Compile Include="1200 or less\C - K-th Not Divisible by n.cs" />
     <Compile Include="1300\A - Bus Game.cs" />
     <Compile Include="1300\A - Party.cs" />
     <Compile Include="1300\A - Where Are My Flakes.cs" />
@@ -123,7 +126,7 @@
     <Compile Include="Rounds\1335\C.cs" />
     <Compile Include="Rounds\1335\B.cs" />
     <Compile Include="Rounds\1335\A.cs" />
-    <Compile Include="Rounds\1744\A - Number Replacement - Copy.cs" />
+    <Compile Include="Rounds\1744\A - Number Replacement.cs" />
     <Compile Include="Rounds\1744\B - Even-Odd Increments.cs" />
     <Compile Include="Rounds\1746\A - Maxmina.cs" />
     <Compile Include="Rounds\1746\C - Permutation Operations.cs" />
