@@ -138,7 +138,8 @@ namespace CodeForces
             // Practice
             //C___Kth_Not_Divisible_by_n.Main();
             //A___Dima_and_Friends.Main();
-            A___Jzzhu_and_Children.Main();
+            //A___Jzzhu_and_Children.Main();
+            A___Petr_and_Book.Main();
 
             #endregion 2022
 

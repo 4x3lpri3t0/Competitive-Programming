@@ -53,6 +53,7 @@
     <Compile Include="1200 or less\A - Joysticks.cs" />
     <Compile Include="1200 or less\A - Jzzhu and Children.cs" />
     <Compile Include="1200 or less\A - Maximum Increase.cs" />
+    <Compile Include="1200 or less\A - Petr and Book.cs" />
     <Compile Include="1200 or less\A - QAQ.cs" />
     <Compile Include="1200 or less\A - Santa Claus and Candies.cs" />
     <Compile Include="1200 or less\A - Sasha and His Trip.cs" />
