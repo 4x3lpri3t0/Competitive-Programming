@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1200 or less\A - Bicycle Chain.cs" />
     <Compile Include="1200 or less\A - Flipping Game.cs" />
     <Compile Include="1200 or less\A - Hit the Lottery.cs" />
     <Compile Include="1200 or less\A - Joysticks.cs" />
