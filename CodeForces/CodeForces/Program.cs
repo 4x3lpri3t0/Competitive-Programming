@@ -135,12 +135,15 @@ namespace CodeForces
             //B___Rebellion.Main();
             //C___Permutation_Operations.Main();
 
-            // Practice
+            // Practice - <1300 (https://earthshakira.github.io/a2oj-clientside/server/Ladder11.html)
             //C___Kth_Not_Divisible_by_n.Main();
             //A___Dima_and_Friends.Main();
             //A___Jzzhu_and_Children.Main();
             //A___Petr_and_Book.Main();
-            A___Bicycle_Chain.Main();
+            //A___Bicycle_Chain.Main();
+            //A___System_of_Equations.Main();
+            //A___Business_Trip.Main();
+            A___Little_Elephant_and_Function.Main();
 
             #endregion 2022
 

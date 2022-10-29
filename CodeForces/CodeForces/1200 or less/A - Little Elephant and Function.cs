@@ -4,26 +4,22 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-// https://codeforces.com/problemset/problem/793/B
-public class B___Igor_and_his_way_to_work
+// https://codeforces.com/problemset/problem/221/A
+public static class A___Little_Elephant_and_Function
+
 {
-    private static int N;
-    private static int M;
-    private static char[,] matrix;
-
-    //private static bool[,] check;
-    private static bool found = false;
-
     private static void Solve()
     {
-        N = ReadInt();
-        M = ReadInt();
+        // https://codeforces.com/blog/entry/5177
+        int n = ReadInt();
+        int[] result = new int[n];
+        result[0] = n;
+        for (int i = 1; i < n; i++)
+        {
+            result[i] = i;
+        }
 
-        matrix = new char[N, M];
-
-        // TODO: Upsolve
-
-        Write(found ? "YES" : "NO");
+        WriteArray(result);
     }
 
     #region Main
@@ -34,24 +30,20 @@ public class B___Igor_and_his_way_to_work
     public static void Main()
     {
 #if DEBUG
-
         //reader = new StreamReader("C:\\Users\\Axel\\Desktop\\input.txt");
         reader = new StreamReader(Console.OpenStandardInput());
         writer = Console.Out;
-
         //writer = new StreamWriter("..\\..\\output.txt");
 #else
         reader = new StreamReader(Console.OpenStandardInput());
         writer = new StreamWriter(Console.OpenStandardOutput());
-
         //reader = new StreamReader("input.txt");
         //writer = new StreamWriter("output.txt");
 #endif
         try
         {
             Solve();
-
-            //var thread = new Thread(new String_Task().Solve, 1024 * 1024 * 128);
+            //var thread = new Thread(new Word_Capitalization().Solve, 1024 * 1024 * 128);
             //thread.Start();
             //thread.Join();
         }
@@ -74,49 +66,31 @@ public class B___Igor_and_his_way_to_work
     private static Queue<string> currentLineTokens = new Queue<string>();
 
     private static string[] ReadAndSplitLine()
-    {
-        return reader.ReadLine().Split(new[] { ' ', '\t', }, StringSplitOptions.RemoveEmptyEntries);
-    }
+    { return reader.ReadLine().Split(new[] { ' ', '\t', }, StringSplitOptions.RemoveEmptyEntries); }
 
     public static string Read()
-    {
-        while (currentLineTokens.Count == 0) currentLineTokens = new Queue<string>(ReadAndSplitLine()); return currentLineTokens.Dequeue();
-    }
+    { while (currentLineTokens.Count == 0) currentLineTokens = new Queue<string>(ReadAndSplitLine()); return currentLineTokens.Dequeue(); }
 
     public static int ReadInt()
-    {
-        return int.Parse(Read());
-    }
+    { return int.Parse(Read()); }
 
     public static long ReadLong()
-    {
-        return long.Parse(Read());
-    }
+    { return long.Parse(Read()); }
 
     public static double ReadDouble()
-    {
-        return double.Parse(Read(), CultureInfo.InvariantCulture);
-    }
+    { return double.Parse(Read(), CultureInfo.InvariantCulture); }
 
     public static int[] ReadIntArray()
-    {
-        return ReadAndSplitLine().Select(int.Parse).ToArray();
-    }
+    { return ReadAndSplitLine().Select(int.Parse).ToArray(); }
 
     public static long[] ReadLongArray()
-    {
-        return ReadAndSplitLine().Select(long.Parse).ToArray();
-    }
+    { return ReadAndSplitLine().Select(long.Parse).ToArray(); }
 
     public static double[] ReadDoubleArray()
-    {
-        return ReadAndSplitLine().Select(s => double.Parse(s, CultureInfo.InvariantCulture)).ToArray();
-    }
+    { return ReadAndSplitLine().Select(s => double.Parse(s, CultureInfo.InvariantCulture)).ToArray(); }
 
     public static int[][] ReadIntMatrix(int numberOfRows)
-    {
-        int[][] matrix = new int[numberOfRows][]; for (int i = 0; i < numberOfRows; i++) matrix[i] = ReadIntArray(); return matrix;
-    }
+    { int[][] matrix = new int[numberOfRows][]; for (int i = 0; i < numberOfRows; i++) matrix[i] = ReadIntArray(); return matrix; }
 
     public static int[][] ReadAndTransposeIntMatrix(int numberOfRows)
     {
@@ -126,24 +100,16 @@ public class B___Igor_and_his_way_to_work
     }
 
     public static string[] ReadLines(int quantity)
-    {
-        string[] lines = new string[quantity]; for (int i = 0; i < quantity; i++) lines[i] = reader.ReadLine().Trim(); return lines;
-    }
+    { string[] lines = new string[quantity]; for (int i = 0; i < quantity; i++) lines[i] = reader.ReadLine().Trim(); return lines; }
 
     public static void WriteArray<T>(IEnumerable<T> array)
-    {
-        writer.WriteLine(string.Join(" ", array));
-    }
+    { writer.WriteLine(string.Join(" ", array)); }
 
     public static void Write(params object[] array)
-    {
-        WriteArray(array);
-    }
+    { WriteArray(array); }
 
     public static void WriteLines<T>(IEnumerable<T> array)
-    {
-        foreach (var a in array) writer.WriteLine(a);
-    }
+    { foreach (var a in array) writer.WriteLine(a); }
 
     private class SDictionary<TKey, TValue> : Dictionary<TKey, TValue>
     {
@@ -155,9 +121,7 @@ public class B___Igor_and_his_way_to_work
     }
 
     private static T[] Init<T>(int size) where T : new()
-    {
-        var ret = new T[size]; for (int i = 0; i < size; i++) ret[i] = new T(); return ret;
-    }
+    { var ret = new T[size]; for (int i = 0; i < size; i++) ret[i] = new T(); return ret; }
 
     #endregion Read / Write
 }

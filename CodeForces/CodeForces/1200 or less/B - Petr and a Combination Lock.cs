@@ -1,4 +1,5 @@
 ﻿#region Usings
+
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -6,6 +7,7 @@ using System.IO;
 using System.Linq;
 
 using static System.Math;
+
 #endregion
 
 // https://codeforces.com/problemset/problem/1097/B
@@ -27,12 +29,12 @@ public class B___Petr_and_a_Combination_Lock
             Write("NO");
     }
 
-    static bool Dfs(int idx, int[] A, int sum)
+    private static bool Dfs(int idx, int[] A, int sum)
     {
         if (idx == A.Length && (sum % 360 == 0 || sum == 0))
             return true;
 
-        for (int i = idx; i < A.Length; i++)
+        for (int i = idx; i < A.Length;) // TODO: I think this doesn't make sense and could be simplified
         {
             return Dfs(i + 1, A, sum + A[i]) || Dfs(idx + 1, A, sum - A[i]);
         }

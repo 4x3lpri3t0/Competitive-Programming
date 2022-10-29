@@ -49,15 +49,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="1200 or less\A - Bicycle Chain.cs" />
+    <Compile Include="1200 or less\A - Business Trip.cs" />
     <Compile Include="1200 or less\A - Flipping Game.cs" />
+    <Compile Include="1200 or less\A - Hexadecimals theorem.cs" />
     <Compile Include="1200 or less\A - Hit the Lottery.cs" />
     <Compile Include="1200 or less\A - Joysticks.cs" />
     <Compile Include="1200 or less\A - Jzzhu and Children.cs" />
+    <Compile Include="1200 or less\A - Little Elephant and Function.cs" />
     <Compile Include="1200 or less\A - Maximum Increase.cs" />
     <Compile Include="1200 or less\A - Petr and Book.cs" />
     <Compile Include="1200 or less\A - QAQ.cs" />
     <Compile Include="1200 or less\A - Santa Claus and Candies.cs" />
     <Compile Include="1200 or less\A - Sasha and His Trip.cs" />
+    <Compile Include="1200 or less\A - System of Equations.cs" />
     <Compile Include="1200 or less\A - The Way to Home.cs" />
     <Compile Include="1200 or less\B - Cormen.cs" />
     <Compile Include="1200 or less\B - Creating the Contest.cs" />
