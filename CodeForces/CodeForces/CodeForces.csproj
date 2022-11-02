@@ -63,6 +63,7 @@
     <Compile Include="1200 or less\A - Sasha and His Trip.cs" />
     <Compile Include="1200 or less\A - System of Equations.cs" />
     <Compile Include="1200 or less\A - The Way to Home.cs" />
+    <Compile Include="1200 or less\B - Airport.cs" />
     <Compile Include="1200 or less\B - Cormen.cs" />
     <Compile Include="1200 or less\B - Creating the Contest.cs" />
     <Compile Include="1200 or less\B - Dreamoon and WiFi.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="1300\A - Party.cs" />
     <Compile Include="1300\A - Where Are My Flakes.cs" />
     <Compile Include="1300\B - BerSU Ball.cs" />
+    <Compile Include="1300\B - Jeff and Periods.cs" />
     <Compile Include="1300\B - Painting Pebbles.cs" />
     <Compile Include="1300\B - Pashmak and Flowers.cs" />
     <Compile Include="1300\B - Simple Game.cs" />
