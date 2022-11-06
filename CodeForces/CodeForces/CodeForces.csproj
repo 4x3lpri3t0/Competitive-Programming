@@ -74,6 +74,7 @@
     <Compile Include="1200 or less\B - Perfect Number.cs" />
     <Compile Include="1200 or less\B - Petr and a Combination Lock.cs" />
     <Compile Include="1200 or less\B - Petya and Staircases.cs" />
+    <Compile Include="1200 or less\B - Sail.cs" />
     <Compile Include="1200 or less\B - Sereja and Suffixes.cs" />
     <Compile Include="1200 or less\B - Vitamins.cs" />
     <Compile Include="1200 or less\A - Dima and Friends.cs" />
