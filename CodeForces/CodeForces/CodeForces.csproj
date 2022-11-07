@@ -51,6 +51,7 @@
     <Compile Include="1200 or less\A - Bicycle Chain.cs" />
     <Compile Include="1200 or less\A - Business Trip.cs" />
     <Compile Include="1200 or less\A - Flipping Game.cs" />
+    <Compile Include="1200 or less\A - Free Cash.cs" />
     <Compile Include="1200 or less\A - Hexadecimals theorem.cs" />
     <Compile Include="1200 or less\A - Hit the Lottery.cs" />
     <Compile Include="1200 or less\A - Joysticks.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="1300\B - Vanya and Books.cs" />
     <Compile Include="1300\B - Worms.cs" />
     <Compile Include="1300\C - A and B and Team Training.cs" />
+    <Compile Include="1300\C - The Child and Toy.cs" />
     <Compile Include="1400\A - Vacations.cs" />
     <Compile Include="1400\B - Complete the Word.cs" />
     <Compile Include="1400\B - Little Girl and Game.cs" />

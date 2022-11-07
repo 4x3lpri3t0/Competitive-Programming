@@ -145,10 +145,12 @@ namespace CodeForces
             //A___Business_Trip.Main();
             //A___Little_Elephant_and_Function.Main();
             //B___Airport.Main();
-            B___Sail.Main();
+            //B___Sail.Main();
+            //A___Free_Cash.Main();
 
             // Practice - 1300
             //B___Jeff_and_Periods.Main();
+            //C___The_Child_and_Toy.Main();
 
             #endregion 2022
 
