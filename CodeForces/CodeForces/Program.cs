@@ -147,10 +147,17 @@ namespace CodeForces
             //B___Airport.Main();
             //B___Sail.Main();
             //A___Free_Cash.Main();
+            //A___Shooshuns_and_Sequence.Main();
 
             // Practice - 1300
             //B___Jeff_and_Periods.Main();
             //C___The_Child_and_Toy.Main();
+
+            //A___Medium_Number.Main();
+            //B___Atilla_s_Favorite_Problem.Main();
+            //C___Advantage.Main();
+            //D___Challenging_Valleys.Main();
+            E___Binary_Inversions.Main();
 
             #endregion 2022
 

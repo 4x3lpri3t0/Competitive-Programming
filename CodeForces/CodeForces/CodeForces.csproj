@@ -62,6 +62,7 @@
     <Compile Include="1200 or less\A - QAQ.cs" />
     <Compile Include="1200 or less\A - Santa Claus and Candies.cs" />
     <Compile Include="1200 or less\A - Sasha and His Trip.cs" />
+    <Compile Include="1200 or less\A - Shooshuns and Sequence.cs" />
     <Compile Include="1200 or less\A - System of Equations.cs" />
     <Compile Include="1200 or less\A - The Way to Home.cs" />
     <Compile Include="1200 or less\B - Airport.cs" />
@@ -142,6 +143,11 @@
     <Compile Include="Rounds\1746\A - Maxmina.cs" />
     <Compile Include="Rounds\1746\C - Permutation Operations.cs" />
     <Compile Include="Rounds\1746\B - Rebellion.cs" />
+    <Compile Include="Rounds\1760\A - Medium Number.cs" />
+    <Compile Include="Rounds\1760\B - Atilla%27s Favorite Problem.cs" />
+    <Compile Include="Rounds\1760\C - Advantage.cs" />
+    <Compile Include="Rounds\1760\D - Challenging Valleys.cs" />
+    <Compile Include="Rounds\1760\E - Binary Inversions.cs" />
     <Compile Include="Year 2016\Brute Force\Beautiful Year.cs" />
     <Compile Include="Year 2016\Brute Force\IQ test.cs" />
     <Compile Include="Year 2016\Brute Force\Vasya and Socks.cs" />
