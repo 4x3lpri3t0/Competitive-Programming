@@ -80,6 +80,7 @@
     <Compile Include="1200 or less\B - Sereja and Suffixes.cs" />
     <Compile Include="1200 or less\B - Vitamins.cs" />
     <Compile Include="1200 or less\A - Dima and Friends.cs" />
+    <Compile Include="1200 or less\B - Letter.cs" />
     <Compile Include="1200 or less\C - Simple Strings.cs" />
     <Compile Include="1200 or less\B - Fence.cs" />
     <Compile Include="1200 or less\A - Mishka and Game.cs" />

@@ -148,6 +148,7 @@ namespace CodeForces
             //B___Sail.Main();
             //A___Free_Cash.Main();
             //A___Shooshuns_and_Sequence.Main();
+            B__Letter.Main();
 
             // Practice - 1300
             //B___Jeff_and_Periods.Main();
@@ -157,7 +158,7 @@ namespace CodeForces
             //B___Atilla_s_Favorite_Problem.Main();
             //C___Advantage.Main();
             //D___Challenging_Valleys.Main();
-            E___Binary_Inversions.Main();
+            //E___Binary_Inversions.Main();
 
             #endregion 2022
 
